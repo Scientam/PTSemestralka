@@ -35,7 +35,7 @@ public class Main {
 	/** vytvori promenou ktera urcuje pocet sousedu kazde planety(v zadani 5) */
 	static int neighbourCountP = 5;
 	/** vytvori promennou, ktera uchovava vzdalenosti mezi vrcholy */
-	static double[][] distance;
+	static int[][] distance;
 	/** vytvori pole do ktereho se bude ukladat pst vrcholu na ceste z vrcholu i do vrcholu j*/
 	static int[][] shortestPath;
 	static int counter;
@@ -50,8 +50,8 @@ public class Main {
 		if(input == 1) {
 			System.out.println("Zadej pocet planet");
 			planetsCount = sc.nextInt();
-			distance = new double[factoriesCount+neighbourCountF][factoriesCount+neighbourCountF];
-			shortestPath = new int[factoriesCount+neighbourCountF][factoriesCount+neighbourCountF]; 		
+			distance = new int[factoriesCount+planetsCount][factoriesCount+planetsCount];
+			shortestPath = new int[factoriesCount+planetsCount][factoriesCount+planetsCount]; 
 	
 		
 			/** zavola metodu, ktera vytvori centraly */
@@ -94,22 +94,36 @@ public class Main {
 			}
 			bw3.close();
 		
-		
-			/** zavola metodu, ktera nazorne vykresli galaxii, tj. plnety,  centraly a cesty mezi nimi */
-			new Mapa(factoriesCount, planetsCount, neighbourCountF, neighbourCountP, entitiesV);
-		
-			for (int i = 0; i < shortestPath.length; i++) {
+			/*Dijsktra*/
+			  for (int i = 0; i < shortestPath.length; i++) {
 				shortestPath[i] = Graph.doDijkstra(distance, i);
 			}
+			 
+			/* FloydWarshall
+			shortestPath= Graph.floydWarshall(distance);*/
+			BufferedWriter bw4 = new BufferedWriter(new FileWriter("ShortestPath.txt"));				// BW na vypis do textaku 
+			for (int i = 0; i < shortestPath.length; i++) {												// vypise vystup z Dijkstry
+				
+					for (int j = 0; j < shortestPath.length; j++) {
+						bw4.write(shortestPath[i][j]+"\t");					
+					}			
+				bw4.newLine();
+			}
+			bw4.close();
+			
+			/** zavola metodu, ktera nazorne vykresli galaxii, tj. plnety,  centraly a cesty mezi nimi */
+			new Mapa(factoriesCount, planetsCount, neighbourCountF, neighbourCountP, entitiesV, shortestPath);
+		
+			
 			
 		}else{
 			counter = fromFileVrcholy();
 			fromFileHrany();
 			planetsCount = counter - factoriesCount;
-			distance = new double[factoriesCount+neighbourCountF][factoriesCount+neighbourCountF];
-			shortestPath = new int[factoriesCount+neighbourCountF][factoriesCount+neighbourCountF]; 
+			distance = new int[factoriesCount+planetsCount][factoriesCount+planetsCount];
+			shortestPath = new int[factoriesCount+planetsCount][factoriesCount+planetsCount]; 
 			/** zavola metodu, ktera nazorne vykresli galaxii, tj. plnety,  centraly a cesty mezi nimi */
-			new Mapa(factoriesCount, planetsCount, neighbourCountF, neighbourCountP, entitiesV);		
+			new Mapa(factoriesCount, planetsCount, neighbourCountF, neighbourCountP, entitiesV, shortestPath);		
 		}
 		
 	

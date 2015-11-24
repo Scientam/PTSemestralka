@@ -20,6 +20,7 @@ public class Mapa extends JFrame{
 	int neighbourCountP;
 	/** ArrayList uchovavajici vsechny objekty typu Entita*/
 	ArrayList<Vertex> ar;
+	int[][] shortestPath;
 
 
 	/**
@@ -29,12 +30,13 @@ public class Mapa extends JFrame{
 	 * @param ar
 	 * @param adjId
 	 */
-	public Mapa(int factoriesCount, int planetsCount, int neighbourCountF, int neighbourCountP, ArrayList<Vertex>ar) {
+	public Mapa(int factoriesCount, int planetsCount, int neighbourCountF, int neighbourCountP, ArrayList<Vertex>ar, int[][] shortestPath) {
 		this.factoriesCount = factoriesCount;
 		this.planetsCount = planetsCount;
 		this.neighbourCountF = neighbourCountF;
 		this.neighbourCountP = neighbourCountP;
 		this.ar = ar;
+		this.shortestPath =  shortestPath;
 	
 		this.setTitle("Mapa");
 		this.setSize(800, 800);
@@ -74,10 +76,12 @@ public class Mapa extends JFrame{
 		g2.fill(new Ellipse2D.Double(400 + 100, 400 + 130, 10, 10));
 		
 																										/*KRESLENI CEST*/
-	
-		for (int i = 0; i < ar.size(); i++) {	
+		System.out.println("i je velke: "+shortestPath.length+" a j je velke: "+shortestPath[10].length);
+		System.out.println("i je velke: "+shortestPath.length+" a j je velke: "+shortestPath[0].length);
+		for (int i = 0; i < shortestPath.length-1; i++) {	
 			g2.setColor(Color.BLACK);
-			if(i < factoriesCount) {
+		
+			/*if(i < factoriesCount) {
 				for (int j = 0; j < neighbourCountF; j++) {
 					int id = ar.get(i).neighbour[j].index;	
 					g2.draw(new Line2D.Double(ar.get(i).getXAxis()+2+100, ar.get(i).getYAxis()+2+130, ar.get(id).getXAxis()+2+100, ar.get(id).getYAxis()+2+130) );
@@ -86,12 +90,20 @@ public class Mapa extends JFrame{
 			else{					
 				for (int j = 0; j < neighbourCountP; j++) {
 					int id = ar.get(i).neighbour[j].index;	
-					if(i==5) {
-						g2.setColor(Color.PINK);
-						System.out.println("Y kam jdu: " + ar.get(id).key);
-					}
 					g2.draw(new Line2D.Double(ar.get(i).getXAxis()+2+100, ar.get(i).getYAxis()+2+130, ar.get(id).getXAxis()+2+100, ar.get(id).getYAxis()+2+130) );
 				}
+			}*/
+			
+			/*Nejkratsi cesty*/
+			for (int j = 0; j < shortestPath.length-1; j++) {
+				//System.out.println("Hodnota j je: "+j);
+					
+				if ( (shortestPath[i][j] != -1 && shortestPath[i][j+1] != -1) ) {
+					System.out.println();
+					//System.out.println("Hodnota j je: "+j+" a index je: "+shortestPath[i][j]);
+					g2.draw(new Line2D.Double(ar.get(shortestPath[i][j]).getXAxis()+2+100, ar.get(shortestPath[i][j]).getYAxis()+2+130, ar.get(shortestPath[i][j+1]).getXAxis()+2+100, ar.get(shortestPath[i][j+1]).getYAxis()+2+130) );
+				}
+				
 			}
 		} 
 	}

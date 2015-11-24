@@ -8,7 +8,7 @@ import java.util.Random;
 
 public class Data {
 	/** pole se vzdalenostmi entit */
-	private static double[][] distance;		
+	private static int[][] distance;		
 	/** pole se n nejmensimi vzdalenostmi mezi centralou a jejimi sousedy */
 	private static double[][] adjDist;				
 	/** pole s n Id nejblizsich sousedu centraly */
@@ -29,7 +29,7 @@ public class Data {
 	 * @return
 	 */
 	 public static ArrayList<Vertex> factoriesDistribution(int factoriesCount, int planetsCount, int neighbourCountF, ArrayList<Vertex> entitiesV) {
-		 distance = new double[planetsCount+factoriesCount][planetsCount+factoriesCount];     		//deklaruje velikost matice uchvavajici vzdalenost objektu
+		 distance = new int[planetsCount+factoriesCount][planetsCount+factoriesCount];     		//deklaruje velikost matice uchvavajici vzdalenost objektu
 		 
 		 for (int i = 0; i < factoriesCount; i++) {													// vytvori centraly rozlozene pravidelne na kruznici se stredem ve stredu souradneho systemu	  
 			 xAxis = Math.floor(200*Math.cos(Math.toRadians(72*i))+400) ;                                  		// vypocte x-ovou souradnici
@@ -41,8 +41,8 @@ public class Data {
 		 for (int i = 0; i < factoriesCount; i++) {	
 			 for(int j = 0; j < factoriesCount; j++) {													// spocte zda  nove vytvarena planeta je dostatecne daleko od vsech vytvorenych entit
 				actDist = Math.sqrt( Math.pow( (entitiesV.get(j).getXAxis() - entitiesV.get(i).getXAxis()), 2) + Math.pow((entitiesV.get(j).getYAxis() - entitiesV.get(i).getYAxis()), 2) );
-				distance[i][j] = actDist;											// matice distance je symetricka
-		 		distance[j][i] = actDist;
+				distance[i][j] = (int)actDist;											// matice distance je symetricka
+		 		distance[j][i] = (int)actDist;
 				/*if (i != j) {
 					entitiesV.get(i).neighbour[j] = entitiesV.get(j);									// centrale i priradi za sousedy vsechny ostatni centraly	
 				}	*/ 			
@@ -73,8 +73,8 @@ public class Data {
 	 		 for(int j = 0; j < entitiesV.size(); j++) {												// spocte zda  nove vytvarena planeta je dostatecne daleko od vsech vytvorenych entit
 	 			 actDist = Math.sqrt( Math.pow( (entitiesV.get(j).getXAxis() - xAxis), 2) + Math.pow((entitiesV.get(j).getYAxis() - yAxis), 2) );
 		 		 auxDist.add(actDist);																// ulozi vzdalenost prave vytvarene planety od entity j do pomocneho AL
-		 		 distance[i][j] = actDist;											// matice distance je symetricka
-		 		 distance[j][i] = actDist;	
+		 		 distance[i][j] = (int)actDist;											// matice distance je symetricka
+		 		 distance[j][i] = (int)actDist;	
 		 	 }	
 	 		 actDist = Collections.min(auxDist); 													// vybere nejmensi vzdalenost prave vytvarene planety a nejblizsi entity
 	 		 if(actDist > 2) { 																		// overi, zda dana planeta je dostatecne daleko, pokud ano, tak ji vytvori a prida do AL entit
@@ -90,7 +90,7 @@ public class Data {
 	  * 
 	  * @return
 	  */
-	 public static double[][] getDistance() {
+	 public static int[][] getDistance() {
 		 return distance;
 	 }
 	 
