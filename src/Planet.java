@@ -8,6 +8,8 @@ public class Planet extends Vertex {
 	private int populCount;
 	/** promenna uchovajici informaci o vlastni produkci leku*/
 	private int drugProduction;
+	/** promenna uchovavajici objednavku*/
+	private int order;
 	
 	  															/* konstruktor */	     
 	/**
@@ -63,7 +65,22 @@ public class Planet extends Vertex {
   		return status;
   	}
 	
+	public int order(int populCount, int drugProduction){
+		order = populCount - drugProduction;
+		return order;
+	}
+	
 	public int getPopulCount() {
 		return this.populCount;
 	}
+	
+	public int getOrder(){
+		return this.order;
+	}
+
+	public void setOrder(int order) {
+		this.order = order;
+	}
+	
+	
 }
