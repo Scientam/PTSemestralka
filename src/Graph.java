@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -160,13 +161,29 @@ public class Graph {
   	                
   	                if (d[i][j] > d[i][k] + d[k][j]) {
   	                    d[i][j] = d[i][k] + d[k][j];
-  	                    p[i][j] = p[k][j];
+  	                    p[i][j] = k;								// p[k][j];
   	                }
 
   	            }
   	        }
   	    }
   	    return p;
+  	}
+  	
+  	public static ArrayList<Integer> seq(int[][] fW){
+  		ArrayList<Integer> seq = new ArrayList<Integer>();
+  		int from, to;
+  		for (int i = 0; i < fW.length; i++) {
+			for (int j = 0; j < fW.length; j++) {
+				from = i;
+				to = j;
+				if(fW[from][to] == from){
+					seq.add(to);
+					//else{				}
+				}
+			}
+		}
+  		return seq;
   	}
 
   	/**

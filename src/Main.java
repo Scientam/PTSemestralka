@@ -23,7 +23,7 @@ public class Main {
 	static ArrayList<Vertex> entitiesV = new ArrayList<Vertex>();		
 	/** vytvori ArrayList do ktereho se budou ukladat objekty Entita jako hrany grafu */
 	ArrayList<Path> paths = new ArrayList<Path>();	
-	ArrayList<Vertex> edges = new ArrayList<Vertex>();
+	//ArrayList<Vertex> edges = new ArrayList<Vertex>();
 	/** vytvori promennou, urcujici zda se data budou generovat nebo nacitat ze souboru*/
 	static int input;
 	/** vytvori promenou ktera urcuje pocet central v galaxii */
@@ -36,6 +36,8 @@ public class Main {
 	static int neighbourCountP = 5;
 	/** vytvori promennou, ktera uchovava vzdalenosti mezi vrcholy */
 	static int[][] distance;
+	static int[][] FloydWarshall;
+	ArrayList<Integer> edges = new ArrayList<Integer>();
 	/** vytvori pole do ktereho se bude ukladat pst vrcholu na ceste z vrcholu i do vrcholu j*/
 	static int[][] shortestPath;
 	static int counter;
@@ -94,13 +96,13 @@ public class Main {
 			}
 			bw3.close();
 		
-			/*Dijsktra*/
+			/*Dijsktra
 			  for (int i = 0; i < shortestPath.length; i++) {
 				shortestPath[i] = Graph.doDijkstra(distance, i);
-			}
+			}*/
 			 
-			/* FloydWarshall
-			shortestPath= Graph.floydWarshall(distance);*/
+			/* FloydWarshall */
+			FloydWarshall= Graph.floydWarshall(distance);
 			BufferedWriter bw4 = new BufferedWriter(new FileWriter("ShortestPath.txt"));				// BW na vypis do textaku 
 			for (int i = 0; i < shortestPath.length; i++) {												// vypise vystup z Dijkstry
 				

@@ -98,10 +98,11 @@ public class Mapa extends JFrame{
 			for (int j = 0; j < shortestPath.length-1; j++) {
 				//System.out.println("Hodnota j je: "+j);
 					
-				if ( (shortestPath[i][j] != -1 && shortestPath[i][j+1] != -1) ) {
+				if ( (shortestPath[i][j] != -1 && shortestPath[i][j] != i) ) {
 					System.out.println();
 					//System.out.println("Hodnota j je: "+j+" a index je: "+shortestPath[i][j]);
-					g2.draw(new Line2D.Double(ar.get(shortestPath[i][j]).getXAxis()+2+100, ar.get(shortestPath[i][j]).getYAxis()+2+130, ar.get(shortestPath[i][j+1]).getXAxis()+2+100, ar.get(shortestPath[i][j+1]).getYAxis()+2+130) );
+					g2.draw(new Line2D.Double(ar.get(i).getXAxis()+2+100, ar.get(i).getYAxis()+2+130, ar.get(shortestPath[i][j]).getXAxis()+2+100, ar.get(shortestPath[i][j]).getYAxis()+2+130) );
+					//g2.draw(new Line2D.Double(ar.get(shortestPath[i][j]).getXAxis()+2+100, ar.get(shortestPath[i][j]).getYAxis()+2+130, ar.get(j).getXAxis()+2+100, ar.get(j).getYAxis()+2+130) );
 				}
 				
 			}
