@@ -41,6 +41,10 @@ public class Main {
 	/** vytvori pole do ktereho se bude ukladat pst vrcholu na ceste z vrcholu i do vrcholu j*/
 	static int[][] shortestPath;
 	static int counter;
+	/** ArrayList planet */
+	static ArrayList<Planet> planets = new ArrayList<Planet>();
+	/** konstanta uchovavajici plny naklad*/
+	static final int capacity = 5000000;
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
@@ -129,10 +133,79 @@ public class Main {
 		}
 		
 	
-	//*********************************************************************************SIMULACE********************************************************************************************************/	
-		
-	//*****************************************************************************KONEC_SIMULACE******************************************************************************************************/	
-	
+	//**************************************************************SIMULACE***********************************************************************************************************
+		for (int d = 0; d < 1; d++){ 			//poèet dní, kdy simulace pobìží (pozdìji pùjde nastavit více dní uživatelem)
+			for (int i = 0; i < planetsCount; i++){			//cyklus pobìží pro všechny planety
+				Planet p = new Planet(entitiesV.get(i).getKey(), entitiesV.get(i).getXAxis(), entitiesV.get(i).getYAxis(), entitiesV.get(i).getNeighbourCount(), entitiesV.get(i).color);			//volani planety
+				p.setOrder(p.order(p.getPopulCount(), p.drugProduction(p.getPopulCount())));
+				planets.add(p);
+				
+				System.out.println(planets.get(i).getOrder());
+			}
+					
+			for (int j = 0; j < planets.size(); j++){	
+				
+				centralaID = entitiesV.get(r.nextInt(4)).getKey();
+				Starship s = new Starship(j, 25, capacity, centralaID);      //volani lode, musi se doresit ID
+				s.setTargetP(planets.get(j).getKey());
+				//lod doleti na planetu
+				s.setCapacity(s.getCap() - planets.get(j).getOrder());
+				while (planets.get(j+1).getOrder() < s.getCap()){
+					s.setTargetP(planets.get(j+1).getKey());
+					//lod doleti na dalsi planetu
+					s.setCapacity(s.getCap() - planets.get(j).getOrder());
+				}
+				s.setTargetP(centralaID);
+				//lod doleti do centraly
+				s.setCapacity(capacity);
+			}
+				
+				//int oneDayPath = s.getVel();			//lod za jeden den urazi 25 LY
+				//Scanner sc2 = new Scanner(new File("seznamVzdalSeraz.txt"));
+				//sc2.skip("Planeta c.1: ");
+				//while(sc2.hasNextDouble()){
+				
+				//double nextPlanet = sc2.nextDouble(); 			//zatím to neète to, co má
+				//System.out.println(nextPlanet);
+				//if (nextPlanet > oneDayPath){
+				//	nextPlanet = nextPlanet - oneDayPath;
+				//	System.out.println("Lod je stale na ceste");
+				//else{
+				//podle ID planety se zmìní starshipID
+				//starshipID = entities.get(i).getId();
+				//int cargo = s.getCap();
+				//if(cargo > p.drugProduction(p.getPopulCount())){				//funkcni pouze pokud je populCount public ve tride Planet
+				//cargo = cargo - p.enoughDrugProduction(p.getPopulCount());			//vylozi se naklad podle potreby
+				//}
+				//else{
+					//navrat do centraly				//pozdeji proste poleti na dalsi planetu
+					//starshipID = centralaID			//dokud simulace trva jeden den, lod na dalsi planety pokracovat nemuze, program zatim nepokracuje
+				}
+				//System.out.println(naklad);
+				//System.out.println(p.populCount);
+				//}
+				
+			//}
+		//}
+		//}
+			
+			//while (Starship.getCap() > 0){
+			/*if (new Path(false) != null){
+				int pirates = r.nextInt(9);
+					if (pirates == 8){
+						//Lod se vraci do materske centraly
+						//capacity = 0;
+					}
+			}*/
+			
+			//lod poleti na nejblizsi planetu
+			//if Planet.planetStatus == true
+			//na planete vylozi naklad podle Planet.drugProduction
+			//else planeta se preskoci a nasleduje na dalsi nejblizsi planetu
+			//}
+			//}
+	//**************************************************************KONEC SIMULACE*****************************************************************************************************
+
 	System.out.println("Program skoncil.");
 	}	
 	

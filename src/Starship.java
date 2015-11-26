@@ -45,6 +45,11 @@ public class Starship {
 		 this.isInUse = isInUse;
 	 }
 	
+
+	public void setCapacity(int capacity) {
+		this.capacity = capacity;
+	}
+
 														/* gettery */
 	/**
 	 * 
