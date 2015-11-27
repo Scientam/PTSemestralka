@@ -1,18 +1,15 @@
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.lang.management.PlatformLoggingMXBean;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
-import org.omg.Messaging.SyncScopeHelper;
-
 public class Main {
+	//verze 26.11 1713
 	
 	private static int centralaID;
 	private static int starshipID;
@@ -36,7 +33,8 @@ public class Main {
 	static int neighbourCountP = 5;
 	/** vytvori promennou, ktera uchovava vzdalenosti mezi vrcholy */
 	static int[][] distance;
-	static int[][] FloydWarshall;
+	static int[][] floydWarshall;
+	static int[][] floydWarshallP;
 	ArrayList<Integer> edges = new ArrayList<Integer>();
 	/** vytvori pole do ktereho se bude ukladat pst vrcholu na ceste z vrcholu i do vrcholu j*/
 	static int[][] shortestPath;
@@ -44,7 +42,7 @@ public class Main {
 	/** ArrayList planet */
 	static ArrayList<Planet> planets = new ArrayList<Planet>();
 	/** konstanta uchovavajici plny naklad*/
-	static final int capacity = 5000000;
+	static final int CAPACITY = 5000000;
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
@@ -61,11 +59,11 @@ public class Main {
 	
 		
 			/** zavola metodu, ktera vytvori centraly */
-			entitiesV = Data.factoriesDistribution(factoriesCount, planetsCount, neighbourCountF, entitiesV);
+			entitiesV = DataGeneration.factoriesDistribution(factoriesCount, planetsCount, neighbourCountF, entitiesV);
 			/** zavola metodu, ktera vytvori planety */
-			entitiesV = Data.planetsDistribution(factoriesCount, planetsCount, neighbourCountP, entitiesV);	
+			entitiesV = DataGeneration.planetsDistribution(factoriesCount, planetsCount, neighbourCountP, entitiesV);	
 			
-			BufferedWriter bw1 = new BufferedWriter(new FileWriter("Vrcholy.txt"));				// BW na vypis do textaku vzdalenosti vrcholu
+			BufferedWriter bw1 = new BufferedWriter(new FileWriter("Vertexes.txt"));				// BW na vypis do textaku vzdalenosti vrcholu
 			for (int i = 0; i < entitiesV.size(); i++) {
 				
 					bw1.write(entitiesV.get(i).key+"\t"+entitiesV.get(i).xAxis+"\t"+entitiesV.get(i).yAxis+"\t"+entitiesV.get(i).neighbourCount+"\t"+entitiesV.get(i).color);
@@ -74,8 +72,8 @@ public class Main {
 			}
 			bw1.close();
 		
-			distance = Data.getDistance();
-			BufferedWriter bw2 = new BufferedWriter(new FileWriter("Vzdalenosti.txt"));				// BW na vypis do textaku 
+			distance = DataGeneration.getDistance();
+			BufferedWriter bw2 = new BufferedWriter(new FileWriter("Distance.txt"));				// BW na vypis do textaku 
 			for (int i = 0; i < entitiesV.size(); i++) {
 				for (int j = 0; j < entitiesV.size(); j++) {
 					bw2.write(Math.floor(distance[i][j])+"\t");
@@ -84,8 +82,8 @@ public class Main {
 			}
 			bw2.close();
 		
-			Data.neighbour(factoriesCount, neighbourCountF, neighbourCountP, entitiesV);
-			BufferedWriter bw3 = new BufferedWriter(new FileWriter("Hrany.txt"));				// BW na vypis do textaku 
+			DataGeneration.neighbour(factoriesCount, neighbourCountF, neighbourCountP, entitiesV);
+			BufferedWriter bw3 = new BufferedWriter(new FileWriter("Edges.txt"));				// BW na vypis do textaku 
 			for (int i = 0; i < entitiesV.size(); i++) {										// vypise vsechny cesty, prvni prvek pocatecni vrchol, ostatni koncove
 				if (i<factoriesCount) {
 					for (int j = 0; j < neighbourCountF; j++) {
@@ -100,25 +98,36 @@ public class Main {
 			}
 			bw3.close();
 		
-			/*Dijsktra
+			/*Dijsktra 
 			  for (int i = 0; i < shortestPath.length; i++) {
 				shortestPath[i] = Graph.doDijkstra(distance, i);
 			}*/
 			 
 			/* FloydWarshall */
-			FloydWarshall= Graph.floydWarshall(distance);
-			BufferedWriter bw4 = new BufferedWriter(new FileWriter("ShortestPath.txt"));				// BW na vypis do textaku 
-			for (int i = 0; i < shortestPath.length; i++) {												// vypise vystup z Dijkstry
+			floydWarshall= Graph.floydWarshallM(distance); 
+			BufferedWriter bw4 = new BufferedWriter(new FileWriter("FWShortestPath.txt"));				// BW na vypis do textaku 
+			for (int i = 0; i < floydWarshall.length; i++) {												// vypise vystup z Dijkstry
 				
-					for (int j = 0; j < shortestPath.length; j++) {
-						bw4.write(shortestPath[i][j]+"\t");					
+					for (int j = 0; j < floydWarshall.length; j++) {
+						bw4.write(floydWarshall[i][j]+"\t");					
 					}			
 				bw4.newLine();
 			}
 			bw4.close();
 			
+			floydWarshallP= Graph.floydWarshallP(distance); 
+			BufferedWriter bw6 = new BufferedWriter(new FileWriter("FWPath.txt"));				// BW na vypis do textaku 
+			for (int i = 0; i < floydWarshallP.length; i++) {												// vypise vystup z Dijkstry
+				
+					for (int j = 0; j < floydWarshallP.length; j++) {
+						bw6.write(floydWarshallP[i][j]+"\t");					
+					}			
+				bw6.newLine();
+			}
+			bw6.close();
+			
 			/** zavola metodu, ktera nazorne vykresli galaxii, tj. plnety,  centraly a cesty mezi nimi */
-			new Mapa(factoriesCount, planetsCount, neighbourCountF, neighbourCountP, entitiesV, shortestPath);
+			new DrawMap(factoriesCount, planetsCount, neighbourCountF, neighbourCountP, entitiesV, shortestPath);
 		
 			
 			
@@ -129,83 +138,92 @@ public class Main {
 			distance = new int[factoriesCount+planetsCount][factoriesCount+planetsCount];
 			shortestPath = new int[factoriesCount+planetsCount][factoriesCount+planetsCount]; 
 			/** zavola metodu, ktera nazorne vykresli galaxii, tj. plnety,  centraly a cesty mezi nimi */
-			new Mapa(factoriesCount, planetsCount, neighbourCountF, neighbourCountP, entitiesV, shortestPath);		
+			new DrawMap(factoriesCount, planetsCount, neighbourCountF, neighbourCountP, entitiesV, shortestPath);		
 		}
 		
 	
-	//**************************************************************SIMULACE***********************************************************************************************************
-		for (int d = 0; d < 1; d++){ 			//poèet dní, kdy simulace pobìží (pozdìji pùjde nastavit více dní uživatelem)
-			for (int i = 0; i < planetsCount; i++){			//cyklus pobìží pro všechny planety
-				Planet p = new Planet(entitiesV.get(i).getKey(), entitiesV.get(i).getXAxis(), entitiesV.get(i).getYAxis(), entitiesV.get(i).getNeighbourCount(), entitiesV.get(i).color);			//volani planety
-				p.setOrder(p.order(p.getPopulCount(), p.drugProduction(p.getPopulCount())));
-				planets.add(p);
-				
-				System.out.println(planets.get(i).getOrder());
-			}
-					
-			for (int j = 0; j < planets.size(); j++){	
-				
-				centralaID = entitiesV.get(r.nextInt(4)).getKey();
-				Starship s = new Starship(j, 25, capacity, centralaID);      //volani lode, musi se doresit ID
-				s.setTargetP(planets.get(j).getKey());
-				//lod doleti na planetu
-				s.setCapacity(s.getCap() - planets.get(j).getOrder());
-				while (planets.get(j+1).getOrder() < s.getCap()){
-					s.setTargetP(planets.get(j+1).getKey());
-					//lod doleti na dalsi planetu
-					s.setCapacity(s.getCap() - planets.get(j).getOrder());
-				}
-				s.setTargetP(centralaID);
-				//lod doleti do centraly
-				s.setCapacity(capacity);
-			}
-				
-				//int oneDayPath = s.getVel();			//lod za jeden den urazi 25 LY
-				//Scanner sc2 = new Scanner(new File("seznamVzdalSeraz.txt"));
-				//sc2.skip("Planeta c.1: ");
-				//while(sc2.hasNextDouble()){
-				
-				//double nextPlanet = sc2.nextDouble(); 			//zatím to neète to, co má
-				//System.out.println(nextPlanet);
-				//if (nextPlanet > oneDayPath){
-				//	nextPlanet = nextPlanet - oneDayPath;
-				//	System.out.println("Lod je stale na ceste");
-				//else{
-				//podle ID planety se zmìní starshipID
-				//starshipID = entities.get(i).getId();
-				//int cargo = s.getCap();
-				//if(cargo > p.drugProduction(p.getPopulCount())){				//funkcni pouze pokud je populCount public ve tride Planet
-				//cargo = cargo - p.enoughDrugProduction(p.getPopulCount());			//vylozi se naklad podle potreby
-				//}
-				//else{
-					//navrat do centraly				//pozdeji proste poleti na dalsi planetu
-					//starshipID = centralaID			//dokud simulace trva jeden den, lod na dalsi planety pokracovat nemuze, program zatim nepokracuje
-				}
-				//System.out.println(naklad);
-				//System.out.println(p.populCount);
-				//}
-				
-			//}
-		//}
-		//}
+	//*********************************************************************************SIMULACE********************************************************************************************************/	
+		
+		BufferedWriter bw5 = new BufferedWriter(new FileWriter("Order.txt"));
+		for (int d = 0; d < 1; d++){ 			//poÃ¨et dnÃ­, kdy simulace pobÃ¬Å¾Ã­ (pozdÃ¬ji pÃ¹jde nastavit vÃ­ce dnÃ­ uÅ¾ivatelem)
+			bw5.write("Objednavky pro "+(d+1)+". den: ");
+			bw5.newLine();
+						for (int i = 0; i < planetsCount; i++){			//cyklus pobÃ¬Å¾Ã­ pro vÅ¡echny planety
+							Planet p = new Planet(entitiesV.get(i).getKey(), entitiesV.get(i).getXAxis(), entitiesV.get(i).getYAxis(), entitiesV.get(i).getNeighbourCount(), entitiesV.get(i).color);			//volani planety
+							p.setOrder(p.order(p.getPopulCount(), p.drugProduction(p.getPopulCount())));
+							planets.add(p);
+							bw5.write("Planeta s id: "+p.getId()+" objednava takovyto pocet leku: "+planets.get(i).getOrder());
+							bw5.newLine();
+						}
+						bw5.close();	
+						for (int i = 0; i < planets.size(); i++){	
+							
+							centralaID = entitiesV.get(r.nextInt(4)).getKey();
+							Starship s = new Starship(i, 25, CAPACITY, centralaID);      //volani lode, musi se doresit ID
+							s.setTargetP(planets.get(i).getKey());
+							//lod doleti na planetu
+							s.setCapacity(s.getCap() - planets.get(i).getOrder());
+							
+								while (planets.get(i+1).getOrder() < s.getCap()){
+									s.setTargetP(planets.get(i+1).getKey());
+									//lod doleti na dalsi planetu
+									s.setCapacity(s.getCap() - planets.get(i).getOrder());
+								}
+							
+							
+							s.setTargetP(centralaID);
+							//lod doleti do centraly
+							s.setCapacity(CAPACITY);
+						}
+							
+							//int oneDayPath = s.getVel();			//lod za jeden den urazi 25 LY
+							//Scanner sc2 = new Scanner(new File("seznamVzdalSeraz.txt"));
+							//sc2.skip("Planeta c.1: ");
+							//while(sc2.hasNextDouble()){
+							
+							//double nextPlanet = sc2.nextDouble(); 			//zatÃ­m to neÃ¨te to, co mÃ¡
+							//System.out.println(nextPlanet);
+							//if (nextPlanet > oneDayPath){
+							//	nextPlanet = nextPlanet - oneDayPath;
+							//	System.out.println("Lod je stale na ceste");
+							//else{
+							//podle ID planety se zmÃ¬nÃ­ starshipID
+							//starshipID = entities.get(i).getId();
+							//int cargo = s.getCap();
+							//if(cargo > p.drugProduction(p.getPopulCount())){				//funkcni pouze pokud je populCount public ve tride Planet
+							//cargo = cargo - p.enoughDrugProduction(p.getPopulCount());			//vylozi se naklad podle potreby
+							//}
+							//else{
+								//navrat do centraly				//pozdeji proste poleti na dalsi planetu
+								//starshipID = centralaID			//dokud simulace trva jeden den, lod na dalsi planety pokracovat nemuze, program zatim nepokracuje
+							}
+		
+							//System.out.println(naklad);
+							//System.out.println(p.populCount);
+							//}
+							
+						//}
+					//}
+					//}
+						
+						//while (Starship.getCap() > 0){
+						/*if (new Path(false) != null){
+							int pirates = r.nextInt(9);
+								if (pirates == 8){
+									//Lod se vraci do materske centraly
+									//capacity = 0;
+								}
+						}*/
+						
+						//lod poleti na nejblizsi planetu
+						//if Planet.planetStatus == true
+						//na planete vylozi naklad podle Planet.drugProduction
+						//else planeta se preskoci a nasleduje na dalsi nejblizsi planetu
+						//}
+						//}
 			
-			//while (Starship.getCap() > 0){
-			/*if (new Path(false) != null){
-				int pirates = r.nextInt(9);
-					if (pirates == 8){
-						//Lod se vraci do materske centraly
-						//capacity = 0;
-					}
-			}*/
-			
-			//lod poleti na nejblizsi planetu
-			//if Planet.planetStatus == true
-			//na planete vylozi naklad podle Planet.drugProduction
-			//else planeta se preskoci a nasleduje na dalsi nejblizsi planetu
-			//}
-			//}
-	//**************************************************************KONEC SIMULACE*****************************************************************************************************
-
+	//*****************************************************************************KONEC_SIMULACE******************************************************************************************************/	
+	
 	System.out.println("Program skoncil.");
 	}	
 	
@@ -213,7 +231,7 @@ public class Main {
 		BufferedReader br;
 		int counter=0;
 		try {
-			br = new BufferedReader(new FileReader("Vrcholy.txt"));
+			br = new BufferedReader(new FileReader("Vertexes.txt"));
 			String radka;			
 			while((radka = br.readLine()) != null){
 				String[] parseLine = radka.split("\t");
@@ -241,8 +259,8 @@ public class Main {
 		BufferedReader br2;
 		int counter=0;
 		try {
-			br = new BufferedReader(new FileReader("Hrany.txt"));
-			br2 = new BufferedReader(new FileReader("Vzdalenosti.txt"));
+			br = new BufferedReader(new FileReader("Edges.txt"));
+			br2 = new BufferedReader(new FileReader("Distance.txt"));
 			String radka;		
 			String radka2;	
 			while((radka = br.readLine()) != null){
@@ -266,9 +284,7 @@ public class Main {
 						index = Integer.valueOf(parseLine[i]);
 						vzdalenost = Double.valueOf(parseLine2[(int)index]);
 						entitiesV.get(counter).neighbour[i] = new Neighbour(index, vzdalenost);
-						System.out.println("nacet jsem: " + index + " vzdal : " + vzdalenost);
-						//entitiesV.get(counter).neighbour[i].index = index;
-						//entitiesV.get(counter).neighbour[i].dist = vzdalenost;
+						//System.out.println("nacet jsem: " + index + " vzdal : " + vzdalenost);
 					}
 				}
 				counter++;

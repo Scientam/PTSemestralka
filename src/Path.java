@@ -2,7 +2,7 @@ import java.util.Random;
 
 public class Path {
 	
-	/** Promenna nebezpeci. True nebo false.*/
+	/** Promenna nebezpeci. True nebo false. */
 	private boolean dangerous;
 	private Random r = new Random();
 	private Vertex from;

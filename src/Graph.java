@@ -19,6 +19,7 @@ public class Graph {
 	/** promenna uchovavajici informaci o to zda je graf orientovany */
 	private boolean connected;			
 	private static int[][] shortestPath;
+	static int[][] p;
 	
 	                                                              /* konstruktor */	   
 	/**
@@ -84,8 +85,6 @@ public class Graph {
   			}
   			System.out.println();
   	}
-	
-
   
   	
 
@@ -150,25 +149,58 @@ public class Graph {
   	 * @param d matrix of distances (Integer.MAX_VALUE represents positive infinity)
   	 * @return matrix of predecessors
   	 */
-  	public static int[][] floydWarshall(int[][] d) {
-  	    int[][] p = constructInitialMatixOfPredecessors(d);
-  	    for (int k = 0; k < d.length; k++) {
-  	        for (int i = 0; i < d.length; i++) {
-  	            for (int j = 0; j < d.length; j++) {
-  	                if (d[i][k] == Integer.MAX_VALUE || d[k][j] == Integer.MAX_VALUE) {
-  	                    continue;                  
-  	                }
-  	                
-  	                if (d[i][j] > d[i][k] + d[k][j]) {
-  	                    d[i][j] = d[i][k] + d[k][j];
-  	                    p[i][j] = k;								// p[k][j];
-  	                }
-
-  	            }
-  	        }
-  	    }
-  	    return p;
+  	public static int[][] floydWarshallM(int[][] m) {
+  	  for (int k = 0; k < m.length; k++) {
+			for (int i = 0; i < m.length; i++) {
+				for (int j = 0; j < m.length; j++) {
+					// to keep track.;
+					if (m[i][k] + m[k][j] < m[i][j]) {
+						m[i][j] = m[i][k] + m[k][j];
+					}
+					// or not to keep track.
+					//M[i][j] = min(M[i][j], M[i][k] + M[k][j]);
+				}
+			}
+		}
+		return m;
   	}
+  	
+  	public static int[][] floydWarshallP(int[][] m) {
+    	  p = constructInitialMatixOfPredecessors(m);
+    	  for (int k = 0; k < m.length; k++) {
+  			for (int i = 0; i < m.length; i++) {
+  				for (int j = 0; j < m.length; j++) {
+  					// to keep track.;
+  					if (m[i][k] + m[k][j] < m[i][j]) {
+  						m[i][j] = m[i][k] + m[k][j];
+  						p[i][j] = p[k][j];
+  					}
+  					// or not to keep track.
+  					//M[i][j] = min(M[i][j], M[i][k] + M[k][j]);
+  				}
+  			}
+  		}
+  		return p;
+    	}
+  	
+  	/**
+	 * Constructs matrix P0
+	 * @param d matrix of lengths
+	 * @return P0
+	 */
+	private static int[][] constructInitialMatixOfPredecessors(int[][] d) {
+	    int[][] p = new int[d.length][d.length];
+	    for (int i = 0; i < d.length; i++) {
+	        for (int j = 0; j < d.length; j++) {
+	            if (d[i][j] != 0 && d[i][j] != Integer.MAX_VALUE) {
+	                p[i][j] = i;
+	            } else {
+	                p[i][j] = -1;
+	            }
+	        }
+	    }
+	    return p;
+	}
   	
   	public static ArrayList<Integer> seq(int[][] fW){
   		ArrayList<Integer> seq = new ArrayList<Integer>();
@@ -185,26 +217,5 @@ public class Graph {
 		}
   		return seq;
   	}
-
-  	/**
-  	 * Constructs matrix P0
-  	 * @param d matrix of lengths
-  	 * @return P0
-  	 */
-  	private static int[][] constructInitialMatixOfPredecessors(int[][] d) {
-  	    int[][] p = new int[d.length][d.length];
-  	    for (int i = 0; i < d.length; i++) {
-  	        for (int j = 0; j < d.length; j++) {
-  	            if (d[i][j] != 0 && d[i][j] != Integer.MAX_VALUE) {
-  	                p[i][j] = i;
-  	            } else {
-  	                p[i][j] = -1;
-  	            }
-  	        }
-  	    }
-  	    return p;
-  	}
-
-
-  	
+ 	
 }

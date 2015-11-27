@@ -10,6 +10,7 @@ public class Planet extends Vertex {
 	private int drugProduction;
 	/** promenna uchovavajici objednavku*/
 	private int order;
+	private int id;
 	
 	  															/* konstruktor */	     
 	/**
@@ -22,6 +23,7 @@ public class Planet extends Vertex {
 	*/ 
 	public Planet(int id, double xAxis, double yAxis, int neighbourCount, char color) {
 		super(id, xAxis, yAxis, neighbourCount, color);
+		this.id=id;
 		status = true;
 		double population = r.nextGaussian() * 2900000/3 + 3000000;
 		populCount = (int) Math.round(population);								
@@ -66,8 +68,12 @@ public class Planet extends Vertex {
   	}
 	
 	public int order(int populCount, int drugProduction){
-		order = populCount - drugProduction;
-		return order;
+				order = populCount - drugProduction;
+				return order;
+		}
+	
+	public int getId() {
+		return this.id;
 	}
 	
 	public int getPopulCount() {
@@ -75,12 +81,10 @@ public class Planet extends Vertex {
 	}
 	
 	public int getOrder(){
-		return this.order;
-	}
-
-	public void setOrder(int order) {
-		this.order = order;
-	}
-	
-	
+				return this.order;
+			}
+		
+			public void setOrder(int order) {
+				this.order = order;
+			}
 }

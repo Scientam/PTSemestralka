@@ -1,12 +1,11 @@
 import javax.swing.*;
-
 import java.awt.*;
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.Line2D;
 import java.util.ArrayList;
 
 
-public class Mapa extends JFrame{
+public class DrawMap extends JFrame{
 
 	/**
 	 * 
@@ -30,7 +29,7 @@ public class Mapa extends JFrame{
 	 * @param ar
 	 * @param adjId
 	 */
-	public Mapa(int factoriesCount, int planetsCount, int neighbourCountF, int neighbourCountP, ArrayList<Vertex>ar, int[][] shortestPath) {
+	public DrawMap(int factoriesCount, int planetsCount, int neighbourCountF, int neighbourCountP, ArrayList<Vertex>ar, int[][] shortestPath) {
 		this.factoriesCount = factoriesCount;
 		this.planetsCount = planetsCount;
 		this.neighbourCountF = neighbourCountF;
@@ -59,9 +58,7 @@ public class Mapa extends JFrame{
 	 * @param g2
 	 */
 	public void paint2D(Graphics2D g2) {
-	
-		System.out.println("Prave jsem vstoupil do malovani.");
-																										/*KRESLENI VRCHOLU*/
+																											/*KRESLENI VRCHOLU*/
 		g2.setColor(Color.BLUE);
 		for(int i = factoriesCount; i < ar.size(); i++) {
 			g2.fill(new Ellipse2D.Double(ar.get(i).getXAxis()+100, ar.get(i).getYAxis()+130 , 4, 4));
@@ -76,12 +73,12 @@ public class Mapa extends JFrame{
 		g2.fill(new Ellipse2D.Double(400 + 100, 400 + 130, 10, 10));
 		
 																										/*KRESLENI CEST*/
-		System.out.println("i je velke: "+shortestPath.length+" a j je velke: "+shortestPath[10].length);
-		System.out.println("i je velke: "+shortestPath.length+" a j je velke: "+shortestPath[0].length);
+
 		for (int i = 0; i < shortestPath.length-1; i++) {	
 			g2.setColor(Color.BLACK);
 		
-			/*if(i < factoriesCount) {
+			/*Sousedi*/
+			if(i < factoriesCount) {
 				for (int j = 0; j < neighbourCountF; j++) {
 					int id = ar.get(i).neighbour[j].index;	
 					g2.draw(new Line2D.Double(ar.get(i).getXAxis()+2+100, ar.get(i).getYAxis()+2+130, ar.get(id).getXAxis()+2+100, ar.get(id).getYAxis()+2+130) );
@@ -92,9 +89,9 @@ public class Mapa extends JFrame{
 					int id = ar.get(i).neighbour[j].index;	
 					g2.draw(new Line2D.Double(ar.get(i).getXAxis()+2+100, ar.get(i).getYAxis()+2+130, ar.get(id).getXAxis()+2+100, ar.get(id).getYAxis()+2+130) );
 				}
-			}*/
+			}
 			
-			/*Nejkratsi cesty*/
+			/*Nejkratsi cesty
 			for (int j = 0; j < shortestPath.length-1; j++) {
 				//System.out.println("Hodnota j je: "+j);
 					
@@ -105,7 +102,7 @@ public class Mapa extends JFrame{
 					//g2.draw(new Line2D.Double(ar.get(shortestPath[i][j]).getXAxis()+2+100, ar.get(shortestPath[i][j]).getYAxis()+2+130, ar.get(j).getXAxis()+2+100, ar.get(j).getYAxis()+2+130) );
 				}
 				
-			}
+			}*/
 		} 
 	}
 }
