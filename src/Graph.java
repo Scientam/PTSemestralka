@@ -19,7 +19,7 @@ public class Graph {
 	/** promenna uchovavajici informaci o to zda je graf orientovany */
 	private boolean connected;			
 	private static int[][] shortestPath;
-	static int[][] p;
+
 	
 	                                                              /* konstruktor */	   
 	/**
@@ -166,7 +166,7 @@ public class Graph {
   	}
   	
   	public static int[][] floydWarshallP(int[][] m) {
-    	  p = constructInitialMatixOfPredecessors(m);
+  		  int[][] p = constructInitialMatixOfPredecessors(m);
     	  for (int k = 0; k < m.length; k++) {
   			for (int i = 0; i < m.length; i++) {
   				for (int j = 0; j < m.length; j++) {

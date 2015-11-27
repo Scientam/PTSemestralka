@@ -29,7 +29,7 @@ public class DrawMap extends JFrame{
 	 * @param ar
 	 * @param adjId
 	 */
-	public DrawMap(int factoriesCount, int planetsCount, int neighbourCountF, int neighbourCountP, ArrayList<Vertex>ar, int[][] shortestPath) {
+	public DrawMap(int factoriesCount, int planetsCount, int neighbourCountF, int neighbourCountP, ArrayList<Vertex>ar) {
 		this.factoriesCount = factoriesCount;
 		this.planetsCount = planetsCount;
 		this.neighbourCountF = neighbourCountF;
@@ -74,7 +74,7 @@ public class DrawMap extends JFrame{
 		
 																										/*KRESLENI CEST*/
 
-		for (int i = 0; i < shortestPath.length-1; i++) {	
+		for (int i = 0; i < ar.size(); i++) {	
 			g2.setColor(Color.BLACK);
 		
 			/*Sousedi*/
