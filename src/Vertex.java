@@ -20,7 +20,7 @@ public class Vertex {
 	/** deklaruje promenou pro algoritmy hledani nejkratsich cest */
 	protected char color;		
 	/** deklaruje promennou uchovavajici pocet predchucu vrcholu */ 
-	protected int predecessor;		
+	protected Vertex[] predecessor;		
 	/** deklaruje promennou uchovavajici vzdalenost vrcholu */
 	protected double distance;
 	protected Neighbour[] neighbour;
@@ -62,7 +62,11 @@ public class Vertex {
 		 return color;
 	 }
 	 	
-																			//metody
+	 public Vertex[] getPredecessor() {
+		 return predecessor;
+	 }
+	 
+	                                                             //metody
 	/**
 	* Metoda pro tisk vrcholu
 	*/

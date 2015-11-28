@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -8,13 +9,13 @@ import java.util.Set;
  */
 public class Graph {
 	
-	/** tato promenna uchovava vrcholy nasi grafove striktury*/
+	/** tato promenna uchovava vrcholy nasi grafove striktury */
 	private static Vertex[] vertexes;					
-	/** tato promenna uchovava informaci o tom zda spoluvrcholy sousedi*/
+	/** tato promenna uchovava informaci o tom zda spoluvrcholy sousedi */
 	private int[][] adjMatrix;
-	/** tato promenna uchovava konecny pocet vrcholu*/
+	/** tato promenna uchovava konecny pocet vrcholu */
 	private static int vertexCount;	
-	/** tato promenna uchovava pocet vytvorenych vrcholu*/
+	/** tato promenna uchovava pocet vytvorenych vrcholu */
 	private int vertexCreated = 0;	
 	/** promenna uchovavajici informaci o to zda je graf orientovany */
 	private boolean connected;			
@@ -201,21 +202,22 @@ public class Graph {
 	    }
 	    return p;
 	}
+	
+	/**
+	 * Metoda, která nalezne nejkratsi cestu z prave zpracovavaneho vrcholu
+	 * do libovolneho zadaneho vrcholu
+	 * @param target
+	 * @return
+	 */
+  	public static ArrayList<Vertex> getShoortestPathTo(Vertex target ) {
+  		ArrayList<Vertex> path = new ArrayList<Vertex>();
+  		
+  		for (Vertex vertex=target; vertex != null; vertex=vertex.predecessor[5] ) {
+            path.add(vertex);    
+        } 
   	
-  	public static ArrayList<Integer> seq(int[][] fW){
-  		ArrayList<Integer> seq = new ArrayList<Integer>();
-  		int from, to;
-  		for (int i = 0; i < fW.length; i++) {
-			for (int j = 0; j < fW.length; j++) {
-				from = i;
-				to = j;
-				if(fW[from][to] == from){
-					seq.add(to);
-					//else{				}
-				}
-			}
-		}
-  		return seq;
+  		//Collection.reverse(path);           //vzhledem k neorentaci hran, asi nebude treba
+  		return path;
   	}
  	
 }

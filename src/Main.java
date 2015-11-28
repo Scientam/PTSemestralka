@@ -143,6 +143,8 @@ public class Main {
 		for (int d = 0; d < 1; d++){ 			//poèet dní, kdy simulace pobìží (pozdìji pùjde nastavit více dní uživatelem)
 			bw5.write("Objednavky pro "+(d+1)+". den: ");
 			bw5.newLine();
+			bw5.write("---------------------------------------------------------------------------------------------");
+			bw5.newLine();
 						for (int i = 0; i < planetsCount; i++){			//cyklus pobìží pro všechny planety
 							Planet p = new Planet(entitiesV.get(i).getKey(), entitiesV.get(i).getXAxis(), entitiesV.get(i).getYAxis(), entitiesV.get(i).getNeighbourCount(), entitiesV.get(i).color);			//volani planety
 							p.setOrder(p.order(p.getPopulCount(), p.drugProduction(p.getPopulCount())));
