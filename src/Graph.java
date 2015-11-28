@@ -177,8 +177,9 @@ public class Graph {
   		
   		while (stop==-1){
   			seq.add(target);
-  			if (entitiesV.get(target).predecessor[source]==-1){stop=1;}
-  			else if (entitiesV.get(target).predecessor[source]==source){
+  			if (entitiesV.get(target).predecessor[target]==-1){stop=1;
+  			System.out.println("Tohle se nemelo stat.");}
+  			else if (entitiesV.get(target).predecessor[target]==source){
   		    	for(int i=seq.size()-1; i != 0; i--){
   		    		path.add(seq.get(i));
   		    	}

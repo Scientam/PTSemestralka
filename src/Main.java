@@ -13,10 +13,12 @@ import java.util.Scanner;
  *
  */
 public class Main {
-	//verze 27.11 1814
+	/**
+	 * @version 0.2811.2116
+	 */
 	static Scanner sc = new Scanner(System.in);
     //*********************************************************************************************promenne pro generovani****************************************************
-	/** vytvori ArrayList do ktereho se budou ukladat objekty Entita jako vrcholy grafu */
+	/** vytvori ArrayList do ktereho se budou ukladat objekty Vertex jako vrcholy grafu */
 	static ArrayList<Vertex> entitiesV = new ArrayList<Vertex>();		
 	/** vytvori promennou, urcujici zda se data budou generovat nebo nacitat ze souboru*/
 	static int input;
@@ -152,15 +154,18 @@ public class Main {
 			
 			
 			// vytvoreni listu cest z kazdeho vrcholu do kazdeho
-		   /* for (int i = 0; i < paths.length; i++) {
-		        for (int j = 0; j < paths.length; j++) {		        	
-		        	paths[i][j] = Graph.getShoortestPathTo(i, j, entitiesV);                             //OutOfMemoryError
+		    for (int i = 0; i < paths.length; i++) {
+		        for (int j = 0; j < paths.length; j++) {
+		        	if (i!=j) {                                                             // abychom nehledali nejkratsi cestu z vrcholu u do vrcholu u
+		        		paths[i][j] = Graph.getShoortestPathTo(i, j, entitiesV);            // OutOfMemoryError
+		        	}		        	
 				}	
-		        System.out.print("Uz jse dodelal prvek: "+i);
-			}*/
+		        System.out.println("Uz jsem dodelal prvek i: "+i);
+			}
+		    System.out.println("Uz jsem za forem");
 			
 			/** zavola metodu, ktera nazorne vykresli galaxii, tj. plnety,  centraly a cesty mezi nimi */
-			new DrawMap(factoriesCount, planetsCount, neighbourCountF, neighbourCountP, entitiesV);
+			new DrawMap(factoriesCount, planetsCount, neighbourCountF, neighbourCountP, entitiesV, paths);
 			
 	    // negeneruje, ale vytvari pomoci txt	
 		}else{ 
@@ -169,7 +174,7 @@ public class Main {
 			planetsCount = counter - factoriesCount;
 			distance = new int[factoriesCount+planetsCount][factoriesCount+planetsCount];
 			/** zavola metodu, ktera nazorne vykresli galaxii, tj. plnety,  centraly a cesty mezi nimi */
-			new DrawMap(factoriesCount, planetsCount, neighbourCountF, neighbourCountP, entitiesV);		
+			new DrawMap(factoriesCount, planetsCount, neighbourCountF, neighbourCountP, entitiesV, paths);		
 		}
 		
 	
@@ -269,9 +274,10 @@ public class Main {
 			
 	//*****************************************************************************KONEC_SIMULACE******************************************************************************************************/	
 	
-	    System.out.println("Program skoncil.");
+	   
 	    }
     bw6.close();
+    System.out.println("Program skoncil.");
 	}
 	
 	/**
@@ -350,4 +356,5 @@ public class Main {
 			System.out.println("IOexception");
 		}
 	}
+	
 }
