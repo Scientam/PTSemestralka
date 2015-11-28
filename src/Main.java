@@ -43,9 +43,9 @@ public class Main {
 	/** */
 	static Random r = new Random();
 	/** */
-	private static int centralaID;
+	private static int factoryId;
 	/** */
-	private static int starshipID;
+	private static int starshipId;
 	/** konstanta uchovavajici plny naklad*/
 	static final int CAPACITY = 5000000;
 
@@ -176,28 +176,35 @@ public class Main {
 	//*********************************************************************************SIMULACE********************************************************************************************************/	
 		
 	    BufferedWriter bw6 = new BufferedWriter(new FileWriter("Order.txt"));
-		for (int d = 0; d < 1; d++){ 			//poèet dní, kdy simulace pobìží (pozdìji pùjde nastavit více dní uživatelem)
-			bw6.write("Objednavky pro "+(d+1)+". den: ");
+	    int production = 0;
+	    /*
+		 * Cyklus spousti simulaci kazdy den a generuje objednavky kazdych 30 dni. Pracuje se pouze s ArrayListem. Informace o objednavkach se ukladaji
+		 * do textoveho souboru.
+		 */
+		for (int d = 0; d < 90; d++){ 	
+			if ((d % 30) == 0){
+			bw6.write("Objednavky pro "+(d/30+1)+". mesic: ");
 			bw6.newLine();
 			bw6.write("---------------------------------------------------------------------------------------------");
 			bw6.newLine();
 			
 			//****************************************************vytvoreni objednavek******************************************************************/
 			for (int i=0; i<planetsCount; i++) {			                            //cyklus pobìží pro všechny planety
-			    Planet planet = (Planet) entitiesV.get(i+factoriesCount);			//volani planety							
-			    planet.setOrder(planet.order(planet.getPopulCount(), planet.drugProduction(planet.getPopulCount())));    // vytvori objednavku, jeji velikost zavisi na poctu obyvatel planety
+			    Planet planet = (Planet) entitiesV.get(i+factoriesCount);			//volani planety	
+			    production = planet.drugProduction(planet.getPopulCount());
+			    planet.setOrder(planet.order(planet.getPopulCount(), production));    // vytvori objednavku, jeji velikost zavisi na poctu obyvatel planety
 				bw6.write("Planeta s id: "+planet.getId()+" objednava takovyto pocet leku: "+planet.getOrder());
 				bw6.newLine();
 					
 			//*****************************************************vyrizovani objednacek****************************************************************/
 			
 				// pokud bude cas, udelal bych, aby to bralo nejbzsi centralu
-				centralaID = entitiesV.get(r.nextInt(4)).getKey();                   // urceni centraly, ktera obednavku vyridi
-				Starship starship = new Starship(i, 25, CAPACITY, centralaID);      //volani lode, musi se doresit ID
+				factoryId = entitiesV.get(r.nextInt(4)).getKey();                   // urceni centraly, ktera obednavku vyridi
+				Starship starship = new Starship(i, 25, CAPACITY, factoryId);      //volani lode, musi se doresit ID
 				starship.setTargetP(planet.getKey());
 				//lod doleti na planetu
 				starship.setCapacity(starship.getCapacity() - planet.getOrder());
-				// Pridal bych nehjakou podminku na vzdalenost, aby to nebralo, planety na druhe strane galaxie
+				// Pridal bych nejakou podminku na vzdalenost, aby to nebralo, planety na druhe strane galaxie
 				
 				/**for (int j=0; j<planetsCount; j++) {
 					if (i!=j && (entitiesV.get(j+factoriesCount).getOrder() < starship.getCapacity()) ) {
@@ -209,10 +216,10 @@ public class Main {
 				    }	
 				} */
 				
-				starship.setTargetP(centralaID);
+				starship.setTargetP(factoryId);
 				starship.setCapacity(CAPACITY);                                         //lod doleti do centraly, tj. doplni zasoby
 			}
-		    bw6.close();
+		   
 							
 							//int oneDayPath = s.getVel();			//lod za jeden den urazi 25 LY
 							//Scanner sc2 = new Scanner(new File("seznamVzdalSeraz.txt"));
@@ -234,7 +241,7 @@ public class Main {
 							//else{
 								//navrat do centraly				//pozdeji proste poleti na dalsi planetu
 								//starshipID = centralaID			//dokud simulace trva jeden den, lod na dalsi planety pokracovat nemuze, program zatim nepokracuje
-							}
+		     }
 		
 							//System.out.println(naklad);
 							//System.out.println(p.populCount);
@@ -262,8 +269,10 @@ public class Main {
 			
 	//*****************************************************************************KONEC_SIMULACE******************************************************************************************************/	
 	
-	System.out.println("Program skoncil.");
-	}	
+	    System.out.println("Program skoncil.");
+	    }
+    bw6.close();
+	}
 	
 	/**
 	 * Metoda slouzici pro nacitani dat typu Vertex
