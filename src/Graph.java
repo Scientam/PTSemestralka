@@ -209,13 +209,30 @@ public class Graph {
 	 * @param target
 	 * @return
 	 */
-  	public static ArrayList<Vertex> getShoortestPathTo(Vertex target ) {
-  		ArrayList<Vertex> path = new ArrayList<Vertex>();
+  	public static ArrayList<Integer> getShoortestPathTo(int source, int target, ArrayList<Vertex> entitiesV) {
+  		ArrayList<Integer> path = new ArrayList<Integer>();
+  		ArrayList<Integer> seq = new ArrayList<Integer>();
+  		int stop = -1;
+  		path.add(source);
   		
-  		for (Vertex vertex=target; vertex != null; vertex=vertex.predecessor[5] ) {
+  		while (stop==-1){
+  			seq.add(target);
+  			if (entitiesV.get(target).predecessor[source]==-1){stop=1;}
+  			else if (entitiesV.get(target).predecessor[source]==source){
+  		    	for(int i=seq.size()-1; i != 0; i--){
+  		    		path.add(seq.get(i));
+  		    	}
+  		    	stop=1;
+  		    }
+  		    else{ 
+  		    	target = entitiesV.get(target).predecessor[source];
+  		    }
+        }
+  		// path.add(entitiesV.get(target).predecessor[source]);
+  		
+  		/* for (int vertex=target; vertex != source; vertex=entitiesV.get(source).getPredecessor()[source] ) {
             path.add(vertex);    
-        } 
-  	
+        } */  	
   		//Collection.reverse(path);           //vzhledem k neorentaci hran, asi nebude treba
   		return path;
   	}

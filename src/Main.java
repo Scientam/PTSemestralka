@@ -9,13 +9,13 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
-	//verze 27.11 1223
+	//verze 27.11 1546
 	static Scanner sc = new Scanner(System.in);
     //*********************************************************************************************promenne pro generovani****************************************************
 	/** vytvori ArrayList do ktereho se budou ukladat objekty Entita jako vrcholy grafu */
 	static ArrayList<Vertex> entitiesV = new ArrayList<Vertex>();		
 	/** vytvori ArrayList do ktereho se budou ukladat objekty Entita jako hrany grafu */
-	ArrayList<Path> paths = new ArrayList<Path>();
+	//ArrayList<Path> paths = new ArrayList<Path>();
 	/** vytvori pole do ktereho se bude ukladat pst vrcholu na ceste z vrcholu i do vrcholu j*/
 	ArrayList<Integer> edges = new ArrayList<Integer>();
 	//ArrayList<Vertex> edges = new ArrayList<Vertex>();
@@ -36,6 +36,8 @@ public class Main {
 	/** vytvori promennou, ktera uchovava nejkratsi vzdalenosti(cesty) mezi vrcholy */
 	static int[][] floydWarshallP;
 	
+	static ArrayList<Integer>[][] paths;
+	
 	static int counter;
 	//*********************************************************************promenne pro simulaci**************************************************************************************************
 	static ArrayList<Planet> planets = new ArrayList<Planet>();
@@ -50,6 +52,7 @@ public class Main {
 	 * @param args
 	 * @throws IOException
 	 */
+	@SuppressWarnings("unchecked")
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		System.out.println("Nacist ze souboru/Generovat nove hodnoty: 0/1");
@@ -60,6 +63,7 @@ public class Main {
 			distance = new int[factoriesCount+planetsCount][factoriesCount+planetsCount];
 			floydWarshall = new int[factoriesCount+planetsCount][factoriesCount+planetsCount];
 			floydWarshallP = new int[factoriesCount+planetsCount][factoriesCount+planetsCount];
+			paths = new ArrayList[factoriesCount+planetsCount][factoriesCount+planetsCount];
 			
 		
 			/** zavola metodu, ktera vytvori centraly */
@@ -105,7 +109,7 @@ public class Main {
 				  floydWarshall[i] = Graph.doDijkstra(distance, i);
 			}*/
 			 
-			floydWarshallP= Graph.floydWarshallP(distance); 										// najde nejkratsi cesty
+			floydWarshallP = Graph.floydWarshallP(distance); 										// najde nejkratsi cesty
 			BufferedWriter bw6 = new BufferedWriter(new FileWriter("FWPath.txt"));					// BW na vypis do textaku 
 			for (int i = 0; i < floydWarshallP.length; i++) {												
 				for (int j = 0; j < floydWarshallP.length; j++) {
@@ -126,8 +130,24 @@ public class Main {
 			}
 			bw4.close();
 			
+			// ulozeni pole predchudcu kazdeho vrcholu
+			for (int i = 0; i < floydWarshallP.length; i++) {
+				entitiesV.get(i).predecessor = new int[entitiesV.size()];                    //urci velikost pole predchudcu(pocet planet+central)
+				for (int j = 0; j < floydWarshallP.length; j++) {
+					entitiesV.get(i).predecessor[j]=floydWarshallP[i][j];
+					//if(i==2){System.out.print(entitiesV.get(2).predecessor[j]+" ");}
+					//if(i==7){System.out.print(entitiesV.get(7).predecessor[j]+" ");}
+				}							
+            }
 			
 			
+			// vytvoreni listu cest z kazdeho vrcholu do kazdeho
+		    for (int i = 0; i < paths.length; i++) {
+		        for (int j = 0; j < paths.length; j++) {		        	
+		        	paths[i][j] = Graph.getShoortestPathTo(i, j, entitiesV);                             //OutOfMemoryError
+				}	
+		        System.out.print("Uz jse dodelal prvek: "+i);
+			}
 			
 			/** zavola metodu, ktera nazorne vykresli galaxii, tj. plnety,  centraly a cesty mezi nimi */
 			new DrawMap(factoriesCount, planetsCount, neighbourCountF, neighbourCountP, entitiesV);
