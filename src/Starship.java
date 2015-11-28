@@ -1,5 +1,8 @@
-public class Starship {
-	
+/**
+ * 
+ * @authors Petr Tobiaa, Karel Sobehart
+ */
+public class Starship {	
 	/** promenna uchovavajici idetifikacni cislo lodi */
 	private  int id;
 	/** promenna uchovavajici rychlost lodi */
@@ -45,6 +48,10 @@ public class Starship {
 		 this.isInUse = isInUse;
 	 }
 	
+	/**
+	 * 
+	 * @param capacity
+	 */
 	public void setCapacity(int capacity) {
 				this.capacity = capacity;
 			}
@@ -62,7 +69,7 @@ public class Starship {
 	  * 
 	  * @return
 	  */
-	 public int getVel() {
+	 public int getVelocity() {
 		 return velocity;
 	 }
 	 
@@ -70,7 +77,7 @@ public class Starship {
 	  * 
 	  * @return
 	  */
-	 public int getCap() {
+	 public int getCapacity() {
 		 return capacity;
 	 }
 	 
@@ -97,5 +104,5 @@ public class Starship {
 	 public boolean getIsInUse() {
 		 return isInUse;
 	 }
-
+	 
 }

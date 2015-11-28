@@ -7,18 +7,17 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
-
+/**
+ * 
+ * @authors Karel Sobehart, Petr Tobias
+ *
+ */
 public class Main {
-	//verze 27.11 1546
+	//verze 27.11 1814
 	static Scanner sc = new Scanner(System.in);
     //*********************************************************************************************promenne pro generovani****************************************************
 	/** vytvori ArrayList do ktereho se budou ukladat objekty Entita jako vrcholy grafu */
 	static ArrayList<Vertex> entitiesV = new ArrayList<Vertex>();		
-	/** vytvori ArrayList do ktereho se budou ukladat objekty Entita jako hrany grafu */
-	//ArrayList<Path> paths = new ArrayList<Path>();
-	/** vytvori pole do ktereho se bude ukladat pst vrcholu na ceste z vrcholu i do vrcholu j*/
-	ArrayList<Integer> edges = new ArrayList<Integer>();
-	//ArrayList<Vertex> edges = new ArrayList<Vertex>();
 	/** vytvori promennou, urcujici zda se data budou generovat nebo nacitat ze souboru*/
 	static int input;
 	/** vytvori promenou ktera urcuje pocet central v galaxii */
@@ -35,14 +34,17 @@ public class Main {
 	static int[][] floydWarshall;
 	/** vytvori promennou, ktera uchovava nejkratsi vzdalenosti(cesty) mezi vrcholy */
 	static int[][] floydWarshallP;
-	
+	/** vytvori promennou, ktera uchovava posloupnosti vrcholu tvorici nejkratsi cestu z vrcholu u do vrcholu v */
 	static ArrayList<Integer>[][] paths;
-	
+	/** vytvori promennou, ktera slozi pro nacitani ze souboru */
 	static int counter;
 	//*********************************************************************promenne pro simulaci**************************************************************************************************
-	static ArrayList<Planet> planets = new ArrayList<Planet>();
+    //Dodelej prosim ty komenty a u simulace vic popisku, co k cemu slouzi
+	/** */
 	static Random r = new Random();
+	/** */
 	private static int centralaID;
+	/** */
 	private static int starshipID;
 	/** konstanta uchovavajici plny naklad*/
 	static final int CAPACITY = 5000000;
@@ -71,32 +73,37 @@ public class Main {
 			/** zavola metodu, ktera vytvori planety */
 			entitiesV = DataGeneration.planetsDistribution(factoriesCount, planetsCount, neighbourCountP, entitiesV);	
 			
+			/** vytvori textovy soubor, do ktereho se vypisi parametry vrcholu */
 			BufferedWriter bw1 = new BufferedWriter(new FileWriter("Vertexes.txt"));				// BW na vypis vrcholu(tj. central a planet)do textaku  
-			for (int i = 0; i < entitiesV.size(); i++) {
+			for (int i=0; i<entitiesV.size(); i++) {
 				bw1.write(entitiesV.get(i).key+"\t"+entitiesV.get(i).xAxis+"\t"+entitiesV.get(i).yAxis+"\t"+entitiesV.get(i).neighbourCount+"\t"+entitiesV.get(i).color);
 				bw1.newLine();							
 			}
 			bw1.close();
 		
-			distance = DataGeneration.getDistance();												// vrati matici vzdalenosti
-			BufferedWriter bw2 = new BufferedWriter(new FileWriter("Distance.txt"));				// BW na vypis vzdalnesti vrcholu(tj. central a planet)do textaku   
-			for (int i = 0; i < entitiesV.size(); i++) {
-				for (int j = 0; j < entitiesV.size(); j++) {
+			/** spocte vzdalensoti mezi vsemi vrcholy a ulozi do matice */
+			distance = DataGeneration.getDistance();												
+			/** vytvori textovy soubor, do ktereho se vypise matice vzdalenosti */
+			BufferedWriter bw2 = new BufferedWriter(new FileWriter("Distance.txt"));				
+			for (int i = 0; i<entitiesV.size(); i++) {
+				for (int j = 0; j<entitiesV.size(); j++) {
 					bw2.write(Math.floor(distance[i][j])+"\t");
 				}
 				bw2.newLine();
 			}
 			bw2.close();
 		
-			DataGeneration.neighbour(factoriesCount, neighbourCountF, neighbourCountP, entitiesV);  // najde nejblizsi sousedy(tj. vytvori hrany)
-			BufferedWriter bw3 = new BufferedWriter(new FileWriter("Edges.txt"));					// BW na vypis do textaku 
-			for (int i = 0; i<entitiesV.size(); i++) {											// vypise vsechny cesty, prvni prvek pocatecni vrchol, ostatni koncove
-				if (i<factoriesCount) {
+			/** zavola metodu, ktera najde sousedy, tedy vytvori hrany */
+			DataGeneration.neighbour(factoriesCount, neighbourCountF, neighbourCountP, entitiesV);  
+			/** vytvori textovy soubor, do ktereho se vypisi hrany */
+			BufferedWriter bw3 = new BufferedWriter(new FileWriter("Edges.txt"));					
+			for (int i = 0; i<entitiesV.size(); i++) {											    
+				if (i<factoriesCount) {                                                             // zpracovava centraly
 					for (int j = 0; j<neighbourCountF; j++) {
 						bw3.write(entitiesV.get(i).neighbour[j].index+"\t");					
 					}
 				}else{
-					for (int j = 0; j<neighbourCountP; j++) {
+					for (int j = 0; j<neighbourCountP; j++) {                                       // zpracovava planety
 						bw3.write(entitiesV.get(i).neighbour[j].index+"\t");	
 					}	
 				}
@@ -109,26 +116,29 @@ public class Main {
 				  floydWarshall[i] = Graph.doDijkstra(distance, i);
 			}*/
 			 
-			floydWarshallP = Graph.floydWarshallP(distance); 										// najde nejkratsi cesty
-			BufferedWriter bw6 = new BufferedWriter(new FileWriter("FWPath.txt"));					// BW na vypis do textaku 
+			/** zavola metodu, ktera najde nejkratsi cesty, tj. predchudce */
+			floydWarshallP = Graph.floydWarshallP(distance); 										
+			/** vytvori textovy soubor, do ktereho se vypisi nejkratsi cesty, tj. predchudci */
+			BufferedWriter bw4 = new BufferedWriter(new FileWriter("FWPath.txt"));					
 			for (int i = 0; i < floydWarshallP.length; i++) {												
 				for (int j = 0; j < floydWarshallP.length; j++) {
-					bw6.write(floydWarshallP[i][j]+"\t");					
+					bw4.write(floydWarshallP[i][j]+"\t");					
 				}			
-				bw6.newLine();
-			}
-			bw6.close();
-			
-			/* FloydWarshall */
-			floydWarshall= Graph.floydWarshallM(distance); 									        // najde hodnotu nekratsich cest
-			BufferedWriter bw4 = new BufferedWriter(new FileWriter("FWShortestPath.txt"));			// BW na vypis do textaku 
-			for (int i = 0; i < floydWarshall.length; i++) {										
-					for (int j = 0; j < floydWarshall.length; j++) {
-						bw4.write(floydWarshall[i][j]+"\t");					
-					}			
 				bw4.newLine();
 			}
 			bw4.close();
+			
+			/** zavola metodu, ktera najde nejkratsi cesty, tj. hodnoty */
+			floydWarshall= Graph.floydWarshallM(distance); 									       
+			/** vytvori textovy soubor, do ktereho se vypisi nejkratsi cesty, tj. hodnoty */
+			BufferedWriter bw5 = new BufferedWriter(new FileWriter("FWShortestPath.txt"));			
+			for (int i = 0; i < floydWarshall.length; i++) {										
+					for (int j = 0; j < floydWarshall.length; j++) {
+						bw5.write(floydWarshall[i][j]+"\t");					
+					}			
+				bw5.newLine();
+			}
+			bw5.close();
 			
 			// ulozeni pole predchudcu kazdeho vrcholu
 			for (int i = 0; i < floydWarshallP.length; i++) {
@@ -142,18 +152,18 @@ public class Main {
 			
 			
 			// vytvoreni listu cest z kazdeho vrcholu do kazdeho
-		    for (int i = 0; i < paths.length; i++) {
+		   /* for (int i = 0; i < paths.length; i++) {
 		        for (int j = 0; j < paths.length; j++) {		        	
 		        	paths[i][j] = Graph.getShoortestPathTo(i, j, entitiesV);                             //OutOfMemoryError
 				}	
 		        System.out.print("Uz jse dodelal prvek: "+i);
-			}
+			}*/
 			
 			/** zavola metodu, ktera nazorne vykresli galaxii, tj. plnety,  centraly a cesty mezi nimi */
 			new DrawMap(factoriesCount, planetsCount, neighbourCountF, neighbourCountP, entitiesV);
 			
 	    // negeneruje, ale vytvari pomoci txt	
-		}else{ // negeneruje, ale vytvari pomoci txt
+		}else{ 
 			counter = fromFileVrcholy();
 			fromFileHrany();
 			planetsCount = counter - factoriesCount;
@@ -165,39 +175,44 @@ public class Main {
 	
 	//*********************************************************************************SIMULACE********************************************************************************************************/	
 		
-		BufferedWriter bw5 = new BufferedWriter(new FileWriter("Order.txt"));
+	    BufferedWriter bw6 = new BufferedWriter(new FileWriter("Order.txt"));
 		for (int d = 0; d < 1; d++){ 			//poèet dní, kdy simulace pobìží (pozdìji pùjde nastavit více dní uživatelem)
-			bw5.write("Objednavky pro "+(d+1)+". den: ");
-			bw5.newLine();
-			bw5.write("---------------------------------------------------------------------------------------------");
-			bw5.newLine();
-						for (int i = 0; i < planetsCount; i++){			//cyklus pobìží pro všechny planety
-							Planet p = new Planet(entitiesV.get(i).getKey(), entitiesV.get(i).getXAxis(), entitiesV.get(i).getYAxis(), entitiesV.get(i).getNeighbourCount(), entitiesV.get(i).color);			//volani planety
-							p.setOrder(p.order(p.getPopulCount(), p.drugProduction(p.getPopulCount())));
-							planets.add(p);
-							bw5.write("Planeta s id: "+p.getId()+" objednava takovyto pocet leku: "+planets.get(i).getOrder());
-							bw5.newLine();
-						}
-						bw5.close();	
-						for (int i = 0; i < planets.size(); i++){	
-							
-							centralaID = entitiesV.get(r.nextInt(4)).getKey();
-							Starship s = new Starship(i, 25, CAPACITY, centralaID);      //volani lode, musi se doresit ID
-							s.setTargetP(planets.get(i).getKey());
-							//lod doleti na planetu
-							s.setCapacity(s.getCap() - planets.get(i).getOrder());
-							
-								while (planets.get(i+1).getOrder() < s.getCap()){
-									s.setTargetP(planets.get(i+1).getKey());
-									//lod doleti na dalsi planetu
-									s.setCapacity(s.getCap() - planets.get(i).getOrder());
-								}
-							
-							
-							s.setTargetP(centralaID);
-							//lod doleti do centraly
-							s.setCapacity(CAPACITY);
-						}
+			bw6.write("Objednavky pro "+(d+1)+". den: ");
+			bw6.newLine();
+			bw6.write("---------------------------------------------------------------------------------------------");
+			bw6.newLine();
+			
+			//****************************************************vytvoreni objednavek******************************************************************/
+			for (int i=0; i<planetsCount; i++) {			                            //cyklus pobìží pro všechny planety
+			    Planet planet = (Planet) entitiesV.get(i+factoriesCount);			//volani planety							
+			    planet.setOrder(planet.order(planet.getPopulCount(), planet.drugProduction(planet.getPopulCount())));    // vytvori objednavku, jeji velikost zavisi na poctu obyvatel planety
+				bw6.write("Planeta s id: "+planet.getId()+" objednava takovyto pocet leku: "+planet.getOrder());
+				bw6.newLine();
+					
+			//*****************************************************vyrizovani objednacek****************************************************************/
+			
+				// pokud bude cas, udelal bych, aby to bralo nejbzsi centralu
+				centralaID = entitiesV.get(r.nextInt(4)).getKey();                   // urceni centraly, ktera obednavku vyridi
+				Starship starship = new Starship(i, 25, CAPACITY, centralaID);      //volani lode, musi se doresit ID
+				starship.setTargetP(planet.getKey());
+				//lod doleti na planetu
+				starship.setCapacity(starship.getCapacity() - planet.getOrder());
+				// Pridal bych nehjakou podminku na vzdalenost, aby to nebralo, planety na druhe strane galaxie
+				
+				/**for (int j=0; j<planetsCount; j++) {
+					if (i!=j && (entitiesV.get(j+factoriesCount).getOrder() < starship.getCapacity()) ) {
+					    while (planets.get(i+1).getOrder() < starship.getCapacity()){
+						    starship.setTargetP(planets.get(i+1).getKey());
+						    //lod doleti na dalsi planetu
+						    starship.setCapacity(starship.getCapacity() - planet.getOrder());
+						} 
+				    }	
+				} */
+				
+				starship.setTargetP(centralaID);
+				starship.setCapacity(CAPACITY);                                         //lod doleti do centraly, tj. doplni zasoby
+			}
+		    bw6.close();
 							
 							//int oneDayPath = s.getVel();			//lod za jeden den urazi 25 LY
 							//Scanner sc2 = new Scanner(new File("seznamVzdalSeraz.txt"));
@@ -251,7 +266,7 @@ public class Main {
 	}	
 	
 	/**
-	 * 
+	 * Metoda slouzici pro nacitani dat typu Vertex
 	 * @return
 	 */
 	public static int fromFileVrcholy() {
@@ -282,7 +297,7 @@ public class Main {
 	}
 	
 	/**
-	 * 
+	 * Metoda slouzici pro nacitani dat typu Edges
 	 */
 	public static void fromFileHrany() {
 		BufferedReader br;

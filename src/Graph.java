@@ -5,23 +5,18 @@ import java.util.Set;
 
 /**
  * Trida pro reprezentaci grafu
- * @author Scien_000
+ * @author Karel Sobehart
  */
 public class Graph {
-	
-	/** tato promenna uchovava vrcholy nasi grafove striktury */
+    /** tato promenna uchovava vrcholy nasi grafove striktury */
 	private static Vertex[] vertexes;					
 	/** tato promenna uchovava informaci o tom zda spoluvrcholy sousedi */
 	private int[][] adjMatrix;
 	/** tato promenna uchovava konecny pocet vrcholu */
 	private static int vertexCount;	
-	/** tato promenna uchovava pocet vytvorenych vrcholu */
-	private int vertexCreated = 0;	
 	/** promenna uchovavajici informaci o to zda je graf orientovany */
 	private boolean connected;			
-	private static int[][] shortestPath;
-
-	
+		
 	                                                              /* konstruktor */	   
 	/**
 	 * Konstruktor grafu
@@ -52,43 +47,8 @@ public class Graph {
   		}
   		return pom;
   	}
-		
-  	/**
-  	 * Metoda pro vlozeni hrany grafu
-  	 * @param start
-  	 * @param end
-  	 */
-  	public	void addEdge(int start, int end) {
-  		for (int m = 0; m < vertexCount; m++) {
-  			if (vertexes[m].key == start) {
-  				for (int n = 0; n < vertexCount; n++) {
-  					if (vertexes[n].key == end) {
-  						adjMatrix[m][n] = 1;
-  						if(connected == false){
-  							adjMatrix[n][m] = 1;
-  						}
-  					}
-  				}
-  			}
-  		}
-  	}
 	
-  	/**
-  	 * Metoda pro vypsani matice sousednosti na obrazovku 
-  	 */
-  	public void printAdjMatrix() {
-  		System.out.println("\nMatice sousednosti\n");
-  			for (int m = 0; m < vertexCount; m++) {
-  				for (int n = 0; n < vertexCount; n++) {
-  					System.out.print(adjMatrix[m][n]+" ");
-  				}
-  				System.out.println();
-  			}
-  			System.out.println();
-  	}
-  
   	
-
   	/**
   	 * Dijkstruv algoritmus
   	 * @param d matice delek (Integer.MAX_VALUE pokud hrana mezi uzly neexistuje)
@@ -108,7 +68,6 @@ public class Graph {
             distances[i] = 0;															// pocatecni vrchol ma vzdalenost 0
         }
     }
-
 
     int[] predecessors = new int[d.length];												// vytvori seznam predchudcu, nas pozadovany vystup
     predecessors[from] = -1;
@@ -144,6 +103,7 @@ public class Graph {
     }
     return predecessors;
   	}
+  	
   	
   	/**
   	 * Floyd-Warshall algorithm. Finds all shortest paths among all pairs of nodes

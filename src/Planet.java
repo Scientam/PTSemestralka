@@ -1,7 +1,9 @@
-import java.util.ArrayList;
-
+/**
+ * 
+ * @authors Petr Tobias, Karel Sobehart
+ *
+ */
 public class Planet extends Vertex {
-	
 	/** promenna uchovavajici informaci o tom zda se na planetu budou nadale dovazet leky  */
 	private boolean status;
 	/** promenna uchovavajici informaci o poctu obyvatel */
@@ -10,6 +12,7 @@ public class Planet extends Vertex {
 	private int drugProduction;
 	/** promenna uchovavajici objednavku*/
 	private int order;
+	/** */
 	private int id;
 	
 	  															/* konstruktor */	     
@@ -67,24 +70,50 @@ public class Planet extends Vertex {
   		return status;
   	}
 	
+	/**
+	 * 
+	 * @param populCount
+	 * @param drugProduction
+	 * @return
+	 */
 	public int order(int populCount, int drugProduction){
 				order = populCount - drugProduction;
 				return order;
 		}
 	
+	
+	/**
+	 * 
+	 * @return
+	 */
 	public int getId() {
 		return this.id;
 	}
 	
+	
+	/**
+	 * 
+	 * @return
+	 */
 	public int getPopulCount() {
 		return this.populCount;
 	}
 	
-	public int getOrder(){
-				return this.order;
-			}
-		
-			public void setOrder(int order) {
-				this.order = order;
-			}
+	
+	/**
+	 * 
+	 * @return
+	 */
+	public int getOrder() {
+	    return this.order;
+	}
+	
+	
+	/**
+	 * 
+	 * @param order
+	 */
+	public void setOrder(int argOrder) {
+		this.order = argOrder;
+	}
 }
