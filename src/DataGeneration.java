@@ -143,6 +143,30 @@ public class DataGeneration {
 		 return entitiesV;	 
 	 } 
 	 
+	 
+	 public static int[][] realDistance(ArrayList<Vertex> entitiesV, int[][] distance) {
+		 int[][] realDistance = new int[entitiesV.size()][entitiesV.size()];
+		 
+		 for (int i = 0; i < realDistance.length; i++) {
+			 for (int j = 0; j < realDistance.length; j++) {
+				 if(i == j) {
+					 realDistance[i][j] = 0;
+					 continue ;
+				 }
+				 
+				 for(int k = 0; k < entitiesV.get(i).neighbour.length; k++) {
+					 if (entitiesV.get(i).neighbour[k].index == j) {
+						realDistance[i][j] = distance[i][j];
+					}else{
+						realDistance[i][j] = Integer.MAX_VALUE/2-100000;
+					}
+				 }
+			}
+			
+		}
+		 return realDistance;
+	 }
+	 
 }
 
 

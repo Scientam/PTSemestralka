@@ -32,10 +32,7 @@ public class Main {
 	static int neighbourCountP = 5;
 	/** vytvori promennou, ktera uchovava vzdalenosti mezi vrcholy */
 	static int[][] distance;
-	/** vytvori promennou, ktera uchovava nejkratsi vzdalenosti mezi vrcholy */
-	static int[][] floydWarshall;
-	/** vytvori promennou, ktera uchovava nejkratsi vzdalenosti(cesty) mezi vrcholy */
-	static int[][] floydWarshallP;
+	static int[][] realDistance;
 	/** vytvori promennou, ktera uchovava posloupnosti vrcholu tvorici nejkratsi cestu z vrcholu u do vrcholu v */
 	static ArrayList<Integer>[][] paths;
 	/** vytvori promennou, ktera slozi pro nacitani ze souboru */
@@ -59,12 +56,17 @@ public class Main {
 	@SuppressWarnings("unchecked")
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
+		/** vytvori promennou, ktera uchovava nejkratsi vzdalenosti mezi vrcholy */
+		 int[][] floydWarshall;
+		/** vytvori promennou, ktera uchovava nejkratsi vzdalenosti(cesty) mezi vrcholy */
+		 int[][] floydWarshallP;
 		System.out.println("Nacist ze souboru/Generovat nove hodnoty: 0/1");
 		input = sc.nextInt();
 		if(input == 1) {
 			System.out.println("Zadej pocet planet");
 			planetsCount = sc.nextInt();
 			distance = new int[factoriesCount+planetsCount][factoriesCount+planetsCount];
+			realDistance = new int[factoriesCount+planetsCount][factoriesCount+planetsCount];
 			floydWarshall = new int[factoriesCount+planetsCount][factoriesCount+planetsCount];
 			floydWarshallP = new int[factoriesCount+planetsCount][factoriesCount+planetsCount];
 			paths = new ArrayList[factoriesCount+planetsCount][factoriesCount+planetsCount];
@@ -112,15 +114,28 @@ public class Main {
 				bw3.newLine();
 			}
 			bw3.close();
+			
+			realDistance = DataGeneration.realDistance(entitiesV, distance);
+			BufferedWriter bw9 = new BufferedWriter(new FileWriter("RealDistance.txt"));				
+			for (int i = 0; i<realDistance.length; i++) {
+				for (int j = 0; j<realDistance.length; j++) {
+					bw9.write(Math.floor(realDistance[i][j])+"\t");
+				}
+				bw9.newLine();
+			}
+			bw9.close();
 		
-			/*Dijsktra 
+			/*Dijsktra */
 			  for (int i = 0; i < floydWarshall.length; i++) {
-				  floydWarshallP[i] = Graph.doDijkstra(distance, i);
-			} */
+				  floydWarshallP[i] = Graph.doDijkstra(realDistance, i);
+			} 
 
 			 
 			/** zavola metodu, ktera najde nejkratsi cesty, tj. hodnoty */
-			floydWarshall= Graph.floydWarshallM(distance); 									       
+			floydWarshall= Graph.floydWarshallM(realDistance, true); 	
+			/*for (int i = 0; i < entitiesV.size()-1; i++) {
+				floydWarshall = Graph.floydWarshallM(floydWarshall, false);
+			}*/
 			/** vytvori textovy soubor, do ktereho se vypisi nejkratsi cesty, tj. hodnoty */
 			BufferedWriter bw5 = new BufferedWriter(new FileWriter("FWShortestPath.txt"));			
 			for (int i = 0; i < floydWarshall.length; i++) {										
@@ -132,7 +147,7 @@ public class Main {
 			bw5.close();
 			
 			/** zavola metodu, ktera najde nejkratsi cesty, tj. predchudce */
-			floydWarshallP = Graph.getPathMatrix(); 										
+			//floydWarshallP = Graph.getPathMatrix(); 										
 			/** vytvori textovy soubor, do ktereho se vypisi nejkratsi cesty, tj. predchudci */
 			BufferedWriter bw4 = new BufferedWriter(new FileWriter("FWPath.txt"));					
 			for (int i = 0; i < floydWarshallP.length; i++) {												
@@ -158,7 +173,7 @@ public class Main {
 		    for (int i = 0; i < paths.length; i++) {
 		        for (int j = 0; j < paths.length; j++) {
 		        	if (i!=j) {                                                             // abychom nehledali nejkratsi cestu z vrcholu u do vrcholu u
-		        		paths[i][j] = Graph.getShoortestPathTo(i, j, entitiesV);           
+		        		paths[i][j] = Graph.getShortestPathTo(i, j, entitiesV);           
 		        	}		        	
 				}	
 		        System.out.println("Uz jsem dodelal prvek i: "+i);

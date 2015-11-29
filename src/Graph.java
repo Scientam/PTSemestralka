@@ -111,13 +111,14 @@ public class Graph {
   	 * @param d matrix of distances (Integer.MAX_VALUE represents positive infinity)
   	 * @return matrix of predecessors
   	 */
-  	public static int[][] floydWarshallM(int[][] m) {
-  		p = constructInitialMatrixOfPredecessors(m);
+  	public static int[][] floydWarshallM(int[][] m, boolean argBool) {
+  		if(argBool){p = constructInitialMatrixOfPredecessors(m);}
+  		
   	    for (int k = 0; k < m.length; k++) {
 			for (int i = 0; i < m.length; i++) {
 				for (int j = 0; j < m.length; j++) {
 					// to keep track.;
-					if (m[i][k] + m[k][j] < m[i][j]) {
+					if ( m[i][j] > m[i][k] + m[k][j]) {
 						m[i][j] = m[i][k] + m[k][j];
 						p[i][j] = p[k][j];
 					}
@@ -159,7 +160,7 @@ public class Graph {
 	 * @param target
 	 * @return
 	 */
-  	public static ArrayList<Integer> getShoortestPathTo(int source, int target, ArrayList<Vertex> entitiesV) {
+  	public static ArrayList<Integer> getShortestPathTo(int source, int target, ArrayList<Vertex> entitiesV) {
   		ArrayList<Integer> path = new ArrayList<Integer>();
   		ArrayList<Integer> seq = new ArrayList<Integer>();
   		int stop = 1;
