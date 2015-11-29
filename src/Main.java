@@ -14,7 +14,7 @@ import java.util.Scanner;
  */
 public class Main {
 	/**
-	 * @version 0.2811.2116
+	 * @version 0.2911.1040
 	 */
 	static Scanner sc = new Scanner(System.in);
     //*********************************************************************************************promenne pro generovani****************************************************
@@ -115,21 +115,10 @@ public class Main {
 		
 			/*Dijsktra 
 			  for (int i = 0; i < floydWarshall.length; i++) {
-				  floydWarshall[i] = Graph.doDijkstra(distance, i);
-			}*/
+				  floydWarshallP[i] = Graph.doDijkstra(distance, i);
+			} */
+
 			 
-			/** zavola metodu, ktera najde nejkratsi cesty, tj. predchudce */
-			floydWarshallP = Graph.floydWarshallP(distance); 										
-			/** vytvori textovy soubor, do ktereho se vypisi nejkratsi cesty, tj. predchudci */
-			BufferedWriter bw4 = new BufferedWriter(new FileWriter("FWPath.txt"));					
-			for (int i = 0; i < floydWarshallP.length; i++) {												
-				for (int j = 0; j < floydWarshallP.length; j++) {
-					bw4.write(floydWarshallP[i][j]+"\t");					
-				}			
-				bw4.newLine();
-			}
-			bw4.close();
-			
 			/** zavola metodu, ktera najde nejkratsi cesty, tj. hodnoty */
 			floydWarshall= Graph.floydWarshallM(distance); 									       
 			/** vytvori textovy soubor, do ktereho se vypisi nejkratsi cesty, tj. hodnoty */
@@ -141,6 +130,18 @@ public class Main {
 				bw5.newLine();
 			}
 			bw5.close();
+			
+			/** zavola metodu, ktera najde nejkratsi cesty, tj. predchudce */
+			floydWarshallP = Graph.getPathMatrix(); 										
+			/** vytvori textovy soubor, do ktereho se vypisi nejkratsi cesty, tj. predchudci */
+			BufferedWriter bw4 = new BufferedWriter(new FileWriter("FWPath.txt"));					
+			for (int i = 0; i < floydWarshallP.length; i++) {												
+				for (int j = 0; j < floydWarshallP.length; j++) {
+					bw4.write(floydWarshallP[i][j]+"\t");					
+				}			
+				bw4.newLine();
+			}
+			bw4.close();
 			
 			// ulozeni pole predchudcu kazdeho vrcholu
 			for (int i = 0; i < floydWarshallP.length; i++) {
@@ -157,7 +158,7 @@ public class Main {
 		    for (int i = 0; i < paths.length; i++) {
 		        for (int j = 0; j < paths.length; j++) {
 		        	if (i!=j) {                                                             // abychom nehledali nejkratsi cestu z vrcholu u do vrcholu u
-		        		paths[i][j] = Graph.getShoortestPathTo(i, j, entitiesV);            // OutOfMemoryError
+		        		paths[i][j] = Graph.getShoortestPathTo(i, j, entitiesV);           
 		        	}		        	
 				}	
 		        System.out.println("Uz jsem dodelal prvek i: "+i);

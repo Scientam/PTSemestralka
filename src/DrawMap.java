@@ -85,7 +85,7 @@ public class DrawMap extends JFrame{
 		for (int i = 0; i < entities.size(); i++) {	
 			g2.setColor(Color.BLACK);
 		
-			/*Sousedi */
+			/*Sousedi 
 			if(i < factoriesCount) {
 				for (int j = 0; j < neighbourCountF; j++) {
 					int id = entities.get(i).neighbour[j].index;	
@@ -97,13 +97,13 @@ public class DrawMap extends JFrame{
 					int id = entities.get(i).neighbour[j].index;	
 					g2.draw(new Line2D.Double(entities.get(i).getXAxis()+2+100, entities.get(i).getYAxis()+2+130, entities.get(id).getXAxis()+2+100, entities.get(id).getYAxis()+2+130) );
 				}
-			} 
+			} */
 			
-			/*Nejkratsi cesty 
+			/*Nejkratsi cesty */
 			int from;
 		    int to;
 			for (int j = 0; j < entities.size(); j++) {
-				if (paths[i][j].isEmpty() != true) {
+				if (paths[i][j] != null) {
 				    for (int k = 0; k < paths[i][j].size()-1; k++){ 					
 						from = paths[i][j].get(k);
 						to = paths[i][j].get(k+1);
@@ -111,7 +111,7 @@ public class DrawMap extends JFrame{
 					}
 					
 				}
-		    }*/
+		    }
 		}
 	}
 }

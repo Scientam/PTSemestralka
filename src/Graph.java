@@ -16,6 +16,7 @@ public class Graph {
 	private static int vertexCount;	
 	/** promenna uchovavajici informaci o to zda je graf orientovany */
 	private boolean connected;			
+	public static int[][] p;
 		
 	                                                              /* konstruktor */	   
 	/**
@@ -111,12 +112,14 @@ public class Graph {
   	 * @return matrix of predecessors
   	 */
   	public static int[][] floydWarshallM(int[][] m) {
-  	  for (int k = 0; k < m.length; k++) {
+  		p = constructInitialMatrixOfPredecessors(m);
+  	    for (int k = 0; k < m.length; k++) {
 			for (int i = 0; i < m.length; i++) {
 				for (int j = 0; j < m.length; j++) {
 					// to keep track.;
 					if (m[i][k] + m[k][j] < m[i][j]) {
 						m[i][j] = m[i][k] + m[k][j];
+						p[i][j] = p[k][j];
 					}
 					// or not to keep track.
 					//M[i][j] = min(M[i][j], M[i][k] + M[k][j]);
@@ -126,41 +129,28 @@ public class Graph {
 		return m;
   	}
   	
-  	public static int[][] floydWarshallP(int[][] m) {
-  		  int[][] p = constructInitialMatixOfPredecessors(m);
-    	  for (int k = 0; k < m.length; k++) {
-  			for (int i = 0; i < m.length; i++) {
-  				for (int j = 0; j < m.length; j++) {
-  					// to keep track.;
-  					if (m[i][k] + m[k][j] < m[i][j]) {
-  						m[i][j] = m[i][k] + m[k][j];
-  						p[i][j] = p[k][j];
-  					}
-  					// or not to keep track.
-  					//M[i][j] = min(M[i][j], M[i][k] + M[k][j]);
-  				}
-  			}
-  		}
+  	public static int[][] getPathMatrix(){
   		return p;
-    	}
+  	}
+  	
   	
   	/**
 	 * Constructs matrix P0
 	 * @param d matrix of lengths
 	 * @return P0
 	 */
-	private static int[][] constructInitialMatixOfPredecessors(int[][] d) {
-	    int[][] p = new int[d.length][d.length];
+	private static int[][] constructInitialMatrixOfPredecessors(int[][] d) {
+	    int[][] initial = new int[d.length][d.length];
 	    for (int i = 0; i < d.length; i++) {
 	        for (int j = 0; j < d.length; j++) {
 	            if (d[i][j] != 0 && d[i][j] != Integer.MAX_VALUE) {
-	                p[i][j] = i;
+	            	initial[i][j] = i;
 	            } else {
-	                p[i][j] = -1;
+	            	initial[i][j] = -1;
 	            }
 	        }
 	    }
-	    return p;
+	    return initial;
 	}
 	
 	/**
@@ -172,21 +162,23 @@ public class Graph {
   	public static ArrayList<Integer> getShoortestPathTo(int source, int target, ArrayList<Vertex> entitiesV) {
   		ArrayList<Integer> path = new ArrayList<Integer>();
   		ArrayList<Integer> seq = new ArrayList<Integer>();
-  		int stop = -1;
+  		int stop = 1;
   		path.add(source);
   		
-  		while (stop==-1){
+  		while (stop==1){                                     //pozn. source=radek, taget=sloupec
   			seq.add(target);
-  			if (entitiesV.get(target).predecessor[target]==-1){stop=1;
-  			System.out.println("Tohle se nemelo stat.");}
-  			else if (entitiesV.get(target).predecessor[target]==source){
+  			if (entitiesV.get(source).predecessor[target]==-1){         // osetreni chyby
+  				stop=-1;
+  			    System.out.println("Tohle se nemelo stat.");
+  			}
+  			else if (entitiesV.get(source).predecessor[target]==source){
   		    	for(int i=seq.size()-1; i != 0; i--){
   		    		path.add(seq.get(i));
   		    	}
-  		    	stop=1;
+  		    	stop=-1;
   		    }
   		    else{ 
-  		    	target = entitiesV.get(target).predecessor[source];
+  		    	target = entitiesV.get(source).predecessor[target];
   		    }
         }
   		// path.add(entitiesV.get(target).predecessor[source]);
