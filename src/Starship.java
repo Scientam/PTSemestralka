@@ -11,8 +11,12 @@ public class Starship {
 	private  int capacity;
 	/** promenna uchovavajici id cetraly pod kterou lod spada */
 	private  int numF;
-	/** promenna uchovavajici id planety na kterou lod prave miri */
+	/** promenna uchovavajici id planety, ze ktere lod leti */
+	private int sourceP;
+	/** promenna uchovavajici id planety, na kterou lod prave miri */
 	private  int targetP;
+	/** promìnná uchovavajicí vzdalenost, kterou musi lod uletet */
+	private double distance;
 	/** promenna uchovavajici informaci o tom zda je dana lod prave k dispozici */
 	private boolean isInUse;
 	
@@ -31,7 +35,28 @@ public class Starship {
 		this.isInUse = true;
 	}
 	
-														/* settery */
+														
+
+	/* settery */
+
+	
+	public void setId(int id) {
+		this.id = id;
+	}
+	
+	
+
+
+	/**
+	 * 
+	 * @param sourceP
+	 */
+	public void setSourceP(int sourceP) {
+		this.sourceP = sourceP;
+	}
+
+
+
 	/**
 	 * 
 	 * @param targetP
@@ -53,13 +78,21 @@ public class Starship {
 	 * @param capacity
 	 */
 	public void setCapacity(int capacity) {
-				this.capacity = capacity;
-			}
+		this.capacity = capacity;
+	}
 	
-														/* gettery */
 	/**
 	 * 
-	 * @return
+	 * @param distance
+	 */
+	public void setDistance(double distance) {
+		this.distance = distance;
+	}
+
+	/* gettery */
+	/**
+	 * 
+	 * @return id
 	 */
 	 public int getId() {
 		 return id;
@@ -67,7 +100,7 @@ public class Starship {
 	  
 	 /**
 	  * 
-	  * @return
+	  * @return velocity
 	  */
 	 public int getVelocity() {
 		 return velocity;
@@ -75,7 +108,7 @@ public class Starship {
 	 
 	 /**
 	  * 
-	  * @return
+	  * @return capacity
 	  */
 	 public int getCapacity() {
 		 return capacity;
@@ -83,7 +116,7 @@ public class Starship {
 	 
 	 /**
 	  * 
-	  * @return
+	  * @return numF
 	  */
 	 public int getNumF() {
 		 return numF;
@@ -91,7 +124,15 @@ public class Starship {
 	 
 	 /**
 	  * 
-	  * @return
+	  * @return sourceP
+	  */
+	 public int getSourceP() {
+			return sourceP;
+		}
+	 
+	 /**
+	  * 
+	  * @return targetP
 	  */
 	 public int getTargetP() {
 		 return targetP;
@@ -99,7 +140,15 @@ public class Starship {
 	 
 	 /**
 	  * 
-	  * @return
+	  * @return distance
+	  */
+	 public double getDistance() {
+		 return distance;
+	 }
+	 
+	 /**
+	  * 
+	  * @return isInUse
 	  */
 	 public boolean getIsInUse() {
 		 return isInUse;
