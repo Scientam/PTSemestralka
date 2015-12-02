@@ -147,18 +147,19 @@ public class DataGeneration {
 	 public static int[][] realDistance(ArrayList<Vertex> entitiesV, int[][] distance) {
 		 int[][] realDistance = new int[entitiesV.size()][entitiesV.size()];
 		 
-		 for (int i = 0; i < realDistance.length; i++) {
-			 for (int j = 0; j < realDistance.length; j++) {
+		 for (int i = 0; i < entitiesV.size(); i++) {
+			 for (int j = 0; j < entitiesV.size(); j++) {															// vzdalenost z vrcholu do sebe sama je 0
 				 if(i == j) {
 					 realDistance[i][j] = 0;
-					 continue ;
+					continue ;
 				 }
 				 
 				 for(int k = 0; k < entitiesV.get(i).neighbour.length; k++) {
-					 if (entitiesV.get(i).neighbour[k].index == j) {
+					 if (entitiesV.get(i).neighbour[k].dist == distance[i][j]) {			// .neighbour[k].index == d
 						realDistance[i][j] = distance[i][j];
+						break;
 					}else{
-						realDistance[i][j] = Integer.MAX_VALUE/2-100000;
+						realDistance[i][j] = Integer.MAX_VALUE/2-100000;				// Integer.MAX_VALUE/2-100000
 					}
 				 }
 			}

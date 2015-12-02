@@ -128,10 +128,10 @@ public class Main {
 			bw9.close();
 		
 			//*********************************************************************************HLEDANI_NEJKRATSICH_CEST********************************************************
-			/*Dijsktra */
+			/*Dijsktra 
 			  for (int i = 0; i < floydWarshall.length; i++) {
 				  floydWarshallP[i] = Graph.doDijkstra(realDistance, i);
-			} 
+			} */
 
 			 
 			/** zavola metodu, ktera najde nejkratsi cesty, tj. hodnoty */
@@ -150,7 +150,7 @@ public class Main {
 			bw5.close();
 			
 			/** zavola metodu, ktera najde nejkratsi cesty, tj. predchudce */
-			//floydWarshallP = Graph.getPathMatrix(); 										
+			floydWarshallP = Graph.getPathMatrix(); 										
 			/** vytvori textovy soubor, do ktereho se vypisi nejkratsi cesty, tj. predchudci */
 			BufferedWriter bw4 = new BufferedWriter(new FileWriter("FWPath.txt"));					
 			for (int i = 0; i < floydWarshallP.length; i++) {												
