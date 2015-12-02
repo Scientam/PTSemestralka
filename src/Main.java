@@ -15,7 +15,7 @@ import java.util.Scanner;
  */
 public class Main {
 	/**
-	 * @version 0.0212.1219
+	 * @version 0.0212.1619
 	 */
 	static Scanner sc = new Scanner(System.in);
     //*********************************************************************************************promenne pro generovani****************************************************
@@ -215,6 +215,7 @@ public class Main {
 		
 	    BufferedWriter bw6 = new BufferedWriter(new FileWriter("Order.txt"));
 	    Scanner sc2 = new Scanner(new File("Distance.txt"));
+	    Scanner sc3 = new Scanner(System.in);
 	    sc2.skip("0.0");
 	    int production = 0;
 	    Planet p = null;
@@ -226,7 +227,9 @@ public class Main {
 		 * Cyklus spousti simulaci kazdy den a generuje objednavky kazdych 30 dni. Pracuje se pouze s ArrayListem. Informace o objednavkach se ukladaji
 		 * do textoveho souboru.
 		 */
-		for (int d = 0; d < 60; d++){ 	
+	    System.out.println("Zadej pocet dni po ktere bude bezet simulace: ");
+	    int maxD = sc3.nextInt();
+		for (int d = 0; d < maxD; d++){ 	
 			bw6.write("---------------------------------------------------------------------------------------------");
 			bw6.newLine();
 			if ((d % 30) == 0){
@@ -236,6 +239,24 @@ public class Main {
 			bw6.newLine();
 			}
 			//****************************************************vytvoreni objednavek******************************************************************/
+			if (d % 30 == 0 && d != 0){
+				System.out.println("Chcete zadat vlastni objednavku? (0 - NE/1 - ANO): ");
+				int choice = sc3.nextInt();
+				if (choice == 0){
+					continue;
+				}
+				else{
+					System.out.println("Zadej objednavku ve tvaru (id_planety pocet_leku): ");
+					String order = sc3.next();
+					String[] parseLine = order.split(" ");
+					int orderID = Integer.parseInt(parseLine[0]);
+					int orderDrugCount = Integer.parseInt(parseLine[1]);
+					 planet.get(orderID).setOrder(orderDrugCount);    // vytvori objednavku, jeji velikost zavisi na poctu obyvatel planety
+						bw6.write("Planeta s id: "+planet.get(orderID).getKey()+" objednava takovyto pocet leku: "+planet.get(orderID).getOrder());
+						bw6.newLine();
+				}
+				
+			}
 			for (int i = 0; i < planetsCount; i++) {			                            //cyklus pobÃ¬Å¾Ã­ pro vÅ¡echny planety
 				if ((d % 30) == 0){	
 				p = (Planet) entitiesV.get(i+factoriesCount);			//volani planety
