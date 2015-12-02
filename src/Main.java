@@ -15,7 +15,7 @@ import java.util.Scanner;
  */
 public class Main {
 	/**
-	 * @version 0.3011.2225
+	 * @version 0.0212.1219
 	 */
 	static Scanner sc = new Scanner(System.in);
     //*********************************************************************************************promenne pro generovani****************************************************
@@ -49,7 +49,7 @@ public class Main {
 	/** */
 	private static int factoryId;
 	/** */
-	private static int starshipId;
+	//private static int starshipId;
 	/** konstanta uchovavajici plny naklad*/
 	static final int CAPACITY = 5000000;
 
@@ -237,8 +237,8 @@ public class Main {
 			}
 			//****************************************************vytvoreni objednavek******************************************************************/
 			for (int i = 0; i < planetsCount; i++) {			                            //cyklus pobÃ¬Å¾Ã­ pro vÅ¡echny planety
-				if ((d % 30) == 0){
-				p = (Planet) entitiesV.get(i+factoriesCount);			//volani planety	
+				if ((d % 30) == 0){	
+				p = (Planet) entitiesV.get(i+factoriesCount);			//volani planety
 				planet.add(p);
 			    production = planet.get(i).drugProduction(planet.get(i).getPopulCount());
 			    planet.get(i).setOrder(planet.get(i).order(planet.get(i).getPopulCount(), production));    // vytvori objednavku, jeji velikost zavisi na poctu obyvatel planety
@@ -255,25 +255,52 @@ public class Main {
 			//*****************************************************vyrizovani objednacek****************************************************************/
 			
 				// pokud bude cas, udelal bych, aby to bralo nejblizsi centralu
-				//starship.get(i).setId(i);
-				starship.get(i).setDistance(starship.get(i).getDistance());
+				/**
+				 * Pokud ma lod id centraly, vrati se na ni a doplni zasoby.
+				 * Po doplneni zasob se vrati id planety, na kterou puvodne smerovala.
+				 */
+				/*if (starship.get(i).getTargetP() == factoryId){
+					starship.get(i).setDistance(starship.get(i).getDistance() - 25.0);					//vzdalenost se snizuje kazdy den o 25 LY
+					bw6.write("Lodi s id: " + starship.get(i).getId() + " zbyva doletet: " + starship.get(i).getDistance());
+					bw6.newLine();
+					if (starship.get(i).getDistance() < 25.0){
+						starship.get(i).setDistance(0.0);
+						starship.get(i).setSourceP(starship.get(i).getTargetP());
+						starship.get(i).setCapacity(CAPACITY);
+						starship.get(i).setTargetP(starship.get(i).getSourceP());
+					}
+				}*/
+				/**
+				 * Pokud lod doleti na planetu, vylozi zasoby podle objednavky.
+				 * Pote se priradi dalsi planeta (pripadne centrala).
+				 */
 				if (starship.get(i).getDistance() < 25.0){
 					starship.get(i).setDistance(0.0);
-					starship.get(i).setSourceP(starship.get(i).getTargetP());
-					//priradi se dalsi planeta a lod leti znovu
 					starship.get(i).setCapacity(starship.get(i).getCapacity() - planet.get(starship.get(i).getTargetP()).getOrder());
 					bw6.write("Lodi s id: " + starship.get(i).getId() + " zbyva doletet: " + starship.get(i).getDistance());
 					bw6.newLine();
 					bw6.write("Lod s id: " + starship.get(i).getId() + " vylozila " + planet.get(starship.get(i).getTargetP()).getOrder() + " jednotek nakladu.");
 					bw6.newLine();
+					starship.get(i).setSourceP(starship.get(i).getTargetP());
+					starship.get(i).setTargetP(factoryId);
 				}
 				else{
+					/**
+					 * Lodi se odpocitava 25 LY z celkove cesty kazdy den.
+					 */
 				starship.get(i).setDistance(starship.get(i).getDistance() - 25.0);					//vzdalenost se snizuje kazdy den o 25 LY
 				bw6.write("Lodi s id: " + starship.get(i).getId() + " zbyva doletet: " + starship.get(i).getDistance());
 				bw6.newLine();
 				}
 				// Pridal bych nejakou podminku na vzdalenost, aby to nebralo, planety na druhe strane galaxie
-				
+				/**
+				 * Pokud lod nema nalozen dostatek jednotek na pokryti objednavky dalsi planety, vraci se na centralu.
+				 */
+				if (starship.get(i).getCapacity() < planet.get(starship.get(i).getTargetP()).getOrder()){
+					starship.get(i).setSourceP(starship.get(i).getTargetP());
+					starship.get(i).setTargetP(factoryId);
+					//ulozit vzdalenost k centrale do Distance
+																						}
 				/**for (int j=0; j<planetsCount; j++) {
 					if (i!=j && (entitiesV.get(j+factoriesCount).getOrder() < starship.getCapacity()) ) {
 					    while (planets.get(i+1).getOrder() < starship.getCapacity()){
@@ -283,10 +310,6 @@ public class Main {
 						} 
 				    }	
 				} */
-				/*if (starship.get(i).getCapacity() < planet.get(starship.get(i).getTargetP()).getOrder()){
-					starship.get(i).setTargetP(factoryId);
-					starship.get(i).setCapacity(CAPACITY);										//lod doleti do centraly, tj. doplni zasoby
-				}*/
 			
 			bw6.newLine();
 			}
