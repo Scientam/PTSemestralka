@@ -173,7 +173,7 @@ public class Graph {
   			    System.out.println("Tohle se nemelo stat.");
   			}
   			else if (entitiesV.get(source).predecessor[target]==source){
-  		    	for(int i=seq.size()-1; i != 0; i--){
+  		    	for(int i=seq.size()-1; i != -1; i--){
   		    		path.add(seq.get(i));
   		    	}
   		    	stop=-1;

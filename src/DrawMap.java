@@ -83,7 +83,9 @@ public class DrawMap extends JFrame{
 																								 /*KRESLENI CEST*/
 		
 		for (int i = 0; i < entities.size(); i++) {	
-			g2.setColor(Color.BLACK);
+			if (i<factoriesCount) {g2.setColor(Color.RED);}
+			else{g2.setColor(Color.BLACK);}
+			
 		
 			/*Sousedi 
 			if(i < factoriesCount) {

@@ -15,7 +15,7 @@ import java.util.Scanner;
  */
 public class Main {
 	/**
-	 * @version 0.0212.1619
+	 * @version 0.0312.0000
 	 */
 	static Scanner sc = new Scanner(System.in);
     //*********************************************************************************************promenne pro generovani****************************************************
@@ -136,9 +136,9 @@ public class Main {
 			 
 			/** zavola metodu, ktera najde nejkratsi cesty, tj. hodnoty */
 			floydWarshall= Graph.floydWarshallM(realDistance, true); 	
-			/*for (int i = 0; i < entitiesV.size()-1; i++) {
+			for (int i = 0; i < entitiesV.size()-1; i++) {
 				floydWarshall = Graph.floydWarshallM(floydWarshall, false);
-			}*/
+			}
 			/** vytvori textovy soubor, do ktereho se vypisi nejkratsi cesty, tj. hodnoty */
 			BufferedWriter bw5 = new BufferedWriter(new FileWriter("FWShortestPath.txt"));			
 			for (int i = 0; i < floydWarshall.length; i++) {										
@@ -179,12 +179,17 @@ public class Main {
 		        		paths[i][j] = Graph.getShortestPathTo(i, j, entitiesV);           
 		        	}		        	
 				}	
-		        System.out.println("Uz jsem dodelal prvek i: "+i);
+		        //System.out.println("Uz jsem dodelal prvek i: "+i);
 			}
-		    System.out.println("Uz jsem za forem");
+		
+		    System.out.println("Cesta z vrcholu 5 do vrcholu 7: ");
+		    for (int i = 0; i < paths[5][7].size(); i++) {
+		    	System.out.print(paths[5][7].get(i)+" ");
+			}
 			
 		    //********************************************************************************VYKRESLENI_DAT*****************************************************************************************/
 			/** zavola metodu, ktera nazorne vykresli galaxii, tj. plnety,  centraly a cesty mezi nimi */
+		    new DrawMapG(factoriesCount, planetsCount, neighbourCountF, neighbourCountP, entitiesV, paths);
 			new DrawMap(factoriesCount, planetsCount, neighbourCountF, neighbourCountP, entitiesV, paths);
 		
 		//*******************************************************************************************************************************************************************************************/	
