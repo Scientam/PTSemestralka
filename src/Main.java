@@ -15,7 +15,7 @@ import java.util.Scanner;
  */
 public class Main {
 	/**
-	 * @version 0.0312.2211
+	 * @version 0.0312.2301
 	 */
 	static Scanner sc = new Scanner(System.in);
     //*********************************************************************************************promenne pro generovani****************************************************
@@ -87,45 +87,31 @@ public class Main {
 			}
 			bw1.close();
 		
-			/** spocte vzdalensoti mezi vsemi vrcholy a ulozi do matice */
+			/** spocte vzdalenosti mezi vsemi vrcholy a ulozi do matice */
 			distance = DataGeneration.getDistance();												
 			/** vytvori textovy soubor, do ktereho se vypise matice vzdalenosti */
-			BufferedWriter bw2 = new BufferedWriter(new FileWriter("Distance.txt"));				
-			for (int i = 0; i<entitiesV.size(); i++) {
-				for (int j = 0; j<entitiesV.size(); j++) {
-					bw2.write(Math.floor(distance[i][j])+"\t");
-				}
-				bw2.newLine();
-			}
-			bw2.close();
+			DataGeneration.printMatrix(distance, entitiesV.size(), "Distance.txt");
 		
 			/** zavola metodu, ktera najde sousedy, tedy vytvori hrany */
 			DataGeneration.neighbour(factoriesCount, neighbourCountF, neighbourCountP, entitiesV);  
 			/** vytvori textovy soubor, do ktereho se vypisi hrany */
-			BufferedWriter bw3 = new BufferedWriter(new FileWriter("Edges.txt"));					
+			BufferedWriter bw2 = new BufferedWriter(new FileWriter("Edges.txt"));					
 			for (int i = 0; i<entitiesV.size(); i++) {											    
 				if (i<factoriesCount) {                                                             // zpracovava centraly
 					for (int j = 0; j<neighbourCountF; j++) {
-						bw3.write(entitiesV.get(i).neighbour[j].index+"\t");					
+						bw2.write(entitiesV.get(i).neighbour[j].index+"\t");					
 					}
 				}else{
 					for (int j = 0; j<neighbourCountP; j++) {                                       // zpracovava planety
-						bw3.write(entitiesV.get(i).neighbour[j].index+"\t");	
+						bw2.write(entitiesV.get(i).neighbour[j].index+"\t");	
 					}	
 				}
-				bw3.newLine();
+				bw2.newLine();
 			}
-			bw3.close();
+			bw2.close();
 			
 			realDistance = DataGeneration.realDistance(entitiesV, distance);
-			BufferedWriter bw9 = new BufferedWriter(new FileWriter("RealDistance.txt"));				
-			for (int i = 0; i<realDistance.length; i++) {
-				for (int j = 0; j<realDistance.length; j++) {
-					bw9.write((int)Math.floor(realDistance[i][j])+"\t");
-				}
-				bw9.newLine();
-			}
-			bw9.close();
+			DataGeneration.printMatrix(realDistance, entitiesV.size(), "RealDistance.txt");
 		
 			//*********************************************************************************HLEDANI_NEJKRATSICH_CEST********************************************************
 			/*Dijsktra 
@@ -136,30 +122,14 @@ public class Main {
 			 
 			/** zavola metodu, ktera najde nejkratsi cesty, tj. hodnoty */
 			floydWarshall= Graph.floydWarshallM(realDistance, true); 	
-			/*for (int i = 0; i < entitiesV.size()-1; i++) {
-				floydWarshall = Graph.floydWarshallM(floydWarshall, false);
-			}*/
 			/** vytvori textovy soubor, do ktereho se vypisi nejkratsi cesty, tj. hodnoty */
-			BufferedWriter bw5 = new BufferedWriter(new FileWriter("FWShortestPath.txt"));			
-			for (int i = 0; i < floydWarshall.length; i++) {										
-					for (int j = 0; j < floydWarshall.length; j++) {
-						bw5.write(floydWarshall[i][j]+"\t");					
-					}			
-				bw5.newLine();
-			}
-			bw5.close();
+			DataGeneration.printMatrix(floydWarshall, entitiesV.size(), "FWShortestPath.txt");
 			
 			/** zavola metodu, ktera najde nejkratsi cesty, tj. predchudce */
 			floydWarshallP = Graph.getPathMatrix(); 										
 			/** vytvori textovy soubor, do ktereho se vypisi nejkratsi cesty, tj. predchudci */
-			BufferedWriter bw4 = new BufferedWriter(new FileWriter("FWPath.txt"));					
-			for (int i = 0; i < floydWarshallP.length; i++) {												
-				for (int j = 0; j < floydWarshallP.length; j++) {
-					bw4.write(floydWarshallP[i][j]+"\t");					
-				}			
-				bw4.newLine();
-			}
-			bw4.close();
+			DataGeneration.printMatrix(floydWarshallP, entitiesV.size(), "FWPath.txt");
+			
 			
 			// ulozeni pole predchudcu kazdeho vrcholu
 			for (int i = 0; i < floydWarshallP.length; i++) {
@@ -182,16 +152,17 @@ public class Main {
 		        //System.out.println("Uz jsem dodelal prvek i: "+i);
 			}
 		
+		    /*
 		    System.out.println("Cesta z vrcholu 5 do vrcholu 7: ");
 		    for (int i = 0; i < paths[5][7].size(); i++) {
 		    	System.out.print(paths[5][7].get(i)+" ");
-			}
+			}*/
 			
 		    //********************************************************************************VYKRESLENI_DAT*****************************************************************************************/
 			/** zavola metodu, ktera nazorne vykresli galaxii, tj. plnety,  centraly a cesty mezi nimi */
 		    new DrawMapG(factoriesCount, planetsCount, neighbourCountF, neighbourCountP, entitiesV, paths);
 			new DrawMap(factoriesCount, planetsCount, neighbourCountF, neighbourCountP, entitiesV, paths);
-		
+
 		//*******************************************************************************************************************************************************************************************/	
 	    //***********************************************************************************NACITANI_ZE_SOUBORU*************************************************************************************/
 		//*******************************************************************************************************************************************************************************************/	

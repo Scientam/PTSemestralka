@@ -1,3 +1,5 @@
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -159,7 +161,7 @@ public class DataGeneration {
 						realDistance[i][j] = distance[i][j];
 						break;
 					}else{
-						realDistance[i][j] = 1000;				// Integer.MAX_VALUE/2-100000
+						realDistance[i][j] = 10000;				// Integer.MAX_VALUE/2-100000
 					}
 				 }
 			}
@@ -167,6 +169,21 @@ public class DataGeneration {
 		}
 		 return realDistance;
 	 }
+	 
+	 public static void printMatrix(int[][] matrix, int size, String name) {
+		 BufferedWriter bw;
+		try {
+			bw = new BufferedWriter(new FileWriter(name));
+			for (int i = 0; i<size; i++) {
+				for (int j = 0; j<size; j++) {
+					bw.write((int)Math.floor(matrix[i][j])+"\t");
+				}
+				bw.newLine();
+			}
+			bw.close();
+		} catch (IOException e) {e.printStackTrace();}			
+	 }
+
 	 
 }
 

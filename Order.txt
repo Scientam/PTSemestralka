@@ -1,39 +1,34 @@
 ---------------------------------------------------------------------------------------------
 Objednavky pro 1. mesic: 
 ---------------------------------------------------------------------------------------------
-Planeta s id: 5 objednava takovyto pocet leku: 899794
-Planeta s id: 6 objednava takovyto pocet leku: 1492788
-Planeta s id: 7 objednava takovyto pocet leku: 1992726
-Planeta s id: 8 objednava takovyto pocet leku: 2105551
-Planeta s id: 9 objednava takovyto pocet leku: 2949708
-Planeta s id: 10 objednava takovyto pocet leku: 1883357
-Planeta s id: 11 objednava takovyto pocet leku: 781946
-Planeta s id: 12 objednava takovyto pocet leku: 2365802
-Planeta s id: 13 objednava takovyto pocet leku: 3252872
-Planeta s id: 14 objednava takovyto pocet leku: 2956315
-Planeta s id: 15 objednava takovyto pocet leku: 709158
-Planeta s id: 16 objednava takovyto pocet leku: 846701
-Planeta s id: 17 objednava takovyto pocet leku: 1585062
-Planeta s id: 18 objednava takovyto pocet leku: 2179426
-Planeta s id: 19 objednava takovyto pocet leku: 1618668
-Planeta s id: 20 objednava takovyto pocet leku: 2934989
-Planeta s id: 21 objednava takovyto pocet leku: 1297038
-Planeta s id: 22 objednava takovyto pocet leku: 760182
-Planeta s id: 23 objednava takovyto pocet leku: 1225010
-Planeta s id: 24 objednava takovyto pocet leku: 1427364
-Planeta s id: 25 objednava takovyto pocet leku: 2867711
-Planeta s id: 26 objednava takovyto pocet leku: 888939
-Planeta s id: 27 objednava takovyto pocet leku: 2631244
-Planeta s id: 28 objednava takovyto pocet leku: 594360
-Planeta s id: 29 objednava takovyto pocet leku: 497177
-Planeta s id: 30 objednava takovyto pocet leku: 1011450
-Planeta s id: 31 objednava takovyto pocet leku: 1402284
-Planeta s id: 32 objednava takovyto pocet leku: 1261092
-Planeta s id: 33 objednava takovyto pocet leku: 1680939
-Planeta s id: 34 objednava takovyto pocet leku: 2986938
+Planeta s id: 5 objednava takovyto pocet leku: 520005
+Planeta s id: 6 objednava takovyto pocet leku: 1277603
+Planeta s id: 7 objednava takovyto pocet leku: 3036236
+Planeta s id: 8 objednava takovyto pocet leku: 1676753
+Planeta s id: 9 objednava takovyto pocet leku: 794152
+Planeta s id: 10 objednava takovyto pocet leku: 1545198
+Planeta s id: 11 objednava takovyto pocet leku: 1163998
+Planeta s id: 12 objednava takovyto pocet leku: 1731504
+Planeta s id: 13 objednava takovyto pocet leku: 2492073
+Planeta s id: 14 objednava takovyto pocet leku: 2007164
+Planeta s id: 15 objednava takovyto pocet leku: 1305864
+Planeta s id: 16 objednava takovyto pocet leku: 677181
+Planeta s id: 17 objednava takovyto pocet leku: 1312953
+Planeta s id: 18 objednava takovyto pocet leku: 1720213
+Planeta s id: 19 objednava takovyto pocet leku: 891453
+Planeta s id: 20 objednava takovyto pocet leku: 109865
+Planeta s id: 21 objednava takovyto pocet leku: 1511315
+Planeta s id: 22 objednava takovyto pocet leku: 1521393
+Planeta s id: 23 objednava takovyto pocet leku: 1105539
+Planeta s id: 24 objednava takovyto pocet leku: 3134546
+Planeta s id: 25 objednava takovyto pocet leku: 1883820
+Planeta s id: 26 objednava takovyto pocet leku: 1565784
+Planeta s id: 27 objednava takovyto pocet leku: 2482554
+Planeta s id: 28 objednava takovyto pocet leku: 1488803
+Planeta s id: 29 objednava takovyto pocet leku: 578491
 ---------------------------------------------------------------------------------------------
 Lodi s id: 0 zbyva doletet: 0.0
-Lod s id: 0 vylozila 899794 jednotek nakladu.
+Lod s id: 0 vylozila 520005 jednotek nakladu.
 
 Lodi s id: 1 zbyva doletet: 211.0
 
@@ -43,55 +38,46 @@ Lodi s id: 3 zbyva doletet: 355.0
 
 Lodi s id: 4 zbyva doletet: 210.0
 
-Lodi s id: 5 zbyva doletet: 181.0
+Lodi s id: 5 zbyva doletet: 14.0
 
-Lodi s id: 6 zbyva doletet: 31.0
+Lodi s id: 6 zbyva doletet: 553.0
 
-Lodi s id: 7 zbyva doletet: 328.0
+Lodi s id: 7 zbyva doletet: 403.0
 
-Lodi s id: 8 zbyva doletet: 70.0
+Lodi s id: 8 zbyva doletet: 104.0
 
-Lodi s id: 9 zbyva doletet: 553.0
+Lodi s id: 9 zbyva doletet: 123.0
 
-Lodi s id: 10 zbyva doletet: 239.0
+Lodi s id: 10 zbyva doletet: 252.0
 
-Lodi s id: 11 zbyva doletet: 382.0
+Lodi s id: 11 zbyva doletet: 111.0
 
-Lodi s id: 12 zbyva doletet: 326.0
+Lodi s id: 12 zbyva doletet: 60.0
 
-Lodi s id: 13 zbyva doletet: 408.0
+Lodi s id: 13 zbyva doletet: 608.0
 
-Lodi s id: 14 zbyva doletet: 311.0
+Lodi s id: 14 zbyva doletet: 505.0
 
-Lodi s id: 15 zbyva doletet: 544.0
+Lodi s id: 15 zbyva doletet: 340.0
 
-Lodi s id: 16 zbyva doletet: 470.0
+Lodi s id: 16 zbyva doletet: 440.0
 
-Lodi s id: 17 zbyva doletet: 418.0
+Lodi s id: 17 zbyva doletet: 464.0
 
-Lodi s id: 18 zbyva doletet: 551.0
+Lodi s id: 18 zbyva doletet: 335.0
 
-Lodi s id: 19 zbyva doletet: 342.0
+Lodi s id: 19 zbyva doletet: 188.0
 
-Lodi s id: 20 zbyva doletet: 244.0
+Lodi s id: 20 zbyva doletet: 175.0
 
-Lodi s id: 21 zbyva doletet: 234.0
+Lodi s id: 21 zbyva doletet: 0.0
+Lod s id: 21 vylozila 1565784 jednotek nakladu.
 
-Lodi s id: 22 zbyva doletet: 173.0
+Lodi s id: 22 zbyva doletet: 416.0
 
-Lodi s id: 23 zbyva doletet: 503.0
+Lodi s id: 23 zbyva doletet: 149.0
 
-Lodi s id: 24 zbyva doletet: 442.0
-
-Lodi s id: 25 zbyva doletet: 349.0
-
-Lodi s id: 26 zbyva doletet: 643.0
-
-Lodi s id: 27 zbyva doletet: 290.0
-
-Lodi s id: 28 zbyva doletet: 347.0
-
-Lodi s id: 29 zbyva doletet: 251.0
+Lodi s id: 24 zbyva doletet: 96.0
 
 ---------------------------------------------------------------------------------------------
 Lodi s id: 0 zbyva doletet: 0.0
@@ -105,55 +91,47 @@ Lodi s id: 3 zbyva doletet: 330.0
 
 Lodi s id: 4 zbyva doletet: 185.0
 
-Lodi s id: 5 zbyva doletet: 156.0
+Lodi s id: 5 zbyva doletet: 0.0
+Lod s id: 5 vylozila 1545198 jednotek nakladu.
 
-Lodi s id: 6 zbyva doletet: 6.0
+Lodi s id: 6 zbyva doletet: 528.0
 
-Lodi s id: 7 zbyva doletet: 303.0
+Lodi s id: 7 zbyva doletet: 378.0
 
-Lodi s id: 8 zbyva doletet: 45.0
+Lodi s id: 8 zbyva doletet: 79.0
 
-Lodi s id: 9 zbyva doletet: 528.0
+Lodi s id: 9 zbyva doletet: 98.0
 
-Lodi s id: 10 zbyva doletet: 214.0
+Lodi s id: 10 zbyva doletet: 227.0
 
-Lodi s id: 11 zbyva doletet: 357.0
+Lodi s id: 11 zbyva doletet: 86.0
 
-Lodi s id: 12 zbyva doletet: 301.0
+Lodi s id: 12 zbyva doletet: 35.0
 
-Lodi s id: 13 zbyva doletet: 383.0
+Lodi s id: 13 zbyva doletet: 583.0
 
-Lodi s id: 14 zbyva doletet: 286.0
+Lodi s id: 14 zbyva doletet: 480.0
 
-Lodi s id: 15 zbyva doletet: 519.0
+Lodi s id: 15 zbyva doletet: 315.0
 
-Lodi s id: 16 zbyva doletet: 445.0
+Lodi s id: 16 zbyva doletet: 415.0
 
-Lodi s id: 17 zbyva doletet: 393.0
+Lodi s id: 17 zbyva doletet: 439.0
 
-Lodi s id: 18 zbyva doletet: 526.0
+Lodi s id: 18 zbyva doletet: 310.0
 
-Lodi s id: 19 zbyva doletet: 317.0
+Lodi s id: 19 zbyva doletet: 163.0
 
-Lodi s id: 20 zbyva doletet: 219.0
+Lodi s id: 20 zbyva doletet: 150.0
 
-Lodi s id: 21 zbyva doletet: 209.0
+Lodi s id: 21 zbyva doletet: 0.0
+Lod s id: 21 vylozila 0 jednotek nakladu.
 
-Lodi s id: 22 zbyva doletet: 148.0
+Lodi s id: 22 zbyva doletet: 391.0
 
-Lodi s id: 23 zbyva doletet: 478.0
+Lodi s id: 23 zbyva doletet: 124.0
 
-Lodi s id: 24 zbyva doletet: 417.0
-
-Lodi s id: 25 zbyva doletet: 324.0
-
-Lodi s id: 26 zbyva doletet: 618.0
-
-Lodi s id: 27 zbyva doletet: 265.0
-
-Lodi s id: 28 zbyva doletet: 322.0
-
-Lodi s id: 29 zbyva doletet: 226.0
+Lodi s id: 24 zbyva doletet: 71.0
 
 ---------------------------------------------------------------------------------------------
 Lodi s id: 0 zbyva doletet: 0.0
@@ -167,56 +145,47 @@ Lodi s id: 3 zbyva doletet: 305.0
 
 Lodi s id: 4 zbyva doletet: 160.0
 
-Lodi s id: 5 zbyva doletet: 131.0
+Lodi s id: 5 zbyva doletet: 0.0
+Lod s id: 5 vylozila 0 jednotek nakladu.
 
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 781946 jednotek nakladu.
+Lodi s id: 6 zbyva doletet: 503.0
 
-Lodi s id: 7 zbyva doletet: 278.0
+Lodi s id: 7 zbyva doletet: 353.0
 
-Lodi s id: 8 zbyva doletet: 20.0
+Lodi s id: 8 zbyva doletet: 54.0
 
-Lodi s id: 9 zbyva doletet: 503.0
+Lodi s id: 9 zbyva doletet: 73.0
 
-Lodi s id: 10 zbyva doletet: 189.0
+Lodi s id: 10 zbyva doletet: 202.0
 
-Lodi s id: 11 zbyva doletet: 332.0
+Lodi s id: 11 zbyva doletet: 61.0
 
-Lodi s id: 12 zbyva doletet: 276.0
+Lodi s id: 12 zbyva doletet: 10.0
 
-Lodi s id: 13 zbyva doletet: 358.0
+Lodi s id: 13 zbyva doletet: 558.0
 
-Lodi s id: 14 zbyva doletet: 261.0
+Lodi s id: 14 zbyva doletet: 455.0
 
-Lodi s id: 15 zbyva doletet: 494.0
+Lodi s id: 15 zbyva doletet: 290.0
 
-Lodi s id: 16 zbyva doletet: 420.0
+Lodi s id: 16 zbyva doletet: 390.0
 
-Lodi s id: 17 zbyva doletet: 368.0
+Lodi s id: 17 zbyva doletet: 414.0
 
-Lodi s id: 18 zbyva doletet: 501.0
+Lodi s id: 18 zbyva doletet: 285.0
 
-Lodi s id: 19 zbyva doletet: 292.0
+Lodi s id: 19 zbyva doletet: 138.0
 
-Lodi s id: 20 zbyva doletet: 194.0
+Lodi s id: 20 zbyva doletet: 125.0
 
-Lodi s id: 21 zbyva doletet: 184.0
+Lodi s id: 21 zbyva doletet: 0.0
+Lod s id: 21 vylozila 0 jednotek nakladu.
 
-Lodi s id: 22 zbyva doletet: 123.0
+Lodi s id: 22 zbyva doletet: 366.0
 
-Lodi s id: 23 zbyva doletet: 453.0
+Lodi s id: 23 zbyva doletet: 99.0
 
-Lodi s id: 24 zbyva doletet: 392.0
-
-Lodi s id: 25 zbyva doletet: 299.0
-
-Lodi s id: 26 zbyva doletet: 593.0
-
-Lodi s id: 27 zbyva doletet: 240.0
-
-Lodi s id: 28 zbyva doletet: 297.0
-
-Lodi s id: 29 zbyva doletet: 201.0
+Lodi s id: 24 zbyva doletet: 46.0
 
 ---------------------------------------------------------------------------------------------
 Lodi s id: 0 zbyva doletet: 0.0
@@ -230,57 +199,48 @@ Lodi s id: 3 zbyva doletet: 280.0
 
 Lodi s id: 4 zbyva doletet: 135.0
 
-Lodi s id: 5 zbyva doletet: 106.0
+Lodi s id: 5 zbyva doletet: 0.0
+Lod s id: 5 vylozila 0 jednotek nakladu.
 
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
+Lodi s id: 6 zbyva doletet: 478.0
 
-Lodi s id: 7 zbyva doletet: 253.0
+Lodi s id: 7 zbyva doletet: 328.0
 
-Lodi s id: 8 zbyva doletet: 0.0
-Lod s id: 8 vylozila 3252872 jednotek nakladu.
+Lodi s id: 8 zbyva doletet: 29.0
 
-Lodi s id: 9 zbyva doletet: 478.0
+Lodi s id: 9 zbyva doletet: 48.0
 
-Lodi s id: 10 zbyva doletet: 164.0
+Lodi s id: 10 zbyva doletet: 177.0
 
-Lodi s id: 11 zbyva doletet: 307.0
+Lodi s id: 11 zbyva doletet: 36.0
 
-Lodi s id: 12 zbyva doletet: 251.0
+Lodi s id: 12 zbyva doletet: 0.0
+Lod s id: 12 vylozila 1312953 jednotek nakladu.
 
-Lodi s id: 13 zbyva doletet: 333.0
+Lodi s id: 13 zbyva doletet: 533.0
 
-Lodi s id: 14 zbyva doletet: 236.0
+Lodi s id: 14 zbyva doletet: 430.0
 
-Lodi s id: 15 zbyva doletet: 469.0
+Lodi s id: 15 zbyva doletet: 265.0
 
-Lodi s id: 16 zbyva doletet: 395.0
+Lodi s id: 16 zbyva doletet: 365.0
 
-Lodi s id: 17 zbyva doletet: 343.0
+Lodi s id: 17 zbyva doletet: 389.0
 
-Lodi s id: 18 zbyva doletet: 476.0
+Lodi s id: 18 zbyva doletet: 260.0
 
-Lodi s id: 19 zbyva doletet: 267.0
+Lodi s id: 19 zbyva doletet: 113.0
 
-Lodi s id: 20 zbyva doletet: 169.0
+Lodi s id: 20 zbyva doletet: 100.0
 
-Lodi s id: 21 zbyva doletet: 159.0
+Lodi s id: 21 zbyva doletet: 0.0
+Lod s id: 21 vylozila 0 jednotek nakladu.
 
-Lodi s id: 22 zbyva doletet: 98.0
+Lodi s id: 22 zbyva doletet: 341.0
 
-Lodi s id: 23 zbyva doletet: 428.0
+Lodi s id: 23 zbyva doletet: 74.0
 
-Lodi s id: 24 zbyva doletet: 367.0
-
-Lodi s id: 25 zbyva doletet: 274.0
-
-Lodi s id: 26 zbyva doletet: 568.0
-
-Lodi s id: 27 zbyva doletet: 215.0
-
-Lodi s id: 28 zbyva doletet: 272.0
-
-Lodi s id: 29 zbyva doletet: 176.0
+Lodi s id: 24 zbyva doletet: 21.0
 
 ---------------------------------------------------------------------------------------------
 Lodi s id: 0 zbyva doletet: 0.0
@@ -294,57 +254,49 @@ Lodi s id: 3 zbyva doletet: 255.0
 
 Lodi s id: 4 zbyva doletet: 110.0
 
-Lodi s id: 5 zbyva doletet: 81.0
+Lodi s id: 5 zbyva doletet: 0.0
+Lod s id: 5 vylozila 0 jednotek nakladu.
 
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
+Lodi s id: 6 zbyva doletet: 453.0
 
-Lodi s id: 7 zbyva doletet: 228.0
+Lodi s id: 7 zbyva doletet: 303.0
 
-Lodi s id: 8 zbyva doletet: 0.0
-Lod s id: 8 vylozila 0 jednotek nakladu.
+Lodi s id: 8 zbyva doletet: 4.0
 
-Lodi s id: 9 zbyva doletet: 453.0
+Lodi s id: 9 zbyva doletet: 23.0
 
-Lodi s id: 10 zbyva doletet: 139.0
+Lodi s id: 10 zbyva doletet: 152.0
 
-Lodi s id: 11 zbyva doletet: 282.0
+Lodi s id: 11 zbyva doletet: 11.0
 
-Lodi s id: 12 zbyva doletet: 226.0
+Lodi s id: 12 zbyva doletet: 0.0
+Lod s id: 12 vylozila 0 jednotek nakladu.
 
-Lodi s id: 13 zbyva doletet: 308.0
+Lodi s id: 13 zbyva doletet: 508.0
 
-Lodi s id: 14 zbyva doletet: 211.0
+Lodi s id: 14 zbyva doletet: 405.0
 
-Lodi s id: 15 zbyva doletet: 444.0
+Lodi s id: 15 zbyva doletet: 240.0
 
-Lodi s id: 16 zbyva doletet: 370.0
+Lodi s id: 16 zbyva doletet: 340.0
 
-Lodi s id: 17 zbyva doletet: 318.0
+Lodi s id: 17 zbyva doletet: 364.0
 
-Lodi s id: 18 zbyva doletet: 451.0
+Lodi s id: 18 zbyva doletet: 235.0
 
-Lodi s id: 19 zbyva doletet: 242.0
+Lodi s id: 19 zbyva doletet: 88.0
 
-Lodi s id: 20 zbyva doletet: 144.0
+Lodi s id: 20 zbyva doletet: 75.0
 
-Lodi s id: 21 zbyva doletet: 134.0
+Lodi s id: 21 zbyva doletet: 0.0
+Lod s id: 21 vylozila 0 jednotek nakladu.
 
-Lodi s id: 22 zbyva doletet: 73.0
+Lodi s id: 22 zbyva doletet: 316.0
 
-Lodi s id: 23 zbyva doletet: 403.0
+Lodi s id: 23 zbyva doletet: 49.0
 
-Lodi s id: 24 zbyva doletet: 342.0
-
-Lodi s id: 25 zbyva doletet: 249.0
-
-Lodi s id: 26 zbyva doletet: 543.0
-
-Lodi s id: 27 zbyva doletet: 190.0
-
-Lodi s id: 28 zbyva doletet: 247.0
-
-Lodi s id: 29 zbyva doletet: 151.0
+Lodi s id: 24 zbyva doletet: 0.0
+Lod s id: 24 vylozila 578491 jednotek nakladu.
 
 ---------------------------------------------------------------------------------------------
 Lodi s id: 0 zbyva doletet: 0.0
@@ -358,57 +310,52 @@ Lodi s id: 3 zbyva doletet: 230.0
 
 Lodi s id: 4 zbyva doletet: 85.0
 
-Lodi s id: 5 zbyva doletet: 56.0
+Lodi s id: 5 zbyva doletet: 0.0
+Lod s id: 5 vylozila 0 jednotek nakladu.
 
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
+Lodi s id: 6 zbyva doletet: 428.0
 
-Lodi s id: 7 zbyva doletet: 203.0
+Lodi s id: 7 zbyva doletet: 278.0
 
 Lodi s id: 8 zbyva doletet: 0.0
-Lod s id: 8 vylozila 0 jednotek nakladu.
+Lod s id: 8 vylozila 2492073 jednotek nakladu.
 
-Lodi s id: 9 zbyva doletet: 428.0
+Lodi s id: 9 zbyva doletet: 0.0
+Lod s id: 9 vylozila 2007164 jednotek nakladu.
 
-Lodi s id: 10 zbyva doletet: 114.0
+Lodi s id: 10 zbyva doletet: 127.0
 
-Lodi s id: 11 zbyva doletet: 257.0
+Lodi s id: 11 zbyva doletet: 0.0
+Lod s id: 11 vylozila 677181 jednotek nakladu.
 
-Lodi s id: 12 zbyva doletet: 201.0
+Lodi s id: 12 zbyva doletet: 0.0
+Lod s id: 12 vylozila 0 jednotek nakladu.
 
-Lodi s id: 13 zbyva doletet: 283.0
+Lodi s id: 13 zbyva doletet: 483.0
 
-Lodi s id: 14 zbyva doletet: 186.0
+Lodi s id: 14 zbyva doletet: 380.0
 
-Lodi s id: 15 zbyva doletet: 419.0
+Lodi s id: 15 zbyva doletet: 215.0
 
-Lodi s id: 16 zbyva doletet: 345.0
+Lodi s id: 16 zbyva doletet: 315.0
 
-Lodi s id: 17 zbyva doletet: 293.0
+Lodi s id: 17 zbyva doletet: 339.0
 
-Lodi s id: 18 zbyva doletet: 426.0
+Lodi s id: 18 zbyva doletet: 210.0
 
-Lodi s id: 19 zbyva doletet: 217.0
+Lodi s id: 19 zbyva doletet: 63.0
 
-Lodi s id: 20 zbyva doletet: 119.0
+Lodi s id: 20 zbyva doletet: 50.0
 
-Lodi s id: 21 zbyva doletet: 109.0
+Lodi s id: 21 zbyva doletet: 0.0
+Lod s id: 21 vylozila 0 jednotek nakladu.
 
-Lodi s id: 22 zbyva doletet: 48.0
+Lodi s id: 22 zbyva doletet: 291.0
 
-Lodi s id: 23 zbyva doletet: 378.0
+Lodi s id: 23 zbyva doletet: 24.0
 
-Lodi s id: 24 zbyva doletet: 317.0
-
-Lodi s id: 25 zbyva doletet: 224.0
-
-Lodi s id: 26 zbyva doletet: 518.0
-
-Lodi s id: 27 zbyva doletet: 165.0
-
-Lodi s id: 28 zbyva doletet: 222.0
-
-Lodi s id: 29 zbyva doletet: 126.0
+Lodi s id: 24 zbyva doletet: 0.0
+Lod s id: 24 vylozila 0 jednotek nakladu.
 
 ---------------------------------------------------------------------------------------------
 Lodi s id: 0 zbyva doletet: 0.0
@@ -422,57 +369,53 @@ Lodi s id: 3 zbyva doletet: 205.0
 
 Lodi s id: 4 zbyva doletet: 60.0
 
-Lodi s id: 5 zbyva doletet: 31.0
+Lodi s id: 5 zbyva doletet: 0.0
+Lod s id: 5 vylozila 0 jednotek nakladu.
 
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
+Lodi s id: 6 zbyva doletet: 403.0
 
-Lodi s id: 7 zbyva doletet: 178.0
+Lodi s id: 7 zbyva doletet: 253.0
 
 Lodi s id: 8 zbyva doletet: 0.0
 Lod s id: 8 vylozila 0 jednotek nakladu.
 
-Lodi s id: 9 zbyva doletet: 403.0
+Lodi s id: 9 zbyva doletet: 0.0
+Lod s id: 9 vylozila 0 jednotek nakladu.
 
-Lodi s id: 10 zbyva doletet: 89.0
+Lodi s id: 10 zbyva doletet: 102.0
 
-Lodi s id: 11 zbyva doletet: 232.0
+Lodi s id: 11 zbyva doletet: 0.0
+Lod s id: 11 vylozila 0 jednotek nakladu.
 
-Lodi s id: 12 zbyva doletet: 176.0
+Lodi s id: 12 zbyva doletet: 0.0
+Lod s id: 12 vylozila 0 jednotek nakladu.
 
-Lodi s id: 13 zbyva doletet: 258.0
+Lodi s id: 13 zbyva doletet: 458.0
 
-Lodi s id: 14 zbyva doletet: 161.0
+Lodi s id: 14 zbyva doletet: 355.0
 
-Lodi s id: 15 zbyva doletet: 394.0
+Lodi s id: 15 zbyva doletet: 190.0
 
-Lodi s id: 16 zbyva doletet: 320.0
+Lodi s id: 16 zbyva doletet: 290.0
 
-Lodi s id: 17 zbyva doletet: 268.0
+Lodi s id: 17 zbyva doletet: 314.0
 
-Lodi s id: 18 zbyva doletet: 401.0
+Lodi s id: 18 zbyva doletet: 185.0
 
-Lodi s id: 19 zbyva doletet: 192.0
+Lodi s id: 19 zbyva doletet: 38.0
 
-Lodi s id: 20 zbyva doletet: 94.0
+Lodi s id: 20 zbyva doletet: 25.0
 
-Lodi s id: 21 zbyva doletet: 84.0
+Lodi s id: 21 zbyva doletet: 0.0
+Lod s id: 21 vylozila 0 jednotek nakladu.
 
-Lodi s id: 22 zbyva doletet: 23.0
+Lodi s id: 22 zbyva doletet: 266.0
 
-Lodi s id: 23 zbyva doletet: 353.0
+Lodi s id: 23 zbyva doletet: 0.0
+Lod s id: 23 vylozila 1488803 jednotek nakladu.
 
-Lodi s id: 24 zbyva doletet: 292.0
-
-Lodi s id: 25 zbyva doletet: 199.0
-
-Lodi s id: 26 zbyva doletet: 493.0
-
-Lodi s id: 27 zbyva doletet: 140.0
-
-Lodi s id: 28 zbyva doletet: 197.0
-
-Lodi s id: 29 zbyva doletet: 101.0
+Lodi s id: 24 zbyva doletet: 0.0
+Lod s id: 24 vylozila 0 jednotek nakladu.
 
 ---------------------------------------------------------------------------------------------
 Lodi s id: 0 zbyva doletet: 0.0
@@ -486,58 +429,54 @@ Lodi s id: 3 zbyva doletet: 180.0
 
 Lodi s id: 4 zbyva doletet: 35.0
 
-Lodi s id: 5 zbyva doletet: 6.0
+Lodi s id: 5 zbyva doletet: 0.0
+Lod s id: 5 vylozila 0 jednotek nakladu.
 
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
+Lodi s id: 6 zbyva doletet: 378.0
 
-Lodi s id: 7 zbyva doletet: 153.0
+Lodi s id: 7 zbyva doletet: 228.0
 
 Lodi s id: 8 zbyva doletet: 0.0
 Lod s id: 8 vylozila 0 jednotek nakladu.
 
-Lodi s id: 9 zbyva doletet: 378.0
+Lodi s id: 9 zbyva doletet: 0.0
+Lod s id: 9 vylozila 0 jednotek nakladu.
 
-Lodi s id: 10 zbyva doletet: 64.0
+Lodi s id: 10 zbyva doletet: 77.0
 
-Lodi s id: 11 zbyva doletet: 207.0
+Lodi s id: 11 zbyva doletet: 0.0
+Lod s id: 11 vylozila 0 jednotek nakladu.
 
-Lodi s id: 12 zbyva doletet: 151.0
+Lodi s id: 12 zbyva doletet: 0.0
+Lod s id: 12 vylozila 0 jednotek nakladu.
 
-Lodi s id: 13 zbyva doletet: 233.0
+Lodi s id: 13 zbyva doletet: 433.0
 
-Lodi s id: 14 zbyva doletet: 136.0
+Lodi s id: 14 zbyva doletet: 330.0
 
-Lodi s id: 15 zbyva doletet: 369.0
+Lodi s id: 15 zbyva doletet: 165.0
 
-Lodi s id: 16 zbyva doletet: 295.0
+Lodi s id: 16 zbyva doletet: 265.0
 
-Lodi s id: 17 zbyva doletet: 243.0
+Lodi s id: 17 zbyva doletet: 289.0
 
-Lodi s id: 18 zbyva doletet: 376.0
+Lodi s id: 18 zbyva doletet: 160.0
 
-Lodi s id: 19 zbyva doletet: 167.0
+Lodi s id: 19 zbyva doletet: 13.0
 
-Lodi s id: 20 zbyva doletet: 69.0
+Lodi s id: 20 zbyva doletet: 0.0
+Lod s id: 20 vylozila 1883820 jednotek nakladu.
 
-Lodi s id: 21 zbyva doletet: 59.0
+Lodi s id: 21 zbyva doletet: 0.0
+Lod s id: 21 vylozila 0 jednotek nakladu.
 
-Lodi s id: 22 zbyva doletet: 0.0
-Lod s id: 22 vylozila 2631244 jednotek nakladu.
+Lodi s id: 22 zbyva doletet: 241.0
 
-Lodi s id: 23 zbyva doletet: 328.0
+Lodi s id: 23 zbyva doletet: 0.0
+Lod s id: 23 vylozila 0 jednotek nakladu.
 
-Lodi s id: 24 zbyva doletet: 267.0
-
-Lodi s id: 25 zbyva doletet: 174.0
-
-Lodi s id: 26 zbyva doletet: 468.0
-
-Lodi s id: 27 zbyva doletet: 115.0
-
-Lodi s id: 28 zbyva doletet: 172.0
-
-Lodi s id: 29 zbyva doletet: 76.0
+Lodi s id: 24 zbyva doletet: 0.0
+Lod s id: 24 vylozila 0 jednotek nakladu.
 
 ---------------------------------------------------------------------------------------------
 Lodi s id: 0 zbyva doletet: 0.0
@@ -552,126 +491,118 @@ Lodi s id: 3 zbyva doletet: 155.0
 Lodi s id: 4 zbyva doletet: 10.0
 
 Lodi s id: 5 zbyva doletet: 0.0
-Lod s id: 5 vylozila 1883357 jednotek nakladu.
+Lod s id: 5 vylozila 0 jednotek nakladu.
 
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
+Lodi s id: 6 zbyva doletet: 353.0
 
-Lodi s id: 7 zbyva doletet: 128.0
+Lodi s id: 7 zbyva doletet: 203.0
 
 Lodi s id: 8 zbyva doletet: 0.0
 Lod s id: 8 vylozila 0 jednotek nakladu.
 
-Lodi s id: 9 zbyva doletet: 353.0
+Lodi s id: 9 zbyva doletet: 0.0
+Lod s id: 9 vylozila 0 jednotek nakladu.
 
-Lodi s id: 10 zbyva doletet: 39.0
+Lodi s id: 10 zbyva doletet: 52.0
 
-Lodi s id: 11 zbyva doletet: 182.0
+Lodi s id: 11 zbyva doletet: 0.0
+Lod s id: 11 vylozila 0 jednotek nakladu.
 
-Lodi s id: 12 zbyva doletet: 126.0
+Lodi s id: 12 zbyva doletet: 0.0
+Lod s id: 12 vylozila 0 jednotek nakladu.
 
-Lodi s id: 13 zbyva doletet: 208.0
+Lodi s id: 13 zbyva doletet: 408.0
 
-Lodi s id: 14 zbyva doletet: 111.0
+Lodi s id: 14 zbyva doletet: 305.0
 
-Lodi s id: 15 zbyva doletet: 344.0
+Lodi s id: 15 zbyva doletet: 140.0
 
-Lodi s id: 16 zbyva doletet: 270.0
+Lodi s id: 16 zbyva doletet: 240.0
 
-Lodi s id: 17 zbyva doletet: 218.0
+Lodi s id: 17 zbyva doletet: 264.0
 
-Lodi s id: 18 zbyva doletet: 351.0
+Lodi s id: 18 zbyva doletet: 135.0
 
-Lodi s id: 19 zbyva doletet: 142.0
+Lodi s id: 19 zbyva doletet: 0.0
+Lod s id: 19 vylozila 3134546 jednotek nakladu.
 
-Lodi s id: 20 zbyva doletet: 44.0
+Lodi s id: 20 zbyva doletet: 0.0
+Lod s id: 20 vylozila 0 jednotek nakladu.
 
-Lodi s id: 21 zbyva doletet: 34.0
+Lodi s id: 21 zbyva doletet: 0.0
+Lod s id: 21 vylozila 0 jednotek nakladu.
 
-Lodi s id: 22 zbyva doletet: 0.0
-Lod s id: 22 vylozila 0 jednotek nakladu.
+Lodi s id: 22 zbyva doletet: 216.0
 
-Lodi s id: 23 zbyva doletet: 303.0
+Lodi s id: 23 zbyva doletet: 0.0
+Lod s id: 23 vylozila 0 jednotek nakladu.
 
-Lodi s id: 24 zbyva doletet: 242.0
-
-Lodi s id: 25 zbyva doletet: 149.0
-
-Lodi s id: 26 zbyva doletet: 443.0
-
-Lodi s id: 27 zbyva doletet: 90.0
-
-Lodi s id: 28 zbyva doletet: 147.0
-
-Lodi s id: 29 zbyva doletet: 51.0
+Lodi s id: 24 zbyva doletet: 0.0
+Lod s id: 24 vylozila 0 jednotek nakladu.
 
 ---------------------------------------------------------------------------------------------
 Lodi s id: 0 zbyva doletet: 0.0
 Lod s id: 0 vylozila 0 jednotek nakladu.
 
 Lodi s id: 1 zbyva doletet: 0.0
-Lod s id: 1 vylozila 1492788 jednotek nakladu.
+Lod s id: 1 vylozila 1277603 jednotek nakladu.
 
 Lodi s id: 2 zbyva doletet: 130.0
 
 Lodi s id: 3 zbyva doletet: 130.0
 
 Lodi s id: 4 zbyva doletet: 0.0
-Lod s id: 4 vylozila 2949708 jednotek nakladu.
+Lod s id: 4 vylozila 794152 jednotek nakladu.
 
 Lodi s id: 5 zbyva doletet: 0.0
 Lod s id: 5 vylozila 0 jednotek nakladu.
 
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
+Lodi s id: 6 zbyva doletet: 328.0
 
-Lodi s id: 7 zbyva doletet: 103.0
+Lodi s id: 7 zbyva doletet: 178.0
 
 Lodi s id: 8 zbyva doletet: 0.0
 Lod s id: 8 vylozila 0 jednotek nakladu.
 
-Lodi s id: 9 zbyva doletet: 328.0
+Lodi s id: 9 zbyva doletet: 0.0
+Lod s id: 9 vylozila 0 jednotek nakladu.
 
-Lodi s id: 10 zbyva doletet: 14.0
+Lodi s id: 10 zbyva doletet: 27.0
 
-Lodi s id: 11 zbyva doletet: 157.0
+Lodi s id: 11 zbyva doletet: 0.0
+Lod s id: 11 vylozila 0 jednotek nakladu.
 
-Lodi s id: 12 zbyva doletet: 101.0
+Lodi s id: 12 zbyva doletet: 0.0
+Lod s id: 12 vylozila 0 jednotek nakladu.
 
-Lodi s id: 13 zbyva doletet: 183.0
+Lodi s id: 13 zbyva doletet: 383.0
 
-Lodi s id: 14 zbyva doletet: 86.0
+Lodi s id: 14 zbyva doletet: 280.0
 
-Lodi s id: 15 zbyva doletet: 319.0
+Lodi s id: 15 zbyva doletet: 115.0
 
-Lodi s id: 16 zbyva doletet: 245.0
+Lodi s id: 16 zbyva doletet: 215.0
 
-Lodi s id: 17 zbyva doletet: 193.0
+Lodi s id: 17 zbyva doletet: 239.0
 
-Lodi s id: 18 zbyva doletet: 326.0
+Lodi s id: 18 zbyva doletet: 110.0
 
-Lodi s id: 19 zbyva doletet: 117.0
+Lodi s id: 19 zbyva doletet: 0.0
+Lod s id: 19 vylozila 0 jednotek nakladu.
 
-Lodi s id: 20 zbyva doletet: 19.0
+Lodi s id: 20 zbyva doletet: 0.0
+Lod s id: 20 vylozila 0 jednotek nakladu.
 
-Lodi s id: 21 zbyva doletet: 9.0
+Lodi s id: 21 zbyva doletet: 0.0
+Lod s id: 21 vylozila 0 jednotek nakladu.
 
-Lodi s id: 22 zbyva doletet: 0.0
-Lod s id: 22 vylozila 0 jednotek nakladu.
+Lodi s id: 22 zbyva doletet: 191.0
 
-Lodi s id: 23 zbyva doletet: 278.0
+Lodi s id: 23 zbyva doletet: 0.0
+Lod s id: 23 vylozila 0 jednotek nakladu.
 
-Lodi s id: 24 zbyva doletet: 217.0
-
-Lodi s id: 25 zbyva doletet: 124.0
-
-Lodi s id: 26 zbyva doletet: 418.0
-
-Lodi s id: 27 zbyva doletet: 65.0
-
-Lodi s id: 28 zbyva doletet: 122.0
-
-Lodi s id: 29 zbyva doletet: 26.0
+Lodi s id: 24 zbyva doletet: 0.0
+Lod s id: 24 vylozila 0 jednotek nakladu.
 
 ---------------------------------------------------------------------------------------------
 Lodi s id: 0 zbyva doletet: 0.0
@@ -690,59 +621,52 @@ Lod s id: 4 vylozila 0 jednotek nakladu.
 Lodi s id: 5 zbyva doletet: 0.0
 Lod s id: 5 vylozila 0 jednotek nakladu.
 
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
+Lodi s id: 6 zbyva doletet: 303.0
 
-Lodi s id: 7 zbyva doletet: 78.0
+Lodi s id: 7 zbyva doletet: 153.0
 
 Lodi s id: 8 zbyva doletet: 0.0
 Lod s id: 8 vylozila 0 jednotek nakladu.
 
-Lodi s id: 9 zbyva doletet: 303.0
+Lodi s id: 9 zbyva doletet: 0.0
+Lod s id: 9 vylozila 0 jednotek nakladu.
 
-Lodi s id: 10 zbyva doletet: 0.0
-Lod s id: 10 vylozila 709158 jednotek nakladu.
+Lodi s id: 10 zbyva doletet: 2.0
 
-Lodi s id: 11 zbyva doletet: 132.0
+Lodi s id: 11 zbyva doletet: 0.0
+Lod s id: 11 vylozila 0 jednotek nakladu.
 
-Lodi s id: 12 zbyva doletet: 76.0
+Lodi s id: 12 zbyva doletet: 0.0
+Lod s id: 12 vylozila 0 jednotek nakladu.
 
-Lodi s id: 13 zbyva doletet: 158.0
+Lodi s id: 13 zbyva doletet: 358.0
 
-Lodi s id: 14 zbyva doletet: 61.0
+Lodi s id: 14 zbyva doletet: 255.0
 
-Lodi s id: 15 zbyva doletet: 294.0
+Lodi s id: 15 zbyva doletet: 90.0
 
-Lodi s id: 16 zbyva doletet: 220.0
+Lodi s id: 16 zbyva doletet: 190.0
 
-Lodi s id: 17 zbyva doletet: 168.0
+Lodi s id: 17 zbyva doletet: 214.0
 
-Lodi s id: 18 zbyva doletet: 301.0
+Lodi s id: 18 zbyva doletet: 85.0
 
-Lodi s id: 19 zbyva doletet: 92.0
+Lodi s id: 19 zbyva doletet: 0.0
+Lod s id: 19 vylozila 0 jednotek nakladu.
 
 Lodi s id: 20 zbyva doletet: 0.0
-Lod s id: 20 vylozila 2867711 jednotek nakladu.
+Lod s id: 20 vylozila 0 jednotek nakladu.
 
 Lodi s id: 21 zbyva doletet: 0.0
-Lod s id: 21 vylozila 888939 jednotek nakladu.
+Lod s id: 21 vylozila 0 jednotek nakladu.
 
-Lodi s id: 22 zbyva doletet: 0.0
-Lod s id: 22 vylozila 0 jednotek nakladu.
+Lodi s id: 22 zbyva doletet: 166.0
 
-Lodi s id: 23 zbyva doletet: 253.0
+Lodi s id: 23 zbyva doletet: 0.0
+Lod s id: 23 vylozila 0 jednotek nakladu.
 
-Lodi s id: 24 zbyva doletet: 192.0
-
-Lodi s id: 25 zbyva doletet: 99.0
-
-Lodi s id: 26 zbyva doletet: 393.0
-
-Lodi s id: 27 zbyva doletet: 40.0
-
-Lodi s id: 28 zbyva doletet: 97.0
-
-Lodi s id: 29 zbyva doletet: 1.0
+Lodi s id: 24 zbyva doletet: 0.0
+Lod s id: 24 vylozila 0 jednotek nakladu.
 
 ---------------------------------------------------------------------------------------------
 Lodi s id: 0 zbyva doletet: 0.0
@@ -761,36 +685,39 @@ Lod s id: 4 vylozila 0 jednotek nakladu.
 Lodi s id: 5 zbyva doletet: 0.0
 Lod s id: 5 vylozila 0 jednotek nakladu.
 
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
+Lodi s id: 6 zbyva doletet: 278.0
 
-Lodi s id: 7 zbyva doletet: 53.0
+Lodi s id: 7 zbyva doletet: 128.0
 
 Lodi s id: 8 zbyva doletet: 0.0
 Lod s id: 8 vylozila 0 jednotek nakladu.
 
-Lodi s id: 9 zbyva doletet: 278.0
+Lodi s id: 9 zbyva doletet: 0.0
+Lod s id: 9 vylozila 0 jednotek nakladu.
 
 Lodi s id: 10 zbyva doletet: 0.0
-Lod s id: 10 vylozila 0 jednotek nakladu.
+Lod s id: 10 vylozila 1305864 jednotek nakladu.
 
-Lodi s id: 11 zbyva doletet: 107.0
+Lodi s id: 11 zbyva doletet: 0.0
+Lod s id: 11 vylozila 0 jednotek nakladu.
 
-Lodi s id: 12 zbyva doletet: 51.0
+Lodi s id: 12 zbyva doletet: 0.0
+Lod s id: 12 vylozila 0 jednotek nakladu.
 
-Lodi s id: 13 zbyva doletet: 133.0
+Lodi s id: 13 zbyva doletet: 333.0
 
-Lodi s id: 14 zbyva doletet: 36.0
+Lodi s id: 14 zbyva doletet: 230.0
 
-Lodi s id: 15 zbyva doletet: 269.0
+Lodi s id: 15 zbyva doletet: 65.0
 
-Lodi s id: 16 zbyva doletet: 195.0
+Lodi s id: 16 zbyva doletet: 165.0
 
-Lodi s id: 17 zbyva doletet: 143.0
+Lodi s id: 17 zbyva doletet: 189.0
 
-Lodi s id: 18 zbyva doletet: 276.0
+Lodi s id: 18 zbyva doletet: 60.0
 
-Lodi s id: 19 zbyva doletet: 67.0
+Lodi s id: 19 zbyva doletet: 0.0
+Lod s id: 19 vylozila 0 jednotek nakladu.
 
 Lodi s id: 20 zbyva doletet: 0.0
 Lod s id: 20 vylozila 0 jednotek nakladu.
@@ -798,23 +725,13 @@ Lod s id: 20 vylozila 0 jednotek nakladu.
 Lodi s id: 21 zbyva doletet: 0.0
 Lod s id: 21 vylozila 0 jednotek nakladu.
 
-Lodi s id: 22 zbyva doletet: 0.0
-Lod s id: 22 vylozila 0 jednotek nakladu.
+Lodi s id: 22 zbyva doletet: 141.0
 
-Lodi s id: 23 zbyva doletet: 228.0
+Lodi s id: 23 zbyva doletet: 0.0
+Lod s id: 23 vylozila 0 jednotek nakladu.
 
-Lodi s id: 24 zbyva doletet: 167.0
-
-Lodi s id: 25 zbyva doletet: 74.0
-
-Lodi s id: 26 zbyva doletet: 368.0
-
-Lodi s id: 27 zbyva doletet: 15.0
-
-Lodi s id: 28 zbyva doletet: 72.0
-
-Lodi s id: 29 zbyva doletet: 0.0
-Lod s id: 29 vylozila 2986938 jednotek nakladu.
+Lodi s id: 24 zbyva doletet: 0.0
+Lod s id: 24 vylozila 0 jednotek nakladu.
 
 ---------------------------------------------------------------------------------------------
 Lodi s id: 0 zbyva doletet: 0.0
@@ -833,36 +750,39 @@ Lod s id: 4 vylozila 0 jednotek nakladu.
 Lodi s id: 5 zbyva doletet: 0.0
 Lod s id: 5 vylozila 0 jednotek nakladu.
 
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
+Lodi s id: 6 zbyva doletet: 253.0
 
-Lodi s id: 7 zbyva doletet: 28.0
+Lodi s id: 7 zbyva doletet: 103.0
 
 Lodi s id: 8 zbyva doletet: 0.0
 Lod s id: 8 vylozila 0 jednotek nakladu.
 
-Lodi s id: 9 zbyva doletet: 253.0
+Lodi s id: 9 zbyva doletet: 0.0
+Lod s id: 9 vylozila 0 jednotek nakladu.
 
 Lodi s id: 10 zbyva doletet: 0.0
 Lod s id: 10 vylozila 0 jednotek nakladu.
 
-Lodi s id: 11 zbyva doletet: 82.0
+Lodi s id: 11 zbyva doletet: 0.0
+Lod s id: 11 vylozila 0 jednotek nakladu.
 
-Lodi s id: 12 zbyva doletet: 26.0
+Lodi s id: 12 zbyva doletet: 0.0
+Lod s id: 12 vylozila 0 jednotek nakladu.
 
-Lodi s id: 13 zbyva doletet: 108.0
+Lodi s id: 13 zbyva doletet: 308.0
 
-Lodi s id: 14 zbyva doletet: 11.0
+Lodi s id: 14 zbyva doletet: 205.0
 
-Lodi s id: 15 zbyva doletet: 244.0
+Lodi s id: 15 zbyva doletet: 40.0
 
-Lodi s id: 16 zbyva doletet: 170.0
+Lodi s id: 16 zbyva doletet: 140.0
 
-Lodi s id: 17 zbyva doletet: 118.0
+Lodi s id: 17 zbyva doletet: 164.0
 
-Lodi s id: 18 zbyva doletet: 251.0
+Lodi s id: 18 zbyva doletet: 35.0
 
-Lodi s id: 19 zbyva doletet: 42.0
+Lodi s id: 19 zbyva doletet: 0.0
+Lod s id: 19 vylozila 0 jednotek nakladu.
 
 Lodi s id: 20 zbyva doletet: 0.0
 Lod s id: 20 vylozila 0 jednotek nakladu.
@@ -870,24 +790,13 @@ Lod s id: 20 vylozila 0 jednotek nakladu.
 Lodi s id: 21 zbyva doletet: 0.0
 Lod s id: 21 vylozila 0 jednotek nakladu.
 
-Lodi s id: 22 zbyva doletet: 0.0
-Lod s id: 22 vylozila 0 jednotek nakladu.
+Lodi s id: 22 zbyva doletet: 116.0
 
-Lodi s id: 23 zbyva doletet: 203.0
+Lodi s id: 23 zbyva doletet: 0.0
+Lod s id: 23 vylozila 0 jednotek nakladu.
 
-Lodi s id: 24 zbyva doletet: 142.0
-
-Lodi s id: 25 zbyva doletet: 49.0
-
-Lodi s id: 26 zbyva doletet: 343.0
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 1261092 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 47.0
-
-Lodi s id: 29 zbyva doletet: 0.0
-Lod s id: 29 vylozila 0 jednotek nakladu.
+Lodi s id: 24 zbyva doletet: 0.0
+Lod s id: 24 vylozila 0 jednotek nakladu.
 
 ---------------------------------------------------------------------------------------------
 Lodi s id: 0 zbyva doletet: 0.0
@@ -906,37 +815,39 @@ Lod s id: 4 vylozila 0 jednotek nakladu.
 Lodi s id: 5 zbyva doletet: 0.0
 Lod s id: 5 vylozila 0 jednotek nakladu.
 
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
+Lodi s id: 6 zbyva doletet: 228.0
 
-Lodi s id: 7 zbyva doletet: 3.0
+Lodi s id: 7 zbyva doletet: 78.0
 
 Lodi s id: 8 zbyva doletet: 0.0
 Lod s id: 8 vylozila 0 jednotek nakladu.
 
-Lodi s id: 9 zbyva doletet: 228.0
+Lodi s id: 9 zbyva doletet: 0.0
+Lod s id: 9 vylozila 0 jednotek nakladu.
 
 Lodi s id: 10 zbyva doletet: 0.0
 Lod s id: 10 vylozila 0 jednotek nakladu.
 
-Lodi s id: 11 zbyva doletet: 57.0
+Lodi s id: 11 zbyva doletet: 0.0
+Lod s id: 11 vylozila 0 jednotek nakladu.
 
-Lodi s id: 12 zbyva doletet: 1.0
+Lodi s id: 12 zbyva doletet: 0.0
+Lod s id: 12 vylozila 0 jednotek nakladu.
 
-Lodi s id: 13 zbyva doletet: 83.0
+Lodi s id: 13 zbyva doletet: 283.0
 
-Lodi s id: 14 zbyva doletet: 0.0
-Lod s id: 14 vylozila 1618668 jednotek nakladu.
+Lodi s id: 14 zbyva doletet: 180.0
 
-Lodi s id: 15 zbyva doletet: 219.0
+Lodi s id: 15 zbyva doletet: 15.0
 
-Lodi s id: 16 zbyva doletet: 145.0
+Lodi s id: 16 zbyva doletet: 115.0
 
-Lodi s id: 17 zbyva doletet: 93.0
+Lodi s id: 17 zbyva doletet: 139.0
 
-Lodi s id: 18 zbyva doletet: 226.0
+Lodi s id: 18 zbyva doletet: 10.0
 
-Lodi s id: 19 zbyva doletet: 17.0
+Lodi s id: 19 zbyva doletet: 0.0
+Lod s id: 19 vylozila 0 jednotek nakladu.
 
 Lodi s id: 20 zbyva doletet: 0.0
 Lod s id: 20 vylozila 0 jednotek nakladu.
@@ -944,24 +855,13 @@ Lod s id: 20 vylozila 0 jednotek nakladu.
 Lodi s id: 21 zbyva doletet: 0.0
 Lod s id: 21 vylozila 0 jednotek nakladu.
 
-Lodi s id: 22 zbyva doletet: 0.0
-Lod s id: 22 vylozila 0 jednotek nakladu.
+Lodi s id: 22 zbyva doletet: 91.0
 
-Lodi s id: 23 zbyva doletet: 178.0
+Lodi s id: 23 zbyva doletet: 0.0
+Lod s id: 23 vylozila 0 jednotek nakladu.
 
-Lodi s id: 24 zbyva doletet: 117.0
-
-Lodi s id: 25 zbyva doletet: 24.0
-
-Lodi s id: 26 zbyva doletet: 318.0
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 0 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 22.0
-
-Lodi s id: 29 zbyva doletet: 0.0
-Lod s id: 29 vylozila 0 jednotek nakladu.
+Lodi s id: 24 zbyva doletet: 0.0
+Lod s id: 24 vylozila 0 jednotek nakladu.
 
 ---------------------------------------------------------------------------------------------
 Lodi s id: 0 zbyva doletet: 0.0
@@ -980,40 +880,321 @@ Lod s id: 4 vylozila 0 jednotek nakladu.
 Lodi s id: 5 zbyva doletet: 0.0
 Lod s id: 5 vylozila 0 jednotek nakladu.
 
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
+Lodi s id: 6 zbyva doletet: 203.0
 
-Lodi s id: 7 zbyva doletet: 0.0
-Lod s id: 7 vylozila 2365802 jednotek nakladu.
+Lodi s id: 7 zbyva doletet: 53.0
 
 Lodi s id: 8 zbyva doletet: 0.0
 Lod s id: 8 vylozila 0 jednotek nakladu.
 
-Lodi s id: 9 zbyva doletet: 203.0
+Lodi s id: 9 zbyva doletet: 0.0
+Lod s id: 9 vylozila 0 jednotek nakladu.
 
 Lodi s id: 10 zbyva doletet: 0.0
 Lod s id: 10 vylozila 0 jednotek nakladu.
 
-Lodi s id: 11 zbyva doletet: 32.0
+Lodi s id: 11 zbyva doletet: 0.0
+Lod s id: 11 vylozila 0 jednotek nakladu.
 
 Lodi s id: 12 zbyva doletet: 0.0
-Lod s id: 12 vylozila 1585062 jednotek nakladu.
+Lod s id: 12 vylozila 0 jednotek nakladu.
 
-Lodi s id: 13 zbyva doletet: 58.0
+Lodi s id: 13 zbyva doletet: 258.0
 
-Lodi s id: 14 zbyva doletet: 0.0
-Lod s id: 14 vylozila 0 jednotek nakladu.
+Lodi s id: 14 zbyva doletet: 155.0
 
-Lodi s id: 15 zbyva doletet: 194.0
+Lodi s id: 15 zbyva doletet: 0.0
+Lod s id: 15 vylozila 109865 jednotek nakladu.
 
-Lodi s id: 16 zbyva doletet: 120.0
+Lodi s id: 16 zbyva doletet: 90.0
 
-Lodi s id: 17 zbyva doletet: 68.0
+Lodi s id: 17 zbyva doletet: 114.0
 
-Lodi s id: 18 zbyva doletet: 201.0
+Lodi s id: 18 zbyva doletet: 0.0
+Lod s id: 18 vylozila 1105539 jednotek nakladu.
 
 Lodi s id: 19 zbyva doletet: 0.0
-Lod s id: 19 vylozila 1427364 jednotek nakladu.
+Lod s id: 19 vylozila 0 jednotek nakladu.
+
+Lodi s id: 20 zbyva doletet: 0.0
+Lod s id: 20 vylozila 0 jednotek nakladu.
+
+Lodi s id: 21 zbyva doletet: 0.0
+Lod s id: 21 vylozila 0 jednotek nakladu.
+
+Lodi s id: 22 zbyva doletet: 66.0
+
+Lodi s id: 23 zbyva doletet: 0.0
+Lod s id: 23 vylozila 0 jednotek nakladu.
+
+Lodi s id: 24 zbyva doletet: 0.0
+Lod s id: 24 vylozila 0 jednotek nakladu.
+
+---------------------------------------------------------------------------------------------
+Lodi s id: 0 zbyva doletet: 0.0
+Lod s id: 0 vylozila 0 jednotek nakladu.
+
+Lodi s id: 1 zbyva doletet: 0.0
+Lod s id: 1 vylozila 0 jednotek nakladu.
+
+Lodi s id: 2 zbyva doletet: 0.0
+Lod s id: 2 vylozila 3036236 jednotek nakladu.
+
+Lodi s id: 3 zbyva doletet: 0.0
+Lod s id: 3 vylozila 1676753 jednotek nakladu.
+
+Lodi s id: 4 zbyva doletet: 0.0
+Lod s id: 4 vylozila 0 jednotek nakladu.
+
+Lodi s id: 5 zbyva doletet: 0.0
+Lod s id: 5 vylozila 0 jednotek nakladu.
+
+Lodi s id: 6 zbyva doletet: 178.0
+
+Lodi s id: 7 zbyva doletet: 28.0
+
+Lodi s id: 8 zbyva doletet: 0.0
+Lod s id: 8 vylozila 0 jednotek nakladu.
+
+Lodi s id: 9 zbyva doletet: 0.0
+Lod s id: 9 vylozila 0 jednotek nakladu.
+
+Lodi s id: 10 zbyva doletet: 0.0
+Lod s id: 10 vylozila 0 jednotek nakladu.
+
+Lodi s id: 11 zbyva doletet: 0.0
+Lod s id: 11 vylozila 0 jednotek nakladu.
+
+Lodi s id: 12 zbyva doletet: 0.0
+Lod s id: 12 vylozila 0 jednotek nakladu.
+
+Lodi s id: 13 zbyva doletet: 233.0
+
+Lodi s id: 14 zbyva doletet: 130.0
+
+Lodi s id: 15 zbyva doletet: 0.0
+Lod s id: 15 vylozila 0 jednotek nakladu.
+
+Lodi s id: 16 zbyva doletet: 65.0
+
+Lodi s id: 17 zbyva doletet: 89.0
+
+Lodi s id: 18 zbyva doletet: 0.0
+Lod s id: 18 vylozila 0 jednotek nakladu.
+
+Lodi s id: 19 zbyva doletet: 0.0
+Lod s id: 19 vylozila 0 jednotek nakladu.
+
+Lodi s id: 20 zbyva doletet: 0.0
+Lod s id: 20 vylozila 0 jednotek nakladu.
+
+Lodi s id: 21 zbyva doletet: 0.0
+Lod s id: 21 vylozila 0 jednotek nakladu.
+
+Lodi s id: 22 zbyva doletet: 41.0
+
+Lodi s id: 23 zbyva doletet: 0.0
+Lod s id: 23 vylozila 0 jednotek nakladu.
+
+Lodi s id: 24 zbyva doletet: 0.0
+Lod s id: 24 vylozila 0 jednotek nakladu.
+
+---------------------------------------------------------------------------------------------
+Lodi s id: 0 zbyva doletet: 0.0
+Lod s id: 0 vylozila 0 jednotek nakladu.
+
+Lodi s id: 1 zbyva doletet: 0.0
+Lod s id: 1 vylozila 0 jednotek nakladu.
+
+Lodi s id: 2 zbyva doletet: 0.0
+Lod s id: 2 vylozila 0 jednotek nakladu.
+
+Lodi s id: 3 zbyva doletet: 0.0
+Lod s id: 3 vylozila 0 jednotek nakladu.
+
+Lodi s id: 4 zbyva doletet: 0.0
+Lod s id: 4 vylozila 0 jednotek nakladu.
+
+Lodi s id: 5 zbyva doletet: 0.0
+Lod s id: 5 vylozila 0 jednotek nakladu.
+
+Lodi s id: 6 zbyva doletet: 153.0
+
+Lodi s id: 7 zbyva doletet: 3.0
+
+Lodi s id: 8 zbyva doletet: 0.0
+Lod s id: 8 vylozila 0 jednotek nakladu.
+
+Lodi s id: 9 zbyva doletet: 0.0
+Lod s id: 9 vylozila 0 jednotek nakladu.
+
+Lodi s id: 10 zbyva doletet: 0.0
+Lod s id: 10 vylozila 0 jednotek nakladu.
+
+Lodi s id: 11 zbyva doletet: 0.0
+Lod s id: 11 vylozila 0 jednotek nakladu.
+
+Lodi s id: 12 zbyva doletet: 0.0
+Lod s id: 12 vylozila 0 jednotek nakladu.
+
+Lodi s id: 13 zbyva doletet: 208.0
+
+Lodi s id: 14 zbyva doletet: 105.0
+
+Lodi s id: 15 zbyva doletet: 0.0
+Lod s id: 15 vylozila 0 jednotek nakladu.
+
+Lodi s id: 16 zbyva doletet: 40.0
+
+Lodi s id: 17 zbyva doletet: 64.0
+
+Lodi s id: 18 zbyva doletet: 0.0
+Lod s id: 18 vylozila 0 jednotek nakladu.
+
+Lodi s id: 19 zbyva doletet: 0.0
+Lod s id: 19 vylozila 0 jednotek nakladu.
+
+Lodi s id: 20 zbyva doletet: 0.0
+Lod s id: 20 vylozila 0 jednotek nakladu.
+
+Lodi s id: 21 zbyva doletet: 0.0
+Lod s id: 21 vylozila 0 jednotek nakladu.
+
+Lodi s id: 22 zbyva doletet: 16.0
+
+Lodi s id: 23 zbyva doletet: 0.0
+Lod s id: 23 vylozila 0 jednotek nakladu.
+
+Lodi s id: 24 zbyva doletet: 0.0
+Lod s id: 24 vylozila 0 jednotek nakladu.
+
+---------------------------------------------------------------------------------------------
+Lodi s id: 0 zbyva doletet: 0.0
+Lod s id: 0 vylozila 0 jednotek nakladu.
+
+Lodi s id: 1 zbyva doletet: 0.0
+Lod s id: 1 vylozila 0 jednotek nakladu.
+
+Lodi s id: 2 zbyva doletet: 0.0
+Lod s id: 2 vylozila 0 jednotek nakladu.
+
+Lodi s id: 3 zbyva doletet: 0.0
+Lod s id: 3 vylozila 0 jednotek nakladu.
+
+Lodi s id: 4 zbyva doletet: 0.0
+Lod s id: 4 vylozila 0 jednotek nakladu.
+
+Lodi s id: 5 zbyva doletet: 0.0
+Lod s id: 5 vylozila 0 jednotek nakladu.
+
+Lodi s id: 6 zbyva doletet: 128.0
+
+Lodi s id: 7 zbyva doletet: 0.0
+Lod s id: 7 vylozila 1731504 jednotek nakladu.
+
+Lodi s id: 8 zbyva doletet: 0.0
+Lod s id: 8 vylozila 0 jednotek nakladu.
+
+Lodi s id: 9 zbyva doletet: 0.0
+Lod s id: 9 vylozila 0 jednotek nakladu.
+
+Lodi s id: 10 zbyva doletet: 0.0
+Lod s id: 10 vylozila 0 jednotek nakladu.
+
+Lodi s id: 11 zbyva doletet: 0.0
+Lod s id: 11 vylozila 0 jednotek nakladu.
+
+Lodi s id: 12 zbyva doletet: 0.0
+Lod s id: 12 vylozila 0 jednotek nakladu.
+
+Lodi s id: 13 zbyva doletet: 183.0
+
+Lodi s id: 14 zbyva doletet: 80.0
+
+Lodi s id: 15 zbyva doletet: 0.0
+Lod s id: 15 vylozila 0 jednotek nakladu.
+
+Lodi s id: 16 zbyva doletet: 15.0
+
+Lodi s id: 17 zbyva doletet: 39.0
+
+Lodi s id: 18 zbyva doletet: 0.0
+Lod s id: 18 vylozila 0 jednotek nakladu.
+
+Lodi s id: 19 zbyva doletet: 0.0
+Lod s id: 19 vylozila 0 jednotek nakladu.
+
+Lodi s id: 20 zbyva doletet: 0.0
+Lod s id: 20 vylozila 0 jednotek nakladu.
+
+Lodi s id: 21 zbyva doletet: 0.0
+Lod s id: 21 vylozila 0 jednotek nakladu.
+
+Lodi s id: 22 zbyva doletet: 0.0
+Lod s id: 22 vylozila 2482554 jednotek nakladu.
+
+Lodi s id: 23 zbyva doletet: 0.0
+Lod s id: 23 vylozila 0 jednotek nakladu.
+
+Lodi s id: 24 zbyva doletet: 0.0
+Lod s id: 24 vylozila 0 jednotek nakladu.
+
+---------------------------------------------------------------------------------------------
+Lodi s id: 0 zbyva doletet: 0.0
+Lod s id: 0 vylozila 0 jednotek nakladu.
+
+Lodi s id: 1 zbyva doletet: 0.0
+Lod s id: 1 vylozila 0 jednotek nakladu.
+
+Lodi s id: 2 zbyva doletet: 0.0
+Lod s id: 2 vylozila 0 jednotek nakladu.
+
+Lodi s id: 3 zbyva doletet: 0.0
+Lod s id: 3 vylozila 0 jednotek nakladu.
+
+Lodi s id: 4 zbyva doletet: 0.0
+Lod s id: 4 vylozila 0 jednotek nakladu.
+
+Lodi s id: 5 zbyva doletet: 0.0
+Lod s id: 5 vylozila 0 jednotek nakladu.
+
+Lodi s id: 6 zbyva doletet: 103.0
+
+Lodi s id: 7 zbyva doletet: 0.0
+Lod s id: 7 vylozila 0 jednotek nakladu.
+
+Lodi s id: 8 zbyva doletet: 0.0
+Lod s id: 8 vylozila 0 jednotek nakladu.
+
+Lodi s id: 9 zbyva doletet: 0.0
+Lod s id: 9 vylozila 0 jednotek nakladu.
+
+Lodi s id: 10 zbyva doletet: 0.0
+Lod s id: 10 vylozila 0 jednotek nakladu.
+
+Lodi s id: 11 zbyva doletet: 0.0
+Lod s id: 11 vylozila 0 jednotek nakladu.
+
+Lodi s id: 12 zbyva doletet: 0.0
+Lod s id: 12 vylozila 0 jednotek nakladu.
+
+Lodi s id: 13 zbyva doletet: 158.0
+
+Lodi s id: 14 zbyva doletet: 55.0
+
+Lodi s id: 15 zbyva doletet: 0.0
+Lod s id: 15 vylozila 0 jednotek nakladu.
+
+Lodi s id: 16 zbyva doletet: 0.0
+Lod s id: 16 vylozila 1511315 jednotek nakladu.
+
+Lodi s id: 17 zbyva doletet: 14.0
+
+Lodi s id: 18 zbyva doletet: 0.0
+Lod s id: 18 vylozila 0 jednotek nakladu.
+
+Lodi s id: 19 zbyva doletet: 0.0
+Lod s id: 19 vylozila 0 jednotek nakladu.
 
 Lodi s id: 20 zbyva doletet: 0.0
 Lod s id: 20 vylozila 0 jednotek nakladu.
@@ -1024,23 +1205,11 @@ Lod s id: 21 vylozila 0 jednotek nakladu.
 Lodi s id: 22 zbyva doletet: 0.0
 Lod s id: 22 vylozila 0 jednotek nakladu.
 
-Lodi s id: 23 zbyva doletet: 153.0
+Lodi s id: 23 zbyva doletet: 0.0
+Lod s id: 23 vylozila 0 jednotek nakladu.
 
-Lodi s id: 24 zbyva doletet: 92.0
-
-Lodi s id: 25 zbyva doletet: 0.0
-Lod s id: 25 vylozila 1011450 jednotek nakladu.
-
-Lodi s id: 26 zbyva doletet: 293.0
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 0 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 0.0
-Lod s id: 28 vylozila 1680939 jednotek nakladu.
-
-Lodi s id: 29 zbyva doletet: 0.0
-Lod s id: 29 vylozila 0 jednotek nakladu.
+Lodi s id: 24 zbyva doletet: 0.0
+Lod s id: 24 vylozila 0 jednotek nakladu.
 
 ---------------------------------------------------------------------------------------------
 Lodi s id: 0 zbyva doletet: 0.0
@@ -1050,10 +1219,304 @@ Lodi s id: 1 zbyva doletet: 0.0
 Lod s id: 1 vylozila 0 jednotek nakladu.
 
 Lodi s id: 2 zbyva doletet: 0.0
-Lod s id: 2 vylozila 1992726 jednotek nakladu.
+Lod s id: 2 vylozila 0 jednotek nakladu.
 
 Lodi s id: 3 zbyva doletet: 0.0
-Lod s id: 3 vylozila 2105551 jednotek nakladu.
+Lod s id: 3 vylozila 0 jednotek nakladu.
+
+Lodi s id: 4 zbyva doletet: 0.0
+Lod s id: 4 vylozila 0 jednotek nakladu.
+
+Lodi s id: 5 zbyva doletet: 0.0
+Lod s id: 5 vylozila 0 jednotek nakladu.
+
+Lodi s id: 6 zbyva doletet: 78.0
+
+Lodi s id: 7 zbyva doletet: 0.0
+Lod s id: 7 vylozila 0 jednotek nakladu.
+
+Lodi s id: 8 zbyva doletet: 0.0
+Lod s id: 8 vylozila 0 jednotek nakladu.
+
+Lodi s id: 9 zbyva doletet: 0.0
+Lod s id: 9 vylozila 0 jednotek nakladu.
+
+Lodi s id: 10 zbyva doletet: 0.0
+Lod s id: 10 vylozila 0 jednotek nakladu.
+
+Lodi s id: 11 zbyva doletet: 0.0
+Lod s id: 11 vylozila 0 jednotek nakladu.
+
+Lodi s id: 12 zbyva doletet: 0.0
+Lod s id: 12 vylozila 0 jednotek nakladu.
+
+Lodi s id: 13 zbyva doletet: 133.0
+
+Lodi s id: 14 zbyva doletet: 30.0
+
+Lodi s id: 15 zbyva doletet: 0.0
+Lod s id: 15 vylozila 0 jednotek nakladu.
+
+Lodi s id: 16 zbyva doletet: 0.0
+Lod s id: 16 vylozila 0 jednotek nakladu.
+
+Lodi s id: 17 zbyva doletet: 0.0
+Lod s id: 17 vylozila 1521393 jednotek nakladu.
+
+Lodi s id: 18 zbyva doletet: 0.0
+Lod s id: 18 vylozila 0 jednotek nakladu.
+
+Lodi s id: 19 zbyva doletet: 0.0
+Lod s id: 19 vylozila 0 jednotek nakladu.
+
+Lodi s id: 20 zbyva doletet: 0.0
+Lod s id: 20 vylozila 0 jednotek nakladu.
+
+Lodi s id: 21 zbyva doletet: 0.0
+Lod s id: 21 vylozila 0 jednotek nakladu.
+
+Lodi s id: 22 zbyva doletet: 0.0
+Lod s id: 22 vylozila 0 jednotek nakladu.
+
+Lodi s id: 23 zbyva doletet: 0.0
+Lod s id: 23 vylozila 0 jednotek nakladu.
+
+Lodi s id: 24 zbyva doletet: 0.0
+Lod s id: 24 vylozila 0 jednotek nakladu.
+
+---------------------------------------------------------------------------------------------
+Lodi s id: 0 zbyva doletet: 0.0
+Lod s id: 0 vylozila 0 jednotek nakladu.
+
+Lodi s id: 1 zbyva doletet: 0.0
+Lod s id: 1 vylozila 0 jednotek nakladu.
+
+Lodi s id: 2 zbyva doletet: 0.0
+Lod s id: 2 vylozila 0 jednotek nakladu.
+
+Lodi s id: 3 zbyva doletet: 0.0
+Lod s id: 3 vylozila 0 jednotek nakladu.
+
+Lodi s id: 4 zbyva doletet: 0.0
+Lod s id: 4 vylozila 0 jednotek nakladu.
+
+Lodi s id: 5 zbyva doletet: 0.0
+Lod s id: 5 vylozila 0 jednotek nakladu.
+
+Lodi s id: 6 zbyva doletet: 53.0
+
+Lodi s id: 7 zbyva doletet: 0.0
+Lod s id: 7 vylozila 0 jednotek nakladu.
+
+Lodi s id: 8 zbyva doletet: 0.0
+Lod s id: 8 vylozila 0 jednotek nakladu.
+
+Lodi s id: 9 zbyva doletet: 0.0
+Lod s id: 9 vylozila 0 jednotek nakladu.
+
+Lodi s id: 10 zbyva doletet: 0.0
+Lod s id: 10 vylozila 0 jednotek nakladu.
+
+Lodi s id: 11 zbyva doletet: 0.0
+Lod s id: 11 vylozila 0 jednotek nakladu.
+
+Lodi s id: 12 zbyva doletet: 0.0
+Lod s id: 12 vylozila 0 jednotek nakladu.
+
+Lodi s id: 13 zbyva doletet: 108.0
+
+Lodi s id: 14 zbyva doletet: 5.0
+
+Lodi s id: 15 zbyva doletet: 0.0
+Lod s id: 15 vylozila 0 jednotek nakladu.
+
+Lodi s id: 16 zbyva doletet: 0.0
+Lod s id: 16 vylozila 0 jednotek nakladu.
+
+Lodi s id: 17 zbyva doletet: 0.0
+Lod s id: 17 vylozila 0 jednotek nakladu.
+
+Lodi s id: 18 zbyva doletet: 0.0
+Lod s id: 18 vylozila 0 jednotek nakladu.
+
+Lodi s id: 19 zbyva doletet: 0.0
+Lod s id: 19 vylozila 0 jednotek nakladu.
+
+Lodi s id: 20 zbyva doletet: 0.0
+Lod s id: 20 vylozila 0 jednotek nakladu.
+
+Lodi s id: 21 zbyva doletet: 0.0
+Lod s id: 21 vylozila 0 jednotek nakladu.
+
+Lodi s id: 22 zbyva doletet: 0.0
+Lod s id: 22 vylozila 0 jednotek nakladu.
+
+Lodi s id: 23 zbyva doletet: 0.0
+Lod s id: 23 vylozila 0 jednotek nakladu.
+
+Lodi s id: 24 zbyva doletet: 0.0
+Lod s id: 24 vylozila 0 jednotek nakladu.
+
+---------------------------------------------------------------------------------------------
+Lodi s id: 0 zbyva doletet: 0.0
+Lod s id: 0 vylozila 0 jednotek nakladu.
+
+Lodi s id: 1 zbyva doletet: 0.0
+Lod s id: 1 vylozila 0 jednotek nakladu.
+
+Lodi s id: 2 zbyva doletet: 0.0
+Lod s id: 2 vylozila 0 jednotek nakladu.
+
+Lodi s id: 3 zbyva doletet: 0.0
+Lod s id: 3 vylozila 0 jednotek nakladu.
+
+Lodi s id: 4 zbyva doletet: 0.0
+Lod s id: 4 vylozila 0 jednotek nakladu.
+
+Lodi s id: 5 zbyva doletet: 0.0
+Lod s id: 5 vylozila 0 jednotek nakladu.
+
+Lodi s id: 6 zbyva doletet: 28.0
+
+Lodi s id: 7 zbyva doletet: 0.0
+Lod s id: 7 vylozila 0 jednotek nakladu.
+
+Lodi s id: 8 zbyva doletet: 0.0
+Lod s id: 8 vylozila 0 jednotek nakladu.
+
+Lodi s id: 9 zbyva doletet: 0.0
+Lod s id: 9 vylozila 0 jednotek nakladu.
+
+Lodi s id: 10 zbyva doletet: 0.0
+Lod s id: 10 vylozila 0 jednotek nakladu.
+
+Lodi s id: 11 zbyva doletet: 0.0
+Lod s id: 11 vylozila 0 jednotek nakladu.
+
+Lodi s id: 12 zbyva doletet: 0.0
+Lod s id: 12 vylozila 0 jednotek nakladu.
+
+Lodi s id: 13 zbyva doletet: 83.0
+
+Lodi s id: 14 zbyva doletet: 0.0
+Lod s id: 14 vylozila 891453 jednotek nakladu.
+
+Lodi s id: 15 zbyva doletet: 0.0
+Lod s id: 15 vylozila 0 jednotek nakladu.
+
+Lodi s id: 16 zbyva doletet: 0.0
+Lod s id: 16 vylozila 0 jednotek nakladu.
+
+Lodi s id: 17 zbyva doletet: 0.0
+Lod s id: 17 vylozila 0 jednotek nakladu.
+
+Lodi s id: 18 zbyva doletet: 0.0
+Lod s id: 18 vylozila 0 jednotek nakladu.
+
+Lodi s id: 19 zbyva doletet: 0.0
+Lod s id: 19 vylozila 0 jednotek nakladu.
+
+Lodi s id: 20 zbyva doletet: 0.0
+Lod s id: 20 vylozila 0 jednotek nakladu.
+
+Lodi s id: 21 zbyva doletet: 0.0
+Lod s id: 21 vylozila 0 jednotek nakladu.
+
+Lodi s id: 22 zbyva doletet: 0.0
+Lod s id: 22 vylozila 0 jednotek nakladu.
+
+Lodi s id: 23 zbyva doletet: 0.0
+Lod s id: 23 vylozila 0 jednotek nakladu.
+
+Lodi s id: 24 zbyva doletet: 0.0
+Lod s id: 24 vylozila 0 jednotek nakladu.
+
+---------------------------------------------------------------------------------------------
+Lodi s id: 0 zbyva doletet: 0.0
+Lod s id: 0 vylozila 0 jednotek nakladu.
+
+Lodi s id: 1 zbyva doletet: 0.0
+Lod s id: 1 vylozila 0 jednotek nakladu.
+
+Lodi s id: 2 zbyva doletet: 0.0
+Lod s id: 2 vylozila 0 jednotek nakladu.
+
+Lodi s id: 3 zbyva doletet: 0.0
+Lod s id: 3 vylozila 0 jednotek nakladu.
+
+Lodi s id: 4 zbyva doletet: 0.0
+Lod s id: 4 vylozila 0 jednotek nakladu.
+
+Lodi s id: 5 zbyva doletet: 0.0
+Lod s id: 5 vylozila 0 jednotek nakladu.
+
+Lodi s id: 6 zbyva doletet: 3.0
+
+Lodi s id: 7 zbyva doletet: 0.0
+Lod s id: 7 vylozila 0 jednotek nakladu.
+
+Lodi s id: 8 zbyva doletet: 0.0
+Lod s id: 8 vylozila 0 jednotek nakladu.
+
+Lodi s id: 9 zbyva doletet: 0.0
+Lod s id: 9 vylozila 0 jednotek nakladu.
+
+Lodi s id: 10 zbyva doletet: 0.0
+Lod s id: 10 vylozila 0 jednotek nakladu.
+
+Lodi s id: 11 zbyva doletet: 0.0
+Lod s id: 11 vylozila 0 jednotek nakladu.
+
+Lodi s id: 12 zbyva doletet: 0.0
+Lod s id: 12 vylozila 0 jednotek nakladu.
+
+Lodi s id: 13 zbyva doletet: 58.0
+
+Lodi s id: 14 zbyva doletet: 0.0
+Lod s id: 14 vylozila 0 jednotek nakladu.
+
+Lodi s id: 15 zbyva doletet: 0.0
+Lod s id: 15 vylozila 0 jednotek nakladu.
+
+Lodi s id: 16 zbyva doletet: 0.0
+Lod s id: 16 vylozila 0 jednotek nakladu.
+
+Lodi s id: 17 zbyva doletet: 0.0
+Lod s id: 17 vylozila 0 jednotek nakladu.
+
+Lodi s id: 18 zbyva doletet: 0.0
+Lod s id: 18 vylozila 0 jednotek nakladu.
+
+Lodi s id: 19 zbyva doletet: 0.0
+Lod s id: 19 vylozila 0 jednotek nakladu.
+
+Lodi s id: 20 zbyva doletet: 0.0
+Lod s id: 20 vylozila 0 jednotek nakladu.
+
+Lodi s id: 21 zbyva doletet: 0.0
+Lod s id: 21 vylozila 0 jednotek nakladu.
+
+Lodi s id: 22 zbyva doletet: 0.0
+Lod s id: 22 vylozila 0 jednotek nakladu.
+
+Lodi s id: 23 zbyva doletet: 0.0
+Lod s id: 23 vylozila 0 jednotek nakladu.
+
+Lodi s id: 24 zbyva doletet: 0.0
+Lod s id: 24 vylozila 0 jednotek nakladu.
+
+---------------------------------------------------------------------------------------------
+Lodi s id: 0 zbyva doletet: 0.0
+Lod s id: 0 vylozila 0 jednotek nakladu.
+
+Lodi s id: 1 zbyva doletet: 0.0
+Lod s id: 1 vylozila 0 jednotek nakladu.
+
+Lodi s id: 2 zbyva doletet: 0.0
+Lod s id: 2 vylozila 0 jednotek nakladu.
+
+Lodi s id: 3 zbyva doletet: 0.0
+Lod s id: 3 vylozila 0 jednotek nakladu.
 
 Lodi s id: 4 zbyva doletet: 0.0
 Lod s id: 4 vylozila 0 jednotek nakladu.
@@ -1062,7 +1525,7 @@ Lodi s id: 5 zbyva doletet: 0.0
 Lod s id: 5 vylozila 0 jednotek nakladu.
 
 Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
+Lod s id: 6 vylozila 1163998 jednotek nakladu.
 
 Lodi s id: 7 zbyva doletet: 0.0
 Lod s id: 7 vylozila 0 jednotek nakladu.
@@ -1070,12 +1533,14 @@ Lod s id: 7 vylozila 0 jednotek nakladu.
 Lodi s id: 8 zbyva doletet: 0.0
 Lod s id: 8 vylozila 0 jednotek nakladu.
 
-Lodi s id: 9 zbyva doletet: 178.0
+Lodi s id: 9 zbyva doletet: 0.0
+Lod s id: 9 vylozila 0 jednotek nakladu.
 
 Lodi s id: 10 zbyva doletet: 0.0
 Lod s id: 10 vylozila 0 jednotek nakladu.
 
-Lodi s id: 11 zbyva doletet: 7.0
+Lodi s id: 11 zbyva doletet: 0.0
+Lod s id: 11 vylozila 0 jednotek nakladu.
 
 Lodi s id: 12 zbyva doletet: 0.0
 Lod s id: 12 vylozila 0 jednotek nakladu.
@@ -1085,13 +1550,17 @@ Lodi s id: 13 zbyva doletet: 33.0
 Lodi s id: 14 zbyva doletet: 0.0
 Lod s id: 14 vylozila 0 jednotek nakladu.
 
-Lodi s id: 15 zbyva doletet: 169.0
+Lodi s id: 15 zbyva doletet: 0.0
+Lod s id: 15 vylozila 0 jednotek nakladu.
 
-Lodi s id: 16 zbyva doletet: 95.0
+Lodi s id: 16 zbyva doletet: 0.0
+Lod s id: 16 vylozila 0 jednotek nakladu.
 
-Lodi s id: 17 zbyva doletet: 43.0
+Lodi s id: 17 zbyva doletet: 0.0
+Lod s id: 17 vylozila 0 jednotek nakladu.
 
-Lodi s id: 18 zbyva doletet: 176.0
+Lodi s id: 18 zbyva doletet: 0.0
+Lod s id: 18 vylozila 0 jednotek nakladu.
 
 Lodi s id: 19 zbyva doletet: 0.0
 Lod s id: 19 vylozila 0 jednotek nakladu.
@@ -1105,23 +1574,11 @@ Lod s id: 21 vylozila 0 jednotek nakladu.
 Lodi s id: 22 zbyva doletet: 0.0
 Lod s id: 22 vylozila 0 jednotek nakladu.
 
-Lodi s id: 23 zbyva doletet: 128.0
+Lodi s id: 23 zbyva doletet: 0.0
+Lod s id: 23 vylozila 0 jednotek nakladu.
 
-Lodi s id: 24 zbyva doletet: 67.0
-
-Lodi s id: 25 zbyva doletet: 0.0
-Lod s id: 25 vylozila 0 jednotek nakladu.
-
-Lodi s id: 26 zbyva doletet: 268.0
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 0 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 0.0
-Lod s id: 28 vylozila 0 jednotek nakladu.
-
-Lodi s id: 29 zbyva doletet: 0.0
-Lod s id: 29 vylozila 0 jednotek nakladu.
+Lodi s id: 24 zbyva doletet: 0.0
+Lod s id: 24 vylozila 0 jednotek nakladu.
 
 ---------------------------------------------------------------------------------------------
 Lodi s id: 0 zbyva doletet: 0.0
@@ -1151,13 +1608,14 @@ Lod s id: 7 vylozila 0 jednotek nakladu.
 Lodi s id: 8 zbyva doletet: 0.0
 Lod s id: 8 vylozila 0 jednotek nakladu.
 
-Lodi s id: 9 zbyva doletet: 153.0
+Lodi s id: 9 zbyva doletet: 0.0
+Lod s id: 9 vylozila 0 jednotek nakladu.
 
 Lodi s id: 10 zbyva doletet: 0.0
 Lod s id: 10 vylozila 0 jednotek nakladu.
 
 Lodi s id: 11 zbyva doletet: 0.0
-Lod s id: 11 vylozila 846701 jednotek nakladu.
+Lod s id: 11 vylozila 0 jednotek nakladu.
 
 Lodi s id: 12 zbyva doletet: 0.0
 Lod s id: 12 vylozila 0 jednotek nakladu.
@@ -1167,519 +1625,8 @@ Lodi s id: 13 zbyva doletet: 8.0
 Lodi s id: 14 zbyva doletet: 0.0
 Lod s id: 14 vylozila 0 jednotek nakladu.
 
-Lodi s id: 15 zbyva doletet: 144.0
-
-Lodi s id: 16 zbyva doletet: 70.0
-
-Lodi s id: 17 zbyva doletet: 18.0
-
-Lodi s id: 18 zbyva doletet: 151.0
-
-Lodi s id: 19 zbyva doletet: 0.0
-Lod s id: 19 vylozila 0 jednotek nakladu.
-
-Lodi s id: 20 zbyva doletet: 0.0
-Lod s id: 20 vylozila 0 jednotek nakladu.
-
-Lodi s id: 21 zbyva doletet: 0.0
-Lod s id: 21 vylozila 0 jednotek nakladu.
-
-Lodi s id: 22 zbyva doletet: 0.0
-Lod s id: 22 vylozila 0 jednotek nakladu.
-
-Lodi s id: 23 zbyva doletet: 103.0
-
-Lodi s id: 24 zbyva doletet: 42.0
-
-Lodi s id: 25 zbyva doletet: 0.0
-Lod s id: 25 vylozila 0 jednotek nakladu.
-
-Lodi s id: 26 zbyva doletet: 243.0
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 0 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 0.0
-Lod s id: 28 vylozila 0 jednotek nakladu.
-
-Lodi s id: 29 zbyva doletet: 0.0
-Lod s id: 29 vylozila 0 jednotek nakladu.
-
----------------------------------------------------------------------------------------------
-Lodi s id: 0 zbyva doletet: 0.0
-Lod s id: 0 vylozila 0 jednotek nakladu.
-
-Lodi s id: 1 zbyva doletet: 0.0
-Lod s id: 1 vylozila 0 jednotek nakladu.
-
-Lodi s id: 2 zbyva doletet: 0.0
-Lod s id: 2 vylozila 0 jednotek nakladu.
-
-Lodi s id: 3 zbyva doletet: 0.0
-Lod s id: 3 vylozila 0 jednotek nakladu.
-
-Lodi s id: 4 zbyva doletet: 0.0
-Lod s id: 4 vylozila 0 jednotek nakladu.
-
-Lodi s id: 5 zbyva doletet: 0.0
-Lod s id: 5 vylozila 0 jednotek nakladu.
-
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
-
-Lodi s id: 7 zbyva doletet: 0.0
-Lod s id: 7 vylozila 0 jednotek nakladu.
-
-Lodi s id: 8 zbyva doletet: 0.0
-Lod s id: 8 vylozila 0 jednotek nakladu.
-
-Lodi s id: 9 zbyva doletet: 128.0
-
-Lodi s id: 10 zbyva doletet: 0.0
-Lod s id: 10 vylozila 0 jednotek nakladu.
-
-Lodi s id: 11 zbyva doletet: 0.0
-Lod s id: 11 vylozila 0 jednotek nakladu.
-
-Lodi s id: 12 zbyva doletet: 0.0
-Lod s id: 12 vylozila 0 jednotek nakladu.
-
-Lodi s id: 13 zbyva doletet: 0.0
-Lod s id: 13 vylozila 2179426 jednotek nakladu.
-
-Lodi s id: 14 zbyva doletet: 0.0
-Lod s id: 14 vylozila 0 jednotek nakladu.
-
-Lodi s id: 15 zbyva doletet: 119.0
-
-Lodi s id: 16 zbyva doletet: 45.0
-
-Lodi s id: 17 zbyva doletet: 0.0
-Lod s id: 17 vylozila 760182 jednotek nakladu.
-
-Lodi s id: 18 zbyva doletet: 126.0
-
-Lodi s id: 19 zbyva doletet: 0.0
-Lod s id: 19 vylozila 0 jednotek nakladu.
-
-Lodi s id: 20 zbyva doletet: 0.0
-Lod s id: 20 vylozila 0 jednotek nakladu.
-
-Lodi s id: 21 zbyva doletet: 0.0
-Lod s id: 21 vylozila 0 jednotek nakladu.
-
-Lodi s id: 22 zbyva doletet: 0.0
-Lod s id: 22 vylozila 0 jednotek nakladu.
-
-Lodi s id: 23 zbyva doletet: 78.0
-
-Lodi s id: 24 zbyva doletet: 17.0
-
-Lodi s id: 25 zbyva doletet: 0.0
-Lod s id: 25 vylozila 0 jednotek nakladu.
-
-Lodi s id: 26 zbyva doletet: 218.0
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 0 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 0.0
-Lod s id: 28 vylozila 0 jednotek nakladu.
-
-Lodi s id: 29 zbyva doletet: 0.0
-Lod s id: 29 vylozila 0 jednotek nakladu.
-
----------------------------------------------------------------------------------------------
-Lodi s id: 0 zbyva doletet: 0.0
-Lod s id: 0 vylozila 0 jednotek nakladu.
-
-Lodi s id: 1 zbyva doletet: 0.0
-Lod s id: 1 vylozila 0 jednotek nakladu.
-
-Lodi s id: 2 zbyva doletet: 0.0
-Lod s id: 2 vylozila 0 jednotek nakladu.
-
-Lodi s id: 3 zbyva doletet: 0.0
-Lod s id: 3 vylozila 0 jednotek nakladu.
-
-Lodi s id: 4 zbyva doletet: 0.0
-Lod s id: 4 vylozila 0 jednotek nakladu.
-
-Lodi s id: 5 zbyva doletet: 0.0
-Lod s id: 5 vylozila 0 jednotek nakladu.
-
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
-
-Lodi s id: 7 zbyva doletet: 0.0
-Lod s id: 7 vylozila 0 jednotek nakladu.
-
-Lodi s id: 8 zbyva doletet: 0.0
-Lod s id: 8 vylozila 0 jednotek nakladu.
-
-Lodi s id: 9 zbyva doletet: 103.0
-
-Lodi s id: 10 zbyva doletet: 0.0
-Lod s id: 10 vylozila 0 jednotek nakladu.
-
-Lodi s id: 11 zbyva doletet: 0.0
-Lod s id: 11 vylozila 0 jednotek nakladu.
-
-Lodi s id: 12 zbyva doletet: 0.0
-Lod s id: 12 vylozila 0 jednotek nakladu.
-
-Lodi s id: 13 zbyva doletet: 0.0
-Lod s id: 13 vylozila 0 jednotek nakladu.
-
-Lodi s id: 14 zbyva doletet: 0.0
-Lod s id: 14 vylozila 0 jednotek nakladu.
-
-Lodi s id: 15 zbyva doletet: 94.0
-
-Lodi s id: 16 zbyva doletet: 20.0
-
-Lodi s id: 17 zbyva doletet: 0.0
-Lod s id: 17 vylozila 0 jednotek nakladu.
-
-Lodi s id: 18 zbyva doletet: 101.0
-
-Lodi s id: 19 zbyva doletet: 0.0
-Lod s id: 19 vylozila 0 jednotek nakladu.
-
-Lodi s id: 20 zbyva doletet: 0.0
-Lod s id: 20 vylozila 0 jednotek nakladu.
-
-Lodi s id: 21 zbyva doletet: 0.0
-Lod s id: 21 vylozila 0 jednotek nakladu.
-
-Lodi s id: 22 zbyva doletet: 0.0
-Lod s id: 22 vylozila 0 jednotek nakladu.
-
-Lodi s id: 23 zbyva doletet: 53.0
-
-Lodi s id: 24 zbyva doletet: 0.0
-Lod s id: 24 vylozila 497177 jednotek nakladu.
-
-Lodi s id: 25 zbyva doletet: 0.0
-Lod s id: 25 vylozila 0 jednotek nakladu.
-
-Lodi s id: 26 zbyva doletet: 193.0
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 0 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 0.0
-Lod s id: 28 vylozila 0 jednotek nakladu.
-
-Lodi s id: 29 zbyva doletet: 0.0
-Lod s id: 29 vylozila 0 jednotek nakladu.
-
----------------------------------------------------------------------------------------------
-Lodi s id: 0 zbyva doletet: 0.0
-Lod s id: 0 vylozila 0 jednotek nakladu.
-
-Lodi s id: 1 zbyva doletet: 0.0
-Lod s id: 1 vylozila 0 jednotek nakladu.
-
-Lodi s id: 2 zbyva doletet: 0.0
-Lod s id: 2 vylozila 0 jednotek nakladu.
-
-Lodi s id: 3 zbyva doletet: 0.0
-Lod s id: 3 vylozila 0 jednotek nakladu.
-
-Lodi s id: 4 zbyva doletet: 0.0
-Lod s id: 4 vylozila 0 jednotek nakladu.
-
-Lodi s id: 5 zbyva doletet: 0.0
-Lod s id: 5 vylozila 0 jednotek nakladu.
-
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
-
-Lodi s id: 7 zbyva doletet: 0.0
-Lod s id: 7 vylozila 0 jednotek nakladu.
-
-Lodi s id: 8 zbyva doletet: 0.0
-Lod s id: 8 vylozila 0 jednotek nakladu.
-
-Lodi s id: 9 zbyva doletet: 78.0
-
-Lodi s id: 10 zbyva doletet: 0.0
-Lod s id: 10 vylozila 0 jednotek nakladu.
-
-Lodi s id: 11 zbyva doletet: 0.0
-Lod s id: 11 vylozila 0 jednotek nakladu.
-
-Lodi s id: 12 zbyva doletet: 0.0
-Lod s id: 12 vylozila 0 jednotek nakladu.
-
-Lodi s id: 13 zbyva doletet: 0.0
-Lod s id: 13 vylozila 0 jednotek nakladu.
-
-Lodi s id: 14 zbyva doletet: 0.0
-Lod s id: 14 vylozila 0 jednotek nakladu.
-
-Lodi s id: 15 zbyva doletet: 69.0
-
-Lodi s id: 16 zbyva doletet: 0.0
-Lod s id: 16 vylozila 1297038 jednotek nakladu.
-
-Lodi s id: 17 zbyva doletet: 0.0
-Lod s id: 17 vylozila 0 jednotek nakladu.
-
-Lodi s id: 18 zbyva doletet: 76.0
-
-Lodi s id: 19 zbyva doletet: 0.0
-Lod s id: 19 vylozila 0 jednotek nakladu.
-
-Lodi s id: 20 zbyva doletet: 0.0
-Lod s id: 20 vylozila 0 jednotek nakladu.
-
-Lodi s id: 21 zbyva doletet: 0.0
-Lod s id: 21 vylozila 0 jednotek nakladu.
-
-Lodi s id: 22 zbyva doletet: 0.0
-Lod s id: 22 vylozila 0 jednotek nakladu.
-
-Lodi s id: 23 zbyva doletet: 28.0
-
-Lodi s id: 24 zbyva doletet: 0.0
-Lod s id: 24 vylozila 0 jednotek nakladu.
-
-Lodi s id: 25 zbyva doletet: 0.0
-Lod s id: 25 vylozila 0 jednotek nakladu.
-
-Lodi s id: 26 zbyva doletet: 168.0
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 0 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 0.0
-Lod s id: 28 vylozila 0 jednotek nakladu.
-
-Lodi s id: 29 zbyva doletet: 0.0
-Lod s id: 29 vylozila 0 jednotek nakladu.
-
----------------------------------------------------------------------------------------------
-Lodi s id: 0 zbyva doletet: 0.0
-Lod s id: 0 vylozila 0 jednotek nakladu.
-
-Lodi s id: 1 zbyva doletet: 0.0
-Lod s id: 1 vylozila 0 jednotek nakladu.
-
-Lodi s id: 2 zbyva doletet: 0.0
-Lod s id: 2 vylozila 0 jednotek nakladu.
-
-Lodi s id: 3 zbyva doletet: 0.0
-Lod s id: 3 vylozila 0 jednotek nakladu.
-
-Lodi s id: 4 zbyva doletet: 0.0
-Lod s id: 4 vylozila 0 jednotek nakladu.
-
-Lodi s id: 5 zbyva doletet: 0.0
-Lod s id: 5 vylozila 0 jednotek nakladu.
-
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
-
-Lodi s id: 7 zbyva doletet: 0.0
-Lod s id: 7 vylozila 0 jednotek nakladu.
-
-Lodi s id: 8 zbyva doletet: 0.0
-Lod s id: 8 vylozila 0 jednotek nakladu.
-
-Lodi s id: 9 zbyva doletet: 53.0
-
-Lodi s id: 10 zbyva doletet: 0.0
-Lod s id: 10 vylozila 0 jednotek nakladu.
-
-Lodi s id: 11 zbyva doletet: 0.0
-Lod s id: 11 vylozila 0 jednotek nakladu.
-
-Lodi s id: 12 zbyva doletet: 0.0
-Lod s id: 12 vylozila 0 jednotek nakladu.
-
-Lodi s id: 13 zbyva doletet: 0.0
-Lod s id: 13 vylozila 0 jednotek nakladu.
-
-Lodi s id: 14 zbyva doletet: 0.0
-Lod s id: 14 vylozila 0 jednotek nakladu.
-
-Lodi s id: 15 zbyva doletet: 44.0
-
-Lodi s id: 16 zbyva doletet: 0.0
-Lod s id: 16 vylozila 0 jednotek nakladu.
-
-Lodi s id: 17 zbyva doletet: 0.0
-Lod s id: 17 vylozila 0 jednotek nakladu.
-
-Lodi s id: 18 zbyva doletet: 51.0
-
-Lodi s id: 19 zbyva doletet: 0.0
-Lod s id: 19 vylozila 0 jednotek nakladu.
-
-Lodi s id: 20 zbyva doletet: 0.0
-Lod s id: 20 vylozila 0 jednotek nakladu.
-
-Lodi s id: 21 zbyva doletet: 0.0
-Lod s id: 21 vylozila 0 jednotek nakladu.
-
-Lodi s id: 22 zbyva doletet: 0.0
-Lod s id: 22 vylozila 0 jednotek nakladu.
-
-Lodi s id: 23 zbyva doletet: 3.0
-
-Lodi s id: 24 zbyva doletet: 0.0
-Lod s id: 24 vylozila 0 jednotek nakladu.
-
-Lodi s id: 25 zbyva doletet: 0.0
-Lod s id: 25 vylozila 0 jednotek nakladu.
-
-Lodi s id: 26 zbyva doletet: 143.0
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 0 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 0.0
-Lod s id: 28 vylozila 0 jednotek nakladu.
-
-Lodi s id: 29 zbyva doletet: 0.0
-Lod s id: 29 vylozila 0 jednotek nakladu.
-
----------------------------------------------------------------------------------------------
-Lodi s id: 0 zbyva doletet: 0.0
-Lod s id: 0 vylozila 0 jednotek nakladu.
-
-Lodi s id: 1 zbyva doletet: 0.0
-Lod s id: 1 vylozila 0 jednotek nakladu.
-
-Lodi s id: 2 zbyva doletet: 0.0
-Lod s id: 2 vylozila 0 jednotek nakladu.
-
-Lodi s id: 3 zbyva doletet: 0.0
-Lod s id: 3 vylozila 0 jednotek nakladu.
-
-Lodi s id: 4 zbyva doletet: 0.0
-Lod s id: 4 vylozila 0 jednotek nakladu.
-
-Lodi s id: 5 zbyva doletet: 0.0
-Lod s id: 5 vylozila 0 jednotek nakladu.
-
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
-
-Lodi s id: 7 zbyva doletet: 0.0
-Lod s id: 7 vylozila 0 jednotek nakladu.
-
-Lodi s id: 8 zbyva doletet: 0.0
-Lod s id: 8 vylozila 0 jednotek nakladu.
-
-Lodi s id: 9 zbyva doletet: 28.0
-
-Lodi s id: 10 zbyva doletet: 0.0
-Lod s id: 10 vylozila 0 jednotek nakladu.
-
-Lodi s id: 11 zbyva doletet: 0.0
-Lod s id: 11 vylozila 0 jednotek nakladu.
-
-Lodi s id: 12 zbyva doletet: 0.0
-Lod s id: 12 vylozila 0 jednotek nakladu.
-
-Lodi s id: 13 zbyva doletet: 0.0
-Lod s id: 13 vylozila 0 jednotek nakladu.
-
-Lodi s id: 14 zbyva doletet: 0.0
-Lod s id: 14 vylozila 0 jednotek nakladu.
-
-Lodi s id: 15 zbyva doletet: 19.0
-
-Lodi s id: 16 zbyva doletet: 0.0
-Lod s id: 16 vylozila 0 jednotek nakladu.
-
-Lodi s id: 17 zbyva doletet: 0.0
-Lod s id: 17 vylozila 0 jednotek nakladu.
-
-Lodi s id: 18 zbyva doletet: 26.0
-
-Lodi s id: 19 zbyva doletet: 0.0
-Lod s id: 19 vylozila 0 jednotek nakladu.
-
-Lodi s id: 20 zbyva doletet: 0.0
-Lod s id: 20 vylozila 0 jednotek nakladu.
-
-Lodi s id: 21 zbyva doletet: 0.0
-Lod s id: 21 vylozila 0 jednotek nakladu.
-
-Lodi s id: 22 zbyva doletet: 0.0
-Lod s id: 22 vylozila 0 jednotek nakladu.
-
-Lodi s id: 23 zbyva doletet: 0.0
-Lod s id: 23 vylozila 594360 jednotek nakladu.
-
-Lodi s id: 24 zbyva doletet: 0.0
-Lod s id: 24 vylozila 0 jednotek nakladu.
-
-Lodi s id: 25 zbyva doletet: 0.0
-Lod s id: 25 vylozila 0 jednotek nakladu.
-
-Lodi s id: 26 zbyva doletet: 118.0
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 0 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 0.0
-Lod s id: 28 vylozila 0 jednotek nakladu.
-
-Lodi s id: 29 zbyva doletet: 0.0
-Lod s id: 29 vylozila 0 jednotek nakladu.
-
----------------------------------------------------------------------------------------------
-Lodi s id: 0 zbyva doletet: 0.0
-Lod s id: 0 vylozila 0 jednotek nakladu.
-
-Lodi s id: 1 zbyva doletet: 0.0
-Lod s id: 1 vylozila 0 jednotek nakladu.
-
-Lodi s id: 2 zbyva doletet: 0.0
-Lod s id: 2 vylozila 0 jednotek nakladu.
-
-Lodi s id: 3 zbyva doletet: 0.0
-Lod s id: 3 vylozila 0 jednotek nakladu.
-
-Lodi s id: 4 zbyva doletet: 0.0
-Lod s id: 4 vylozila 0 jednotek nakladu.
-
-Lodi s id: 5 zbyva doletet: 0.0
-Lod s id: 5 vylozila 0 jednotek nakladu.
-
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
-
-Lodi s id: 7 zbyva doletet: 0.0
-Lod s id: 7 vylozila 0 jednotek nakladu.
-
-Lodi s id: 8 zbyva doletet: 0.0
-Lod s id: 8 vylozila 0 jednotek nakladu.
-
-Lodi s id: 9 zbyva doletet: 3.0
-
-Lodi s id: 10 zbyva doletet: 0.0
-Lod s id: 10 vylozila 0 jednotek nakladu.
-
-Lodi s id: 11 zbyva doletet: 0.0
-Lod s id: 11 vylozila 0 jednotek nakladu.
-
-Lodi s id: 12 zbyva doletet: 0.0
-Lod s id: 12 vylozila 0 jednotek nakladu.
-
-Lodi s id: 13 zbyva doletet: 0.0
-Lod s id: 13 vylozila 0 jednotek nakladu.
-
-Lodi s id: 14 zbyva doletet: 0.0
-Lod s id: 14 vylozila 0 jednotek nakladu.
-
 Lodi s id: 15 zbyva doletet: 0.0
-Lod s id: 15 vylozila 2934989 jednotek nakladu.
+Lod s id: 15 vylozila 0 jednotek nakladu.
 
 Lodi s id: 16 zbyva doletet: 0.0
 Lod s id: 16 vylozila 0 jednotek nakladu.
@@ -1687,7 +1634,8 @@ Lod s id: 16 vylozila 0 jednotek nakladu.
 Lodi s id: 17 zbyva doletet: 0.0
 Lod s id: 17 vylozila 0 jednotek nakladu.
 
-Lodi s id: 18 zbyva doletet: 1.0
+Lodi s id: 18 zbyva doletet: 0.0
+Lod s id: 18 vylozila 0 jednotek nakladu.
 
 Lodi s id: 19 zbyva doletet: 0.0
 Lod s id: 19 vylozila 0 jednotek nakladu.
@@ -1706,20 +1654,6 @@ Lod s id: 23 vylozila 0 jednotek nakladu.
 
 Lodi s id: 24 zbyva doletet: 0.0
 Lod s id: 24 vylozila 0 jednotek nakladu.
-
-Lodi s id: 25 zbyva doletet: 0.0
-Lod s id: 25 vylozila 0 jednotek nakladu.
-
-Lodi s id: 26 zbyva doletet: 93.0
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 0 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 0.0
-Lod s id: 28 vylozila 0 jednotek nakladu.
-
-Lodi s id: 29 zbyva doletet: 0.0
-Lod s id: 29 vylozila 0 jednotek nakladu.
 
 ---------------------------------------------------------------------------------------------
 Lodi s id: 0 zbyva doletet: 0.0
@@ -1750,7 +1684,7 @@ Lodi s id: 8 zbyva doletet: 0.0
 Lod s id: 8 vylozila 0 jednotek nakladu.
 
 Lodi s id: 9 zbyva doletet: 0.0
-Lod s id: 9 vylozila 2956315 jednotek nakladu.
+Lod s id: 9 vylozila 0 jednotek nakladu.
 
 Lodi s id: 10 zbyva doletet: 0.0
 Lod s id: 10 vylozila 0 jednotek nakladu.
@@ -1762,7 +1696,7 @@ Lodi s id: 12 zbyva doletet: 0.0
 Lod s id: 12 vylozila 0 jednotek nakladu.
 
 Lodi s id: 13 zbyva doletet: 0.0
-Lod s id: 13 vylozila 0 jednotek nakladu.
+Lod s id: 13 vylozila 1720213 jednotek nakladu.
 
 Lodi s id: 14 zbyva doletet: 0.0
 Lod s id: 14 vylozila 0 jednotek nakladu.
@@ -1777,7 +1711,7 @@ Lodi s id: 17 zbyva doletet: 0.0
 Lod s id: 17 vylozila 0 jednotek nakladu.
 
 Lodi s id: 18 zbyva doletet: 0.0
-Lod s id: 18 vylozila 1225010 jednotek nakladu.
+Lod s id: 18 vylozila 0 jednotek nakladu.
 
 Lodi s id: 19 zbyva doletet: 0.0
 Lod s id: 19 vylozila 0 jednotek nakladu.
@@ -1796,20 +1730,6 @@ Lod s id: 23 vylozila 0 jednotek nakladu.
 
 Lodi s id: 24 zbyva doletet: 0.0
 Lod s id: 24 vylozila 0 jednotek nakladu.
-
-Lodi s id: 25 zbyva doletet: 0.0
-Lod s id: 25 vylozila 0 jednotek nakladu.
-
-Lodi s id: 26 zbyva doletet: 68.0
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 0 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 0.0
-Lod s id: 28 vylozila 0 jednotek nakladu.
-
-Lodi s id: 29 zbyva doletet: 0.0
-Lod s id: 29 vylozila 0 jednotek nakladu.
 
 ---------------------------------------------------------------------------------------------
 Lodi s id: 0 zbyva doletet: 0.0
@@ -1887,19 +1807,81 @@ Lod s id: 23 vylozila 0 jednotek nakladu.
 Lodi s id: 24 zbyva doletet: 0.0
 Lod s id: 24 vylozila 0 jednotek nakladu.
 
-Lodi s id: 25 zbyva doletet: 0.0
-Lod s id: 25 vylozila 0 jednotek nakladu.
+---------------------------------------------------------------------------------------------
+Lodi s id: 0 zbyva doletet: 0.0
+Lod s id: 0 vylozila 0 jednotek nakladu.
 
-Lodi s id: 26 zbyva doletet: 43.0
+Lodi s id: 1 zbyva doletet: 0.0
+Lod s id: 1 vylozila 0 jednotek nakladu.
 
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 0 jednotek nakladu.
+Lodi s id: 2 zbyva doletet: 0.0
+Lod s id: 2 vylozila 0 jednotek nakladu.
 
-Lodi s id: 28 zbyva doletet: 0.0
-Lod s id: 28 vylozila 0 jednotek nakladu.
+Lodi s id: 3 zbyva doletet: 0.0
+Lod s id: 3 vylozila 0 jednotek nakladu.
 
-Lodi s id: 29 zbyva doletet: 0.0
-Lod s id: 29 vylozila 0 jednotek nakladu.
+Lodi s id: 4 zbyva doletet: 0.0
+Lod s id: 4 vylozila 0 jednotek nakladu.
+
+Lodi s id: 5 zbyva doletet: 0.0
+Lod s id: 5 vylozila 0 jednotek nakladu.
+
+Lodi s id: 6 zbyva doletet: 0.0
+Lod s id: 6 vylozila 0 jednotek nakladu.
+
+Lodi s id: 7 zbyva doletet: 0.0
+Lod s id: 7 vylozila 0 jednotek nakladu.
+
+Lodi s id: 8 zbyva doletet: 0.0
+Lod s id: 8 vylozila 0 jednotek nakladu.
+
+Lodi s id: 9 zbyva doletet: 0.0
+Lod s id: 9 vylozila 0 jednotek nakladu.
+
+Lodi s id: 10 zbyva doletet: 0.0
+Lod s id: 10 vylozila 0 jednotek nakladu.
+
+Lodi s id: 11 zbyva doletet: 0.0
+Lod s id: 11 vylozila 0 jednotek nakladu.
+
+Lodi s id: 12 zbyva doletet: 0.0
+Lod s id: 12 vylozila 0 jednotek nakladu.
+
+Lodi s id: 13 zbyva doletet: 0.0
+Lod s id: 13 vylozila 0 jednotek nakladu.
+
+Lodi s id: 14 zbyva doletet: 0.0
+Lod s id: 14 vylozila 0 jednotek nakladu.
+
+Lodi s id: 15 zbyva doletet: 0.0
+Lod s id: 15 vylozila 0 jednotek nakladu.
+
+Lodi s id: 16 zbyva doletet: 0.0
+Lod s id: 16 vylozila 0 jednotek nakladu.
+
+Lodi s id: 17 zbyva doletet: 0.0
+Lod s id: 17 vylozila 0 jednotek nakladu.
+
+Lodi s id: 18 zbyva doletet: 0.0
+Lod s id: 18 vylozila 0 jednotek nakladu.
+
+Lodi s id: 19 zbyva doletet: 0.0
+Lod s id: 19 vylozila 0 jednotek nakladu.
+
+Lodi s id: 20 zbyva doletet: 0.0
+Lod s id: 20 vylozila 0 jednotek nakladu.
+
+Lodi s id: 21 zbyva doletet: 0.0
+Lod s id: 21 vylozila 0 jednotek nakladu.
+
+Lodi s id: 22 zbyva doletet: 0.0
+Lod s id: 22 vylozila 0 jednotek nakladu.
+
+Lodi s id: 23 zbyva doletet: 0.0
+Lod s id: 23 vylozila 0 jednotek nakladu.
+
+Lodi s id: 24 zbyva doletet: 0.0
+Lod s id: 24 vylozila 0 jednotek nakladu.
 
 ---------------------------------------------------------------------------------------------
 Lodi s id: 0 zbyva doletet: 0.0
@@ -1977,20 +1959,6 @@ Lod s id: 23 vylozila 0 jednotek nakladu.
 Lodi s id: 24 zbyva doletet: 0.0
 Lod s id: 24 vylozila 0 jednotek nakladu.
 
-Lodi s id: 25 zbyva doletet: 0.0
-Lod s id: 25 vylozila 0 jednotek nakladu.
-
-Lodi s id: 26 zbyva doletet: 18.0
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 0 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 0.0
-Lod s id: 28 vylozila 0 jednotek nakladu.
-
-Lodi s id: 29 zbyva doletet: 0.0
-Lod s id: 29 vylozila 0 jednotek nakladu.
-
 ---------------------------------------------------------------------------------------------
 Lodi s id: 0 zbyva doletet: 0.0
 Lod s id: 0 vylozila 0 jednotek nakladu.
@@ -2066,2708 +2034,4 @@ Lod s id: 23 vylozila 0 jednotek nakladu.
 
 Lodi s id: 24 zbyva doletet: 0.0
 Lod s id: 24 vylozila 0 jednotek nakladu.
-
-Lodi s id: 25 zbyva doletet: 0.0
-Lod s id: 25 vylozila 0 jednotek nakladu.
-
-Lodi s id: 26 zbyva doletet: 0.0
-Lod s id: 26 vylozila 1402284 jednotek nakladu.
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 0 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 0.0
-Lod s id: 28 vylozila 0 jednotek nakladu.
-
-Lodi s id: 29 zbyva doletet: 0.0
-Lod s id: 29 vylozila 0 jednotek nakladu.
-
----------------------------------------------------------------------------------------------
-Lodi s id: 0 zbyva doletet: 0.0
-Lod s id: 0 vylozila 0 jednotek nakladu.
-
-Lodi s id: 1 zbyva doletet: 0.0
-Lod s id: 1 vylozila 0 jednotek nakladu.
-
-Lodi s id: 2 zbyva doletet: 0.0
-Lod s id: 2 vylozila 0 jednotek nakladu.
-
-Lodi s id: 3 zbyva doletet: 0.0
-Lod s id: 3 vylozila 0 jednotek nakladu.
-
-Lodi s id: 4 zbyva doletet: 0.0
-Lod s id: 4 vylozila 0 jednotek nakladu.
-
-Lodi s id: 5 zbyva doletet: 0.0
-Lod s id: 5 vylozila 0 jednotek nakladu.
-
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
-
-Lodi s id: 7 zbyva doletet: 0.0
-Lod s id: 7 vylozila 0 jednotek nakladu.
-
-Lodi s id: 8 zbyva doletet: 0.0
-Lod s id: 8 vylozila 0 jednotek nakladu.
-
-Lodi s id: 9 zbyva doletet: 0.0
-Lod s id: 9 vylozila 0 jednotek nakladu.
-
-Lodi s id: 10 zbyva doletet: 0.0
-Lod s id: 10 vylozila 0 jednotek nakladu.
-
-Lodi s id: 11 zbyva doletet: 0.0
-Lod s id: 11 vylozila 0 jednotek nakladu.
-
-Lodi s id: 12 zbyva doletet: 0.0
-Lod s id: 12 vylozila 0 jednotek nakladu.
-
-Lodi s id: 13 zbyva doletet: 0.0
-Lod s id: 13 vylozila 0 jednotek nakladu.
-
-Lodi s id: 14 zbyva doletet: 0.0
-Lod s id: 14 vylozila 0 jednotek nakladu.
-
-Lodi s id: 15 zbyva doletet: 0.0
-Lod s id: 15 vylozila 0 jednotek nakladu.
-
-Lodi s id: 16 zbyva doletet: 0.0
-Lod s id: 16 vylozila 0 jednotek nakladu.
-
-Lodi s id: 17 zbyva doletet: 0.0
-Lod s id: 17 vylozila 0 jednotek nakladu.
-
-Lodi s id: 18 zbyva doletet: 0.0
-Lod s id: 18 vylozila 0 jednotek nakladu.
-
-Lodi s id: 19 zbyva doletet: 0.0
-Lod s id: 19 vylozila 0 jednotek nakladu.
-
-Lodi s id: 20 zbyva doletet: 0.0
-Lod s id: 20 vylozila 0 jednotek nakladu.
-
-Lodi s id: 21 zbyva doletet: 0.0
-Lod s id: 21 vylozila 0 jednotek nakladu.
-
-Lodi s id: 22 zbyva doletet: 0.0
-Lod s id: 22 vylozila 0 jednotek nakladu.
-
-Lodi s id: 23 zbyva doletet: 0.0
-Lod s id: 23 vylozila 0 jednotek nakladu.
-
-Lodi s id: 24 zbyva doletet: 0.0
-Lod s id: 24 vylozila 0 jednotek nakladu.
-
-Lodi s id: 25 zbyva doletet: 0.0
-Lod s id: 25 vylozila 0 jednotek nakladu.
-
-Lodi s id: 26 zbyva doletet: 0.0
-Lod s id: 26 vylozila 0 jednotek nakladu.
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 0 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 0.0
-Lod s id: 28 vylozila 0 jednotek nakladu.
-
-Lodi s id: 29 zbyva doletet: 0.0
-Lod s id: 29 vylozila 0 jednotek nakladu.
-
----------------------------------------------------------------------------------------------
-Lodi s id: 0 zbyva doletet: 0.0
-Lod s id: 0 vylozila 0 jednotek nakladu.
-
-Lodi s id: 1 zbyva doletet: 0.0
-Lod s id: 1 vylozila 0 jednotek nakladu.
-
-Lodi s id: 2 zbyva doletet: 0.0
-Lod s id: 2 vylozila 0 jednotek nakladu.
-
-Lodi s id: 3 zbyva doletet: 0.0
-Lod s id: 3 vylozila 0 jednotek nakladu.
-
-Lodi s id: 4 zbyva doletet: 0.0
-Lod s id: 4 vylozila 0 jednotek nakladu.
-
-Lodi s id: 5 zbyva doletet: 0.0
-Lod s id: 5 vylozila 0 jednotek nakladu.
-
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
-
-Lodi s id: 7 zbyva doletet: 0.0
-Lod s id: 7 vylozila 0 jednotek nakladu.
-
-Lodi s id: 8 zbyva doletet: 0.0
-Lod s id: 8 vylozila 0 jednotek nakladu.
-
-Lodi s id: 9 zbyva doletet: 0.0
-Lod s id: 9 vylozila 0 jednotek nakladu.
-
-Lodi s id: 10 zbyva doletet: 0.0
-Lod s id: 10 vylozila 0 jednotek nakladu.
-
-Lodi s id: 11 zbyva doletet: 0.0
-Lod s id: 11 vylozila 0 jednotek nakladu.
-
-Lodi s id: 12 zbyva doletet: 0.0
-Lod s id: 12 vylozila 0 jednotek nakladu.
-
-Lodi s id: 13 zbyva doletet: 0.0
-Lod s id: 13 vylozila 0 jednotek nakladu.
-
-Lodi s id: 14 zbyva doletet: 0.0
-Lod s id: 14 vylozila 0 jednotek nakladu.
-
-Lodi s id: 15 zbyva doletet: 0.0
-Lod s id: 15 vylozila 0 jednotek nakladu.
-
-Lodi s id: 16 zbyva doletet: 0.0
-Lod s id: 16 vylozila 0 jednotek nakladu.
-
-Lodi s id: 17 zbyva doletet: 0.0
-Lod s id: 17 vylozila 0 jednotek nakladu.
-
-Lodi s id: 18 zbyva doletet: 0.0
-Lod s id: 18 vylozila 0 jednotek nakladu.
-
-Lodi s id: 19 zbyva doletet: 0.0
-Lod s id: 19 vylozila 0 jednotek nakladu.
-
-Lodi s id: 20 zbyva doletet: 0.0
-Lod s id: 20 vylozila 0 jednotek nakladu.
-
-Lodi s id: 21 zbyva doletet: 0.0
-Lod s id: 21 vylozila 0 jednotek nakladu.
-
-Lodi s id: 22 zbyva doletet: 0.0
-Lod s id: 22 vylozila 0 jednotek nakladu.
-
-Lodi s id: 23 zbyva doletet: 0.0
-Lod s id: 23 vylozila 0 jednotek nakladu.
-
-Lodi s id: 24 zbyva doletet: 0.0
-Lod s id: 24 vylozila 0 jednotek nakladu.
-
-Lodi s id: 25 zbyva doletet: 0.0
-Lod s id: 25 vylozila 0 jednotek nakladu.
-
-Lodi s id: 26 zbyva doletet: 0.0
-Lod s id: 26 vylozila 0 jednotek nakladu.
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 0 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 0.0
-Lod s id: 28 vylozila 0 jednotek nakladu.
-
-Lodi s id: 29 zbyva doletet: 0.0
-Lod s id: 29 vylozila 0 jednotek nakladu.
-
----------------------------------------------------------------------------------------------
-Lodi s id: 0 zbyva doletet: 0.0
-Lod s id: 0 vylozila 0 jednotek nakladu.
-
-Lodi s id: 1 zbyva doletet: 0.0
-Lod s id: 1 vylozila 0 jednotek nakladu.
-
-Lodi s id: 2 zbyva doletet: 0.0
-Lod s id: 2 vylozila 0 jednotek nakladu.
-
-Lodi s id: 3 zbyva doletet: 0.0
-Lod s id: 3 vylozila 0 jednotek nakladu.
-
-Lodi s id: 4 zbyva doletet: 0.0
-Lod s id: 4 vylozila 0 jednotek nakladu.
-
-Lodi s id: 5 zbyva doletet: 0.0
-Lod s id: 5 vylozila 0 jednotek nakladu.
-
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
-
-Lodi s id: 7 zbyva doletet: 0.0
-Lod s id: 7 vylozila 0 jednotek nakladu.
-
-Lodi s id: 8 zbyva doletet: 0.0
-Lod s id: 8 vylozila 0 jednotek nakladu.
-
-Lodi s id: 9 zbyva doletet: 0.0
-Lod s id: 9 vylozila 0 jednotek nakladu.
-
-Lodi s id: 10 zbyva doletet: 0.0
-Lod s id: 10 vylozila 0 jednotek nakladu.
-
-Lodi s id: 11 zbyva doletet: 0.0
-Lod s id: 11 vylozila 0 jednotek nakladu.
-
-Lodi s id: 12 zbyva doletet: 0.0
-Lod s id: 12 vylozila 0 jednotek nakladu.
-
-Lodi s id: 13 zbyva doletet: 0.0
-Lod s id: 13 vylozila 0 jednotek nakladu.
-
-Lodi s id: 14 zbyva doletet: 0.0
-Lod s id: 14 vylozila 0 jednotek nakladu.
-
-Lodi s id: 15 zbyva doletet: 0.0
-Lod s id: 15 vylozila 0 jednotek nakladu.
-
-Lodi s id: 16 zbyva doletet: 0.0
-Lod s id: 16 vylozila 0 jednotek nakladu.
-
-Lodi s id: 17 zbyva doletet: 0.0
-Lod s id: 17 vylozila 0 jednotek nakladu.
-
-Lodi s id: 18 zbyva doletet: 0.0
-Lod s id: 18 vylozila 0 jednotek nakladu.
-
-Lodi s id: 19 zbyva doletet: 0.0
-Lod s id: 19 vylozila 0 jednotek nakladu.
-
-Lodi s id: 20 zbyva doletet: 0.0
-Lod s id: 20 vylozila 0 jednotek nakladu.
-
-Lodi s id: 21 zbyva doletet: 0.0
-Lod s id: 21 vylozila 0 jednotek nakladu.
-
-Lodi s id: 22 zbyva doletet: 0.0
-Lod s id: 22 vylozila 0 jednotek nakladu.
-
-Lodi s id: 23 zbyva doletet: 0.0
-Lod s id: 23 vylozila 0 jednotek nakladu.
-
-Lodi s id: 24 zbyva doletet: 0.0
-Lod s id: 24 vylozila 0 jednotek nakladu.
-
-Lodi s id: 25 zbyva doletet: 0.0
-Lod s id: 25 vylozila 0 jednotek nakladu.
-
-Lodi s id: 26 zbyva doletet: 0.0
-Lod s id: 26 vylozila 0 jednotek nakladu.
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 0 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 0.0
-Lod s id: 28 vylozila 0 jednotek nakladu.
-
-Lodi s id: 29 zbyva doletet: 0.0
-Lod s id: 29 vylozila 0 jednotek nakladu.
-
----------------------------------------------------------------------------------------------
-Objednavky pro 2. mesic: 
----------------------------------------------------------------------------------------------
-Planeta s id: 5 objednava takovyto pocet leku: 3333333
-Planeta s id: 6 objednava takovyto pocet leku: 1306190
-Planeta s id: 7 objednava takovyto pocet leku: 1264615
-Planeta s id: 8 objednava takovyto pocet leku: 1119407
-Planeta s id: 9 objednava takovyto pocet leku: 2866618
-Planeta s id: 10 objednava takovyto pocet leku: 1658478
-Planeta s id: 11 objednava takovyto pocet leku: 810907
-Planeta s id: 12 objednava takovyto pocet leku: 1232883
-Planeta s id: 13 objednava takovyto pocet leku: 1813076
-Planeta s id: 14 objednava takovyto pocet leku: 2456656
-Planeta s id: 15 objednava takovyto pocet leku: 818259
-Planeta s id: 16 objednava takovyto pocet leku: 926579
-Planeta s id: 17 objednava takovyto pocet leku: 1706990
-Planeta s id: 18 objednava takovyto pocet leku: 2874987
-Planeta s id: 19 objednava takovyto pocet leku: 1802608
-Planeta s id: 20 objednava takovyto pocet leku: 3409766
-Planeta s id: 21 objednava takovyto pocet leku: 825388
-Planeta s id: 22 objednava takovyto pocet leku: 773756
-Planeta s id: 23 objednava takovyto pocet leku: 816673
-Planeta s id: 24 objednava takovyto pocet leku: 673285
-Planeta s id: 25 objednava takovyto pocet leku: 1090538
-Planeta s id: 26 objednava takovyto pocet leku: 1972332
-Planeta s id: 27 objednava takovyto pocet leku: 1261555
-Planeta s id: 28 objednava takovyto pocet leku: 754380
-Planeta s id: 29 objednava takovyto pocet leku: 505069
-Planeta s id: 30 objednava takovyto pocet leku: 2858445
-Planeta s id: 31 objednava takovyto pocet leku: 1342186
-Planeta s id: 32 objednava takovyto pocet leku: 638528
-Planeta s id: 33 objednava takovyto pocet leku: 894116
-Planeta s id: 34 objednava takovyto pocet leku: 1225411
----------------------------------------------------------------------------------------------
-Lodi s id: 0 zbyva doletet: 13.0
-
-Lodi s id: 1 zbyva doletet: 189.0
-
-Lodi s id: 2 zbyva doletet: 269.0
-
-Lodi s id: 3 zbyva doletet: 593.0
-
-Lodi s id: 4 zbyva doletet: 340.0
-
-Lodi s id: 5 zbyva doletet: 211.0
-
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 810907 jednotek nakladu.
-
-Lodi s id: 7 zbyva doletet: 209.0
-
-Lodi s id: 8 zbyva doletet: 355.0
-
-Lodi s id: 9 zbyva doletet: 356.0
-
-Lodi s id: 10 zbyva doletet: 347.0
-
-Lodi s id: 11 zbyva doletet: 204.0
-
-Lodi s id: 12 zbyva doletet: 296.0
-
-Lodi s id: 13 zbyva doletet: 199.0
-
-Lodi s id: 14 zbyva doletet: 364.0
-
-Lodi s id: 15 zbyva doletet: 355.0
-
-Lodi s id: 16 zbyva doletet: 148.0
-
-Lodi s id: 17 zbyva doletet: 107.0
-
-Lodi s id: 18 zbyva doletet: 259.0
-
-Lodi s id: 19 zbyva doletet: 251.0
-
-Lodi s id: 20 zbyva doletet: 369.0
-
-Lodi s id: 21 zbyva doletet: 326.0
-
-Lodi s id: 22 zbyva doletet: 232.0
-
-Lodi s id: 23 zbyva doletet: 467.0
-
-Lodi s id: 24 zbyva doletet: 418.0
-
-Lodi s id: 25 zbyva doletet: 303.0
-
-Lodi s id: 26 zbyva doletet: 366.0
-
-Lodi s id: 27 zbyva doletet: 33.0
-
-Lodi s id: 28 zbyva doletet: 405.0
-
-Lodi s id: 29 zbyva doletet: 322.0
-
----------------------------------------------------------------------------------------------
-Lodi s id: 0 zbyva doletet: 0.0
-Lod s id: 0 vylozila 3333333 jednotek nakladu.
-
-Lodi s id: 1 zbyva doletet: 164.0
-
-Lodi s id: 2 zbyva doletet: 244.0
-
-Lodi s id: 3 zbyva doletet: 568.0
-
-Lodi s id: 4 zbyva doletet: 315.0
-
-Lodi s id: 5 zbyva doletet: 186.0
-
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
-
-Lodi s id: 7 zbyva doletet: 184.0
-
-Lodi s id: 8 zbyva doletet: 330.0
-
-Lodi s id: 9 zbyva doletet: 331.0
-
-Lodi s id: 10 zbyva doletet: 322.0
-
-Lodi s id: 11 zbyva doletet: 179.0
-
-Lodi s id: 12 zbyva doletet: 271.0
-
-Lodi s id: 13 zbyva doletet: 174.0
-
-Lodi s id: 14 zbyva doletet: 339.0
-
-Lodi s id: 15 zbyva doletet: 330.0
-
-Lodi s id: 16 zbyva doletet: 123.0
-
-Lodi s id: 17 zbyva doletet: 82.0
-
-Lodi s id: 18 zbyva doletet: 234.0
-
-Lodi s id: 19 zbyva doletet: 226.0
-
-Lodi s id: 20 zbyva doletet: 344.0
-
-Lodi s id: 21 zbyva doletet: 301.0
-
-Lodi s id: 22 zbyva doletet: 207.0
-
-Lodi s id: 23 zbyva doletet: 442.0
-
-Lodi s id: 24 zbyva doletet: 393.0
-
-Lodi s id: 25 zbyva doletet: 278.0
-
-Lodi s id: 26 zbyva doletet: 341.0
-
-Lodi s id: 27 zbyva doletet: 8.0
-
-Lodi s id: 28 zbyva doletet: 380.0
-
-Lodi s id: 29 zbyva doletet: 297.0
-
----------------------------------------------------------------------------------------------
-Lodi s id: 0 zbyva doletet: 0.0
-Lod s id: 0 vylozila 0 jednotek nakladu.
-
-Lodi s id: 1 zbyva doletet: 139.0
-
-Lodi s id: 2 zbyva doletet: 219.0
-
-Lodi s id: 3 zbyva doletet: 543.0
-
-Lodi s id: 4 zbyva doletet: 290.0
-
-Lodi s id: 5 zbyva doletet: 161.0
-
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
-
-Lodi s id: 7 zbyva doletet: 159.0
-
-Lodi s id: 8 zbyva doletet: 305.0
-
-Lodi s id: 9 zbyva doletet: 306.0
-
-Lodi s id: 10 zbyva doletet: 297.0
-
-Lodi s id: 11 zbyva doletet: 154.0
-
-Lodi s id: 12 zbyva doletet: 246.0
-
-Lodi s id: 13 zbyva doletet: 149.0
-
-Lodi s id: 14 zbyva doletet: 314.0
-
-Lodi s id: 15 zbyva doletet: 305.0
-
-Lodi s id: 16 zbyva doletet: 98.0
-
-Lodi s id: 17 zbyva doletet: 57.0
-
-Lodi s id: 18 zbyva doletet: 209.0
-
-Lodi s id: 19 zbyva doletet: 201.0
-
-Lodi s id: 20 zbyva doletet: 319.0
-
-Lodi s id: 21 zbyva doletet: 276.0
-
-Lodi s id: 22 zbyva doletet: 182.0
-
-Lodi s id: 23 zbyva doletet: 417.0
-
-Lodi s id: 24 zbyva doletet: 368.0
-
-Lodi s id: 25 zbyva doletet: 253.0
-
-Lodi s id: 26 zbyva doletet: 316.0
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 638528 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 355.0
-
-Lodi s id: 29 zbyva doletet: 272.0
-
----------------------------------------------------------------------------------------------
-Lodi s id: 0 zbyva doletet: 0.0
-Lod s id: 0 vylozila 0 jednotek nakladu.
-
-Lodi s id: 1 zbyva doletet: 114.0
-
-Lodi s id: 2 zbyva doletet: 194.0
-
-Lodi s id: 3 zbyva doletet: 518.0
-
-Lodi s id: 4 zbyva doletet: 265.0
-
-Lodi s id: 5 zbyva doletet: 136.0
-
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
-
-Lodi s id: 7 zbyva doletet: 134.0
-
-Lodi s id: 8 zbyva doletet: 280.0
-
-Lodi s id: 9 zbyva doletet: 281.0
-
-Lodi s id: 10 zbyva doletet: 272.0
-
-Lodi s id: 11 zbyva doletet: 129.0
-
-Lodi s id: 12 zbyva doletet: 221.0
-
-Lodi s id: 13 zbyva doletet: 124.0
-
-Lodi s id: 14 zbyva doletet: 289.0
-
-Lodi s id: 15 zbyva doletet: 280.0
-
-Lodi s id: 16 zbyva doletet: 73.0
-
-Lodi s id: 17 zbyva doletet: 32.0
-
-Lodi s id: 18 zbyva doletet: 184.0
-
-Lodi s id: 19 zbyva doletet: 176.0
-
-Lodi s id: 20 zbyva doletet: 294.0
-
-Lodi s id: 21 zbyva doletet: 251.0
-
-Lodi s id: 22 zbyva doletet: 157.0
-
-Lodi s id: 23 zbyva doletet: 392.0
-
-Lodi s id: 24 zbyva doletet: 343.0
-
-Lodi s id: 25 zbyva doletet: 228.0
-
-Lodi s id: 26 zbyva doletet: 291.0
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 0 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 330.0
-
-Lodi s id: 29 zbyva doletet: 247.0
-
----------------------------------------------------------------------------------------------
-Lodi s id: 0 zbyva doletet: 0.0
-Lod s id: 0 vylozila 0 jednotek nakladu.
-
-Lodi s id: 1 zbyva doletet: 89.0
-
-Lodi s id: 2 zbyva doletet: 169.0
-
-Lodi s id: 3 zbyva doletet: 493.0
-
-Lodi s id: 4 zbyva doletet: 240.0
-
-Lodi s id: 5 zbyva doletet: 111.0
-
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
-
-Lodi s id: 7 zbyva doletet: 109.0
-
-Lodi s id: 8 zbyva doletet: 255.0
-
-Lodi s id: 9 zbyva doletet: 256.0
-
-Lodi s id: 10 zbyva doletet: 247.0
-
-Lodi s id: 11 zbyva doletet: 104.0
-
-Lodi s id: 12 zbyva doletet: 196.0
-
-Lodi s id: 13 zbyva doletet: 99.0
-
-Lodi s id: 14 zbyva doletet: 264.0
-
-Lodi s id: 15 zbyva doletet: 255.0
-
-Lodi s id: 16 zbyva doletet: 48.0
-
-Lodi s id: 17 zbyva doletet: 7.0
-
-Lodi s id: 18 zbyva doletet: 159.0
-
-Lodi s id: 19 zbyva doletet: 151.0
-
-Lodi s id: 20 zbyva doletet: 269.0
-
-Lodi s id: 21 zbyva doletet: 226.0
-
-Lodi s id: 22 zbyva doletet: 132.0
-
-Lodi s id: 23 zbyva doletet: 367.0
-
-Lodi s id: 24 zbyva doletet: 318.0
-
-Lodi s id: 25 zbyva doletet: 203.0
-
-Lodi s id: 26 zbyva doletet: 266.0
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 0 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 305.0
-
-Lodi s id: 29 zbyva doletet: 222.0
-
----------------------------------------------------------------------------------------------
-Lodi s id: 0 zbyva doletet: 0.0
-Lod s id: 0 vylozila 0 jednotek nakladu.
-
-Lodi s id: 1 zbyva doletet: 64.0
-
-Lodi s id: 2 zbyva doletet: 144.0
-
-Lodi s id: 3 zbyva doletet: 468.0
-
-Lodi s id: 4 zbyva doletet: 215.0
-
-Lodi s id: 5 zbyva doletet: 86.0
-
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
-
-Lodi s id: 7 zbyva doletet: 84.0
-
-Lodi s id: 8 zbyva doletet: 230.0
-
-Lodi s id: 9 zbyva doletet: 231.0
-
-Lodi s id: 10 zbyva doletet: 222.0
-
-Lodi s id: 11 zbyva doletet: 79.0
-
-Lodi s id: 12 zbyva doletet: 171.0
-
-Lodi s id: 13 zbyva doletet: 74.0
-
-Lodi s id: 14 zbyva doletet: 239.0
-
-Lodi s id: 15 zbyva doletet: 230.0
-
-Lodi s id: 16 zbyva doletet: 23.0
-
-Lodi s id: 17 zbyva doletet: 0.0
-Lod s id: 17 vylozila 773756 jednotek nakladu.
-
-Lodi s id: 18 zbyva doletet: 134.0
-
-Lodi s id: 19 zbyva doletet: 126.0
-
-Lodi s id: 20 zbyva doletet: 244.0
-
-Lodi s id: 21 zbyva doletet: 201.0
-
-Lodi s id: 22 zbyva doletet: 107.0
-
-Lodi s id: 23 zbyva doletet: 342.0
-
-Lodi s id: 24 zbyva doletet: 293.0
-
-Lodi s id: 25 zbyva doletet: 178.0
-
-Lodi s id: 26 zbyva doletet: 241.0
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 0 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 280.0
-
-Lodi s id: 29 zbyva doletet: 197.0
-
----------------------------------------------------------------------------------------------
-Lodi s id: 0 zbyva doletet: 0.0
-Lod s id: 0 vylozila 0 jednotek nakladu.
-
-Lodi s id: 1 zbyva doletet: 39.0
-
-Lodi s id: 2 zbyva doletet: 119.0
-
-Lodi s id: 3 zbyva doletet: 443.0
-
-Lodi s id: 4 zbyva doletet: 190.0
-
-Lodi s id: 5 zbyva doletet: 61.0
-
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
-
-Lodi s id: 7 zbyva doletet: 59.0
-
-Lodi s id: 8 zbyva doletet: 205.0
-
-Lodi s id: 9 zbyva doletet: 206.0
-
-Lodi s id: 10 zbyva doletet: 197.0
-
-Lodi s id: 11 zbyva doletet: 54.0
-
-Lodi s id: 12 zbyva doletet: 146.0
-
-Lodi s id: 13 zbyva doletet: 49.0
-
-Lodi s id: 14 zbyva doletet: 214.0
-
-Lodi s id: 15 zbyva doletet: 205.0
-
-Lodi s id: 16 zbyva doletet: 0.0
-Lod s id: 16 vylozila 825388 jednotek nakladu.
-
-Lodi s id: 17 zbyva doletet: 0.0
-Lod s id: 17 vylozila 0 jednotek nakladu.
-
-Lodi s id: 18 zbyva doletet: 109.0
-
-Lodi s id: 19 zbyva doletet: 101.0
-
-Lodi s id: 20 zbyva doletet: 219.0
-
-Lodi s id: 21 zbyva doletet: 176.0
-
-Lodi s id: 22 zbyva doletet: 82.0
-
-Lodi s id: 23 zbyva doletet: 317.0
-
-Lodi s id: 24 zbyva doletet: 268.0
-
-Lodi s id: 25 zbyva doletet: 153.0
-
-Lodi s id: 26 zbyva doletet: 216.0
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 0 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 255.0
-
-Lodi s id: 29 zbyva doletet: 172.0
-
----------------------------------------------------------------------------------------------
-Lodi s id: 0 zbyva doletet: 0.0
-Lod s id: 0 vylozila 0 jednotek nakladu.
-
-Lodi s id: 1 zbyva doletet: 14.0
-
-Lodi s id: 2 zbyva doletet: 94.0
-
-Lodi s id: 3 zbyva doletet: 418.0
-
-Lodi s id: 4 zbyva doletet: 165.0
-
-Lodi s id: 5 zbyva doletet: 36.0
-
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
-
-Lodi s id: 7 zbyva doletet: 34.0
-
-Lodi s id: 8 zbyva doletet: 180.0
-
-Lodi s id: 9 zbyva doletet: 181.0
-
-Lodi s id: 10 zbyva doletet: 172.0
-
-Lodi s id: 11 zbyva doletet: 29.0
-
-Lodi s id: 12 zbyva doletet: 121.0
-
-Lodi s id: 13 zbyva doletet: 24.0
-
-Lodi s id: 14 zbyva doletet: 189.0
-
-Lodi s id: 15 zbyva doletet: 180.0
-
-Lodi s id: 16 zbyva doletet: 0.0
-Lod s id: 16 vylozila 0 jednotek nakladu.
-
-Lodi s id: 17 zbyva doletet: 0.0
-Lod s id: 17 vylozila 0 jednotek nakladu.
-
-Lodi s id: 18 zbyva doletet: 84.0
-
-Lodi s id: 19 zbyva doletet: 76.0
-
-Lodi s id: 20 zbyva doletet: 194.0
-
-Lodi s id: 21 zbyva doletet: 151.0
-
-Lodi s id: 22 zbyva doletet: 57.0
-
-Lodi s id: 23 zbyva doletet: 292.0
-
-Lodi s id: 24 zbyva doletet: 243.0
-
-Lodi s id: 25 zbyva doletet: 128.0
-
-Lodi s id: 26 zbyva doletet: 191.0
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 0 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 230.0
-
-Lodi s id: 29 zbyva doletet: 147.0
-
----------------------------------------------------------------------------------------------
-Lodi s id: 0 zbyva doletet: 0.0
-Lod s id: 0 vylozila 0 jednotek nakladu.
-
-Lodi s id: 1 zbyva doletet: 0.0
-Lod s id: 1 vylozila 1306190 jednotek nakladu.
-
-Lodi s id: 2 zbyva doletet: 69.0
-
-Lodi s id: 3 zbyva doletet: 393.0
-
-Lodi s id: 4 zbyva doletet: 140.0
-
-Lodi s id: 5 zbyva doletet: 11.0
-
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
-
-Lodi s id: 7 zbyva doletet: 9.0
-
-Lodi s id: 8 zbyva doletet: 155.0
-
-Lodi s id: 9 zbyva doletet: 156.0
-
-Lodi s id: 10 zbyva doletet: 147.0
-
-Lodi s id: 11 zbyva doletet: 4.0
-
-Lodi s id: 12 zbyva doletet: 96.0
-
-Lodi s id: 13 zbyva doletet: 0.0
-Lod s id: 13 vylozila 0 jednotek nakladu.
-
-Lodi s id: 14 zbyva doletet: 164.0
-
-Lodi s id: 15 zbyva doletet: 155.0
-
-Lodi s id: 16 zbyva doletet: 0.0
-Lod s id: 16 vylozila 0 jednotek nakladu.
-
-Lodi s id: 17 zbyva doletet: 0.0
-Lod s id: 17 vylozila 0 jednotek nakladu.
-
-Lodi s id: 18 zbyva doletet: 59.0
-
-Lodi s id: 19 zbyva doletet: 51.0
-
-Lodi s id: 20 zbyva doletet: 169.0
-
-Lodi s id: 21 zbyva doletet: 126.0
-
-Lodi s id: 22 zbyva doletet: 32.0
-
-Lodi s id: 23 zbyva doletet: 267.0
-
-Lodi s id: 24 zbyva doletet: 218.0
-
-Lodi s id: 25 zbyva doletet: 103.0
-
-Lodi s id: 26 zbyva doletet: 166.0
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 0 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 205.0
-
-Lodi s id: 29 zbyva doletet: 122.0
-
----------------------------------------------------------------------------------------------
-Lodi s id: 0 zbyva doletet: 0.0
-Lod s id: 0 vylozila 0 jednotek nakladu.
-
-Lodi s id: 1 zbyva doletet: 0.0
-Lod s id: 1 vylozila 0 jednotek nakladu.
-
-Lodi s id: 2 zbyva doletet: 44.0
-
-Lodi s id: 3 zbyva doletet: 368.0
-
-Lodi s id: 4 zbyva doletet: 115.0
-
-Lodi s id: 5 zbyva doletet: 0.0
-Lod s id: 5 vylozila 1658478 jednotek nakladu.
-
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
-
-Lodi s id: 7 zbyva doletet: 0.0
-Lod s id: 7 vylozila 1232883 jednotek nakladu.
-
-Lodi s id: 8 zbyva doletet: 130.0
-
-Lodi s id: 9 zbyva doletet: 131.0
-
-Lodi s id: 10 zbyva doletet: 122.0
-
-Lodi s id: 11 zbyva doletet: 0.0
-Lod s id: 11 vylozila 926579 jednotek nakladu.
-
-Lodi s id: 12 zbyva doletet: 71.0
-
-Lodi s id: 13 zbyva doletet: 0.0
-Lod s id: 13 vylozila 0 jednotek nakladu.
-
-Lodi s id: 14 zbyva doletet: 139.0
-
-Lodi s id: 15 zbyva doletet: 130.0
-
-Lodi s id: 16 zbyva doletet: 0.0
-Lod s id: 16 vylozila 0 jednotek nakladu.
-
-Lodi s id: 17 zbyva doletet: 0.0
-Lod s id: 17 vylozila 0 jednotek nakladu.
-
-Lodi s id: 18 zbyva doletet: 34.0
-
-Lodi s id: 19 zbyva doletet: 26.0
-
-Lodi s id: 20 zbyva doletet: 144.0
-
-Lodi s id: 21 zbyva doletet: 101.0
-
-Lodi s id: 22 zbyva doletet: 7.0
-
-Lodi s id: 23 zbyva doletet: 242.0
-
-Lodi s id: 24 zbyva doletet: 193.0
-
-Lodi s id: 25 zbyva doletet: 78.0
-
-Lodi s id: 26 zbyva doletet: 141.0
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 0 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 180.0
-
-Lodi s id: 29 zbyva doletet: 97.0
-
----------------------------------------------------------------------------------------------
-Lodi s id: 0 zbyva doletet: 0.0
-Lod s id: 0 vylozila 0 jednotek nakladu.
-
-Lodi s id: 1 zbyva doletet: 0.0
-Lod s id: 1 vylozila 0 jednotek nakladu.
-
-Lodi s id: 2 zbyva doletet: 19.0
-
-Lodi s id: 3 zbyva doletet: 343.0
-
-Lodi s id: 4 zbyva doletet: 90.0
-
-Lodi s id: 5 zbyva doletet: 0.0
-Lod s id: 5 vylozila 0 jednotek nakladu.
-
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
-
-Lodi s id: 7 zbyva doletet: 0.0
-Lod s id: 7 vylozila 0 jednotek nakladu.
-
-Lodi s id: 8 zbyva doletet: 105.0
-
-Lodi s id: 9 zbyva doletet: 106.0
-
-Lodi s id: 10 zbyva doletet: 97.0
-
-Lodi s id: 11 zbyva doletet: 0.0
-Lod s id: 11 vylozila 0 jednotek nakladu.
-
-Lodi s id: 12 zbyva doletet: 46.0
-
-Lodi s id: 13 zbyva doletet: 0.0
-Lod s id: 13 vylozila 0 jednotek nakladu.
-
-Lodi s id: 14 zbyva doletet: 114.0
-
-Lodi s id: 15 zbyva doletet: 105.0
-
-Lodi s id: 16 zbyva doletet: 0.0
-Lod s id: 16 vylozila 0 jednotek nakladu.
-
-Lodi s id: 17 zbyva doletet: 0.0
-Lod s id: 17 vylozila 0 jednotek nakladu.
-
-Lodi s id: 18 zbyva doletet: 9.0
-
-Lodi s id: 19 zbyva doletet: 1.0
-
-Lodi s id: 20 zbyva doletet: 119.0
-
-Lodi s id: 21 zbyva doletet: 76.0
-
-Lodi s id: 22 zbyva doletet: 0.0
-Lod s id: 22 vylozila 1261555 jednotek nakladu.
-
-Lodi s id: 23 zbyva doletet: 217.0
-
-Lodi s id: 24 zbyva doletet: 168.0
-
-Lodi s id: 25 zbyva doletet: 53.0
-
-Lodi s id: 26 zbyva doletet: 116.0
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 0 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 155.0
-
-Lodi s id: 29 zbyva doletet: 72.0
-
----------------------------------------------------------------------------------------------
-Lodi s id: 0 zbyva doletet: 0.0
-Lod s id: 0 vylozila 0 jednotek nakladu.
-
-Lodi s id: 1 zbyva doletet: 0.0
-Lod s id: 1 vylozila 0 jednotek nakladu.
-
-Lodi s id: 2 zbyva doletet: 0.0
-Lod s id: 2 vylozila 1264615 jednotek nakladu.
-
-Lodi s id: 3 zbyva doletet: 318.0
-
-Lodi s id: 4 zbyva doletet: 65.0
-
-Lodi s id: 5 zbyva doletet: 0.0
-Lod s id: 5 vylozila 0 jednotek nakladu.
-
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
-
-Lodi s id: 7 zbyva doletet: 0.0
-Lod s id: 7 vylozila 0 jednotek nakladu.
-
-Lodi s id: 8 zbyva doletet: 80.0
-
-Lodi s id: 9 zbyva doletet: 81.0
-
-Lodi s id: 10 zbyva doletet: 72.0
-
-Lodi s id: 11 zbyva doletet: 0.0
-Lod s id: 11 vylozila 0 jednotek nakladu.
-
-Lodi s id: 12 zbyva doletet: 21.0
-
-Lodi s id: 13 zbyva doletet: 0.0
-Lod s id: 13 vylozila 0 jednotek nakladu.
-
-Lodi s id: 14 zbyva doletet: 89.0
-
-Lodi s id: 15 zbyva doletet: 80.0
-
-Lodi s id: 16 zbyva doletet: 0.0
-Lod s id: 16 vylozila 0 jednotek nakladu.
-
-Lodi s id: 17 zbyva doletet: 0.0
-Lod s id: 17 vylozila 0 jednotek nakladu.
-
-Lodi s id: 18 zbyva doletet: 0.0
-Lod s id: 18 vylozila 816673 jednotek nakladu.
-
-Lodi s id: 19 zbyva doletet: 0.0
-Lod s id: 19 vylozila 673285 jednotek nakladu.
-
-Lodi s id: 20 zbyva doletet: 94.0
-
-Lodi s id: 21 zbyva doletet: 51.0
-
-Lodi s id: 22 zbyva doletet: 0.0
-Lod s id: 22 vylozila 0 jednotek nakladu.
-
-Lodi s id: 23 zbyva doletet: 192.0
-
-Lodi s id: 24 zbyva doletet: 143.0
-
-Lodi s id: 25 zbyva doletet: 28.0
-
-Lodi s id: 26 zbyva doletet: 91.0
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 0 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 130.0
-
-Lodi s id: 29 zbyva doletet: 47.0
-
----------------------------------------------------------------------------------------------
-Lodi s id: 0 zbyva doletet: 0.0
-Lod s id: 0 vylozila 0 jednotek nakladu.
-
-Lodi s id: 1 zbyva doletet: 0.0
-Lod s id: 1 vylozila 0 jednotek nakladu.
-
-Lodi s id: 2 zbyva doletet: 0.0
-Lod s id: 2 vylozila 0 jednotek nakladu.
-
-Lodi s id: 3 zbyva doletet: 293.0
-
-Lodi s id: 4 zbyva doletet: 40.0
-
-Lodi s id: 5 zbyva doletet: 0.0
-Lod s id: 5 vylozila 0 jednotek nakladu.
-
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
-
-Lodi s id: 7 zbyva doletet: 0.0
-Lod s id: 7 vylozila 0 jednotek nakladu.
-
-Lodi s id: 8 zbyva doletet: 55.0
-
-Lodi s id: 9 zbyva doletet: 56.0
-
-Lodi s id: 10 zbyva doletet: 47.0
-
-Lodi s id: 11 zbyva doletet: 0.0
-Lod s id: 11 vylozila 0 jednotek nakladu.
-
-Lodi s id: 12 zbyva doletet: 0.0
-Lod s id: 12 vylozila 1706990 jednotek nakladu.
-
-Lodi s id: 13 zbyva doletet: 0.0
-Lod s id: 13 vylozila 0 jednotek nakladu.
-
-Lodi s id: 14 zbyva doletet: 64.0
-
-Lodi s id: 15 zbyva doletet: 55.0
-
-Lodi s id: 16 zbyva doletet: 0.0
-Lod s id: 16 vylozila 0 jednotek nakladu.
-
-Lodi s id: 17 zbyva doletet: 0.0
-Lod s id: 17 vylozila 0 jednotek nakladu.
-
-Lodi s id: 18 zbyva doletet: 0.0
-Lod s id: 18 vylozila 0 jednotek nakladu.
-
-Lodi s id: 19 zbyva doletet: 0.0
-Lod s id: 19 vylozila 0 jednotek nakladu.
-
-Lodi s id: 20 zbyva doletet: 69.0
-
-Lodi s id: 21 zbyva doletet: 26.0
-
-Lodi s id: 22 zbyva doletet: 0.0
-Lod s id: 22 vylozila 0 jednotek nakladu.
-
-Lodi s id: 23 zbyva doletet: 167.0
-
-Lodi s id: 24 zbyva doletet: 118.0
-
-Lodi s id: 25 zbyva doletet: 3.0
-
-Lodi s id: 26 zbyva doletet: 66.0
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 0 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 105.0
-
-Lodi s id: 29 zbyva doletet: 22.0
-
----------------------------------------------------------------------------------------------
-Lodi s id: 0 zbyva doletet: 0.0
-Lod s id: 0 vylozila 0 jednotek nakladu.
-
-Lodi s id: 1 zbyva doletet: 0.0
-Lod s id: 1 vylozila 0 jednotek nakladu.
-
-Lodi s id: 2 zbyva doletet: 0.0
-Lod s id: 2 vylozila 0 jednotek nakladu.
-
-Lodi s id: 3 zbyva doletet: 268.0
-
-Lodi s id: 4 zbyva doletet: 15.0
-
-Lodi s id: 5 zbyva doletet: 0.0
-Lod s id: 5 vylozila 0 jednotek nakladu.
-
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
-
-Lodi s id: 7 zbyva doletet: 0.0
-Lod s id: 7 vylozila 0 jednotek nakladu.
-
-Lodi s id: 8 zbyva doletet: 30.0
-
-Lodi s id: 9 zbyva doletet: 31.0
-
-Lodi s id: 10 zbyva doletet: 22.0
-
-Lodi s id: 11 zbyva doletet: 0.0
-Lod s id: 11 vylozila 0 jednotek nakladu.
-
-Lodi s id: 12 zbyva doletet: 0.0
-Lod s id: 12 vylozila 0 jednotek nakladu.
-
-Lodi s id: 13 zbyva doletet: 0.0
-Lod s id: 13 vylozila 0 jednotek nakladu.
-
-Lodi s id: 14 zbyva doletet: 39.0
-
-Lodi s id: 15 zbyva doletet: 30.0
-
-Lodi s id: 16 zbyva doletet: 0.0
-Lod s id: 16 vylozila 0 jednotek nakladu.
-
-Lodi s id: 17 zbyva doletet: 0.0
-Lod s id: 17 vylozila 0 jednotek nakladu.
-
-Lodi s id: 18 zbyva doletet: 0.0
-Lod s id: 18 vylozila 0 jednotek nakladu.
-
-Lodi s id: 19 zbyva doletet: 0.0
-Lod s id: 19 vylozila 0 jednotek nakladu.
-
-Lodi s id: 20 zbyva doletet: 44.0
-
-Lodi s id: 21 zbyva doletet: 1.0
-
-Lodi s id: 22 zbyva doletet: 0.0
-Lod s id: 22 vylozila 0 jednotek nakladu.
-
-Lodi s id: 23 zbyva doletet: 142.0
-
-Lodi s id: 24 zbyva doletet: 93.0
-
-Lodi s id: 25 zbyva doletet: 0.0
-Lod s id: 25 vylozila 2858445 jednotek nakladu.
-
-Lodi s id: 26 zbyva doletet: 41.0
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 0 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 80.0
-
-Lodi s id: 29 zbyva doletet: 0.0
-Lod s id: 29 vylozila 1225411 jednotek nakladu.
-
----------------------------------------------------------------------------------------------
-Lodi s id: 0 zbyva doletet: 0.0
-Lod s id: 0 vylozila 0 jednotek nakladu.
-
-Lodi s id: 1 zbyva doletet: 0.0
-Lod s id: 1 vylozila 0 jednotek nakladu.
-
-Lodi s id: 2 zbyva doletet: 0.0
-Lod s id: 2 vylozila 0 jednotek nakladu.
-
-Lodi s id: 3 zbyva doletet: 243.0
-
-Lodi s id: 4 zbyva doletet: 0.0
-Lod s id: 4 vylozila 0 jednotek nakladu.
-
-Lodi s id: 5 zbyva doletet: 0.0
-Lod s id: 5 vylozila 0 jednotek nakladu.
-
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
-
-Lodi s id: 7 zbyva doletet: 0.0
-Lod s id: 7 vylozila 0 jednotek nakladu.
-
-Lodi s id: 8 zbyva doletet: 5.0
-
-Lodi s id: 9 zbyva doletet: 6.0
-
-Lodi s id: 10 zbyva doletet: 0.0
-Lod s id: 10 vylozila 818259 jednotek nakladu.
-
-Lodi s id: 11 zbyva doletet: 0.0
-Lod s id: 11 vylozila 0 jednotek nakladu.
-
-Lodi s id: 12 zbyva doletet: 0.0
-Lod s id: 12 vylozila 0 jednotek nakladu.
-
-Lodi s id: 13 zbyva doletet: 0.0
-Lod s id: 13 vylozila 0 jednotek nakladu.
-
-Lodi s id: 14 zbyva doletet: 14.0
-
-Lodi s id: 15 zbyva doletet: 5.0
-
-Lodi s id: 16 zbyva doletet: 0.0
-Lod s id: 16 vylozila 0 jednotek nakladu.
-
-Lodi s id: 17 zbyva doletet: 0.0
-Lod s id: 17 vylozila 0 jednotek nakladu.
-
-Lodi s id: 18 zbyva doletet: 0.0
-Lod s id: 18 vylozila 0 jednotek nakladu.
-
-Lodi s id: 19 zbyva doletet: 0.0
-Lod s id: 19 vylozila 0 jednotek nakladu.
-
-Lodi s id: 20 zbyva doletet: 19.0
-
-Lodi s id: 21 zbyva doletet: 0.0
-Lod s id: 21 vylozila 1972332 jednotek nakladu.
-
-Lodi s id: 22 zbyva doletet: 0.0
-Lod s id: 22 vylozila 0 jednotek nakladu.
-
-Lodi s id: 23 zbyva doletet: 117.0
-
-Lodi s id: 24 zbyva doletet: 68.0
-
-Lodi s id: 25 zbyva doletet: 0.0
-Lod s id: 25 vylozila 0 jednotek nakladu.
-
-Lodi s id: 26 zbyva doletet: 16.0
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 0 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 55.0
-
-Lodi s id: 29 zbyva doletet: 0.0
-Lod s id: 29 vylozila 0 jednotek nakladu.
-
----------------------------------------------------------------------------------------------
-Lodi s id: 0 zbyva doletet: 0.0
-Lod s id: 0 vylozila 0 jednotek nakladu.
-
-Lodi s id: 1 zbyva doletet: 0.0
-Lod s id: 1 vylozila 0 jednotek nakladu.
-
-Lodi s id: 2 zbyva doletet: 0.0
-Lod s id: 2 vylozila 0 jednotek nakladu.
-
-Lodi s id: 3 zbyva doletet: 218.0
-
-Lodi s id: 4 zbyva doletet: 0.0
-Lod s id: 4 vylozila 0 jednotek nakladu.
-
-Lodi s id: 5 zbyva doletet: 0.0
-Lod s id: 5 vylozila 0 jednotek nakladu.
-
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
-
-Lodi s id: 7 zbyva doletet: 0.0
-Lod s id: 7 vylozila 0 jednotek nakladu.
-
-Lodi s id: 8 zbyva doletet: 0.0
-Lod s id: 8 vylozila 0 jednotek nakladu.
-
-Lodi s id: 9 zbyva doletet: 0.0
-Lod s id: 9 vylozila 0 jednotek nakladu.
-
-Lodi s id: 10 zbyva doletet: 0.0
-Lod s id: 10 vylozila 0 jednotek nakladu.
-
-Lodi s id: 11 zbyva doletet: 0.0
-Lod s id: 11 vylozila 0 jednotek nakladu.
-
-Lodi s id: 12 zbyva doletet: 0.0
-Lod s id: 12 vylozila 0 jednotek nakladu.
-
-Lodi s id: 13 zbyva doletet: 0.0
-Lod s id: 13 vylozila 0 jednotek nakladu.
-
-Lodi s id: 14 zbyva doletet: 0.0
-Lod s id: 14 vylozila 1802608 jednotek nakladu.
-
-Lodi s id: 15 zbyva doletet: 0.0
-Lod s id: 15 vylozila 0 jednotek nakladu.
-
-Lodi s id: 16 zbyva doletet: 0.0
-Lod s id: 16 vylozila 0 jednotek nakladu.
-
-Lodi s id: 17 zbyva doletet: 0.0
-Lod s id: 17 vylozila 0 jednotek nakladu.
-
-Lodi s id: 18 zbyva doletet: 0.0
-Lod s id: 18 vylozila 0 jednotek nakladu.
-
-Lodi s id: 19 zbyva doletet: 0.0
-Lod s id: 19 vylozila 0 jednotek nakladu.
-
-Lodi s id: 20 zbyva doletet: 0.0
-Lod s id: 20 vylozila 1090538 jednotek nakladu.
-
-Lodi s id: 21 zbyva doletet: 0.0
-Lod s id: 21 vylozila 0 jednotek nakladu.
-
-Lodi s id: 22 zbyva doletet: 0.0
-Lod s id: 22 vylozila 0 jednotek nakladu.
-
-Lodi s id: 23 zbyva doletet: 92.0
-
-Lodi s id: 24 zbyva doletet: 43.0
-
-Lodi s id: 25 zbyva doletet: 0.0
-Lod s id: 25 vylozila 0 jednotek nakladu.
-
-Lodi s id: 26 zbyva doletet: 0.0
-Lod s id: 26 vylozila 1342186 jednotek nakladu.
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 0 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 30.0
-
-Lodi s id: 29 zbyva doletet: 0.0
-Lod s id: 29 vylozila 0 jednotek nakladu.
-
----------------------------------------------------------------------------------------------
-Lodi s id: 0 zbyva doletet: 0.0
-Lod s id: 0 vylozila 0 jednotek nakladu.
-
-Lodi s id: 1 zbyva doletet: 0.0
-Lod s id: 1 vylozila 0 jednotek nakladu.
-
-Lodi s id: 2 zbyva doletet: 0.0
-Lod s id: 2 vylozila 0 jednotek nakladu.
-
-Lodi s id: 3 zbyva doletet: 193.0
-
-Lodi s id: 4 zbyva doletet: 0.0
-Lod s id: 4 vylozila 0 jednotek nakladu.
-
-Lodi s id: 5 zbyva doletet: 0.0
-Lod s id: 5 vylozila 0 jednotek nakladu.
-
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
-
-Lodi s id: 7 zbyva doletet: 0.0
-Lod s id: 7 vylozila 0 jednotek nakladu.
-
-Lodi s id: 8 zbyva doletet: 0.0
-Lod s id: 8 vylozila 0 jednotek nakladu.
-
-Lodi s id: 9 zbyva doletet: 0.0
-Lod s id: 9 vylozila 0 jednotek nakladu.
-
-Lodi s id: 10 zbyva doletet: 0.0
-Lod s id: 10 vylozila 0 jednotek nakladu.
-
-Lodi s id: 11 zbyva doletet: 0.0
-Lod s id: 11 vylozila 0 jednotek nakladu.
-
-Lodi s id: 12 zbyva doletet: 0.0
-Lod s id: 12 vylozila 0 jednotek nakladu.
-
-Lodi s id: 13 zbyva doletet: 0.0
-Lod s id: 13 vylozila 0 jednotek nakladu.
-
-Lodi s id: 14 zbyva doletet: 0.0
-Lod s id: 14 vylozila 0 jednotek nakladu.
-
-Lodi s id: 15 zbyva doletet: 0.0
-Lod s id: 15 vylozila 0 jednotek nakladu.
-
-Lodi s id: 16 zbyva doletet: 0.0
-Lod s id: 16 vylozila 0 jednotek nakladu.
-
-Lodi s id: 17 zbyva doletet: 0.0
-Lod s id: 17 vylozila 0 jednotek nakladu.
-
-Lodi s id: 18 zbyva doletet: 0.0
-Lod s id: 18 vylozila 0 jednotek nakladu.
-
-Lodi s id: 19 zbyva doletet: 0.0
-Lod s id: 19 vylozila 0 jednotek nakladu.
-
-Lodi s id: 20 zbyva doletet: 0.0
-Lod s id: 20 vylozila 0 jednotek nakladu.
-
-Lodi s id: 21 zbyva doletet: 0.0
-Lod s id: 21 vylozila 0 jednotek nakladu.
-
-Lodi s id: 22 zbyva doletet: 0.0
-Lod s id: 22 vylozila 0 jednotek nakladu.
-
-Lodi s id: 23 zbyva doletet: 67.0
-
-Lodi s id: 24 zbyva doletet: 18.0
-
-Lodi s id: 25 zbyva doletet: 0.0
-Lod s id: 25 vylozila 0 jednotek nakladu.
-
-Lodi s id: 26 zbyva doletet: 0.0
-Lod s id: 26 vylozila 0 jednotek nakladu.
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 0 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 5.0
-
-Lodi s id: 29 zbyva doletet: 0.0
-Lod s id: 29 vylozila 0 jednotek nakladu.
-
----------------------------------------------------------------------------------------------
-Lodi s id: 0 zbyva doletet: 0.0
-Lod s id: 0 vylozila 0 jednotek nakladu.
-
-Lodi s id: 1 zbyva doletet: 0.0
-Lod s id: 1 vylozila 0 jednotek nakladu.
-
-Lodi s id: 2 zbyva doletet: 0.0
-Lod s id: 2 vylozila 0 jednotek nakladu.
-
-Lodi s id: 3 zbyva doletet: 168.0
-
-Lodi s id: 4 zbyva doletet: 0.0
-Lod s id: 4 vylozila 0 jednotek nakladu.
-
-Lodi s id: 5 zbyva doletet: 0.0
-Lod s id: 5 vylozila 0 jednotek nakladu.
-
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
-
-Lodi s id: 7 zbyva doletet: 0.0
-Lod s id: 7 vylozila 0 jednotek nakladu.
-
-Lodi s id: 8 zbyva doletet: 0.0
-Lod s id: 8 vylozila 0 jednotek nakladu.
-
-Lodi s id: 9 zbyva doletet: 0.0
-Lod s id: 9 vylozila 0 jednotek nakladu.
-
-Lodi s id: 10 zbyva doletet: 0.0
-Lod s id: 10 vylozila 0 jednotek nakladu.
-
-Lodi s id: 11 zbyva doletet: 0.0
-Lod s id: 11 vylozila 0 jednotek nakladu.
-
-Lodi s id: 12 zbyva doletet: 0.0
-Lod s id: 12 vylozila 0 jednotek nakladu.
-
-Lodi s id: 13 zbyva doletet: 0.0
-Lod s id: 13 vylozila 0 jednotek nakladu.
-
-Lodi s id: 14 zbyva doletet: 0.0
-Lod s id: 14 vylozila 0 jednotek nakladu.
-
-Lodi s id: 15 zbyva doletet: 0.0
-Lod s id: 15 vylozila 0 jednotek nakladu.
-
-Lodi s id: 16 zbyva doletet: 0.0
-Lod s id: 16 vylozila 0 jednotek nakladu.
-
-Lodi s id: 17 zbyva doletet: 0.0
-Lod s id: 17 vylozila 0 jednotek nakladu.
-
-Lodi s id: 18 zbyva doletet: 0.0
-Lod s id: 18 vylozila 0 jednotek nakladu.
-
-Lodi s id: 19 zbyva doletet: 0.0
-Lod s id: 19 vylozila 0 jednotek nakladu.
-
-Lodi s id: 20 zbyva doletet: 0.0
-Lod s id: 20 vylozila 0 jednotek nakladu.
-
-Lodi s id: 21 zbyva doletet: 0.0
-Lod s id: 21 vylozila 0 jednotek nakladu.
-
-Lodi s id: 22 zbyva doletet: 0.0
-Lod s id: 22 vylozila 0 jednotek nakladu.
-
-Lodi s id: 23 zbyva doletet: 42.0
-
-Lodi s id: 24 zbyva doletet: 0.0
-Lod s id: 24 vylozila 505069 jednotek nakladu.
-
-Lodi s id: 25 zbyva doletet: 0.0
-Lod s id: 25 vylozila 0 jednotek nakladu.
-
-Lodi s id: 26 zbyva doletet: 0.0
-Lod s id: 26 vylozila 0 jednotek nakladu.
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 0 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 0.0
-Lod s id: 28 vylozila 894116 jednotek nakladu.
-
-Lodi s id: 29 zbyva doletet: 0.0
-Lod s id: 29 vylozila 0 jednotek nakladu.
-
----------------------------------------------------------------------------------------------
-Lodi s id: 0 zbyva doletet: 0.0
-Lod s id: 0 vylozila 0 jednotek nakladu.
-
-Lodi s id: 1 zbyva doletet: 0.0
-Lod s id: 1 vylozila 0 jednotek nakladu.
-
-Lodi s id: 2 zbyva doletet: 0.0
-Lod s id: 2 vylozila 0 jednotek nakladu.
-
-Lodi s id: 3 zbyva doletet: 143.0
-
-Lodi s id: 4 zbyva doletet: 0.0
-Lod s id: 4 vylozila 0 jednotek nakladu.
-
-Lodi s id: 5 zbyva doletet: 0.0
-Lod s id: 5 vylozila 0 jednotek nakladu.
-
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
-
-Lodi s id: 7 zbyva doletet: 0.0
-Lod s id: 7 vylozila 0 jednotek nakladu.
-
-Lodi s id: 8 zbyva doletet: 0.0
-Lod s id: 8 vylozila 0 jednotek nakladu.
-
-Lodi s id: 9 zbyva doletet: 0.0
-Lod s id: 9 vylozila 0 jednotek nakladu.
-
-Lodi s id: 10 zbyva doletet: 0.0
-Lod s id: 10 vylozila 0 jednotek nakladu.
-
-Lodi s id: 11 zbyva doletet: 0.0
-Lod s id: 11 vylozila 0 jednotek nakladu.
-
-Lodi s id: 12 zbyva doletet: 0.0
-Lod s id: 12 vylozila 0 jednotek nakladu.
-
-Lodi s id: 13 zbyva doletet: 0.0
-Lod s id: 13 vylozila 0 jednotek nakladu.
-
-Lodi s id: 14 zbyva doletet: 0.0
-Lod s id: 14 vylozila 0 jednotek nakladu.
-
-Lodi s id: 15 zbyva doletet: 0.0
-Lod s id: 15 vylozila 0 jednotek nakladu.
-
-Lodi s id: 16 zbyva doletet: 0.0
-Lod s id: 16 vylozila 0 jednotek nakladu.
-
-Lodi s id: 17 zbyva doletet: 0.0
-Lod s id: 17 vylozila 0 jednotek nakladu.
-
-Lodi s id: 18 zbyva doletet: 0.0
-Lod s id: 18 vylozila 0 jednotek nakladu.
-
-Lodi s id: 19 zbyva doletet: 0.0
-Lod s id: 19 vylozila 0 jednotek nakladu.
-
-Lodi s id: 20 zbyva doletet: 0.0
-Lod s id: 20 vylozila 0 jednotek nakladu.
-
-Lodi s id: 21 zbyva doletet: 0.0
-Lod s id: 21 vylozila 0 jednotek nakladu.
-
-Lodi s id: 22 zbyva doletet: 0.0
-Lod s id: 22 vylozila 0 jednotek nakladu.
-
-Lodi s id: 23 zbyva doletet: 17.0
-
-Lodi s id: 24 zbyva doletet: 0.0
-Lod s id: 24 vylozila 0 jednotek nakladu.
-
-Lodi s id: 25 zbyva doletet: 0.0
-Lod s id: 25 vylozila 0 jednotek nakladu.
-
-Lodi s id: 26 zbyva doletet: 0.0
-Lod s id: 26 vylozila 0 jednotek nakladu.
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 0 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 0.0
-Lod s id: 28 vylozila 0 jednotek nakladu.
-
-Lodi s id: 29 zbyva doletet: 0.0
-Lod s id: 29 vylozila 0 jednotek nakladu.
-
----------------------------------------------------------------------------------------------
-Lodi s id: 0 zbyva doletet: 0.0
-Lod s id: 0 vylozila 0 jednotek nakladu.
-
-Lodi s id: 1 zbyva doletet: 0.0
-Lod s id: 1 vylozila 0 jednotek nakladu.
-
-Lodi s id: 2 zbyva doletet: 0.0
-Lod s id: 2 vylozila 0 jednotek nakladu.
-
-Lodi s id: 3 zbyva doletet: 118.0
-
-Lodi s id: 4 zbyva doletet: 0.0
-Lod s id: 4 vylozila 0 jednotek nakladu.
-
-Lodi s id: 5 zbyva doletet: 0.0
-Lod s id: 5 vylozila 0 jednotek nakladu.
-
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
-
-Lodi s id: 7 zbyva doletet: 0.0
-Lod s id: 7 vylozila 0 jednotek nakladu.
-
-Lodi s id: 8 zbyva doletet: 0.0
-Lod s id: 8 vylozila 0 jednotek nakladu.
-
-Lodi s id: 9 zbyva doletet: 0.0
-Lod s id: 9 vylozila 0 jednotek nakladu.
-
-Lodi s id: 10 zbyva doletet: 0.0
-Lod s id: 10 vylozila 0 jednotek nakladu.
-
-Lodi s id: 11 zbyva doletet: 0.0
-Lod s id: 11 vylozila 0 jednotek nakladu.
-
-Lodi s id: 12 zbyva doletet: 0.0
-Lod s id: 12 vylozila 0 jednotek nakladu.
-
-Lodi s id: 13 zbyva doletet: 0.0
-Lod s id: 13 vylozila 0 jednotek nakladu.
-
-Lodi s id: 14 zbyva doletet: 0.0
-Lod s id: 14 vylozila 0 jednotek nakladu.
-
-Lodi s id: 15 zbyva doletet: 0.0
-Lod s id: 15 vylozila 0 jednotek nakladu.
-
-Lodi s id: 16 zbyva doletet: 0.0
-Lod s id: 16 vylozila 0 jednotek nakladu.
-
-Lodi s id: 17 zbyva doletet: 0.0
-Lod s id: 17 vylozila 0 jednotek nakladu.
-
-Lodi s id: 18 zbyva doletet: 0.0
-Lod s id: 18 vylozila 0 jednotek nakladu.
-
-Lodi s id: 19 zbyva doletet: 0.0
-Lod s id: 19 vylozila 0 jednotek nakladu.
-
-Lodi s id: 20 zbyva doletet: 0.0
-Lod s id: 20 vylozila 0 jednotek nakladu.
-
-Lodi s id: 21 zbyva doletet: 0.0
-Lod s id: 21 vylozila 0 jednotek nakladu.
-
-Lodi s id: 22 zbyva doletet: 0.0
-Lod s id: 22 vylozila 0 jednotek nakladu.
-
-Lodi s id: 23 zbyva doletet: 0.0
-Lod s id: 23 vylozila 754380 jednotek nakladu.
-
-Lodi s id: 24 zbyva doletet: 0.0
-Lod s id: 24 vylozila 0 jednotek nakladu.
-
-Lodi s id: 25 zbyva doletet: 0.0
-Lod s id: 25 vylozila 0 jednotek nakladu.
-
-Lodi s id: 26 zbyva doletet: 0.0
-Lod s id: 26 vylozila 0 jednotek nakladu.
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 0 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 0.0
-Lod s id: 28 vylozila 0 jednotek nakladu.
-
-Lodi s id: 29 zbyva doletet: 0.0
-Lod s id: 29 vylozila 0 jednotek nakladu.
-
----------------------------------------------------------------------------------------------
-Lodi s id: 0 zbyva doletet: 0.0
-Lod s id: 0 vylozila 0 jednotek nakladu.
-
-Lodi s id: 1 zbyva doletet: 0.0
-Lod s id: 1 vylozila 0 jednotek nakladu.
-
-Lodi s id: 2 zbyva doletet: 0.0
-Lod s id: 2 vylozila 0 jednotek nakladu.
-
-Lodi s id: 3 zbyva doletet: 93.0
-
-Lodi s id: 4 zbyva doletet: 0.0
-Lod s id: 4 vylozila 0 jednotek nakladu.
-
-Lodi s id: 5 zbyva doletet: 0.0
-Lod s id: 5 vylozila 0 jednotek nakladu.
-
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
-
-Lodi s id: 7 zbyva doletet: 0.0
-Lod s id: 7 vylozila 0 jednotek nakladu.
-
-Lodi s id: 8 zbyva doletet: 0.0
-Lod s id: 8 vylozila 0 jednotek nakladu.
-
-Lodi s id: 9 zbyva doletet: 0.0
-Lod s id: 9 vylozila 0 jednotek nakladu.
-
-Lodi s id: 10 zbyva doletet: 0.0
-Lod s id: 10 vylozila 0 jednotek nakladu.
-
-Lodi s id: 11 zbyva doletet: 0.0
-Lod s id: 11 vylozila 0 jednotek nakladu.
-
-Lodi s id: 12 zbyva doletet: 0.0
-Lod s id: 12 vylozila 0 jednotek nakladu.
-
-Lodi s id: 13 zbyva doletet: 0.0
-Lod s id: 13 vylozila 0 jednotek nakladu.
-
-Lodi s id: 14 zbyva doletet: 0.0
-Lod s id: 14 vylozila 0 jednotek nakladu.
-
-Lodi s id: 15 zbyva doletet: 0.0
-Lod s id: 15 vylozila 0 jednotek nakladu.
-
-Lodi s id: 16 zbyva doletet: 0.0
-Lod s id: 16 vylozila 0 jednotek nakladu.
-
-Lodi s id: 17 zbyva doletet: 0.0
-Lod s id: 17 vylozila 0 jednotek nakladu.
-
-Lodi s id: 18 zbyva doletet: 0.0
-Lod s id: 18 vylozila 0 jednotek nakladu.
-
-Lodi s id: 19 zbyva doletet: 0.0
-Lod s id: 19 vylozila 0 jednotek nakladu.
-
-Lodi s id: 20 zbyva doletet: 0.0
-Lod s id: 20 vylozila 0 jednotek nakladu.
-
-Lodi s id: 21 zbyva doletet: 0.0
-Lod s id: 21 vylozila 0 jednotek nakladu.
-
-Lodi s id: 22 zbyva doletet: 0.0
-Lod s id: 22 vylozila 0 jednotek nakladu.
-
-Lodi s id: 23 zbyva doletet: 0.0
-Lod s id: 23 vylozila 0 jednotek nakladu.
-
-Lodi s id: 24 zbyva doletet: 0.0
-Lod s id: 24 vylozila 0 jednotek nakladu.
-
-Lodi s id: 25 zbyva doletet: 0.0
-Lod s id: 25 vylozila 0 jednotek nakladu.
-
-Lodi s id: 26 zbyva doletet: 0.0
-Lod s id: 26 vylozila 0 jednotek nakladu.
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 0 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 0.0
-Lod s id: 28 vylozila 0 jednotek nakladu.
-
-Lodi s id: 29 zbyva doletet: 0.0
-Lod s id: 29 vylozila 0 jednotek nakladu.
-
----------------------------------------------------------------------------------------------
-Lodi s id: 0 zbyva doletet: 0.0
-Lod s id: 0 vylozila 0 jednotek nakladu.
-
-Lodi s id: 1 zbyva doletet: 0.0
-Lod s id: 1 vylozila 0 jednotek nakladu.
-
-Lodi s id: 2 zbyva doletet: 0.0
-Lod s id: 2 vylozila 0 jednotek nakladu.
-
-Lodi s id: 3 zbyva doletet: 68.0
-
-Lodi s id: 4 zbyva doletet: 0.0
-Lod s id: 4 vylozila 0 jednotek nakladu.
-
-Lodi s id: 5 zbyva doletet: 0.0
-Lod s id: 5 vylozila 0 jednotek nakladu.
-
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
-
-Lodi s id: 7 zbyva doletet: 0.0
-Lod s id: 7 vylozila 0 jednotek nakladu.
-
-Lodi s id: 8 zbyva doletet: 0.0
-Lod s id: 8 vylozila 0 jednotek nakladu.
-
-Lodi s id: 9 zbyva doletet: 0.0
-Lod s id: 9 vylozila 0 jednotek nakladu.
-
-Lodi s id: 10 zbyva doletet: 0.0
-Lod s id: 10 vylozila 0 jednotek nakladu.
-
-Lodi s id: 11 zbyva doletet: 0.0
-Lod s id: 11 vylozila 0 jednotek nakladu.
-
-Lodi s id: 12 zbyva doletet: 0.0
-Lod s id: 12 vylozila 0 jednotek nakladu.
-
-Lodi s id: 13 zbyva doletet: 0.0
-Lod s id: 13 vylozila 0 jednotek nakladu.
-
-Lodi s id: 14 zbyva doletet: 0.0
-Lod s id: 14 vylozila 0 jednotek nakladu.
-
-Lodi s id: 15 zbyva doletet: 0.0
-Lod s id: 15 vylozila 0 jednotek nakladu.
-
-Lodi s id: 16 zbyva doletet: 0.0
-Lod s id: 16 vylozila 0 jednotek nakladu.
-
-Lodi s id: 17 zbyva doletet: 0.0
-Lod s id: 17 vylozila 0 jednotek nakladu.
-
-Lodi s id: 18 zbyva doletet: 0.0
-Lod s id: 18 vylozila 0 jednotek nakladu.
-
-Lodi s id: 19 zbyva doletet: 0.0
-Lod s id: 19 vylozila 0 jednotek nakladu.
-
-Lodi s id: 20 zbyva doletet: 0.0
-Lod s id: 20 vylozila 0 jednotek nakladu.
-
-Lodi s id: 21 zbyva doletet: 0.0
-Lod s id: 21 vylozila 0 jednotek nakladu.
-
-Lodi s id: 22 zbyva doletet: 0.0
-Lod s id: 22 vylozila 0 jednotek nakladu.
-
-Lodi s id: 23 zbyva doletet: 0.0
-Lod s id: 23 vylozila 0 jednotek nakladu.
-
-Lodi s id: 24 zbyva doletet: 0.0
-Lod s id: 24 vylozila 0 jednotek nakladu.
-
-Lodi s id: 25 zbyva doletet: 0.0
-Lod s id: 25 vylozila 0 jednotek nakladu.
-
-Lodi s id: 26 zbyva doletet: 0.0
-Lod s id: 26 vylozila 0 jednotek nakladu.
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 0 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 0.0
-Lod s id: 28 vylozila 0 jednotek nakladu.
-
-Lodi s id: 29 zbyva doletet: 0.0
-Lod s id: 29 vylozila 0 jednotek nakladu.
-
----------------------------------------------------------------------------------------------
-Lodi s id: 0 zbyva doletet: 0.0
-Lod s id: 0 vylozila 0 jednotek nakladu.
-
-Lodi s id: 1 zbyva doletet: 0.0
-Lod s id: 1 vylozila 0 jednotek nakladu.
-
-Lodi s id: 2 zbyva doletet: 0.0
-Lod s id: 2 vylozila 0 jednotek nakladu.
-
-Lodi s id: 3 zbyva doletet: 43.0
-
-Lodi s id: 4 zbyva doletet: 0.0
-Lod s id: 4 vylozila 0 jednotek nakladu.
-
-Lodi s id: 5 zbyva doletet: 0.0
-Lod s id: 5 vylozila 0 jednotek nakladu.
-
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
-
-Lodi s id: 7 zbyva doletet: 0.0
-Lod s id: 7 vylozila 0 jednotek nakladu.
-
-Lodi s id: 8 zbyva doletet: 0.0
-Lod s id: 8 vylozila 0 jednotek nakladu.
-
-Lodi s id: 9 zbyva doletet: 0.0
-Lod s id: 9 vylozila 0 jednotek nakladu.
-
-Lodi s id: 10 zbyva doletet: 0.0
-Lod s id: 10 vylozila 0 jednotek nakladu.
-
-Lodi s id: 11 zbyva doletet: 0.0
-Lod s id: 11 vylozila 0 jednotek nakladu.
-
-Lodi s id: 12 zbyva doletet: 0.0
-Lod s id: 12 vylozila 0 jednotek nakladu.
-
-Lodi s id: 13 zbyva doletet: 0.0
-Lod s id: 13 vylozila 0 jednotek nakladu.
-
-Lodi s id: 14 zbyva doletet: 0.0
-Lod s id: 14 vylozila 0 jednotek nakladu.
-
-Lodi s id: 15 zbyva doletet: 0.0
-Lod s id: 15 vylozila 0 jednotek nakladu.
-
-Lodi s id: 16 zbyva doletet: 0.0
-Lod s id: 16 vylozila 0 jednotek nakladu.
-
-Lodi s id: 17 zbyva doletet: 0.0
-Lod s id: 17 vylozila 0 jednotek nakladu.
-
-Lodi s id: 18 zbyva doletet: 0.0
-Lod s id: 18 vylozila 0 jednotek nakladu.
-
-Lodi s id: 19 zbyva doletet: 0.0
-Lod s id: 19 vylozila 0 jednotek nakladu.
-
-Lodi s id: 20 zbyva doletet: 0.0
-Lod s id: 20 vylozila 0 jednotek nakladu.
-
-Lodi s id: 21 zbyva doletet: 0.0
-Lod s id: 21 vylozila 0 jednotek nakladu.
-
-Lodi s id: 22 zbyva doletet: 0.0
-Lod s id: 22 vylozila 0 jednotek nakladu.
-
-Lodi s id: 23 zbyva doletet: 0.0
-Lod s id: 23 vylozila 0 jednotek nakladu.
-
-Lodi s id: 24 zbyva doletet: 0.0
-Lod s id: 24 vylozila 0 jednotek nakladu.
-
-Lodi s id: 25 zbyva doletet: 0.0
-Lod s id: 25 vylozila 0 jednotek nakladu.
-
-Lodi s id: 26 zbyva doletet: 0.0
-Lod s id: 26 vylozila 0 jednotek nakladu.
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 0 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 0.0
-Lod s id: 28 vylozila 0 jednotek nakladu.
-
-Lodi s id: 29 zbyva doletet: 0.0
-Lod s id: 29 vylozila 0 jednotek nakladu.
-
----------------------------------------------------------------------------------------------
-Lodi s id: 0 zbyva doletet: 0.0
-Lod s id: 0 vylozila 0 jednotek nakladu.
-
-Lodi s id: 1 zbyva doletet: 0.0
-Lod s id: 1 vylozila 0 jednotek nakladu.
-
-Lodi s id: 2 zbyva doletet: 0.0
-Lod s id: 2 vylozila 0 jednotek nakladu.
-
-Lodi s id: 3 zbyva doletet: 18.0
-
-Lodi s id: 4 zbyva doletet: 0.0
-Lod s id: 4 vylozila 0 jednotek nakladu.
-
-Lodi s id: 5 zbyva doletet: 0.0
-Lod s id: 5 vylozila 0 jednotek nakladu.
-
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
-
-Lodi s id: 7 zbyva doletet: 0.0
-Lod s id: 7 vylozila 0 jednotek nakladu.
-
-Lodi s id: 8 zbyva doletet: 0.0
-Lod s id: 8 vylozila 0 jednotek nakladu.
-
-Lodi s id: 9 zbyva doletet: 0.0
-Lod s id: 9 vylozila 0 jednotek nakladu.
-
-Lodi s id: 10 zbyva doletet: 0.0
-Lod s id: 10 vylozila 0 jednotek nakladu.
-
-Lodi s id: 11 zbyva doletet: 0.0
-Lod s id: 11 vylozila 0 jednotek nakladu.
-
-Lodi s id: 12 zbyva doletet: 0.0
-Lod s id: 12 vylozila 0 jednotek nakladu.
-
-Lodi s id: 13 zbyva doletet: 0.0
-Lod s id: 13 vylozila 0 jednotek nakladu.
-
-Lodi s id: 14 zbyva doletet: 0.0
-Lod s id: 14 vylozila 0 jednotek nakladu.
-
-Lodi s id: 15 zbyva doletet: 0.0
-Lod s id: 15 vylozila 0 jednotek nakladu.
-
-Lodi s id: 16 zbyva doletet: 0.0
-Lod s id: 16 vylozila 0 jednotek nakladu.
-
-Lodi s id: 17 zbyva doletet: 0.0
-Lod s id: 17 vylozila 0 jednotek nakladu.
-
-Lodi s id: 18 zbyva doletet: 0.0
-Lod s id: 18 vylozila 0 jednotek nakladu.
-
-Lodi s id: 19 zbyva doletet: 0.0
-Lod s id: 19 vylozila 0 jednotek nakladu.
-
-Lodi s id: 20 zbyva doletet: 0.0
-Lod s id: 20 vylozila 0 jednotek nakladu.
-
-Lodi s id: 21 zbyva doletet: 0.0
-Lod s id: 21 vylozila 0 jednotek nakladu.
-
-Lodi s id: 22 zbyva doletet: 0.0
-Lod s id: 22 vylozila 0 jednotek nakladu.
-
-Lodi s id: 23 zbyva doletet: 0.0
-Lod s id: 23 vylozila 0 jednotek nakladu.
-
-Lodi s id: 24 zbyva doletet: 0.0
-Lod s id: 24 vylozila 0 jednotek nakladu.
-
-Lodi s id: 25 zbyva doletet: 0.0
-Lod s id: 25 vylozila 0 jednotek nakladu.
-
-Lodi s id: 26 zbyva doletet: 0.0
-Lod s id: 26 vylozila 0 jednotek nakladu.
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 0 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 0.0
-Lod s id: 28 vylozila 0 jednotek nakladu.
-
-Lodi s id: 29 zbyva doletet: 0.0
-Lod s id: 29 vylozila 0 jednotek nakladu.
-
----------------------------------------------------------------------------------------------
-Lodi s id: 0 zbyva doletet: 0.0
-Lod s id: 0 vylozila 0 jednotek nakladu.
-
-Lodi s id: 1 zbyva doletet: 0.0
-Lod s id: 1 vylozila 0 jednotek nakladu.
-
-Lodi s id: 2 zbyva doletet: 0.0
-Lod s id: 2 vylozila 0 jednotek nakladu.
-
-Lodi s id: 3 zbyva doletet: 0.0
-Lod s id: 3 vylozila 1119407 jednotek nakladu.
-
-Lodi s id: 4 zbyva doletet: 0.0
-Lod s id: 4 vylozila 0 jednotek nakladu.
-
-Lodi s id: 5 zbyva doletet: 0.0
-Lod s id: 5 vylozila 0 jednotek nakladu.
-
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
-
-Lodi s id: 7 zbyva doletet: 0.0
-Lod s id: 7 vylozila 0 jednotek nakladu.
-
-Lodi s id: 8 zbyva doletet: 0.0
-Lod s id: 8 vylozila 0 jednotek nakladu.
-
-Lodi s id: 9 zbyva doletet: 0.0
-Lod s id: 9 vylozila 0 jednotek nakladu.
-
-Lodi s id: 10 zbyva doletet: 0.0
-Lod s id: 10 vylozila 0 jednotek nakladu.
-
-Lodi s id: 11 zbyva doletet: 0.0
-Lod s id: 11 vylozila 0 jednotek nakladu.
-
-Lodi s id: 12 zbyva doletet: 0.0
-Lod s id: 12 vylozila 0 jednotek nakladu.
-
-Lodi s id: 13 zbyva doletet: 0.0
-Lod s id: 13 vylozila 0 jednotek nakladu.
-
-Lodi s id: 14 zbyva doletet: 0.0
-Lod s id: 14 vylozila 0 jednotek nakladu.
-
-Lodi s id: 15 zbyva doletet: 0.0
-Lod s id: 15 vylozila 0 jednotek nakladu.
-
-Lodi s id: 16 zbyva doletet: 0.0
-Lod s id: 16 vylozila 0 jednotek nakladu.
-
-Lodi s id: 17 zbyva doletet: 0.0
-Lod s id: 17 vylozila 0 jednotek nakladu.
-
-Lodi s id: 18 zbyva doletet: 0.0
-Lod s id: 18 vylozila 0 jednotek nakladu.
-
-Lodi s id: 19 zbyva doletet: 0.0
-Lod s id: 19 vylozila 0 jednotek nakladu.
-
-Lodi s id: 20 zbyva doletet: 0.0
-Lod s id: 20 vylozila 0 jednotek nakladu.
-
-Lodi s id: 21 zbyva doletet: 0.0
-Lod s id: 21 vylozila 0 jednotek nakladu.
-
-Lodi s id: 22 zbyva doletet: 0.0
-Lod s id: 22 vylozila 0 jednotek nakladu.
-
-Lodi s id: 23 zbyva doletet: 0.0
-Lod s id: 23 vylozila 0 jednotek nakladu.
-
-Lodi s id: 24 zbyva doletet: 0.0
-Lod s id: 24 vylozila 0 jednotek nakladu.
-
-Lodi s id: 25 zbyva doletet: 0.0
-Lod s id: 25 vylozila 0 jednotek nakladu.
-
-Lodi s id: 26 zbyva doletet: 0.0
-Lod s id: 26 vylozila 0 jednotek nakladu.
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 0 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 0.0
-Lod s id: 28 vylozila 0 jednotek nakladu.
-
-Lodi s id: 29 zbyva doletet: 0.0
-Lod s id: 29 vylozila 0 jednotek nakladu.
-
----------------------------------------------------------------------------------------------
-Lodi s id: 0 zbyva doletet: 0.0
-Lod s id: 0 vylozila 0 jednotek nakladu.
-
-Lodi s id: 1 zbyva doletet: 0.0
-Lod s id: 1 vylozila 0 jednotek nakladu.
-
-Lodi s id: 2 zbyva doletet: 0.0
-Lod s id: 2 vylozila 0 jednotek nakladu.
-
-Lodi s id: 3 zbyva doletet: 0.0
-Lod s id: 3 vylozila 0 jednotek nakladu.
-
-Lodi s id: 4 zbyva doletet: 0.0
-Lod s id: 4 vylozila 0 jednotek nakladu.
-
-Lodi s id: 5 zbyva doletet: 0.0
-Lod s id: 5 vylozila 0 jednotek nakladu.
-
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
-
-Lodi s id: 7 zbyva doletet: 0.0
-Lod s id: 7 vylozila 0 jednotek nakladu.
-
-Lodi s id: 8 zbyva doletet: 0.0
-Lod s id: 8 vylozila 0 jednotek nakladu.
-
-Lodi s id: 9 zbyva doletet: 0.0
-Lod s id: 9 vylozila 0 jednotek nakladu.
-
-Lodi s id: 10 zbyva doletet: 0.0
-Lod s id: 10 vylozila 0 jednotek nakladu.
-
-Lodi s id: 11 zbyva doletet: 0.0
-Lod s id: 11 vylozila 0 jednotek nakladu.
-
-Lodi s id: 12 zbyva doletet: 0.0
-Lod s id: 12 vylozila 0 jednotek nakladu.
-
-Lodi s id: 13 zbyva doletet: 0.0
-Lod s id: 13 vylozila 0 jednotek nakladu.
-
-Lodi s id: 14 zbyva doletet: 0.0
-Lod s id: 14 vylozila 0 jednotek nakladu.
-
-Lodi s id: 15 zbyva doletet: 0.0
-Lod s id: 15 vylozila 0 jednotek nakladu.
-
-Lodi s id: 16 zbyva doletet: 0.0
-Lod s id: 16 vylozila 0 jednotek nakladu.
-
-Lodi s id: 17 zbyva doletet: 0.0
-Lod s id: 17 vylozila 0 jednotek nakladu.
-
-Lodi s id: 18 zbyva doletet: 0.0
-Lod s id: 18 vylozila 0 jednotek nakladu.
-
-Lodi s id: 19 zbyva doletet: 0.0
-Lod s id: 19 vylozila 0 jednotek nakladu.
-
-Lodi s id: 20 zbyva doletet: 0.0
-Lod s id: 20 vylozila 0 jednotek nakladu.
-
-Lodi s id: 21 zbyva doletet: 0.0
-Lod s id: 21 vylozila 0 jednotek nakladu.
-
-Lodi s id: 22 zbyva doletet: 0.0
-Lod s id: 22 vylozila 0 jednotek nakladu.
-
-Lodi s id: 23 zbyva doletet: 0.0
-Lod s id: 23 vylozila 0 jednotek nakladu.
-
-Lodi s id: 24 zbyva doletet: 0.0
-Lod s id: 24 vylozila 0 jednotek nakladu.
-
-Lodi s id: 25 zbyva doletet: 0.0
-Lod s id: 25 vylozila 0 jednotek nakladu.
-
-Lodi s id: 26 zbyva doletet: 0.0
-Lod s id: 26 vylozila 0 jednotek nakladu.
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 0 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 0.0
-Lod s id: 28 vylozila 0 jednotek nakladu.
-
-Lodi s id: 29 zbyva doletet: 0.0
-Lod s id: 29 vylozila 0 jednotek nakladu.
-
----------------------------------------------------------------------------------------------
-Lodi s id: 0 zbyva doletet: 0.0
-Lod s id: 0 vylozila 0 jednotek nakladu.
-
-Lodi s id: 1 zbyva doletet: 0.0
-Lod s id: 1 vylozila 0 jednotek nakladu.
-
-Lodi s id: 2 zbyva doletet: 0.0
-Lod s id: 2 vylozila 0 jednotek nakladu.
-
-Lodi s id: 3 zbyva doletet: 0.0
-Lod s id: 3 vylozila 0 jednotek nakladu.
-
-Lodi s id: 4 zbyva doletet: 0.0
-Lod s id: 4 vylozila 0 jednotek nakladu.
-
-Lodi s id: 5 zbyva doletet: 0.0
-Lod s id: 5 vylozila 0 jednotek nakladu.
-
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
-
-Lodi s id: 7 zbyva doletet: 0.0
-Lod s id: 7 vylozila 0 jednotek nakladu.
-
-Lodi s id: 8 zbyva doletet: 0.0
-Lod s id: 8 vylozila 0 jednotek nakladu.
-
-Lodi s id: 9 zbyva doletet: 0.0
-Lod s id: 9 vylozila 0 jednotek nakladu.
-
-Lodi s id: 10 zbyva doletet: 0.0
-Lod s id: 10 vylozila 0 jednotek nakladu.
-
-Lodi s id: 11 zbyva doletet: 0.0
-Lod s id: 11 vylozila 0 jednotek nakladu.
-
-Lodi s id: 12 zbyva doletet: 0.0
-Lod s id: 12 vylozila 0 jednotek nakladu.
-
-Lodi s id: 13 zbyva doletet: 0.0
-Lod s id: 13 vylozila 0 jednotek nakladu.
-
-Lodi s id: 14 zbyva doletet: 0.0
-Lod s id: 14 vylozila 0 jednotek nakladu.
-
-Lodi s id: 15 zbyva doletet: 0.0
-Lod s id: 15 vylozila 0 jednotek nakladu.
-
-Lodi s id: 16 zbyva doletet: 0.0
-Lod s id: 16 vylozila 0 jednotek nakladu.
-
-Lodi s id: 17 zbyva doletet: 0.0
-Lod s id: 17 vylozila 0 jednotek nakladu.
-
-Lodi s id: 18 zbyva doletet: 0.0
-Lod s id: 18 vylozila 0 jednotek nakladu.
-
-Lodi s id: 19 zbyva doletet: 0.0
-Lod s id: 19 vylozila 0 jednotek nakladu.
-
-Lodi s id: 20 zbyva doletet: 0.0
-Lod s id: 20 vylozila 0 jednotek nakladu.
-
-Lodi s id: 21 zbyva doletet: 0.0
-Lod s id: 21 vylozila 0 jednotek nakladu.
-
-Lodi s id: 22 zbyva doletet: 0.0
-Lod s id: 22 vylozila 0 jednotek nakladu.
-
-Lodi s id: 23 zbyva doletet: 0.0
-Lod s id: 23 vylozila 0 jednotek nakladu.
-
-Lodi s id: 24 zbyva doletet: 0.0
-Lod s id: 24 vylozila 0 jednotek nakladu.
-
-Lodi s id: 25 zbyva doletet: 0.0
-Lod s id: 25 vylozila 0 jednotek nakladu.
-
-Lodi s id: 26 zbyva doletet: 0.0
-Lod s id: 26 vylozila 0 jednotek nakladu.
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 0 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 0.0
-Lod s id: 28 vylozila 0 jednotek nakladu.
-
-Lodi s id: 29 zbyva doletet: 0.0
-Lod s id: 29 vylozila 0 jednotek nakladu.
-
----------------------------------------------------------------------------------------------
-Lodi s id: 0 zbyva doletet: 0.0
-Lod s id: 0 vylozila 0 jednotek nakladu.
-
-Lodi s id: 1 zbyva doletet: 0.0
-Lod s id: 1 vylozila 0 jednotek nakladu.
-
-Lodi s id: 2 zbyva doletet: 0.0
-Lod s id: 2 vylozila 0 jednotek nakladu.
-
-Lodi s id: 3 zbyva doletet: 0.0
-Lod s id: 3 vylozila 0 jednotek nakladu.
-
-Lodi s id: 4 zbyva doletet: 0.0
-Lod s id: 4 vylozila 0 jednotek nakladu.
-
-Lodi s id: 5 zbyva doletet: 0.0
-Lod s id: 5 vylozila 0 jednotek nakladu.
-
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
-
-Lodi s id: 7 zbyva doletet: 0.0
-Lod s id: 7 vylozila 0 jednotek nakladu.
-
-Lodi s id: 8 zbyva doletet: 0.0
-Lod s id: 8 vylozila 0 jednotek nakladu.
-
-Lodi s id: 9 zbyva doletet: 0.0
-Lod s id: 9 vylozila 0 jednotek nakladu.
-
-Lodi s id: 10 zbyva doletet: 0.0
-Lod s id: 10 vylozila 0 jednotek nakladu.
-
-Lodi s id: 11 zbyva doletet: 0.0
-Lod s id: 11 vylozila 0 jednotek nakladu.
-
-Lodi s id: 12 zbyva doletet: 0.0
-Lod s id: 12 vylozila 0 jednotek nakladu.
-
-Lodi s id: 13 zbyva doletet: 0.0
-Lod s id: 13 vylozila 0 jednotek nakladu.
-
-Lodi s id: 14 zbyva doletet: 0.0
-Lod s id: 14 vylozila 0 jednotek nakladu.
-
-Lodi s id: 15 zbyva doletet: 0.0
-Lod s id: 15 vylozila 0 jednotek nakladu.
-
-Lodi s id: 16 zbyva doletet: 0.0
-Lod s id: 16 vylozila 0 jednotek nakladu.
-
-Lodi s id: 17 zbyva doletet: 0.0
-Lod s id: 17 vylozila 0 jednotek nakladu.
-
-Lodi s id: 18 zbyva doletet: 0.0
-Lod s id: 18 vylozila 0 jednotek nakladu.
-
-Lodi s id: 19 zbyva doletet: 0.0
-Lod s id: 19 vylozila 0 jednotek nakladu.
-
-Lodi s id: 20 zbyva doletet: 0.0
-Lod s id: 20 vylozila 0 jednotek nakladu.
-
-Lodi s id: 21 zbyva doletet: 0.0
-Lod s id: 21 vylozila 0 jednotek nakladu.
-
-Lodi s id: 22 zbyva doletet: 0.0
-Lod s id: 22 vylozila 0 jednotek nakladu.
-
-Lodi s id: 23 zbyva doletet: 0.0
-Lod s id: 23 vylozila 0 jednotek nakladu.
-
-Lodi s id: 24 zbyva doletet: 0.0
-Lod s id: 24 vylozila 0 jednotek nakladu.
-
-Lodi s id: 25 zbyva doletet: 0.0
-Lod s id: 25 vylozila 0 jednotek nakladu.
-
-Lodi s id: 26 zbyva doletet: 0.0
-Lod s id: 26 vylozila 0 jednotek nakladu.
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 0 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 0.0
-Lod s id: 28 vylozila 0 jednotek nakladu.
-
-Lodi s id: 29 zbyva doletet: 0.0
-Lod s id: 29 vylozila 0 jednotek nakladu.
-
----------------------------------------------------------------------------------------------
-Lodi s id: 0 zbyva doletet: 0.0
-Lod s id: 0 vylozila 0 jednotek nakladu.
-
-Lodi s id: 1 zbyva doletet: 0.0
-Lod s id: 1 vylozila 0 jednotek nakladu.
-
-Lodi s id: 2 zbyva doletet: 0.0
-Lod s id: 2 vylozila 0 jednotek nakladu.
-
-Lodi s id: 3 zbyva doletet: 0.0
-Lod s id: 3 vylozila 0 jednotek nakladu.
-
-Lodi s id: 4 zbyva doletet: 0.0
-Lod s id: 4 vylozila 0 jednotek nakladu.
-
-Lodi s id: 5 zbyva doletet: 0.0
-Lod s id: 5 vylozila 0 jednotek nakladu.
-
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
-
-Lodi s id: 7 zbyva doletet: 0.0
-Lod s id: 7 vylozila 0 jednotek nakladu.
-
-Lodi s id: 8 zbyva doletet: 0.0
-Lod s id: 8 vylozila 0 jednotek nakladu.
-
-Lodi s id: 9 zbyva doletet: 0.0
-Lod s id: 9 vylozila 0 jednotek nakladu.
-
-Lodi s id: 10 zbyva doletet: 0.0
-Lod s id: 10 vylozila 0 jednotek nakladu.
-
-Lodi s id: 11 zbyva doletet: 0.0
-Lod s id: 11 vylozila 0 jednotek nakladu.
-
-Lodi s id: 12 zbyva doletet: 0.0
-Lod s id: 12 vylozila 0 jednotek nakladu.
-
-Lodi s id: 13 zbyva doletet: 0.0
-Lod s id: 13 vylozila 0 jednotek nakladu.
-
-Lodi s id: 14 zbyva doletet: 0.0
-Lod s id: 14 vylozila 0 jednotek nakladu.
-
-Lodi s id: 15 zbyva doletet: 0.0
-Lod s id: 15 vylozila 0 jednotek nakladu.
-
-Lodi s id: 16 zbyva doletet: 0.0
-Lod s id: 16 vylozila 0 jednotek nakladu.
-
-Lodi s id: 17 zbyva doletet: 0.0
-Lod s id: 17 vylozila 0 jednotek nakladu.
-
-Lodi s id: 18 zbyva doletet: 0.0
-Lod s id: 18 vylozila 0 jednotek nakladu.
-
-Lodi s id: 19 zbyva doletet: 0.0
-Lod s id: 19 vylozila 0 jednotek nakladu.
-
-Lodi s id: 20 zbyva doletet: 0.0
-Lod s id: 20 vylozila 0 jednotek nakladu.
-
-Lodi s id: 21 zbyva doletet: 0.0
-Lod s id: 21 vylozila 0 jednotek nakladu.
-
-Lodi s id: 22 zbyva doletet: 0.0
-Lod s id: 22 vylozila 0 jednotek nakladu.
-
-Lodi s id: 23 zbyva doletet: 0.0
-Lod s id: 23 vylozila 0 jednotek nakladu.
-
-Lodi s id: 24 zbyva doletet: 0.0
-Lod s id: 24 vylozila 0 jednotek nakladu.
-
-Lodi s id: 25 zbyva doletet: 0.0
-Lod s id: 25 vylozila 0 jednotek nakladu.
-
-Lodi s id: 26 zbyva doletet: 0.0
-Lod s id: 26 vylozila 0 jednotek nakladu.
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 0 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 0.0
-Lod s id: 28 vylozila 0 jednotek nakladu.
-
-Lodi s id: 29 zbyva doletet: 0.0
-Lod s id: 29 vylozila 0 jednotek nakladu.
-
----------------------------------------------------------------------------------------------
-Lodi s id: 0 zbyva doletet: 0.0
-Lod s id: 0 vylozila 0 jednotek nakladu.
-
-Lodi s id: 1 zbyva doletet: 0.0
-Lod s id: 1 vylozila 0 jednotek nakladu.
-
-Lodi s id: 2 zbyva doletet: 0.0
-Lod s id: 2 vylozila 0 jednotek nakladu.
-
-Lodi s id: 3 zbyva doletet: 0.0
-Lod s id: 3 vylozila 0 jednotek nakladu.
-
-Lodi s id: 4 zbyva doletet: 0.0
-Lod s id: 4 vylozila 0 jednotek nakladu.
-
-Lodi s id: 5 zbyva doletet: 0.0
-Lod s id: 5 vylozila 0 jednotek nakladu.
-
-Lodi s id: 6 zbyva doletet: 0.0
-Lod s id: 6 vylozila 0 jednotek nakladu.
-
-Lodi s id: 7 zbyva doletet: 0.0
-Lod s id: 7 vylozila 0 jednotek nakladu.
-
-Lodi s id: 8 zbyva doletet: 0.0
-Lod s id: 8 vylozila 0 jednotek nakladu.
-
-Lodi s id: 9 zbyva doletet: 0.0
-Lod s id: 9 vylozila 0 jednotek nakladu.
-
-Lodi s id: 10 zbyva doletet: 0.0
-Lod s id: 10 vylozila 0 jednotek nakladu.
-
-Lodi s id: 11 zbyva doletet: 0.0
-Lod s id: 11 vylozila 0 jednotek nakladu.
-
-Lodi s id: 12 zbyva doletet: 0.0
-Lod s id: 12 vylozila 0 jednotek nakladu.
-
-Lodi s id: 13 zbyva doletet: 0.0
-Lod s id: 13 vylozila 0 jednotek nakladu.
-
-Lodi s id: 14 zbyva doletet: 0.0
-Lod s id: 14 vylozila 0 jednotek nakladu.
-
-Lodi s id: 15 zbyva doletet: 0.0
-Lod s id: 15 vylozila 0 jednotek nakladu.
-
-Lodi s id: 16 zbyva doletet: 0.0
-Lod s id: 16 vylozila 0 jednotek nakladu.
-
-Lodi s id: 17 zbyva doletet: 0.0
-Lod s id: 17 vylozila 0 jednotek nakladu.
-
-Lodi s id: 18 zbyva doletet: 0.0
-Lod s id: 18 vylozila 0 jednotek nakladu.
-
-Lodi s id: 19 zbyva doletet: 0.0
-Lod s id: 19 vylozila 0 jednotek nakladu.
-
-Lodi s id: 20 zbyva doletet: 0.0
-Lod s id: 20 vylozila 0 jednotek nakladu.
-
-Lodi s id: 21 zbyva doletet: 0.0
-Lod s id: 21 vylozila 0 jednotek nakladu.
-
-Lodi s id: 22 zbyva doletet: 0.0
-Lod s id: 22 vylozila 0 jednotek nakladu.
-
-Lodi s id: 23 zbyva doletet: 0.0
-Lod s id: 23 vylozila 0 jednotek nakladu.
-
-Lodi s id: 24 zbyva doletet: 0.0
-Lod s id: 24 vylozila 0 jednotek nakladu.
-
-Lodi s id: 25 zbyva doletet: 0.0
-Lod s id: 25 vylozila 0 jednotek nakladu.
-
-Lodi s id: 26 zbyva doletet: 0.0
-Lod s id: 26 vylozila 0 jednotek nakladu.
-
-Lodi s id: 27 zbyva doletet: 0.0
-Lod s id: 27 vylozila 0 jednotek nakladu.
-
-Lodi s id: 28 zbyva doletet: 0.0
-Lod s id: 28 vylozila 0 jednotek nakladu.
-
-Lodi s id: 29 zbyva doletet: 0.0
-Lod s id: 29 vylozila 0 jednotek nakladu.
 
