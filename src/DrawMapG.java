@@ -83,7 +83,7 @@ public class DrawMapG extends JFrame{
 																								 /*KRESLENI CEST*/
 		
 		for (int i = 0; i < entities.size(); i++) {	
-			if (i<factoriesCount) {g2.setColor(Color.RED);}
+			if (i==5) {g2.setColor(Color.RED);}
 			else{g2.setColor(Color.BLACK);}
 			
 			if(i < factoriesCount) {

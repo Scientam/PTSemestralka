@@ -136,9 +136,9 @@ public class Main {
 			 
 			/** zavola metodu, ktera najde nejkratsi cesty, tj. hodnoty */
 			floydWarshall= Graph.floydWarshallM(realDistance, true); 	
-			for (int i = 0; i < entitiesV.size()-1; i++) {
+			/*for (int i = 0; i < entitiesV.size()-1; i++) {
 				floydWarshall = Graph.floydWarshallM(floydWarshall, false);
-			}
+			}*/
 			/** vytvori textovy soubor, do ktereho se vypisi nejkratsi cesty, tj. hodnoty */
 			BufferedWriter bw5 = new BufferedWriter(new FileWriter("FWShortestPath.txt"));			
 			for (int i = 0; i < floydWarshall.length; i++) {										

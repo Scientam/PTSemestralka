@@ -159,7 +159,7 @@ public class DataGeneration {
 						realDistance[i][j] = distance[i][j];
 						break;
 					}else{
-						realDistance[i][j] = Integer.MAX_VALUE/2-100000;				// Integer.MAX_VALUE/2-100000
+						realDistance[i][j] = 1000;				// Integer.MAX_VALUE/2-100000
 					}
 				 }
 			}

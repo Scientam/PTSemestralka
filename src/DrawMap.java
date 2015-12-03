@@ -83,9 +83,7 @@ public class DrawMap extends JFrame{
 																								 /*KRESLENI CEST*/
 		
 		for (int i = 0; i < entities.size(); i++) {	
-			if (i<factoriesCount) {g2.setColor(Color.RED);}
-			else{g2.setColor(Color.BLACK);}
-			
+			g2.setColor(Color.BLACK);
 		
 			/*Sousedi 
 			if(i < factoriesCount) {
@@ -104,16 +102,13 @@ public class DrawMap extends JFrame{
 			/*Nejkratsi cesty */
 			int from;
 		    int to;
-			for (int j = 0; j < entities.size(); j++) {
-				if (paths[i][j] != null) {
-				    for (int k = 0; k < paths[i][j].size()-1; k++){ 					
-						from = paths[i][j].get(k);
-						to = paths[i][j].get(k+1);
-						g2.draw(new Line2D.Double(entities.get(from).getXAxis()+2+100, entities.get(from).getYAxis()+2+130, entities.get(to).getXAxis()+2+100, entities.get(to).getYAxis()+2+130) );
-					}
-					
+			if (paths[i][5] != null) {
+				for (int k = 0; k < paths[i][5].size()-1; k++){ 					
+					from = paths[i][5].get(k);
+					to = paths[i][5].get(k+1);
+					g2.draw(new Line2D.Double(entities.get(from).getXAxis()+2+100, entities.get(from).getYAxis()+2+130, entities.get(to).getXAxis()+2+100, entities.get(to).getYAxis()+2+130) );
 				}
-		    }
-		}
+			}
+		 }
 	}
 }
