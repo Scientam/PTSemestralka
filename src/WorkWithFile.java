@@ -92,9 +92,9 @@ public class WorkWithFile {
 				if (planetL.get(i).getAnswered()==false) {
 					production = planetL.get(i).drugProduction( planetL.get(i).getPopulCount() );
 					planetL.get(i).setOrder( planetL.get(i).order( planetL.get(i).getPopulCount(), production ) );    // vytvori objednavku, jeji velikost zavisi na poctu obyvatel planety
-					bw.write("Planeta s id: "+(planetL.get(i).getId()-5)+" objednava takovyto pocet leku: "+planetL.get(i).getOrder());
-					bw.newLine();
-				}				    
+				}	
+				bw.write("Planeta s id: "+(planetL.get(i).getId()-5)+" objednava takovyto pocet leku: "+planetL.get(i).getOrder());
+				bw.newLine();
 			}
 				bw.write("---------------------------------------------------------------------------------------------");
 				bw.newLine();
