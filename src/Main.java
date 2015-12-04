@@ -78,40 +78,21 @@ public class Main {
 			entitiesV = DataGeneration.factoriesDistribution(factoriesCount, planetsCount, neighbourCountF, entitiesV);
 			/** zavola metodu, ktera vytvori planety */
 			entitiesV = DataGeneration.planetsDistribution(factoriesCount, planetsCount, neighbourCountP, entitiesV);	
-			
 			/** vytvori textovy soubor, do ktereho se vypisi parametry vrcholu */
-			BufferedWriter bw1 = new BufferedWriter(new FileWriter("Vertexes.txt"));				// BW na vypis vrcholu(tj. central a planet)do textaku  
-			for (int i=0; i<entitiesV.size(); i++) {
-				bw1.write(entitiesV.get(i).key+"\t"+entitiesV.get(i).xAxis+"\t"+entitiesV.get(i).yAxis+"\t"+entitiesV.get(i).neighbourCount+"\t"+entitiesV.get(i).color);
-				bw1.newLine();							
-			}
-			bw1.close();
+			WriteToFile.printVertex(entitiesV);
 		
 			/** spocte vzdalenosti mezi vsemi vrcholy a ulozi do matice */
 			distance = DataGeneration.getDistance();												
 			/** vytvori textovy soubor, do ktereho se vypise matice vzdalenosti */
-			DataGeneration.printMatrix(distance, entitiesV.size(), "Distance.txt");
+			WriteToFile.printMatrix(distance, entitiesV.size(), "Distance.txt");
 		
 			/** zavola metodu, ktera najde sousedy, tedy vytvori hrany */
 			DataGeneration.neighbour(factoriesCount, neighbourCountF, neighbourCountP, entitiesV);  
 			/** vytvori textovy soubor, do ktereho se vypisi hrany */
-			BufferedWriter bw2 = new BufferedWriter(new FileWriter("Edges.txt"));					
-			for (int i = 0; i<entitiesV.size(); i++) {											    
-				if (i<factoriesCount) {                                                             // zpracovava centraly
-					for (int j = 0; j<neighbourCountF; j++) {
-						bw2.write(entitiesV.get(i).neighbour[j].index+"\t");					
-					}
-				}else{
-					for (int j = 0; j<neighbourCountP; j++) {                                       // zpracovava planety
-						bw2.write(entitiesV.get(i).neighbour[j].index+"\t");	
-					}	
-				}
-				bw2.newLine();
-			}
-			bw2.close();
+			WriteToFile.printNeigbour(entitiesV, factoriesCount, planetsCount);
 			
 			realDistance = DataGeneration.realDistance(entitiesV, distance);
-			DataGeneration.printMatrix(realDistance, entitiesV.size(), "RealDistance.txt");
+			WriteToFile.printMatrix(realDistance, entitiesV.size(), "RealDistance.txt");
 		
 			//*********************************************************************************HLEDANI_NEJKRATSICH_CEST********************************************************
 			/*Dijsktra 
@@ -123,12 +104,12 @@ public class Main {
 			/** zavola metodu, ktera najde nejkratsi cesty, tj. hodnoty */
 			floydWarshall= Graph.floydWarshallM(realDistance, true); 	
 			/** vytvori textovy soubor, do ktereho se vypisi nejkratsi cesty, tj. hodnoty */
-			DataGeneration.printMatrix(floydWarshall, entitiesV.size(), "FWShortestPath.txt");
+			WriteToFile.printMatrix(floydWarshall, entitiesV.size(), "FWShortestPath.txt");
 			
 			/** zavola metodu, ktera najde nejkratsi cesty, tj. predchudce */
 			floydWarshallP = Graph.getPathMatrix(); 										
 			/** vytvori textovy soubor, do ktereho se vypisi nejkratsi cesty, tj. predchudci */
-			DataGeneration.printMatrix(floydWarshallP, entitiesV.size(), "FWPath.txt");
+			WriteToFile.printMatrix(floydWarshallP, entitiesV.size(), "FWPath.txt");
 			
 			
 			// ulozeni pole predchudcu kazdeho vrcholu

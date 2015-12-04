@@ -169,22 +169,5 @@ public class DataGeneration {
 		}
 		 return realDistance;
 	 }
-	 
-	 public static void printMatrix(int[][] matrix, int size, String name) {
-		 BufferedWriter bw;
-		try {
-			bw = new BufferedWriter(new FileWriter(name));
-			for (int i = 0; i<size; i++) {
-				for (int j = 0; j<size; j++) {
-					bw.write((int)Math.floor(matrix[i][j])+"\t");
-				}
-				bw.newLine();
-			}
-			bw.close();
-		} catch (IOException e) {e.printStackTrace();}			
-	 }
-
-	 
+	  
 }
-
-
