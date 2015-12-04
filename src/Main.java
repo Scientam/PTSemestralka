@@ -12,7 +12,7 @@ import java.util.Scanner;
  */
 public class Main {
 	/**
-	 * @version 0.0412.1759
+	 * @version 0.0412.1830
 	 */
 	static Scanner sc = new Scanner(System.in);
     //*********************************************************************************************promenne pro generovani****************************************************
@@ -28,8 +28,9 @@ public class Main {
 	static int planetsCount;
 	/** vytvori promenou ktera urcuje pocet sousedu kazde planety(v zadani 5) */
 	static int neighbourCountP = 5;
-	/** vytvori promennou, ktera uchovava vzdalenosti mezi vrcholy */
+	/** vytvori promennou, ktera uchovava vzdalenosti mezi všemi vrcholy */
 	static int[][] distance;
+	/** vytvori promennou, ktera uchovava vzdalenosti mezi vrcholy mezi kterými existuje hrana */
 	static int[][] realDistance;
 	/** vytvori promennou, ktera uchovava nejkratsi vzdalenosti mezi vrcholy */
 	static int[][] floydWarshall;
@@ -39,9 +40,9 @@ public class Main {
 	static ArrayList<Integer>[][] paths;
 	//*********************************************************************promenne pro simulaci**************************************************************************************************
     //Dodelej prosim ty komenty a u simulace vic popisku, co k cemu slouzi
-	/** */
+	/** vytvori promennou, ktera slouzi pro generování náhodné veličiny*/
 	static Random r = new Random();
-	/** */
+	/** vytvori promennou, ktera slouzi k identifikovani centraly */
 	private static int factoryId;
 	/** */
 	//private static int starshipId;
@@ -72,36 +73,29 @@ public class Main {
 			entitiesV = DataGeneration.planetsDistribution(factoriesCount, planetsCount, neighbourCountP, entitiesV);	
 			/** vytvori textovy soubor, do ktereho se vypisi parametry vrcholu */
 			WorkWithFile.printVertex(entitiesV);
-		
 			/** spocte vzdalenosti mezi vsemi vrcholy a ulozi do matice */
 			distance = DataGeneration.getDistance();												
 			/** vytvori textovy soubor, do ktereho se vypise matice vzdalenosti */
 			WorkWithFile.printMatrix(distance, entitiesV.size(), "Distance.txt");
-		
 			/** zavola metodu, ktera najde sousedy, tedy vytvori hrany */
 			DataGeneration.neighbour(factoriesCount, neighbourCountF, neighbourCountP, entitiesV);  
 			/** vytvori textovy soubor, do ktereho se vypisi hrany */
 			WorkWithFile.printNeigbour(entitiesV, factoriesCount, planetsCount);
-			
+			/** spocte vzdalenosti mezi vsemi vrcholy mezi kterymi existuje hrana a ulozi do matice */
 			realDistance = DataGeneration.realDistance(entitiesV, distance);
 			WorkWithFile.printMatrix(realDistance, entitiesV.size(), "RealDistance.txt");
-					 
 			/** zavola metodu, ktera najde nejkratsi cesty, tj. hodnoty */
 			floydWarshall= Graph.floydWarshallM(realDistance, true); 	
 			/** vytvori textovy soubor, do ktereho se vypisi nejkratsi cesty, tj. hodnoty */
 			WorkWithFile.printMatrix(floydWarshall, entitiesV.size(), "FWShortestPath.txt");
-			
 			/** zavola metodu, ktera najde nejkratsi cesty, tj. predchudce */
 			floydWarshallP = Graph.getPathMatrix(); 										
 			/** vytvori textovy soubor, do ktereho se vypisi nejkratsi cesty, tj. predchudci */
 			WorkWithFile.printMatrix(floydWarshallP, entitiesV.size(), "FWPath.txt");
-			
 			/** ulozeni pole predchudcu kazdeho vrcholu */
 			DataGeneration.assignNeighbour(entitiesV, floydWarshallP);
-			
 			/** vytvoreni listu cest z kazdeho vrcholu do kazdeho */
 		    DataGeneration.createPaths(paths, entitiesV);
-			
 			/** zavola metodu, ktera nazorne vykresli galaxii, tj. plnety,  centraly a cesty mezi nimi */
 		    new DrawMapG(factoriesCount, planetsCount, neighbourCountF, neighbourCountP, entitiesV, paths);
 			new DrawMap(factoriesCount, planetsCount, neighbourCountF, neighbourCountP, entitiesV, paths);	
@@ -109,8 +103,8 @@ public class Main {
 		} else { 	
 			entitiesV = WorkWithFile.fromFileVrcholy(factoriesCount);
 			WorkWithFile.fromFileHrany(entitiesV, factoriesCount, planetsCount);
-			planetsCount = entitiesV.size() - factoriesCount;
 			
+			planetsCount = entitiesV.size() - factoriesCount;
 			realDistance = new int[factoriesCount+planetsCount][factoriesCount+planetsCount];
 			floydWarshall = new int[factoriesCount+planetsCount][factoriesCount+planetsCount];
 			floydWarshallP = new int[factoriesCount+planetsCount][factoriesCount+planetsCount];
@@ -119,8 +113,9 @@ public class Main {
 			WorkWithFile.fromFileRealDistance(realDistance);
 			WorkWithFile.fromFileFWShortestPath(floydWarshall);
 			WorkWithFile.fromFileFWPath(floydWarshallP);
-			
-			/** zavola metodu, ktera nazorne vykresli galaxii, tj. plnety,  centraly a cesty mezi nimi */
+			DataGeneration.assignNeighbour(entitiesV, floydWarshallP);
+			DataGeneration.createPaths(paths, entitiesV);
+			new DrawMapG(factoriesCount, planetsCount, neighbourCountF, neighbourCountP, entitiesV, paths);
 			new DrawMap(factoriesCount, planetsCount, neighbourCountF, neighbourCountP, entitiesV, paths);		
 		}
 	//*********************************************************************************SIMULACE********************************************************************************************************/	
