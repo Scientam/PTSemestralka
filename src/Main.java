@@ -6,16 +6,13 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 /**
- * 
  * @authors Karel Sobehart, Petr Tobias
- *
+ * @version 0.0412.2030
  */
 public class Main {
-	/**
-	 * @version 0.0412.1830
-	 */
+	
 	static Scanner sc = new Scanner(System.in);
-    //*********************************************************************************************promenne pro generovani****************************************************
+    //*********************************************************************************************promenne pro generovani**********************************************************************
 	/** vytvori ArrayList do ktereho se budou ukladat objekty Vertex jako vrcholy grafu */
 	static ArrayList<Vertex> entitiesV = new ArrayList<Vertex>();		
 	/** vytvori promennou, urcujici zda se data budou generovat nebo nacitat ze souboru*/
@@ -38,7 +35,7 @@ public class Main {
 	static int[][] floydWarshallP;
 	/** vytvori promennou, ktera uchovava posloupnosti vrcholu tvorici nejkratsi cestu z vrcholu u do vrcholu v */
 	static ArrayList<Integer>[][] paths;
-	//*********************************************************************promenne pro simulaci**************************************************************************************************
+	//************************************************************************************************promenne pro simulaci*************************************************************************
     //Dodelej prosim ty komenty a u simulace vic popisku, co k cemu slouzi
 	/** vytvori promennou, ktera slouzi pro generování náhodné veličiny*/
 	static Random r = new Random();
@@ -48,9 +45,10 @@ public class Main {
 	//private static int starshipId;
 	/** konstanta uchovavajici plny naklad*/
 	static final int CAPACITY = 5000000;
+	private static Scanner sc2;
+	private static Scanner sc3;
 
 	/**
-	 * 
 	 * @param args
 	 * @throws IOException
 	 */
@@ -119,9 +117,9 @@ public class Main {
 			new DrawMap(factoriesCount, planetsCount, neighbourCountF, neighbourCountP, entitiesV, paths);		
 		}
 	//*********************************************************************************SIMULACE********************************************************************************************************/	
-		 BufferedWriter bw6 = new BufferedWriter(new FileWriter("Order.txt"));
-		    Scanner sc2 = new Scanner(new File("Distance.txt"));
-		    Scanner sc3 = new Scanner(System.in);
+		 BufferedWriter bw = new BufferedWriter(new FileWriter("Order.txt"));
+		    sc2 = new Scanner(new File("Distance.txt"));
+		    sc3 = new Scanner(System.in);
 		    //sc2.skip("0.0");
 		    int production = 0;
 		    Planet p = null;
@@ -140,7 +138,7 @@ public class Main {
 			for (int d = 0; d < maxD; d++){ 
 				if (d == 0){
 					for (int i = 0; i < factoriesCount; i++){
-						p = new Planet(i,entitiesV.get(i).getXAxis(),entitiesV.get(i).getYAxis(),entitiesV.get(i).getNeighbourCount(),entitiesV.get(i).getColor());
+						p = new Planet(i,entitiesV.get(i).getXAxis(),entitiesV.get(i).getYAxis(),entitiesV.get(i).getNeighbourCount());
 						planet.add(p);
 					}
 					for (int i = 5; i < planetsCount+5; i++){
@@ -148,13 +146,13 @@ public class Main {
 						planet.add(p);
 					}
 				}
-				bw6.write("---------------------------------------------------------------------------------------------");
-				bw6.newLine();
+				bw.write("---------------------------------------------------------------------------------------------");
+				bw.newLine();
 				if ((d % 30) == 0){
-				bw6.write("Objednavky pro "+(d/30+1)+". mesic: ");
-				bw6.newLine();
-				bw6.write("---------------------------------------------------------------------------------------------");
-				bw6.newLine();
+				bw.write("Objednavky pro "+(d/30+1)+". mesic: ");
+				bw.newLine();
+				bw.write("---------------------------------------------------------------------------------------------");
+				bw.newLine();
 				}
 				//****************************************************vytvoreni objednavek******************************************************************/
 				if (d % 30 == 0 && d != 0){
@@ -177,12 +175,12 @@ public class Main {
 				    planet.get(orderID).setOrder(orderDrugCount);    // vytvori objednavku, jeji velikost zavisi na poctu obyvatel planety
 				    }
 				    if (i == orderID && orderID != 0){
-				    bw6.write("Planeta s id: "+planet.get(orderID).getId()+" objednava takovyto pocet leku: "+planet.get(orderID).getOrder());
-				    bw6.newLine();
+				    bw.write("Planeta s id: "+planet.get(orderID).getId()+" objednava takovyto pocet leku: "+planet.get(orderID).getOrder());
+				    bw.newLine();
 				    }
 				    else{
-					bw6.write("Planeta s id: "+planet.get(i).getId()+" objednava takovyto pocet leku: "+planet.get(i).getOrder());
-					bw6.newLine();
+					bw.write("Planeta s id: "+planet.get(i).getId()+" objednava takovyto pocet leku: "+planet.get(i).getOrder());
+					bw.newLine();
 				    }
 					/*if (orderID != 0 && i == orderID){
 						planet.get(orderID).setOrder(orderDrugCount);    // vytvori objednavku, jeji velikost zavisi na poctu obyvatel planety
@@ -190,8 +188,8 @@ public class Main {
 						bw6.newLine();
 					}*/
 				}
-				bw6.write("---------------------------------------------------------------------------------------------");
-				bw6.newLine();
+				bw.write("---------------------------------------------------------------------------------------------");
+				bw.newLine();
 				}
 				//*****************************************************vyrizovani objednacek****************************************************************/
 				
@@ -230,10 +228,10 @@ public class Main {
 					if (starship.get(i).getDistance() <= 25.0){
 						starship.get(i).setDistance(0.0);
 						starship.get(i).setCapacity(starship.get(i).getCapacity() - planet.get(starship.get(i).getTargetP()).getOrder());
-						bw6.write("Lodi s id: " + starship.get(i).getId() + " zbyva doletet: " + starship.get(i).getDistance());
-						bw6.newLine();
-						bw6.write("Lod s id: " + starship.get(i).getId() + " vylozila " + planet.get(starship.get(i).getTargetP()).getOrder() + " jednotek nakladu.");
-						bw6.newLine();
+						bw.write("Lodi s id: " + starship.get(i).getId() + " zbyva doletet: " + starship.get(i).getDistance());
+						bw.newLine();
+						bw.write("Lod s id: " + starship.get(i).getId() + " vylozila " + planet.get(starship.get(i).getTargetP()).getOrder() + " jednotek nakladu.");
+						bw.newLine();
 						starship.get(i).setSourceP(starship.get(i).getTargetP());
 						//duvod, proc se po vylozeni nevypisuje, kolik se vylozilo, protoze se hleda objednavka centraly, ktera neexistuje
 						starship.get(i).setTargetP(factoryId);			
@@ -244,8 +242,8 @@ public class Main {
 						 * Lodi se odpocitava 25 LY z celkove cesty kazdy den.
 						 */
 					starship.get(i).setDistance(starship.get(i).getDistance() - 25.0);					//vzdalenost se snizuje kazdy den o 25 LY
-					bw6.write("Lodi s id: " + starship.get(i).getId() + " zbyva doletet: " + starship.get(i).getDistance());
-					bw6.newLine();
+					bw.write("Lodi s id: " + starship.get(i).getId() + " zbyva doletet: " + starship.get(i).getDistance());
+					bw.newLine();
 					}
 					// Pridal bych nejakou podminku na vzdalenost, aby to nebralo, planety na druhe strane galaxie
 					/**
@@ -268,7 +266,7 @@ public class Main {
 					
 					//starship.get(i).setTargetP(floydWarshall[planet.get(i).getId()][planet.get(i).getId()]);
 				
-				bw6.newLine();
+				bw.newLine();
 				}
 			   
 								
@@ -321,7 +319,7 @@ public class Main {
 			
 	//*****************************************************************************KONEC_SIMULACE******************************************************************************************************/	
 			}
-    bw6.close();
+    bw.close();
     System.out.println("Program skoncil.");
 	}
 

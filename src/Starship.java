@@ -1,7 +1,3 @@
-/**
- * 
- * @authors Petr Tobiaa, Karel Sobehart
- */
 public class Starship {	
 	/** promenna uchovavajici idetifikacni cislo lodi */
 	private  int id;
@@ -42,9 +38,7 @@ public class Starship {
 	
 	public void setId(int id) {
 		this.id = id;
-	}
-	
-	
+	}	
 
 
 	/**
@@ -56,14 +50,14 @@ public class Starship {
 	}
 
 
-
 	/**
 	 * 
 	 * @param targetP
 	 */
 	public void setTargetP(int targetP) {
 		 this.targetP = targetP;
-	 }
+	}
+	
 	
 	/**
 	 * 
@@ -71,7 +65,8 @@ public class Starship {
 	 */
 	public void setIsInUse(boolean isInUse) {
 		 this.isInUse = isInUse;
-	 }
+	}
+	
 	
 	/**
 	 * 
@@ -83,13 +78,32 @@ public class Starship {
 	
 	/**
 	 * 
+	 * @param argVelocity
+	 */
+	public void setVelocity(int argVelocity) {
+		this.velocity = argVelocity;
+	}
+	
+	
+	/**
+	 * 
+	 * @param argNumF
+	 */
+	public void setNumF(int argNumF) {
+		this.numF = argNumF;
+	}
+	
+	
+	/**
+	 * 
 	 * @param distance
 	 */
 	public void setDistance(double distance) {
 		this.distance = distance;
 	}
+	
 
-	/* gettery */
+																										/* gettery */
 	/**
 	 * 
 	 * @return id
@@ -97,6 +111,7 @@ public class Starship {
 	 public int getId() {
 		 return id;
 	 }
+	 
 	  
 	 /**
 	  * 
@@ -106,6 +121,7 @@ public class Starship {
 		 return velocity;
 	 }
 	 
+	 
 	 /**
 	  * 
 	  * @return capacity
@@ -113,6 +129,7 @@ public class Starship {
 	 public int getCapacity() {
 		 return capacity;
 	 }
+	 
 	 
 	 /**
 	  * 
@@ -122,13 +139,15 @@ public class Starship {
 		 return numF;
 	 }
 	 
+	 
 	 /**
 	  * 
 	  * @return sourceP
 	  */
 	 public int getSourceP() {
 			return sourceP;
-		}
+	}
+	 
 	 
 	 /**
 	  * 
@@ -145,6 +164,7 @@ public class Starship {
 	 public double getDistance() {
 		 return distance;
 	 }
+	 
 	 
 	 /**
 	  * 

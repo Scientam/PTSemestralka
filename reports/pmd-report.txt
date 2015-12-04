@@ -1,0 +1,39 @@
+src/DataGeneration.java:13:	Pro oznaceni typu promenne nepouzivejte konkretni tridu 'ArrayList'; vhodnejsi je pouziti rozhrani.
+src/DataGeneration.java:24:	Pro oznaceni typu promenne nepouzivejte konkretni tridu 'ArrayList'; vhodnejsi je pouziti rozhrani.
+src/DataGeneration.java:24:	Pro oznaceni typu promenne nepouzivejte konkretni tridu 'ArrayList'; vhodnejsi je pouziti rozhrani.
+src/DataGeneration.java:54:	Pro oznaceni typu promenne nepouzivejte konkretni tridu 'ArrayList'; vhodnejsi je pouziti rozhrani.
+src/DataGeneration.java:54:	Pro oznaceni typu promenne nepouzivejte konkretni tridu 'ArrayList'; vhodnejsi je pouziti rozhrani.
+src/DataGeneration.java:101:	Pro oznaceni typu promenne nepouzivejte konkretni tridu 'ArrayList'; vhodnejsi je pouziti rozhrani.
+src/DataGeneration.java:101:	Pro oznaceni typu promenne nepouzivejte konkretni tridu 'ArrayList'; vhodnejsi je pouziti rozhrani.
+src/DataGeneration.java:135:	Pro oznaceni typu promenne nepouzivejte konkretni tridu 'ArrayList'; vhodnejsi je pouziti rozhrani.
+src/DataGeneration.java:166:	Pro oznaceni typu promenne nepouzivejte konkretni tridu 'ArrayList'; vhodnejsi je pouziti rozhrani.
+src/DataGeneration.java:166:	Pro oznaceni typu promenne nepouzivejte konkretni tridu 'ArrayList'; vhodnejsi je pouziti rozhrani.
+src/DataGeneration.java:183:	Pro oznaceni typu promenne nepouzivejte konkretni tridu 'ArrayList'; vhodnejsi je pouziti rozhrani.
+src/DataGeneration.java:183:	Pro oznaceni typu promenne nepouzivejte konkretni tridu 'ArrayList'; vhodnejsi je pouziti rozhrani.
+src/DataGeneration.java:183:	Pro oznaceni typu promenne nepouzivejte konkretni tridu 'ArrayList'; vhodnejsi je pouziti rozhrani.
+src/DrawMap.java:11:	Pro oznaceni typu promenne nepouzivejte konkretni tridu 'ArrayList'; vhodnejsi je pouziti rozhrani.
+src/DrawMap.java:21:	Pro oznaceni typu promenne nepouzivejte konkretni tridu 'ArrayList'; vhodnejsi je pouziti rozhrani.
+src/DrawMap.java:33:	Pro oznaceni typu promenne nepouzivejte konkretni tridu 'ArrayList'; vhodnejsi je pouziti rozhrani.
+src/DrawMap.java:33:	Pro oznaceni typu promenne nepouzivejte konkretni tridu 'ArrayList'; vhodnejsi je pouziti rozhrani.
+src/DrawMapG.java:19:	Pro oznaceni typu promenne nepouzivejte konkretni tridu 'ArrayList'; vhodnejsi je pouziti rozhrani.
+src/DrawMapG.java:21:	Pro oznaceni typu promenne nepouzivejte konkretni tridu 'ArrayList'; vhodnejsi je pouziti rozhrani.
+src/DrawMapG.java:33:	Pro oznaceni typu promenne nepouzivejte konkretni tridu 'ArrayList'; vhodnejsi je pouziti rozhrani.
+src/DrawMapG.java:33:	Pro oznaceni typu promenne nepouzivejte konkretni tridu 'ArrayList'; vhodnejsi je pouziti rozhrani.
+src/Graph.java:66:	Prirazovani hodnoty parametru 'target' metody je problematicke. Pouzijte lokalni promenne.
+src/Graph.java:66:	Prirazovani hodnoty parametru 'target' metody je problematicke. Pouzijte lokalni promenne.
+src/Graph.java:66:	Pro oznaceni typu promenne nepouzivejte konkretni tridu 'ArrayList'; vhodnejsi je pouziti rozhrani.
+src/Graph.java:66:	Pro oznaceni typu promenne nepouzivejte konkretni tridu 'ArrayList'; vhodnejsi je pouziti rozhrani.
+src/Main.java:12:	class 'Main' je prilis slozita (Cyclomatic Complexity of 21 (Highest = 20)).
+src/Main.java:12:	class 'Main' je prilis slozita (Cyclomatic Complexity of 21 (Highest = 20)).
+src/Main.java:17:	Pro oznaceni typu promenne nepouzivejte konkretni tridu 'ArrayList'; vhodnejsi je pouziti rozhrani.
+src/Main.java:37:	Pro oznaceni typu promenne nepouzivejte konkretni tridu 'ArrayList'; vhodnejsi je pouziti rozhrani.
+src/Main.java:56:	Ruznych cest pruchodu metodou 'main()' je 10882, doporuceny limit je 200 (NPath complexity).
+src/Main.java:56:	Ruznych cest pruchodu metodou 'main()' je 10882, doporuceny limit je 200 (NPath complexity).
+src/Main.java:56:	Vyhnete se prilis dlouhym metodam.
+src/Main.java:56:	Vyhnete se prilis dlouhym metodam.
+src/Main.java:56:	method 'main' je prilis slozita (Cyclomatic Complexity of 20).
+src/Main.java:56:	method 'main' je prilis slozita (Cyclomatic Complexity of 20).
+src/WorkWithFile.java:36:	Pro oznaceni typu promenne nepouzivejte konkretni tridu 'ArrayList'; vhodnejsi je pouziti rozhrani.
+src/WorkWithFile.java:55:	Pro oznaceni typu promenne nepouzivejte konkretni tridu 'ArrayList'; vhodnejsi je pouziti rozhrani.
+src/WorkWithFile.java:82:	Pro oznaceni typu promenne nepouzivejte konkretni tridu 'ArrayList'; vhodnejsi je pouziti rozhrani.
+src/WorkWithFile.java:116:	Pro oznaceni typu promenne nepouzivejte konkretni tridu 'ArrayList'; vhodnejsi je pouziti rozhrani.

@@ -4,16 +4,8 @@ import java.awt.geom.Ellipse2D;
 import java.awt.geom.Line2D;
 import java.util.ArrayList;
 
-/**
- * 
- * @author Karel Sobehart, Tomas Matejka
- *
- */
 public class DrawMapG extends JFrame{
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	/** vytvori promenou ktera urcuje pocet central v galaxii */
 	int factoriesCount;
@@ -63,6 +55,7 @@ public class DrawMapG extends JFrame{
 	}
 	
 	/**
+	 *  Metoda sloužící ke grafickému znázornìní situace v galaxii.
 	 * @param g2
 	 */
 	public void paint2D(Graphics2D g2) {
@@ -78,10 +71,8 @@ public class DrawMapG extends JFrame{
 		}		
 		
 		g2.setColor(Color.RED);
-		g2.fill(new Ellipse2D.Double(400 + 100, 400 + 130, 10, 10));
-		
+		g2.fill(new Ellipse2D.Double(400 + 100, 400 + 130, 10, 10));		
 																								 /*KRESLENI CEST*/
-		
 		for (int i = 0; i < entities.size(); i++) {	
 			if (i==5) {g2.setColor(Color.RED);}
 			else{g2.setColor(Color.BLACK);}
@@ -98,8 +89,7 @@ public class DrawMapG extends JFrame{
 					g2.draw(new Line2D.Double(entities.get(i).getXAxis()+2+100, entities.get(i).getYAxis()+2+130, entities.get(id).getXAxis()+2+100, entities.get(id).getYAxis()+2+130) );
 				}
 			} 
-			
-		
 		}
 	}
+	
 }

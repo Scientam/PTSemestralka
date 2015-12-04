@@ -1,8 +1,3 @@
-/**
- * 
- * @authors Petr Tobias, Karel Sobehart
- *
- */
 public class Planet extends Vertex {
 	/** promenna uchovavajici informaci o tom zda se na planetu budou nadale dovazet leky  */
 	private boolean status;
@@ -24,13 +19,14 @@ public class Planet extends Vertex {
 	* @param xSour, ySour
 	* @param pocetSousC
 	*/ 
-	public Planet(int id, double xAxis, double yAxis, int neighbourCount, char color) {
-		super(id, xAxis, yAxis, neighbourCount, color);
+	public Planet(int id, double xAxis, double yAxis, int neighbourCount) {
+		super(id, xAxis, yAxis, neighbourCount);
 		this.id=id;
 		status = true;
 		double population = r.nextGaussian() * 2900000/3 + 3000000;
 		populCount = (int) Math.round(population);								
 	}	  
+	
 	
 	/**
 	 * Tato metoda urcuje vlastni produkci leku na planete. Tato metoda urcuje vlastni produkci leku na planete. Nejprve vygeneruje procentualni pokryti
@@ -46,6 +42,7 @@ public class Planet extends Vertex {
   		return drugProduction;
   	}
 	
+	
 	/**
 	 * Tato metoda zjisti zda je dostatek leku, pokud ne, snizi prislusny pocet obyvatel
 	 * @param populCount
@@ -57,6 +54,7 @@ public class Planet extends Vertex {
 		}
   		return this.populCount;
   	}
+	
 	
 	/**
 	 * Tato metoda vraci informaci o to zda se na planetu budou nadale dovazet leky
@@ -70,6 +68,7 @@ public class Planet extends Vertex {
   		return status;
   	}
 	
+	
 	/**
 	 * 
 	 * @param populCount
@@ -77,9 +76,9 @@ public class Planet extends Vertex {
 	 * @return
 	 */
 	public int order(int populCount, int drugProduction){
-				order = populCount - drugProduction;
-				return order;
-		}
+		order = populCount - drugProduction;
+		return order;
+	}
 	
 	
 	/**
@@ -116,4 +115,14 @@ public class Planet extends Vertex {
 	public void setOrder(int argOrder) {
 		this.order = argOrder;
 	}
+	
+	
+	/**
+	 * 
+	 * @param argId
+	 */
+	public void setId(int argId) {
+		this.id = argId;
+	}
+	
 }

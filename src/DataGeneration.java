@@ -1,15 +1,8 @@
-import java.io.BufferedWriter;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;
 
-/**
- * 
- * @author Scien_000
- *
- */
 public class DataGeneration {
 	/** pole se vzdalenostmi entit */
 	private static int[][] distance;		
@@ -34,7 +27,7 @@ public class DataGeneration {
 		 for (int i = 0; i < factoriesCount; i++) {													// vytvori centraly rozlozene pravidelne na kruznici se stredem ve stredu souradneho systemu	  
 			 xAxis = Math.floor(200*Math.cos(Math.toRadians(72*i))+400) ;                                  		// vypocte x-ovou souradnici
 			 yAxis = Math.floor(-1*200*Math.sin(Math.toRadians(72*i))+400);                             		// vypocte y-ovou souradnici
-			 Factory centrala = new Factory(i, xAxis, yAxis, neighbourCountF, 'B');              	// vytvori objekt centrala s pozadovanymi parametry
+			 Factory centrala = new Factory(i, xAxis, yAxis, neighbourCountF);              	// vytvori objekt centrala s pozadovanymi parametry
 			 entitiesV.add(centrala);                                                         		// prida objekt centraly do AL entity
 		  }
 		
@@ -42,14 +35,12 @@ public class DataGeneration {
 			 for(int j = 0; j < factoriesCount; j++) {													// spocte zda  nove vytvarena planeta je dostatecne daleko od vsech vytvorenych entit
 				actDist = Math.sqrt( Math.pow( (entitiesV.get(j).getXAxis() - entitiesV.get(i).getXAxis()), 2) + Math.pow((entitiesV.get(j).getYAxis() - entitiesV.get(i).getYAxis()), 2) );
 				distance[i][j] = (int)actDist;											// matice distance je symetricka
-		 		distance[j][i] = (int)actDist;
-				/*if (i != j) {
-					entitiesV.get(i).neighbour[j] = entitiesV.get(j);									// centrale i priradi za sousedy vsechny ostatni centraly	
-				}	*/ 			
+		 		distance[j][i] = (int)actDist;		
 			 }	
 		 }
 		 return entitiesV;
 	  }
+	 
 	 
 	 /**
 	 * Generuje nahodne rozlozeni planet na zadanem uzemi.
@@ -80,13 +71,14 @@ public class DataGeneration {
 		 	 }	
 	 		 actDist = Collections.min(auxDist); 													// vybere nejmensi vzdalenost prave vytvarene planety a nejblizsi entity
 	 		 if(actDist > 2) { 																		// overi, zda dana planeta je dostatecne daleko, pokud ano, tak ji vytvori a prida do AL entit
-	 		 		Planet pl = new Planet(i, xAxis, yAxis, neighbourCountP, 'B');
+	 		 		Planet pl = new Planet(i, xAxis, yAxis, neighbourCountP);
 	 		 		entitiesV.add(pl);
 	 		 		i++;
 	 		 }
 		  }	
 	 	  return entitiesV;
 	  }
+	 
 	 
 	 /**
 	  * 
@@ -95,6 +87,7 @@ public class DataGeneration {
 	 public static int[][] getDistance() {
 		 return distance;
 	 }
+	 
 	 
 	 /**
 	  * Metoda slouzici k nalezeni sousedu daneho vrcholu
@@ -115,21 +108,8 @@ public class DataGeneration {
 				 neigh.get(j).dist=distance[i][j];												// priradi i-temu prvku AL vzdalenost i-teho prvku od j-teho
 				 neigh.get(j).index=j;
 			 }
-			 /*
-			 if (i==5) {
-			 	System.out.println("Kontrola neserazenosti");
-			 	for (int j = 0; j < entitiesV.size(); j++) {
-			 		System.out.println(neighbour.get(j).dist+" "+neighbour.get(j).index);
-			 	}
-			 }*/
-			 Collections.sort(neigh, new MyComparator());										// seradi AL entit podle vzdalenosti
-			 /*if (i==5) {
-				 System.out.println();
-				 System.out.println("Kontrola serazenosti");
-				 for (int j = 0; j < entitiesV.size(); j++) {
-					 System.out.println(neighbour.get(j).dist+" "+neighbour.get(j).index);
-				 }
-			 }*/
+	
+			Collections.sort(neigh, new MyComparator());										// seradi AL entit podle vzdalenosti
 	
 			if(i < factoriesCount) {
 				for (int j = 0; j < neighbourCountF; j++) {
@@ -146,6 +126,12 @@ public class DataGeneration {
 	 } 
 	 
 	 
+	 /**
+	  * 
+	  * @param entitiesV
+	  * @param distance
+	  * @return
+	  */
 	 public static int[][] realDistance(ArrayList<Vertex> entitiesV, int[][] distance) {
 		 int[][] realDistance = new int[entitiesV.size()][entitiesV.size()];
 		 
@@ -188,6 +174,12 @@ public class DataGeneration {
 	 }
 	 
 	 
+	 /**
+	  * 
+	  * @param paths
+	  * @param entitiesV
+	  * @return
+	  */
 	 public static ArrayList<Integer>[][] createPaths(ArrayList<Integer>[][] paths, ArrayList<Vertex> entitiesV) {
 		 for (int i = 0; i < paths.length; i++) {
 		        for (int j = 0; j < paths.length; j++) {
@@ -195,7 +187,6 @@ public class DataGeneration {
 		        		paths[i][j] = Graph.getShortestPathTo(i, j, entitiesV);           
 		        	}		        	
 				}	
-		        //System.out.println("Uz jsem dodelal prvek i: "+i);
 			}
 		
 		    /*

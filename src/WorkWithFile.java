@@ -38,7 +38,7 @@ public class WorkWithFile {
 		try {
 			bw = new BufferedWriter(new FileWriter("Vertexes.txt"));
 			for (int i = 0; i<entitiesV.size(); i++) {
-				bw.write(entitiesV.get(i).key+"\t"+entitiesV.get(i).xAxis+"\t"+entitiesV.get(i).yAxis+"\t"+entitiesV.get(i).neighbourCount+"\t"+entitiesV.get(i).color);
+				bw.write(entitiesV.get(i).key+"\t"+entitiesV.get(i).xAxis+"\t"+entitiesV.get(i).yAxis+"\t"+entitiesV.get(i).neighbourCount);
 				bw.newLine();
 			}
 			bw.close();
@@ -92,10 +92,10 @@ public class WorkWithFile {
 				counter++;
 				
 				if (counter < factoriesCount) {
-					 Factory centrala = new Factory(Integer.valueOf(parseLine[0]), Double.valueOf(parseLine[1]), Double.valueOf(parseLine[2]), Integer.valueOf(parseLine[3]), parseLine[4].charAt(0));              	// vytvori objekt centrala s pozadovanymi parametry
+					 Factory centrala = new Factory(Integer.valueOf(parseLine[0]), Double.valueOf(parseLine[1]), Double.valueOf(parseLine[2]), Integer.valueOf(parseLine[3]));              	// vytvori objekt centrala s pozadovanymi parametry
 					 entitiesV.add(centrala);    
 				} else {
-					 Planet pl = new Planet(Integer.valueOf(parseLine[0]), Double.valueOf(parseLine[1]), Double.valueOf(parseLine[2]), Integer.valueOf(parseLine[3]), parseLine[4].charAt(0));
+					 Planet pl = new Planet(Integer.valueOf(parseLine[0]), Double.valueOf(parseLine[1]), Double.valueOf(parseLine[2]), Integer.valueOf(parseLine[3]));
 	 		 		 entitiesV.add(pl);
 				}
 			}

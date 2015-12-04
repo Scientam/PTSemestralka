@@ -4,17 +4,11 @@ import java.awt.geom.Ellipse2D;
 import java.awt.geom.Line2D;
 import java.util.ArrayList;
 
-/**
- * 
- * @author Karel Sobehart, Tomas Matejka
- *
- */
 public class DrawMap extends JFrame{
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
+	/** vytvori ArrayList do ktereho se budou ukladat objekty Vertex jako vrcholy grafu */
+	ArrayList<Vertex> entities;
 	/** vytvori promenou ktera urcuje pocet central v galaxii */
 	int factoriesCount;
 	/** vytvori promenou ktera urcuje pocet planet v galaxii */
@@ -23,8 +17,6 @@ public class DrawMap extends JFrame{
 	int neighbourCountF;
 	/** vytvori promenou ktera urcuje pocet sousedu kazde planety */
 	int neighbourCountP;
-	/** vytvori ArrayList do ktereho se budou ukladat objekty Vertex jako vrcholy grafu */
-	ArrayList<Vertex> entities;
 	/** vytvori promennou, ktera uchovava posloupnosti vrcholu tvorici nejkratsi cestu z vrcholu u do vrcholu v */
 	ArrayList<Integer>[][] paths;
 
@@ -62,11 +54,13 @@ public class DrawMap extends JFrame{
 		paint2D((Graphics2D)g);
 	}
 	
+	
 	/**
+	 * Metoda sloužící ke grafickému znázornìní nejkratších cest mezi entitami v galaxii.
 	 * @param g2
 	 */
 	public void paint2D(Graphics2D g2) {
-																								/*KRESLENI VRCHOLU*/
+																							/*KRESLENI VRCHOLU*/
 		g2.setColor(Color.BLUE);
 		for(int i = factoriesCount; i < entities.size(); i++) {
 			g2.fill(new Ellipse2D.Double(entities.get(i).getXAxis()+100, entities.get(i).getYAxis()+130 , 4, 4));
@@ -79,27 +73,9 @@ public class DrawMap extends JFrame{
 		
 		g2.setColor(Color.RED);
 		g2.fill(new Ellipse2D.Double(400 + 100, 400 + 130, 10, 10));
-		
-																								 /*KRESLENI CEST*/
-		
-		for (int i = 0; i < entities.size(); i++) {	
-			g2.setColor(Color.BLACK);
-		
-			/*Sousedi 
-			if(i < factoriesCount) {
-				for (int j = 0; j < neighbourCountF; j++) {
-					int id = entities.get(i).neighbour[j].index;	
-					g2.draw(new Line2D.Double(entities.get(i).getXAxis()+2+100, entities.get(i).getYAxis()+2+130, entities.get(id).getXAxis()+2+100, entities.get(id).getYAxis()+2+130) );
-				}				
-			}		
-			else{					
-				for (int j = 0; j < neighbourCountP; j++) {
-					int id = entities.get(i).neighbour[j].index;	
-					g2.draw(new Line2D.Double(entities.get(i).getXAxis()+2+100, entities.get(i).getYAxis()+2+130, entities.get(id).getXAxis()+2+100, entities.get(id).getYAxis()+2+130) );
-				}
-			} */
-			
-			/*Nejkratsi cesty */
+																							/*KRESLENI CEST*/	
+		g2.setColor(Color.BLACK);
+		for (int i = 0; i < entities.size(); i++) {		
 			int from;
 		    int to;
 			if (paths[i][5] != null) {
@@ -111,4 +87,5 @@ public class DrawMap extends JFrame{
 			}
 		 }
 	}
+	
 }
