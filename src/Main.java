@@ -3,18 +3,19 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 /**
  * @authors Karel Sobehart, Petr Tobias
- * @version 0.0412.2030
+ * @version 0.0412.2053
  */
 public class Main {
 	
 	static Scanner sc = new Scanner(System.in);
     //*********************************************************************************************promenne pro generovani**********************************************************************
 	/** vytvori ArrayList do ktereho se budou ukladat objekty Vertex jako vrcholy grafu */
-	static ArrayList<Vertex> entitiesV = new ArrayList<Vertex>();		
+	static List<Vertex> entitiesV = new ArrayList<Vertex>();		
 	/** vytvori promennou, urcujici zda se data budou generovat nebo nacitat ze souboru*/
 	static int input;
 	/** vytvori promenou ktera urcuje pocet central v galaxii */
@@ -34,7 +35,7 @@ public class Main {
 	/** vytvori promennou, ktera uchovava nejkratsi vzdalenosti(cesty) mezi vrcholy */
 	static int[][] floydWarshallP;
 	/** vytvori promennou, ktera uchovava posloupnosti vrcholu tvorici nejkratsi cestu z vrcholu u do vrcholu v */
-	static ArrayList<Integer>[][] paths;
+	static List<Integer>[][] paths;
 	//************************************************************************************************promenne pro simulaci*************************************************************************
     //Dodelej prosim ty komenty a u simulace vic popisku, co k cemu slouzi
 	/** vytvori promennou, ktera slouzi pro generování náhodné veličiny*/

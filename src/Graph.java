@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class Graph {		
 	public static int[][] p;
@@ -63,9 +64,11 @@ public class Graph {
   	 * @param entitiesV
   	 * @return
   	 */
-  	public static ArrayList<Integer> getShortestPathTo(int source, int target, ArrayList<Vertex> entitiesV) {
-  		ArrayList<Integer> path = new ArrayList<Integer>();
-  		ArrayList<Integer> seq = new ArrayList<Integer>();
+  	public static List<Integer> getShortestPathTo(int argSource, int argTarget, List<Vertex> entitiesV) {
+  		List<Integer> path = new ArrayList<Integer>();
+  		List<Integer> seq = new ArrayList<Integer>();
+  		int source = argSource;
+  		int target = argTarget;
   		int stop = 1;
   		path.add(source);
   		

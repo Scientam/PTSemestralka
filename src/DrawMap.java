@@ -2,13 +2,13 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.Line2D;
-import java.util.ArrayList;
+import java.util.List;
 
 public class DrawMap extends JFrame{
 
 	private static final long serialVersionUID = 1L;
 	/** vytvori ArrayList do ktereho se budou ukladat objekty Vertex jako vrcholy grafu */
-	ArrayList<Vertex> entities;
+	List<Vertex> entities;
 	/** vytvori promenou ktera urcuje pocet central v galaxii */
 	int factoriesCount;
 	/** vytvori promenou ktera urcuje pocet planet v galaxii */
@@ -18,7 +18,7 @@ public class DrawMap extends JFrame{
 	/** vytvori promenou ktera urcuje pocet sousedu kazde planety */
 	int neighbourCountP;
 	/** vytvori promennou, ktera uchovava posloupnosti vrcholu tvorici nejkratsi cestu z vrcholu u do vrcholu v */
-	ArrayList<Integer>[][] paths;
+	List<Integer>[][] paths;
 
 
 	/**
@@ -30,7 +30,7 @@ public class DrawMap extends JFrame{
 	 * @param argAr
 	 * @param argPaths
 	 */
-	public DrawMap(int argFactoriesCount, int argPlanetsCount, int argNeighbourCountF, int argNeighbourCountP, ArrayList<Vertex>argEntities, ArrayList<Integer>[][] argPaths) {
+	public DrawMap(int argFactoriesCount, int argPlanetsCount, int argNeighbourCountF, int argNeighbourCountP, List<Vertex>argEntities, List<Integer>[][] argPaths) {
 		this.factoriesCount = argFactoriesCount;
 		this.planetsCount = argPlanetsCount;
 		this.neighbourCountF = argNeighbourCountF;

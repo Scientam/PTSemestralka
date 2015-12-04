@@ -5,6 +5,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 
 public class WorkWithFile {
 //********************************************************************************************VÝPIS_DO_TXT*********************************************************************************************	
@@ -33,7 +34,7 @@ public class WorkWithFile {
 	 * 
 	 * @param entitiesV
 	 */
-	public static void printVertex(ArrayList<Vertex> entitiesV) {
+	public static void printVertex(List<Vertex> entitiesV) {
 		 BufferedWriter bw;
 		try {
 			bw = new BufferedWriter(new FileWriter("Vertexes.txt"));
@@ -52,7 +53,7 @@ public class WorkWithFile {
 	 * @param factoriesCount
 	 * @param planetsCount
 	 */
-	public static void printNeigbour(ArrayList<Vertex> entitiesV, int factoriesCount, int planetsCount) {
+	public static void printNeigbour(List<Vertex> entitiesV, int factoriesCount, int planetsCount) {
 		 BufferedWriter bw;
 		try {
 			bw = new BufferedWriter(new FileWriter("Edges.txt"));					
@@ -79,7 +80,7 @@ public class WorkWithFile {
 	 * @param factoriesCount
 	 * @return
 	 */
-	public static ArrayList<Vertex> fromFileVrcholy(int factoriesCount) {
+	public static List<Vertex> fromFileVrcholy(int factoriesCount) {
 		BufferedReader br;
 		/** vytvori ArrayList do ktereho se budou ukladat objekty Vertex jako vrcholy grafu */
 		ArrayList<Vertex> entitiesV = new ArrayList<Vertex>();	
@@ -113,7 +114,7 @@ public class WorkWithFile {
 	 * @param factoriesCount
 	 * @param planetsCount
 	 */
-	public static void fromFileHrany(ArrayList<Vertex> entitiesV, int factoriesCount, int planetsCount) {
+	public static void fromFileHrany(List<Vertex> entitiesV, int factoriesCount, int planetsCount) {
 		BufferedReader br;
 		BufferedReader br2;
 		int counter=0;

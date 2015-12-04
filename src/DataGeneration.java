@@ -1,6 +1,7 @@
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 import java.util.Random;
 
 public class DataGeneration {
@@ -10,7 +11,7 @@ public class DataGeneration {
 	private static double xAxis, yAxis;
 	/** pomocna promenna uchovavajici aktualni vzdalenost*/
 	private static double actDist;
-	private static ArrayList<Neighbour> neigh = new ArrayList<Neighbour>();
+	private static List<Neighbour> neigh = new ArrayList<Neighbour>();
 	 
 	
 	/**
@@ -21,7 +22,7 @@ public class DataGeneration {
 	 * @param adjFactoriesCount
 	 * @return
 	 */
-	 public static ArrayList<Vertex> factoriesDistribution(int factoriesCount, int planetsCount, int neighbourCountF, ArrayList<Vertex> entitiesV) {
+	 public static List<Vertex> factoriesDistribution(int factoriesCount, int planetsCount, int neighbourCountF, List<Vertex> entitiesV) {
 		 distance = new int[planetsCount+factoriesCount][planetsCount+factoriesCount];     		//deklaruje velikost matice uchvavajici vzdalenost objektu
 		 
 		 for (int i = 0; i < factoriesCount; i++) {													// vytvori centraly rozlozene pravidelne na kruznici se stredem ve stredu souradneho systemu	  
@@ -51,7 +52,7 @@ public class DataGeneration {
 	 * @return
 	 * @throws IOException 
 	 */
-	 public static ArrayList<Vertex> planetsDistribution(int factoriesCount, int planetsCount,int neighbourCountP, ArrayList<Vertex> entitiesV) throws IOException {
+	 public static List<Vertex> planetsDistribution(int factoriesCount, int planetsCount,int neighbourCountP, List<Vertex> entitiesV) throws IOException {
 		 int boundX = 800+2;
 		 int boundY = 800+2;													   // nasteaveni mezi
 		 ArrayList<Double> auxDist = new ArrayList<Double>();		   							   // pomocny ArrayList, ktery slouzi k ukladani vzdalenosti planet a nasledne kontroly splneni podminky min. vzdalenosti 2	
@@ -98,7 +99,7 @@ public class DataGeneration {
 	 * @throws IOException 
 	  */
 	 @SuppressWarnings("unchecked")
-	 public static ArrayList<Vertex> neighbour(int factoriesCount, int neighbourCountF, int neighbourCountP, ArrayList<Vertex> entitiesV) throws IOException {
+	 public static List<Vertex> neighbour(int factoriesCount, int neighbourCountF, int neighbourCountP, List<Vertex> entitiesV) throws IOException {
 		 for (int i = 0; i < entitiesV.size(); i++) {												//vytvori Al pomocnych objektu slozicich k hledani sousedu
 			 neigh.add(new Neighbour(i, 100000));
 		 }
@@ -132,7 +133,7 @@ public class DataGeneration {
 	  * @param distance
 	  * @return
 	  */
-	 public static int[][] realDistance(ArrayList<Vertex> entitiesV, int[][] distance) {
+	 public static int[][] realDistance(List<Vertex> entitiesV, int[][] distance) {
 		 int[][] realDistance = new int[entitiesV.size()][entitiesV.size()];
 		 
 		 for (int i = 0; i < entitiesV.size(); i++) {
@@ -163,7 +164,7 @@ public class DataGeneration {
 	  * @param floydWarshallP
 	  * @return
 	  */
-	 public static ArrayList<Vertex> assignNeighbour(ArrayList<Vertex> entitiesV, int[][] floydWarshallP) {
+	 public static List<Vertex> assignNeighbour(List<Vertex> entitiesV, int[][] floydWarshallP) {
 		 for (int i=0; i<floydWarshallP.length; i++) {
 				entitiesV.get(i).predecessor = new int[entitiesV.size()];                    //urci velikost pole predchudcu(pocet planet+central)
 				for (int j=0; j<floydWarshallP.length; j++) {
@@ -180,7 +181,7 @@ public class DataGeneration {
 	  * @param entitiesV
 	  * @return
 	  */
-	 public static ArrayList<Integer>[][] createPaths(ArrayList<Integer>[][] paths, ArrayList<Vertex> entitiesV) {
+	 public static List<Integer>[][] createPaths(List<Integer>[][] paths, List<Vertex> entitiesV) {
 		 for (int i = 0; i < paths.length; i++) {
 		        for (int j = 0; j < paths.length; j++) {
 		        	if (i!=j) {                                                             // abychom nehledali nejkratsi cestu z vrcholu u do vrcholu u
