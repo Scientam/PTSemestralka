@@ -8,6 +8,12 @@ import java.util.ArrayList;
 
 public class WorkWithFile {
 //********************************************************************************************V›PIS_DO_TXT*********************************************************************************************	
+	/**
+	 * 
+	 * @param matrix
+	 * @param size
+	 * @param name
+	 */
 	public static void printMatrix(int[][] matrix, int size, String name) {
 		 BufferedWriter bw;
 		try {
@@ -22,6 +28,11 @@ public class WorkWithFile {
 		} catch (IOException e) {e.printStackTrace();}			
 	 }
 	
+	
+	/**
+	 * 
+	 * @param entitiesV
+	 */
 	public static void printVertex(ArrayList<Vertex> entitiesV) {
 		 BufferedWriter bw;
 		try {
@@ -34,6 +45,13 @@ public class WorkWithFile {
 		} catch (IOException e) {e.printStackTrace();}			
 	 }
 	
+	
+	/**
+	 * 
+	 * @param entitiesV
+	 * @param factoriesCount
+	 * @param planetsCount
+	 */
 	public static void printNeigbour(ArrayList<Vertex> entitiesV, int factoriesCount, int planetsCount) {
 		 BufferedWriter bw;
 		try {
@@ -56,6 +74,11 @@ public class WorkWithFile {
 
 	//********************************************************************************************NA»ÕT¡NÕ_Z_TXT*********************************************************************************************	
 
+	/**
+	 * 
+	 * @param factoriesCount
+	 * @return
+	 */
 	public static ArrayList<Vertex> fromFileVrcholy(int factoriesCount) {
 		BufferedReader br;
 		/** vytvori ArrayList do ktereho se budou ukladat objekty Vertex jako vrcholy grafu */
@@ -84,6 +107,12 @@ public class WorkWithFile {
 	}
 	
 	
+	/**
+	 * 
+	 * @param entitiesV
+	 * @param factoriesCount
+	 * @param planetsCount
+	 */
 	public static void fromFileHrany(ArrayList<Vertex> entitiesV, int factoriesCount, int planetsCount) {
 		BufferedReader br;
 		BufferedReader br2;
@@ -123,6 +152,10 @@ public class WorkWithFile {
 	}
 	
 	
+	/**
+	 * 
+	 * @param realDistance
+	 */
 	public static void fromFileRealDistance(int[][] realDistance) {
 		BufferedReader br;
 		try {
@@ -144,6 +177,10 @@ public class WorkWithFile {
 	}
 	
 	
+	/**
+	 * 
+	 * @param floydWarshall
+	 */
 	public static void fromFileFWShortestPath(int[][] floydWarshall) {
 		BufferedReader br;
 		try {
@@ -165,6 +202,10 @@ public class WorkWithFile {
 	}
 	
 	
+	/**
+	 * 
+	 * @param floydWarshallP
+	 */
 	public static void fromFileFWPath(int[][] floydWarshallP) {
 		BufferedReader br;
 		try {

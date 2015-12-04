@@ -169,5 +169,41 @@ public class DataGeneration {
 		}
 		 return realDistance;
 	 }
+	 
+	 
+	 /**
+	  * 
+	  * @param entitiesV
+	  * @param floydWarshallP
+	  * @return
+	  */
+	 public static ArrayList<Vertex> assignNeighbour(ArrayList<Vertex> entitiesV, int[][] floydWarshallP) {
+		 for (int i=0; i<floydWarshallP.length; i++) {
+				entitiesV.get(i).predecessor = new int[entitiesV.size()];                    //urci velikost pole predchudcu(pocet planet+central)
+				for (int j=0; j<floydWarshallP.length; j++) {
+					entitiesV.get(i).predecessor[j]=floydWarshallP[i][j];
+				}							
+         }		 
+		 return entitiesV;
+	 }
+	 
+	 
+	 public static ArrayList<Integer>[][] createPaths(ArrayList<Integer>[][] paths, ArrayList<Vertex> entitiesV) {
+		 for (int i = 0; i < paths.length; i++) {
+		        for (int j = 0; j < paths.length; j++) {
+		        	if (i!=j) {                                                             // abychom nehledali nejkratsi cestu z vrcholu u do vrcholu u
+		        		paths[i][j] = Graph.getShortestPathTo(i, j, entitiesV);           
+		        	}		        	
+				}	
+		        //System.out.println("Uz jsem dodelal prvek i: "+i);
+			}
+		
+		    /*
+		    System.out.println("Cesta z vrcholu 5 do vrcholu 7: ");
+		    for (int i = 0; i < paths[5][7].size(); i++) {
+		    	System.out.print(paths[5][7].get(i)+" ");
+			}*/
+		 return paths;
+	 }
 	  
 }

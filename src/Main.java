@@ -12,7 +12,7 @@ import java.util.Scanner;
  */
 public class Main {
 	/**
-	 * @version 0.0412.1743
+	 * @version 0.0412.1759
 	 */
 	static Scanner sc = new Scanner(System.in);
     //*********************************************************************************************promenne pro generovani****************************************************
@@ -96,33 +96,11 @@ public class Main {
 			/** vytvori textovy soubor, do ktereho se vypisi nejkratsi cesty, tj. predchudci */
 			WorkWithFile.printMatrix(floydWarshallP, entitiesV.size(), "FWPath.txt");
 			
+			/** ulozeni pole predchudcu kazdeho vrcholu */
+			DataGeneration.assignNeighbour(entitiesV, floydWarshallP);
 			
-			// ulozeni pole predchudcu kazdeho vrcholu
-			for (int i = 0; i < floydWarshallP.length; i++) {
-				entitiesV.get(i).predecessor = new int[entitiesV.size()];                    //urci velikost pole predchudcu(pocet planet+central)
-				for (int j = 0; j < floydWarshallP.length; j++) {
-					entitiesV.get(i).predecessor[j]=floydWarshallP[i][j];
-					//if(i==2){System.out.print(entitiesV.get(2).predecessor[j]+" ");}
-					//if(i==7){System.out.print(entitiesV.get(7).predecessor[j]+" ");}
-				}							
-            }
-			
-			
-			// vytvoreni listu cest z kazdeho vrcholu do kazdeho
-		    for (int i = 0; i < paths.length; i++) {
-		        for (int j = 0; j < paths.length; j++) {
-		        	if (i!=j) {                                                             // abychom nehledali nejkratsi cestu z vrcholu u do vrcholu u
-		        		paths[i][j] = Graph.getShortestPathTo(i, j, entitiesV);           
-		        	}		        	
-				}	
-		        //System.out.println("Uz jsem dodelal prvek i: "+i);
-			}
-		
-		    /*
-		    System.out.println("Cesta z vrcholu 5 do vrcholu 7: ");
-		    for (int i = 0; i < paths[5][7].size(); i++) {
-		    	System.out.print(paths[5][7].get(i)+" ");
-			}*/
+			/** vytvoreni listu cest z kazdeho vrcholu do kazdeho */
+		    DataGeneration.createPaths(paths, entitiesV);
 			
 			/** zavola metodu, ktera nazorne vykresli galaxii, tj. plnety,  centraly a cesty mezi nimi */
 		    new DrawMapG(factoriesCount, planetsCount, neighbourCountF, neighbourCountP, entitiesV, paths);
