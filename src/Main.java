@@ -1,8 +1,5 @@
-import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -15,7 +12,7 @@ import java.util.Scanner;
  */
 public class Main {
 	/**
-	 * @version 0.0312.2301
+	 * @version 0.0412.1743
 	 */
 	static Scanner sc = new Scanner(System.in);
     //*********************************************************************************************promenne pro generovani****************************************************
@@ -40,8 +37,6 @@ public class Main {
 	static int[][] floydWarshallP;
 	/** vytvori promennou, ktera uchovava posloupnosti vrcholu tvorici nejkratsi cestu z vrcholu u do vrcholu v */
 	static ArrayList<Integer>[][] paths;
-	/** vytvori promennou, ktera slozi pro nacitani ze souboru */
-	static int counter;
 	//*********************************************************************promenne pro simulaci**************************************************************************************************
     //Dodelej prosim ty komenty a u simulace vic popisku, co k cemu slouzi
 	/** */
@@ -59,9 +54,7 @@ public class Main {
 	 * @throws IOException
 	 */
 	@SuppressWarnings("unchecked")
-	public static void main(String[] args) throws IOException {
-		// TODO Auto-generated method stub
-		
+	public static void main(String[] args) throws IOException {		
 		System.out.println("Nacist ze souboru/Generovat nove hodnoty: 0/1");
 		input = sc.nextInt();
 		if(input == 1) {
@@ -73,43 +66,35 @@ public class Main {
 			floydWarshallP = new int[factoriesCount+planetsCount][factoriesCount+planetsCount];
 			paths = new ArrayList[factoriesCount+planetsCount][factoriesCount+planetsCount];
 			
-			//*************************************************************************GENEROVANI_DAT***********************************************************************
 			/** zavola metodu, ktera vytvori centraly */
 			entitiesV = DataGeneration.factoriesDistribution(factoriesCount, planetsCount, neighbourCountF, entitiesV);
 			/** zavola metodu, ktera vytvori planety */
 			entitiesV = DataGeneration.planetsDistribution(factoriesCount, planetsCount, neighbourCountP, entitiesV);	
 			/** vytvori textovy soubor, do ktereho se vypisi parametry vrcholu */
-			WriteToFile.printVertex(entitiesV);
+			WorkWithFile.printVertex(entitiesV);
 		
 			/** spocte vzdalenosti mezi vsemi vrcholy a ulozi do matice */
 			distance = DataGeneration.getDistance();												
 			/** vytvori textovy soubor, do ktereho se vypise matice vzdalenosti */
-			WriteToFile.printMatrix(distance, entitiesV.size(), "Distance.txt");
+			WorkWithFile.printMatrix(distance, entitiesV.size(), "Distance.txt");
 		
 			/** zavola metodu, ktera najde sousedy, tedy vytvori hrany */
 			DataGeneration.neighbour(factoriesCount, neighbourCountF, neighbourCountP, entitiesV);  
 			/** vytvori textovy soubor, do ktereho se vypisi hrany */
-			WriteToFile.printNeigbour(entitiesV, factoriesCount, planetsCount);
+			WorkWithFile.printNeigbour(entitiesV, factoriesCount, planetsCount);
 			
 			realDistance = DataGeneration.realDistance(entitiesV, distance);
-			WriteToFile.printMatrix(realDistance, entitiesV.size(), "RealDistance.txt");
-		
-			//*********************************************************************************HLEDANI_NEJKRATSICH_CEST********************************************************
-			/*Dijsktra 
-			  for (int i = 0; i < floydWarshall.length; i++) {
-				  floydWarshallP[i] = Graph.doDijkstra(realDistance, i);
-			} */
-
-			 
+			WorkWithFile.printMatrix(realDistance, entitiesV.size(), "RealDistance.txt");
+					 
 			/** zavola metodu, ktera najde nejkratsi cesty, tj. hodnoty */
 			floydWarshall= Graph.floydWarshallM(realDistance, true); 	
 			/** vytvori textovy soubor, do ktereho se vypisi nejkratsi cesty, tj. hodnoty */
-			WriteToFile.printMatrix(floydWarshall, entitiesV.size(), "FWShortestPath.txt");
+			WorkWithFile.printMatrix(floydWarshall, entitiesV.size(), "FWShortestPath.txt");
 			
 			/** zavola metodu, ktera najde nejkratsi cesty, tj. predchudce */
 			floydWarshallP = Graph.getPathMatrix(); 										
 			/** vytvori textovy soubor, do ktereho se vypisi nejkratsi cesty, tj. predchudci */
-			WriteToFile.printMatrix(floydWarshallP, entitiesV.size(), "FWPath.txt");
+			WorkWithFile.printMatrix(floydWarshallP, entitiesV.size(), "FWPath.txt");
 			
 			
 			// ulozeni pole predchudcu kazdeho vrcholu
@@ -139,37 +124,28 @@ public class Main {
 		    	System.out.print(paths[5][7].get(i)+" ");
 			}*/
 			
-		    //********************************************************************************VYKRESLENI_DAT*****************************************************************************************/
 			/** zavola metodu, ktera nazorne vykresli galaxii, tj. plnety,  centraly a cesty mezi nimi */
 		    new DrawMapG(factoriesCount, planetsCount, neighbourCountF, neighbourCountP, entitiesV, paths);
-			new DrawMap(factoriesCount, planetsCount, neighbourCountF, neighbourCountP, entitiesV, paths);
-
-		//*******************************************************************************************************************************************************************************************/	
+			new DrawMap(factoriesCount, planetsCount, neighbourCountF, neighbourCountP, entitiesV, paths);	
 	    //***********************************************************************************NACITANI_ZE_SOUBORU*************************************************************************************/
-		//*******************************************************************************************************************************************************************************************/	
-		} else { 
-			//*************************************************************************"GENEROVANI_DAT"***********************************************************************	
-			counter = fromFileVrcholy();
-			fromFileHrany();
-			planetsCount = counter - factoriesCount;
+		} else { 	
+			entitiesV = WorkWithFile.fromFileVrcholy(factoriesCount);
+			WorkWithFile.fromFileHrany(entitiesV, factoriesCount, planetsCount);
+			planetsCount = entitiesV.size() - factoriesCount;
 			
 			realDistance = new int[factoriesCount+planetsCount][factoriesCount+planetsCount];
 			floydWarshall = new int[factoriesCount+planetsCount][factoriesCount+planetsCount];
 			floydWarshallP = new int[factoriesCount+planetsCount][factoriesCount+planetsCount];
 			paths = new ArrayList[factoriesCount+planetsCount][factoriesCount+planetsCount];
 			
-			fromFileRealDistance();
-			fromFileFWShortestPath();
-			fromFileFWPath();
-			//*********************************************************************************"HLEDANI_NEJKRATSICH_CEST"********************************************************
+			WorkWithFile.fromFileRealDistance(realDistance);
+			WorkWithFile.fromFileFWShortestPath(floydWarshall);
+			WorkWithFile.fromFileFWPath(floydWarshallP);
 			
 			/** zavola metodu, ktera nazorne vykresli galaxii, tj. plnety,  centraly a cesty mezi nimi */
 			new DrawMap(factoriesCount, planetsCount, neighbourCountF, neighbourCountP, entitiesV, paths);		
 		}
-		
-	
 	//*********************************************************************************SIMULACE********************************************************************************************************/	
-		
 		 BufferedWriter bw6 = new BufferedWriter(new FileWriter("Order.txt"));
 		    Scanner sc2 = new Scanner(new File("Distance.txt"));
 		    Scanner sc3 = new Scanner(System.in);
@@ -371,151 +347,9 @@ public class Main {
 
 			
 	//*****************************************************************************KONEC_SIMULACE******************************************************************************************************/	
-	
-	   
-	    }
+			}
     bw6.close();
     System.out.println("Program skoncil.");
 	}
-	
-	/**
-	 * Metoda slouzici pro nacitani dat typu Vertex
-	 * @return
-	 */
-	public static int fromFileVrcholy() {
-		BufferedReader br;
-		int counter=0;
-		try {
-			br = new BufferedReader(new FileReader("Vertexes.txt"));
-			String radka;			
-			while((radka = br.readLine()) != null){
-				String[] parseLine = radka.split("\t");
-				counter++;
-				
-				if (counter < factoriesCount) {
-					 Factory centrala = new Factory(Integer.valueOf(parseLine[0]), Double.valueOf(parseLine[1]), Double.valueOf(parseLine[2]), Integer.valueOf(parseLine[3]), parseLine[4].charAt(0));              	// vytvori objekt centrala s pozadovanymi parametry
-					 entitiesV.add(centrala);    
-				} else {
-					 Planet pl = new Planet(Integer.valueOf(parseLine[0]), Double.valueOf(parseLine[1]), Double.valueOf(parseLine[2]), Integer.valueOf(parseLine[3]), parseLine[4].charAt(0));
-	 		 		 entitiesV.add(pl);
-				}
-			}
-			br.close();
-		} 
-		catch (FileNotFoundException e) {e.printStackTrace();} 
-		catch (IOException a) {System.out.println("IOexception");}
-		return counter;
-	}
-	
-	/**
-	 * Metoda slouzici pro nacitani dat typu Edges
-	 */
-	public static void fromFileHrany() {
-		BufferedReader br;
-		BufferedReader br2;
-		int counter=0;
-		try {
-			br = new BufferedReader(new FileReader("Edges.txt"));
-			br2 = new BufferedReader(new FileReader("Distance.txt"));
-			String radka;		
-			String radka2;	
-			while((radka = br.readLine()) != null){
-				radka2 = br2.readLine();
-				String[] parseLine = radka.split("\t");
-				String[] parseLine2 = radka2.split("\t");
-				
-				int index;
-				double vzdalenost;
-				if (counter < factoriesCount) {
-					for (int i = 0; i < neighbourCountF; i++) {
-						index = Integer.valueOf(parseLine[i]);
-						vzdalenost = Double.valueOf(parseLine2[index]);
-						entitiesV.get(counter).neighbour[i] = new Neighbour(index, vzdalenost);					
-					}
-						
-				} else {
-					for (int i = 0; i < neighbourCountP; i++) {
-						index = Integer.valueOf(parseLine[i]);
-						vzdalenost = Double.valueOf(parseLine2[(int)index]);
-						entitiesV.get(counter).neighbour[i] = new Neighbour(index, vzdalenost);
-					}
-				}
-				counter++;
-			}
-			br.close();
-		} 
-		catch (FileNotFoundException e) {System.out.println("File nanalezen");} 
-		catch (IOException a) {System.out.println("IOexception");}
-	}
-	
-	/**
-	 * Metoda slouzici pro nacitani dat typu RealDistance
-	 */
-	public static void fromFileRealDistance() {
-		BufferedReader br;
-		try {
-			br = new BufferedReader(new FileReader("RealDistance.txt"));		
-			String radka;	
-			int counter=0;
-			while ((radka = br.readLine()) != null) {
-				String[] parseLine = radka.split("\t");
-				
-				for (int i = 0; i < parseLine.length; i++) {
-					realDistance[counter][i] = Integer.valueOf(parseLine[i]);
-				}
-				counter++;				
-			}	
-			br.close();
-		} 
-		catch (FileNotFoundException e) {System.out.println("File nanalezen");} 
-		catch (IOException a) {System.out.println("IOexception");}		
-	}
-	
-	
-	/**
-	 * Metoda slouzici pro nacitani dat typu FWShortestPath
-	 */
-	public static void fromFileFWShortestPath() {
-		BufferedReader br;
-		try {
-			br = new BufferedReader(new FileReader("FWShortestPath.txt"));		
-			String radka;	
-			int counter=0;
-			while ((radka = br.readLine()) != null) {
-				String[] parseLine = radka.split("\t");
-				
-				for (int i = 0; i < parseLine.length; i++) {
-					floydWarshall[counter][i] = Integer.valueOf(parseLine[i]);
-				}
-				counter++;				
-			}	
-			br.close();
-		} 
-		catch (FileNotFoundException e) {System.out.println("File nanalezen");} 
-		catch (IOException a) {System.out.println("IOexception");}		
-	}
-	
-	
-	/**
-	 *  Metoda slouzici pro nacitani dat typu FWPath
-	 */
-	public static void fromFileFWPath() {
-		BufferedReader br;
-		try {
-			br = new BufferedReader(new FileReader("FWPath.txt"));		
-			String radka;	
-			int counter=0;
-			while ((radka = br.readLine()) != null) {
-				String[] parseLine = radka.split("\t");
-				
-				for (int i = 0; i < parseLine.length; i++) {
-					floydWarshallP[counter][i] = Integer.valueOf(parseLine[i]);
-				}
-				counter++;				
-			}	
-			br.close();
-		} 
-		catch (FileNotFoundException e) {System.out.println("File nanalezen");} 
-		catch (IOException a) {System.out.println("IOexception");}		
-	}
+
 }
