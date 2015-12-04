@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class WorkWithFile {
-//********************************************************************************************V�PIS_DO_TXT*********************************************************************************************	
+//********************************************************************************************VÝPIS_DO_TXT*********************************************************************************************	
 	/**
 	 * 
 	 * @param matrix
@@ -72,8 +72,39 @@ public class WorkWithFile {
 			bw.close();
 		} catch (IOException e) {e.printStackTrace();}			
 	 }
+	
+	
+	public static void printOrder(int day, List<Vertex> entitiesV, List<Planet> planetL) {
+		BufferedWriter bw;
+		int production;
+		try {
+			bw = new BufferedWriter(new FileWriter("Order.txt"));
+			bw.write("---------------------------------------------------------------------------------------------");
+			bw.newLine();
+			if ((day % 30) == 0) {
+			bw.write("Objednavky pro "+(day/30+1)+". mesic: ");
+			bw.newLine();
+			bw.write("---------------------------------------------------------------------------------------------");
+			bw.newLine();
+			
+			
+			for (int i = 0; i < planetL.size(); i++) {			                            //cyklus pobÃ¬Å¾Ã­ pro vÅ¡echny planety
+				if (planetL.get(i).getAnswered()==false) {
+					production = planetL.get(i).drugProduction( planetL.get(i).getPopulCount() );
+					planetL.get(i).setOrder( planetL.get(i).order( planetL.get(i).getPopulCount(), production ) );    // vytvori objednavku, jeji velikost zavisi na poctu obyvatel planety
+					bw.write("Planeta s id: "+(planetL.get(i).getId()-5)+" objednava takovyto pocet leku: "+planetL.get(i).getOrder());
+					bw.newLine();
+				}				    
+			}
+				bw.write("---------------------------------------------------------------------------------------------");
+				bw.newLine();
+			}
+			bw.close();
+		}catch (IOException e) {e.printStackTrace();}	
+		
+	}
 
-	//********************************************************************************************NA��T�N�_Z_TXT*********************************************************************************************	
+	//********************************************************************************************NAČÍTÁNÍ_Z_TXT*********************************************************************************************	
 
 	/**
 	 * 

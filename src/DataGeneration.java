@@ -197,5 +197,17 @@ public class DataGeneration {
 			}*/
 		 return paths;
 	 }
+	 
+	 
+	 public static List<Planet> createPlanetL (List<Vertex> entitiesV, List<Planet> planetL) {
+		 Planet planet;
+		 planetL = new ArrayList<>();
+		 for (int i = 5; i < entitiesV.size(); i++){
+				planet = (Planet) entitiesV.get(i);			//volani planety
+				planetL.add(planet);
+			} 
+		 return planetL;
+	 }
+	 
 	  
 }

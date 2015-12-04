@@ -9,6 +9,7 @@ public class Planet extends Vertex {
 	private int order;
 	/** */
 	private int id;
+	private boolean answered;
 	
 	  															/* konstruktor */	     
 	/**
@@ -110,6 +111,14 @@ public class Planet extends Vertex {
 	
 	/**
 	 * 
+	 * @return
+	 */
+	public boolean getAnswered() {
+	    return this.answered;
+	}
+	
+	/**
+	 * 
 	 * @param order
 	 */
 	public void setOrder(int argOrder) {
@@ -123,6 +132,15 @@ public class Planet extends Vertex {
 	 */
 	public void setId(int argId) {
 		this.id = argId;
+	}
+	
+	
+	/**
+	 * 
+	 * @param argAnswered
+	 */
+	public void setAnswered(boolean argAnswered) {
+		this.answered = argAnswered;
 	}
 	
 }

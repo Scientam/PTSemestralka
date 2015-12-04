@@ -38,6 +38,17 @@ public class Main {
 	static List<Integer>[][] paths;
 	//************************************************************************************************promenne pro simulaci*************************************************************************
     //Dodelej prosim ty komenty a u simulace vic popisku, co k cemu slouzi
+	 static int maxD;
+	 static int choice;
+	 static int orderID = 0;
+	 static int orderDrugCount = 0;
+	 static Starship starship;
+	 static List<Planet> planetL;
+	 static List<Starship> starshipL;
+
+	
+	
+	    
 	/** vytvori promennou, ktera slouzi pro generování náhodné veličiny*/
 	static Random r = new Random();
 	/** vytvori promennou, ktera slouzi k identifikovani centraly */
@@ -47,7 +58,7 @@ public class Main {
 	/** konstanta uchovavajici plny naklad*/
 	static final int CAPACITY = 5000000;
 	private static Scanner sc2;
-	private static Scanner sc3;
+
 
 	/**
 	 * @param args
@@ -118,80 +129,40 @@ public class Main {
 			new DrawMap(factoriesCount, planetsCount, neighbourCountF, neighbourCountP, entitiesV, paths);		
 		}
 	//*********************************************************************************SIMULACE********************************************************************************************************/	
-		 BufferedWriter bw = new BufferedWriter(new FileWriter("Order.txt"));
+		 	BufferedWriter bw = new BufferedWriter(new FileWriter("OrderFulfillment.txt"));
 		    sc2 = new Scanner(new File("Distance.txt"));
-		    sc3 = new Scanner(System.in);
 		    //sc2.skip("0.0");
-		    int production = 0;
-		    Planet p = null;
-		    Starship s = null;
-		    ArrayList<Starship> starship = new ArrayList<>();
-		    ArrayList<Planet> planet = new ArrayList<>();
-		    int orderID = 0;
-		    int orderDrugCount = 0;
-		    
+		    starship = null;
+		    starshipL = new ArrayList<>();		 
+		   
 		    /**
 			 * Cyklus spousti simulaci kazdy den a generuje objednavky kazdych 30 dni. Pracuje se pouze s ArrayListem. Informace o objednavkach se ukladaji
 			 * do textoveho souboru.
 			 */
 		    System.out.println("Zadej pocet dni po ktere bude bezet simulace (rok ma 360 dni): ");
-		    int maxD = sc.nextInt();
-			for (int d = 0; d < maxD; d++){ 
-				if (d == 0){
-					for (int i = 0; i < factoriesCount; i++){
-						p = new Planet(i,entitiesV.get(i).getXAxis(),entitiesV.get(i).getYAxis(),entitiesV.get(i).getNeighbourCount());
-						planet.add(p);
-					}
-					for (int i = 5; i < planetsCount+5; i++){
-						p = (Planet) entitiesV.get(i);			//volani planety
-						planet.add(p);
-					}
-				}
-				bw.write("---------------------------------------------------------------------------------------------");
-				bw.newLine();
-				if ((d % 30) == 0){
-				bw.write("Objednavky pro "+(d/30+1)+". mesic: ");
-				bw.newLine();
-				bw.write("---------------------------------------------------------------------------------------------");
-				bw.newLine();
-				}
+		    maxD = sc.nextInt();
+			for (int d = 0; d < maxD; d++) { 
+				if (d == 0) {planetL=DataGeneration.createPlanetL(entitiesV, planetL);}
 				//****************************************************vytvoreni objednavek******************************************************************/
-				if (d % 30 == 0 && d != 0){
+				if (d % 30 == 0) {
 					System.out.println("Chcete zadat vlastni objednavku? (0 - NE/1 - ANO): ");
-					int choice = sc.nextInt();
-					if (choice == 1){
+					choice = sc.nextInt();
+					while (choice == 1) {
 						System.out.println("Zadej objednavku ve tvaru (id_planety pocet_leku): ");
-						String order = sc3.nextLine();
-						String[] parseLine = order.split(" ");
-						orderID = Integer.parseInt(parseLine[0]);
-						orderDrugCount = Integer.parseInt(parseLine[1]);
-					}
-					
+						orderID = sc.nextInt();
+						orderDrugCount = sc.nextInt();
+						if (planetL.get(orderID).getAnswered()==false) {
+							planetL.get(orderID).setOrder(orderDrugCount);    // vytvori objednavku, jeji velikost zavisi na poctu obyvatel planety
+							planetL.get(orderID).setAnswered(true);
+						}
+						System.out.println("Chcete zadat vlastni objednavku? (0 - NE/1 - ANO): ");
+						choice = sc.nextInt();
+					} 
+					WorkWithFile.printOrder(d, entitiesV, planetL);
 				}
-				if ((d % 30) == 0){	
-				for (int i = 5; i < planetsCount+5; i++) {			                            //cyklus pobÃ¬Å¾Ã­ pro vÅ¡echny planety
-				    production = planet.get(i).drugProduction(planet.get(i).getPopulCount());
-				    planet.get(i).setOrder(planet.get(i).order(planet.get(i).getPopulCount(), production));    // vytvori objednavku, jeji velikost zavisi na poctu obyvatel planety
-				    if (orderID != 0){
-				    planet.get(orderID).setOrder(orderDrugCount);    // vytvori objednavku, jeji velikost zavisi na poctu obyvatel planety
-				    }
-				    if (i == orderID && orderID != 0){
-				    bw.write("Planeta s id: "+planet.get(orderID).getId()+" objednava takovyto pocet leku: "+planet.get(orderID).getOrder());
-				    bw.newLine();
-				    }
-				    else{
-					bw.write("Planeta s id: "+planet.get(i).getId()+" objednava takovyto pocet leku: "+planet.get(i).getOrder());
-					bw.newLine();
-				    }
-					/*if (orderID != 0 && i == orderID){
-						planet.get(orderID).setOrder(orderDrugCount);    // vytvori objednavku, jeji velikost zavisi na poctu obyvatel planety
-						bw6.write("Planeta s id: "+planet.get(orderID).getKey()+" objednava takovyto pocet leku: "+planet.get(orderID).getOrder());
-						bw6.newLine();
-					}*/
-				}
-				bw.write("---------------------------------------------------------------------------------------------");
-				bw.newLine();
-				}
+				
+			
+				
 				//*****************************************************vyrizovani objednacek****************************************************************/
 				
 					for (int i = 0; i < planetsCount; i++){
@@ -199,13 +170,13 @@ public class Main {
 					// pokud bude cas, udelal bych, aby to bralo nejblizsi centralu
 					factoryId = entitiesV.get(r.nextInt(4)).getKey();                   // urceni centraly, ktera obednavku vyridi
 					//sc2.skip("\t");
-					s = new Starship(i, 25, CAPACITY, factoryId);      //volani lode, musi se doresit ID
-					starship.add(s);
+					starship = new Starship(i, 25, CAPACITY, factoryId);      //volani lode, musi se doresit ID
+					starshipL.add(starship);
 					}
 					if (d % 30 == 0){
-					starship.get(i).setSourceP(factoryId);
-					starship.get(i).setTargetP(planet.get(i+factoriesCount).getId());								//lodi se priradi id dalsi planety
-					starship.get(i).setDistance(Double.parseDouble(sc2.next()));				//lodi se priradi vzdalenost, jakou ma uletet
+					starshipL.get(i).setSourceP(factoryId);
+					starshipL.get(i).setTargetP(planetL.get(i+factoriesCount).getId());								//lodi se priradi id dalsi planety
+					starshipL.get(i).setDistance(Double.parseDouble(sc2.next()));				//lodi se priradi vzdalenost, jakou ma uletet
 					}
 					/**
 					 * Pokud ma lod id centraly, vrati se na ni a doplni zasoby.
@@ -226,33 +197,33 @@ public class Main {
 					 * Pokud lod doleti na planetu, vylozi zasoby podle objednavky.
 					 * Pote se priradi dalsi planeta (pripadne centrala).
 					 */
-					if (starship.get(i).getDistance() <= 25.0){
-						starship.get(i).setDistance(0.0);
-						starship.get(i).setCapacity(starship.get(i).getCapacity() - planet.get(starship.get(i).getTargetP()).getOrder());
-						bw.write("Lodi s id: " + starship.get(i).getId() + " zbyva doletet: " + starship.get(i).getDistance());
+					if (starshipL.get(i).getDistance() <= 25.0){
+						starshipL.get(i).setDistance(0.0);
+						starshipL.get(i).setCapacity(starshipL.get(i).getCapacity() - planetL.get(starshipL.get(i).getTargetP()).getOrder());
+						bw.write("Lodi s id: " + starshipL.get(i).getId() + " zbyva doletet: " + starshipL.get(i).getDistance());
 						bw.newLine();
-						bw.write("Lod s id: " + starship.get(i).getId() + " vylozila " + planet.get(starship.get(i).getTargetP()).getOrder() + " jednotek nakladu.");
+						bw.write("Lod s id: " + starshipL.get(i).getId() + " vylozila " + planetL.get(starshipL.get(i).getTargetP()).getOrder() + " jednotek nakladu.");
 						bw.newLine();
-						starship.get(i).setSourceP(starship.get(i).getTargetP());
+						starshipL.get(i).setSourceP(starshipL.get(i).getTargetP());
 						//duvod, proc se po vylozeni nevypisuje, kolik se vylozilo, protoze se hleda objednavka centraly, ktera neexistuje
-						starship.get(i).setTargetP(factoryId);			
+						starshipL.get(i).setTargetP(factoryId);			
 						//ulozit vzdalenost k centrale do Distance
 					}
 					else{
 						/**
 						 * Lodi se odpocitava 25 LY z celkove cesty kazdy den.
 						 */
-					starship.get(i).setDistance(starship.get(i).getDistance() - 25.0);					//vzdalenost se snizuje kazdy den o 25 LY
-					bw.write("Lodi s id: " + starship.get(i).getId() + " zbyva doletet: " + starship.get(i).getDistance());
+					starshipL.get(i).setDistance(starshipL.get(i).getDistance() - 25.0);					//vzdalenost se snizuje kazdy den o 25 LY
+					bw.write("Lodi s id: " + starshipL.get(i).getId() + " zbyva doletet: " + starshipL.get(i).getDistance());
 					bw.newLine();
 					}
 					// Pridal bych nejakou podminku na vzdalenost, aby to nebralo, planety na druhe strane galaxie
 					/**
 					 * Pokud lod nema nalozen dostatek jednotek na pokryti objednavky dalsi planety, vraci se na centralu.
 					 */
-					if (starship.get(i).getCapacity() < planet.get(starship.get(i).getTargetP()).getOrder()){
-						starship.get(i).setSourceP(starship.get(i).getTargetP());
-						starship.get(i).setTargetP(factoryId);
+					if (starshipL.get(i).getCapacity() < planetL.get(starshipL.get(i).getTargetP()).getOrder()){
+						starshipL.get(i).setSourceP(starshipL.get(i).getTargetP());
+						starshipL.get(i).setTargetP(factoryId);
 						//ulozit vzdalenost k centrale do Distance
 																							}
 					/**for (int j=0; j<planetsCount; j++) {
