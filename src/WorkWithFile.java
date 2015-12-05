@@ -60,11 +60,11 @@ public class WorkWithFile {
 			for (int i = 0; i<entitiesV.size(); i++) {											    
 				if (i<factoriesCount) {                                                             // zpracovava centraly
 					for (int j = 0; j<entitiesV.get(0).neighbourCount; j++) {
-						bw.write(entitiesV.get(i).neighbour[j].index+"\t");					
+						bw.write(entitiesV.get(i).neighbour[j].getIndex()+"\t");					
 					}
 				}else{
 					for (int j = 0; j<entitiesV.get(5).neighbourCount; j++) {                                       // zpracovava planety
-						bw.write(entitiesV.get(i).neighbour[j].index+"\t");	
+						bw.write(entitiesV.get(i).neighbour[j].getIndex()+"\t");	
 					}	
 				}
 				bw.newLine();

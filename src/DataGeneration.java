@@ -12,6 +12,8 @@ public class DataGeneration {
 	/** pomocna promenna uchovavajici aktualni vzdalenost*/
 	private static double actDist;
 	private static List<Neighbour> neigh = new ArrayList<Neighbour>();
+	private static Random r = new Random();
+	private static int danger;
 	 
 	
 	/**
@@ -106,8 +108,8 @@ public class DataGeneration {
 		 
 		 for (int i = 0; i < entitiesV.size(); i++) {			 
 			 for (int j = 0; j < entitiesV.size(); j++) {
-				 neigh.get(j).dist=distance[i][j];												// priradi i-temu prvku AL vzdalenost i-teho prvku od j-teho
-				 neigh.get(j).index=j;
+				 neigh.get(j).setDist(distance[i][j]);												// priradi i-temu prvku AL vzdalenost i-teho prvku od j-teho
+				 neigh.get(j).setIndex(j);
 			 }
 	
 			Collections.sort(neigh, new MyComparator());										// seradi AL entit podle vzdalenosti
@@ -115,11 +117,16 @@ public class DataGeneration {
 			if(i < factoriesCount) {
 				for (int j = 0; j < neighbourCountF; j++) {
 					entitiesV.get(i).neighbour[j] = neigh.get(j+1).clone();								// priradi nejblizsich k(20) prvku(sousedu)
+					danger = r.nextInt(5);
+					if (danger == 4){entitiesV.get(i).neighbour[j].setDanger(true);	}
+					else{ entitiesV.get(i).neighbour[j].setDanger(false); }
 				}
 			} else {
 				for (int j = 0; j < neighbourCountP; j++) {		
-					
 					entitiesV.get(i).neighbour[j] = neigh.get(j+1).clone();								// priradi nejblizsich k(5) prvku(sousedu)
+					danger = r.nextInt(5);
+					if (danger == 4){entitiesV.get(i).neighbour[j].setDanger(true);	}
+					else{ entitiesV.get(i).neighbour[j].setDanger(false); }
 				}
 			}
 		}
@@ -144,7 +151,7 @@ public class DataGeneration {
 				 }
 				 
 				 for(int k = 0; k < entitiesV.get(i).neighbour.length; k++) {
-					 if (entitiesV.get(i).neighbour[k].dist == distance[i][j]) {			// .neighbour[k].index == d
+					 if (entitiesV.get(i).neighbour[k].getDist() == distance[i][j]) {			// .neighbour[k].index == d
 						realDistance[i][j] = distance[i][j];
 						break;
 					}else{

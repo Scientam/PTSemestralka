@@ -79,13 +79,13 @@ public class DrawMapG extends JFrame{
 			
 			if(i < factoriesCount) {
 				for (int j = 0; j < neighbourCountF; j++) {
-					int id = entities.get(i).neighbour[j].index;	
+					int id = entities.get(i).neighbour[j].getIndex();	
 					g2.draw(new Line2D.Double(entities.get(i).getXAxis()+2+100, entities.get(i).getYAxis()+2+130, entities.get(id).getXAxis()+2+100, entities.get(id).getYAxis()+2+130) );
 				}				
 			}		
 			else{					
 				for (int j = 0; j < neighbourCountP; j++) {
-					int id = entities.get(i).neighbour[j].index;	
+					int id = entities.get(i).neighbour[j].getIndex();	
 					g2.draw(new Line2D.Double(entities.get(i).getXAxis()+2+100, entities.get(i).getYAxis()+2+130, entities.get(id).getXAxis()+2+100, entities.get(id).getYAxis()+2+130) );
 				}
 			} 

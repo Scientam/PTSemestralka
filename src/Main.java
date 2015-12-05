@@ -8,7 +8,7 @@ import java.util.Random;
 import java.util.Scanner;
 /**
  * @authors Karel Sobehart, Petr Tobias
- * @version 0.0512.0042
+ * @version 0.0512.1048
  */
 public class Main {
 	

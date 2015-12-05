@@ -1,15 +1,16 @@
 
 public class Neighbour {
 
-	protected int index;
-	protected double dist;
+	private int index;
+	private double dist;
+	private boolean dangerous;
 	
 	Neighbour(int index, double dist){
 		this.index=index;
 		this.dist=dist;		
 	}
 																	//gettery a settery
-	public double getIndex() {
+	public int getIndex() {
 		return index;
 	}
 	
@@ -25,6 +26,14 @@ public class Neighbour {
 		this.dist = dist;
 	}
 	
+	
+	public boolean getDanger() {
+		return dangerous;
+	}
+	
+	public void setDanger(boolean argDanger) {
+		this.dangerous = argDanger;
+	}
 	public Neighbour clone() {
 		return new Neighbour(this.index, this.dist);
 	}	
