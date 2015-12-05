@@ -130,50 +130,26 @@ public class Main {
 		}
 	//*********************************************************************************SIMULACE********************************************************************************************************/	
 		 	BufferedWriter bw = new BufferedWriter(new FileWriter("OrderFulfillment.txt"));	 
-		    /**
-			 * Cyklus spousti simulaci kazdy den a generuje objednavky kazdych 30 dni. Pracuje se pouze s ArrayListem. Informace o objednavkach se ukladaji do textoveho souboru.
-			 */
+		    /** Cyklus spousti simulaci kazdy den a generuje objednavky kazdych 30 dni. Pracuje se pouze s ArrayListem. Informace o objednavkach se ukladaji do textoveho souboru.*/
 		    System.out.println("Zadej pocet dni po ktere bude bezet simulace (rok ma 360 dni): ");
 		    maxD = sc.nextInt();
 			for (int d = 0; d < maxD; d++) { 
 				if (d == 0) {
-					planetL=DataGeneration.createPlanetL(entitiesV, planetL);													// vytvoreni planer
+					planetL=DataGeneration.createPlanetL(entitiesV, planetL);													// vytvoreni planet   id planet jde od 5,...,entitiesV.size()
 					starshipL=DataGeneration.createStarshipL(entitiesV, starshipL);												// vytvoreni lodi
-				}														// id planet jde od 5,...,entitiesV.size()
-				planetL = DataGeneration.createOrder(d, entitiesV, planetL);
-			//*****************************************************vyrizovani objednacek****************************************************************/
-				
+					planetL = DataGeneration.createOrder(d, entitiesV, planetL);												// vytvoreni objednavek	
+				}											
 				for (int i = 0; i < planetsCount; i++) {
 					if (d % 30 == 0) {
-					starshipL.get(i).setTargetP(planetL.get(i+factoriesCount).getId());																	//lodi se priradi id dalsi planety
-					starshipL.get(i).setDistance(floydWarshall[factoryId][starshipL.get(i).getTargetP()]);					//lodi se priradi vzdalenost, jakou ma uletet
+							
+						starshipL.get(i).setTargetP(planetL.get(i+factoriesCount).getId());											//lodi se priradi id dalsi planety
+						starshipL.get(i).setDistance(floydWarshall[factoryId][starshipL.get(i).getTargetP()]);					    //lodi se priradi vzdalenost, jakou ma uletet
 					}
+					planetL=DataGeneration.orderExecution(d, starshipL, planetL);													// vyrizovani objednavek				
 					
-					/**
-					 * Pokud lod doleti na planetu, vylozi zasoby podle objednavky.
-					 * Pote se priradi dalsi planeta (pripadne centrala).
-					 */
-					if (starshipL.get(i).getDistance() <= 25.0) {
-						starshipL.get(i).setDistance(0.0);																						 // lod doletela na planetu
-						starshipL.get(i).setCapacity(starshipL.get(i).getCapacity() - planetL.get(starshipL.get(i).getTargetP()+factoriesCount).getOrder());    // vylozeni nakladu
-						bw.write("Lodi s id: " + starshipL.get(i).getId() + " zbyva doletet: " + starshipL.get(i).getDistance());
-						bw.newLine();
-						//duvod, proc se po vylozeni nevypisuje, kolik se vylozilo, protoze se hleda objednavka centraly, ktera neexistuje
-						bw.write("Lod s id: " + starshipL.get(i).getId() + " vylozila na planete "+planetL.get(i).getId()+", " + planetL.get(starshipL.get(i).getTargetP()).getOrder() + " jednotek nakladu.");
-						bw.newLine();
-						starshipL.get(i).setSourceP(starshipL.get(i).getTargetP());																// lod se vraci na domovskou centralu						
-						starshipL.get(i).setTargetP(factoryId);			
-					} else {
-						starshipL.get(i).setDistance(starshipL.get(i).getDistance() - 25.0);					//vzdalenost se snizuje kazdy den o 25 LY
-						bw.write("Lodi s id: " + starshipL.get(i).getId() + " zbyva doletet na planetu "+planetL.get(i).getId()+", "+ starshipL.get(i).getDistance()+" světelných let.");
-						bw.newLine();
-					}				
-					// Pridal bych nejakou podminku na vzdalenost, aby to nebralo, planety na druhe strane galaxie
 					/**
 					 * Pokud lod nema nalozen dostatek jednotek na pokryti objednavky dalsi planety, vraci se na centralu.
 					 */
-					
-					
 					/** if (starshipL.get(i).getCapacity() < planetL.get(starshipL.get(i).getTargetP()).getOrder()){
 						starshipL.get(i).setSourceP(starshipL.get(i).getTargetP());
 						starshipL.get(i).setTargetP(factoryId);																		*******
@@ -187,16 +163,11 @@ public class Main {
 							    starship.setCapacity(starship.getCapacity() - planet.getOrder());
 							} 
 					    }	
-					} */
-					
-					//starship.get(i).setTargetP(floydWarshall[planet.get(i).getId()][planet.get(i).getId()]);
-				
-				bw.newLine();
+					} */					
 				}		
 	//*****************************************************************************KONEC_SIMULACE******************************************************************************************************/	
 			}
-    bw.close();
-    System.out.println("Program skoncil.");
+			System.out.println("Program skoncil.");
 	}
 
 }

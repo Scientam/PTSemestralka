@@ -1,3 +1,5 @@
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -259,7 +261,7 @@ public class DataGeneration {
 	  * @param planetL
 	  * @return
 	  */
-	 public static List<Planet> createOrder (int day, List<Vertex> entitiesV,List<Planet> planetL) {
+	 public static List<Planet> createOrder (int day, List<Vertex> entitiesV, List<Planet> planetL) {
 		 int choice;
 		 int orderID;
 		 int orderDrugCount;
@@ -279,6 +281,37 @@ public class DataGeneration {
 				} 
 				WorkWithFile.printOrder(day, entitiesV, planetL);
 			}		 
+		 return planetL;
+	 }
+	 
+	 public static List<Planet> orderExecution (int day, List<Starship> starshipL,List<Planet> planetL) {
+		 BufferedWriter bw;
+		try {
+			bw = new BufferedWriter(new FileWriter("OrderFulfillment.txt"));
+			/**
+			 * Pokud lod doleti na planetu, vylozi zasoby podle objednavky.
+			 * Pote se priradi dalsi planeta (pripadne centrala).
+			 */
+		 for (int i = 0; i < planetL.size(); i++) {
+			if (starshipL.get(i).getDistance() <= 25.0) {
+				starshipL.get(i).setDistance(0.0);																						 // lod doletela na planetu
+				starshipL.get(i).setCapacity(starshipL.get(i).getCapacity() - planetL.get(starshipL.get(i).getTargetP()+5).getOrder());    // vylozeni nakladu
+				bw.write("Lodi s id: " + starshipL.get(i).getId() + " zbyva doletet: " + starshipL.get(i).getDistance());
+				bw.newLine();
+				//duvod, proc se po vylozeni nevypisuje, kolik se vylozilo, protoze se hleda objednavka centraly, ktera neexistuje
+				bw.write("Lod s id: " + starshipL.get(i).getId() + " vylozila na planete "+planetL.get(i).getId()+", " + planetL.get(starshipL.get(i).getTargetP()).getOrder() + " jednotek nakladu.");
+				bw.newLine();
+				starshipL.get(i).setSourceP(starshipL.get(i).getTargetP());																// lod se vraci na domovskou centralu						
+				starshipL.get(i).setTargetP(starshipL.get(i).getNumF());			
+			} else {
+				starshipL.get(i).setDistance(starshipL.get(i).getDistance() - 25.0);					//vzdalenost se snizuje kazdy den o 25 LY
+				bw.write("Lodi s id: " + starshipL.get(i).getId() + " zbyva doletet na planetu "+planetL.get(i).getId()+", "+ starshipL.get(i).getDistance()+" svìtelných let.");
+				bw.newLine();
+			}
+			bw.newLine();
+		 }	
+		   bw.close();
+		} catch (IOException e) { e.printStackTrace(); }	 		 
 		 return planetL;
 	 }
 	  
