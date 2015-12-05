@@ -1,0 +1,49 @@
+			   
+								
+								//int oneDayPath = s.getVel();			//lod za jeden den urazi 25 LY
+								//Scanner sc2 = new Scanner(new File("seznamVzdalSeraz.txt"));
+								//sc2.skip("Planeta c.1: ");
+								//while(sc2.hasNextDouble()){
+								
+								//double nextPlanet = sc2.nextDouble(); 			//zat?­m to ne?¨te to, co m??
+								//System.out.println(nextPlanet);
+								//if (nextPlanet > oneDayPath){
+								//	nextPlanet = nextPlanet - oneDayPath;
+								//	System.out.println("Lod je stale na ceste");
+								//else{
+								//podle ID planety se zm?¬n?­ starshipID
+								//starshipID = entities.get(i).getId();
+								//int cargo = s.getCap();
+								//if(cargo > p.drugProduction(p.getPopulCount())){				//funkcni pouze pokud je populCount public ve tride Planet
+								//cargo = cargo - p.enoughDrugProduction(p.getPopulCount());			//vylozi se naklad podle potreby
+								//}
+								//else{
+									//navrat do centraly				//pozdeji proste poleti na dalsi planetu
+									//starshipID = centralaID			//dokud simulace trva jeden den, lod na dalsi planety pokracovat nemuze, program zatim nepokracuje
+			
+								//System.out.println(naklad);
+								//System.out.println(p.populCount);
+								//}
+								
+							//}
+						//}
+						//}
+							
+							//while (Starship.getCap() > 0){
+							/*if (new Path(false) != null){
+								int pirates = r.nextInt(9);
+									if (pirates == 8){
+										//Lod se vraci do materske centraly
+										//capacity = 0;
+									}
+							}*/
+							
+							//lod poleti na nejblizsi planetu
+							//if Planet.planetStatus == true
+							//na planete vylozi naklad podle Planet.drugProduction
+							//else planeta se preskoci a nasleduje na dalsi nejblizsi planetu
+							//}
+							//}
+			
+
+	

@@ -8,7 +8,7 @@ import java.util.Random;
 import java.util.Scanner;
 /**
  * @authors Karel Sobehart, Petr Tobias
- * @version 0.0512.1115
+ * @version 0.0512.1210
  */
 public class Main {
 	
@@ -141,7 +141,7 @@ public class Main {
 		    System.out.println("Zadej pocet dni po ktere bude bezet simulace (rok ma 360 dni): ");
 		    maxD = sc.nextInt();
 			for (int d = 0; d < maxD; d++) { 
-				if (d == 0) {planetL=DataGeneration.createPlanetL(entitiesV, planetL);}
+				if (d == 0) {planetL=DataGeneration.createPlanetL(entitiesV, planetL);}														// id planet jde od 5,...,entitiesV.size()
 			//****************************************************vytvoreni objednavek******************************************************************/
 				if (d % 30 == 0) {
 					System.out.println("Chcete zadat vlastni objednavku? (0 - NE/1 - ANO): ");
@@ -168,8 +168,8 @@ public class Main {
 					starshipL.add(starship);
 					}
 					if (d % 30 == 0) {
-					starshipL.get(i).setTargetP(planetL.get(i).getId());																	//lodi se priradi id dalsi planety
-					starshipL.get(i).setDistance(floydWarshall[factoryId][starshipL.get(i).getTargetP()+factoriesCount]);					//lodi se priradi vzdalenost, jakou ma uletet
+					starshipL.get(i).setTargetP(planetL.get(i+factoriesCount).getId());																	//lodi se priradi id dalsi planety
+					starshipL.get(i).setDistance(floydWarshall[factoryId][starshipL.get(i).getTargetP()]);					//lodi se priradi vzdalenost, jakou ma uletet
 					}
 					
 					/**
@@ -177,30 +177,31 @@ public class Main {
 					 * Pote se priradi dalsi planeta (pripadne centrala).
 					 */
 					if (starshipL.get(i).getDistance() <= 25.0) {
-						starshipL.get(i).setDistance(0.0);
-						starshipL.get(i).setCapacity(starshipL.get(i).getCapacity() - planetL.get(starshipL.get(i).getTargetP()).getOrder());
+						starshipL.get(i).setDistance(0.0);																						 // lod doletela na planetu
+						starshipL.get(i).setCapacity(starshipL.get(i).getCapacity() - planetL.get(starshipL.get(i).getTargetP()+factoriesCount).getOrder());    // vylozeni nakladu
 						bw.write("Lodi s id: " + starshipL.get(i).getId() + " zbyva doletet: " + starshipL.get(i).getDistance());
 						bw.newLine();
-						bw.write("Lod s id: " + starshipL.get(i).getId() + " vylozila " + planetL.get(starshipL.get(i).getTargetP()).getOrder() + " jednotek nakladu.");
-						bw.newLine();
-						starshipL.get(i).setSourceP(starshipL.get(i).getTargetP());
 						//duvod, proc se po vylozeni nevypisuje, kolik se vylozilo, protoze se hleda objednavka centraly, ktera neexistuje
+						bw.write("Lod s id: " + starshipL.get(i).getId() + " vylozila na planete "+planetL.get(i).getId()+", " + planetL.get(starshipL.get(i).getTargetP()).getOrder() + " jednotek nakladu.");
+						bw.newLine();
+						starshipL.get(i).setSourceP(starshipL.get(i).getTargetP());																// lod se vraci na domovskou centralu						
 						starshipL.get(i).setTargetP(factoryId);			
-						//ulozit vzdalenost k centrale do Distance
 					} else {
-					starshipL.get(i).setDistance(starshipL.get(i).getDistance() - 25.0);					//vzdalenost se snizuje kazdy den o 25 LY
-					bw.write("Lodi s id: " + starshipL.get(i).getId() + " zbyva doletet: " + starshipL.get(i).getDistance());
-					bw.newLine();
-					}
+						starshipL.get(i).setDistance(starshipL.get(i).getDistance() - 25.0);					//vzdalenost se snizuje kazdy den o 25 LY
+						bw.write("Lodi s id: " + starshipL.get(i).getId() + " zbyva doletet na planetu "+planetL.get(i).getId()+", "+ starshipL.get(i).getDistance()+" světelných let.");
+						bw.newLine();
+					}				
 					// Pridal bych nejakou podminku na vzdalenost, aby to nebralo, planety na druhe strane galaxie
 					/**
 					 * Pokud lod nema nalozen dostatek jednotek na pokryti objednavky dalsi planety, vraci se na centralu.
 					 */
-					if (starshipL.get(i).getCapacity() < planetL.get(starshipL.get(i).getTargetP()).getOrder()){
+					
+					
+					/** if (starshipL.get(i).getCapacity() < planetL.get(starshipL.get(i).getTargetP()).getOrder()){
 						starshipL.get(i).setSourceP(starshipL.get(i).getTargetP());
-						starshipL.get(i).setTargetP(factoryId);
-						//ulozit vzdalenost k centrale do Distance
-																							}
+						starshipL.get(i).setTargetP(factoryId);																		*******
+						//ulozit vzdalenost k centrale do Distance																	*******	
+																							}*/
 					/**for (int j=0; j<planetsCount; j++) {
 						if (i!=j && (entitiesV.get(j+factoriesCount).getOrder() < starship.getCapacity()) ) {
 						    while (planets.get(i+1).getOrder() < starship.getCapacity()){
@@ -214,56 +215,7 @@ public class Main {
 					//starship.get(i).setTargetP(floydWarshall[planet.get(i).getId()][planet.get(i).getId()]);
 				
 				bw.newLine();
-				}
-			   
-								
-								//int oneDayPath = s.getVel();			//lod za jeden den urazi 25 LY
-								//Scanner sc2 = new Scanner(new File("seznamVzdalSeraz.txt"));
-								//sc2.skip("Planeta c.1: ");
-								//while(sc2.hasNextDouble()){
-								
-								//double nextPlanet = sc2.nextDouble(); 			//zatÃ­m to neÃ¨te to, co mÃ¡
-								//System.out.println(nextPlanet);
-								//if (nextPlanet > oneDayPath){
-								//	nextPlanet = nextPlanet - oneDayPath;
-								//	System.out.println("Lod je stale na ceste");
-								//else{
-								//podle ID planety se zmÃ¬nÃ­ starshipID
-								//starshipID = entities.get(i).getId();
-								//int cargo = s.getCap();
-								//if(cargo > p.drugProduction(p.getPopulCount())){				//funkcni pouze pokud je populCount public ve tride Planet
-								//cargo = cargo - p.enoughDrugProduction(p.getPopulCount());			//vylozi se naklad podle potreby
-								//}
-								//else{
-									//navrat do centraly				//pozdeji proste poleti na dalsi planetu
-									//starshipID = centralaID			//dokud simulace trva jeden den, lod na dalsi planety pokracovat nemuze, program zatim nepokracuje
-			
-								//System.out.println(naklad);
-								//System.out.println(p.populCount);
-								//}
-								
-							//}
-						//}
-						//}
-							
-							//while (Starship.getCap() > 0){
-							/*if (new Path(false) != null){
-								int pirates = r.nextInt(9);
-									if (pirates == 8){
-										//Lod se vraci do materske centraly
-										//capacity = 0;
-									}
-							}*/
-							
-							//lod poleti na nejblizsi planetu
-							//if Planet.planetStatus == true
-							//na planete vylozi naklad podle Planet.drugProduction
-							//else planeta se preskoci a nasleduje na dalsi nejblizsi planetu
-							//}
-							//}
-			
-
-			
+				}		
 	//*****************************************************************************KONEC_SIMULACE******************************************************************************************************/	
 			}
     bw.close();
