@@ -1,4 +1,7 @@
 public class Planet extends Vertex {
+	
+
+
 	/** promenna uchovavajici informaci o tom zda se na planetu budou nadale dovazet leky  */
 	private boolean status;
 	/** promenna uchovavajici informaci o poctu obyvatel */
@@ -141,6 +144,15 @@ public class Planet extends Vertex {
 	 */
 	public void setAnswered(boolean argAnswered) {
 		this.answered = argAnswered;
+	}
+	
+	public boolean isStatus() {
+		return status;
+	}
+
+
+	public void setStatus(boolean status) {
+		this.status = status;
 	}
 	
 }

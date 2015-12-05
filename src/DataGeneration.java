@@ -1,19 +1,28 @@
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
+import java.util.Scanner;
 
 public class DataGeneration {
+	static Scanner sc = new Scanner(System.in);
 	/** pole se vzdalenostmi entit */
 	private static int[][] distance;		
 	/** x-ove a y-ove souradnice objektu */
 	private static double xAxis, yAxis;
 	/** pomocna promenna uchovavajici aktualni vzdalenost*/
 	private static double actDist;
+	/** */
 	private static List<Neighbour> neigh = new ArrayList<Neighbour>();
+	/** */
 	private static Random r = new Random();
+	/** */
 	private static int danger;
+	/** */
+	
 	 
 	
 	/**
@@ -111,7 +120,6 @@ public class DataGeneration {
 	  * @param entitiesV
 	 * @throws IOException 
 	  */
-	 @SuppressWarnings("unchecked")
 	 public static List<Vertex> neighbour(int factoriesCount, int neighbourCountF, int neighbourCountP, List<Vertex> entitiesV) throws IOException {
 		 for (int i = 0; i < entitiesV.size(); i++) {												//vytvori Al pomocnych objektu slozicich k hledani sousedu
 			 neigh.add(new Neighbour(i, 100000));
@@ -217,9 +225,19 @@ public class DataGeneration {
 	 }
 	 
 	 
+	 /**
+	  * 
+	  * @param entitiesV
+	  * @param planetL
+	  * @return
+	  */
 	 public static List<Planet> createPlanetL (List<Vertex> entitiesV, List<Planet> planetL) {
 		 Planet planet;
-		 planetL = new ArrayList<>();
+		 planetL = new ArrayList<Planet>();
+		 for (int i = 0; i < 5; i++){
+			 planet = new Planet(i, entitiesV.get(i).getXAxis(), entitiesV.get(i).getYAxis(), entitiesV.get(i).getNeighbourCount());
+			 planetL.add(planet);
+		 }
 		 for (int i = 5; i < entitiesV.size(); i++){
 				planet = (Planet) entitiesV.get(i);			//volani planety
 				planetL.add(planet);
@@ -227,5 +245,78 @@ public class DataGeneration {
 		 return planetL;
 	 }
 	 
+	 public static List<Starship> createStarshipL (List<Vertex> entitiesV, List<Starship> starshipL) {
+		 int factoryId;
+		 Starship starship;
+		 starshipL = new ArrayList<Starship>();
+		 for (int i = 0; i < (entitiesV.size()-5)/5; i++){
+			 	factoryId = entitiesV.get(r.nextInt(4)).getKey();                    													// urceni centraly, ktera obednavku vyridi
+				starship = new Starship(i, 25, 5000000, factoryId, factoryId);     												    //volani lode, musi se doresit ID
+				starshipL.add(starship);
+			} 
+		 return starshipL;
+	 }
+	 
+	 
+	 /**
+	  * 
+	  * @param day
+	  * @param entitiesV
+	  * @param planetL
+	  * @return
+	  */
+	 public static List<Planet> createOrder (int day, List<Vertex> entitiesV, List<Planet> planetL) {
+		 int choice;
+		 int orderID;
+		 int orderDrugCount;
+		 if (day % 30 == 0) {
+				System.out.println("Chcete zadat vlastni objednavku? (0 - NE/1 - ANO): ");
+				choice = sc.nextInt();
+				while (choice == 1) {
+					System.out.println("Zadej objednavku ve tvaru (id_planety pocet_leku): ");
+					orderID = sc.nextInt();
+					orderDrugCount = sc.nextInt();
+					if (planetL.get(orderID).getAnswered()==false) {
+						planetL.get(orderID).setOrder(orderDrugCount);    // vytvori objednavku, jeji velikost zavisi na poctu obyvatel planety
+						planetL.get(orderID).setAnswered(true);
+					}
+					System.out.println("Chcete zadat vlastni objednavku? (0 - NE/1 - ANO): ");
+					choice = sc.nextInt();
+				} 
+				WorkWithFile.printOrder(day, entitiesV, planetL);
+			}		 
+		 return planetL;
+	 }
+	 
+	 public static List<Planet> orderExecution (int day, List<Starship> starshipL,List<Planet> planetL) {
+		/* BufferedWriter bw;
+		try {
+			bw = new BufferedWriter(new FileWriter("OrderFulfillment.txt"));
+			/**
+			 * Pokud lod doleti na planetu, vylozi zasoby podle objednavky.
+			 * Pote se priradi dalsi planeta (pripadne centrala).
+			 
+		 for (int i = 0; i < planetL.size(); i++) {
+			if (starshipL.get(i).getDistance() <= 25.0) {
+				starshipL.get(i).setDistance(0.0);																						 // lod doletela na planetu
+				starshipL.get(i).setCapacity(starshipL.get(i).getCapacity() - planetL.get(starshipL.get(i).getTargetP()+5).getOrder());    // vylozeni nakladu
+				bw.write("Lodi s id: " + starshipL.get(i).getId() + " zbyva doletet: " + starshipL.get(i).getDistance());
+				bw.newLine();
+				//duvod, proc se po vylozeni nevypisuje, kolik se vylozilo, protoze se hleda objednavka centraly, ktera neexistuje
+				bw.write("Lod s id: " + starshipL.get(i).getId() + " vylozila na planete "+planetL.get(i).getId()+", " + planetL.get(starshipL.get(i).getTargetP()).getOrder() + " jednotek nakladu.");
+				bw.newLine();
+				starshipL.get(i).setSourceP(starshipL.get(i).getTargetP());																// lod se vraci na domovskou centralu						
+				starshipL.get(i).setTargetP(starshipL.get(i).getNumF());			
+			} else {
+				starshipL.get(i).setDistance(starshipL.get(i).getDistance() - 25.0);					//vzdalenost se snizuje kazdy den o 25 LY
+				bw.write("Lodi s id: " + starshipL.get(i).getId() + " zbyva doletet na planetu "+planetL.get(i).getId()+", "+ starshipL.get(i).getDistance()+" svìtelných let.");
+				bw.newLine();
+			}
+			bw.newLine();
+		 }	
+		   bw.close();
+		} catch (IOException e) { e.printStackTrace(); }	*/ 		 
+		 return planetL;
+	 }
 	  
 }

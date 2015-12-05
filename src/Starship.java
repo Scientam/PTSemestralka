@@ -12,7 +12,7 @@ public class Starship {
 	/** promenna uchovavajici id planety, na kterou lod prave miri */
 	private  int targetP;
 	/** promìnná uchovavajicí vzdalenost, kterou musi lod uletet */
-	private double distance;
+	private int distance;
 	/** promenna uchovavajici informaci o tom zda je dana lod prave k dispozici */
 	private boolean isInUse;
 	
@@ -99,7 +99,7 @@ public class Starship {
 	 * 
 	 * @param distance
 	 */
-	public void setDistance(double distance) {
+	public void setDistance(int distance) {
 		this.distance = distance;
 	}
 	
@@ -162,7 +162,7 @@ public class Starship {
 	  * 
 	  * @return distance
 	  */
-	 public double getDistance() {
+	 public int getDistance() {
 		 return distance;
 	 }
 	 
