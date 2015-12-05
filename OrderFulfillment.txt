@@ -1,0 +1,1851 @@
+---------------------------------------------------------------------------------------------
+Zacal 0. den.
+---------------------------------------------------------------------------------------------
+Lod s id: 0 se vydala na planetu s id: 131
+Lodi s id: 0 zbyva doletet na planetu 131, 6 svetelnych let.
+
+Lod s id: 1 se vydala na planetu s id: 21
+Lodi s id: 1 zbyva doletet na planetu 21, 27 svetelnych let.
+
+Lod s id: 2 se vydala na planetu s id: 165
+Lodi s id: 2 zbyva doletet na planetu 165, 38 svetelnych let.
+
+Lod s id: 3 se vydala na planetu s id: 171
+Lodi s id: 3 zbyva doletet na planetu 171, 53 svetelnych let.
+
+Lod s id: 4 se vydala na planetu s id: 27
+Lodi s id: 4 zbyva doletet: 0
+Lod s id: 4 vylozila na planete 27, 2111535 jednotek nakladu.
+Lod s id: 4 se vydala na planetu s id: 71
+
+Lod s id: 5 se vydala na planetu s id: 120
+Lodi s id: 5 zbyva doletet: 0
+Lod s id: 5 vylozila na planete 120, 2498264 jednotek nakladu.
+Lod s id: 5 se vydala na planetu s id: 92
+
+Lod s id: 6 se vydala na planetu s id: 70
+Lodi s id: 6 zbyva doletet na planetu 70, 58 svetelnych let.
+
+Lod s id: 7 se vydala na planetu s id: 68
+Lodi s id: 7 zbyva doletet na planetu 68, 46 svetelnych let.
+
+Lod s id: 8 se vydala na planetu s id: 14
+Lodi s id: 8 zbyva doletet na planetu 14, 11 svetelnych let.
+
+Lod s id: 9 se vydala na planetu s id: 134
+Lodi s id: 9 zbyva doletet na planetu 134, 63 svetelnych let.
+
+Lod s id: 10 se vydala na planetu s id: 79
+Lodi s id: 10 zbyva doletet na planetu 79, 64 svetelnych let.
+
+Lod s id: 11 se vydala na planetu s id: 65
+Lodi s id: 11 zbyva doletet na planetu 65, 70 svetelnych let.
+
+Lod s id: 12 se vydala na planetu s id: 172
+Lodi s id: 12 zbyva doletet na planetu 172, 34 svetelnych let.
+
+Lod s id: 13 se vydala na planetu s id: 111
+Lodi s id: 13 zbyva doletet na planetu 111, 83 svetelnych let.
+
+Lod s id: 14 se vydala na planetu s id: 125
+Lodi s id: 14 zbyva doletet na planetu 125, 90 svetelnych let.
+
+Lod s id: 15 se vydala na planetu s id: 161
+Lodi s id: 15 zbyva doletet: 0
+Lod s id: 15 vylozila na planete 161, 890019 jednotek nakladu.
+Lod s id: 15 se vydala na planetu s id: 87
+
+Lod s id: 16 se vydala na planetu s id: 42
+Lodi s id: 16 zbyva doletet na planetu 42, 39 svetelnych let.
+
+Lod s id: 17 se vydala na planetu s id: 160
+Lodi s id: 17 zbyva doletet na planetu 160, 50 svetelnych let.
+
+Lod s id: 18 se vydala na planetu s id: 26
+Lodi s id: 18 zbyva doletet na planetu 26, 94 svetelnych let.
+
+Lod s id: 19 se vydala na planetu s id: 101
+Lodi s id: 19 zbyva doletet na planetu 101, 51 svetelnych let.
+
+Lod s id: 20 se vydala na planetu s id: 105
+Lodi s id: 20 zbyva doletet na planetu 105, 51 svetelnych let.
+
+Lod s id: 21 se vydala na planetu s id: 18
+Lodi s id: 21 zbyva doletet na planetu 18, 23 svetelnych let.
+
+Lod s id: 22 se vydala na planetu s id: 66
+Lodi s id: 22 zbyva doletet na planetu 66, 55 svetelnych let.
+
+Lod s id: 23 se vydala na planetu s id: 46
+Lodi s id: 23 zbyva doletet na planetu 46, 96 svetelnych let.
+
+Lod s id: 24 se vydala na planetu s id: 38
+Lodi s id: 24 zbyva doletet na planetu 38, 65 svetelnych let.
+
+Lod s id: 25 se vydala na planetu s id: 122
+Lodi s id: 25 zbyva doletet na planetu 122, 97 svetelnych let.
+
+Lod s id: 26 se vydala na planetu s id: 135
+Lodi s id: 26 zbyva doletet na planetu 135, 69 svetelnych let.
+
+Lod s id: 27 se vydala na planetu s id: 39
+Lodi s id: 27 zbyva doletet na planetu 39, 27 svetelnych let.
+
+Lod s id: 28 se vydala na planetu s id: 187
+Lodi s id: 28 zbyva doletet na planetu 187, 70 svetelnych let.
+
+Lod s id: 29 se vydala na planetu s id: 19
+Lodi s id: 29 zbyva doletet na planetu 19, 50 svetelnych let.
+
+Lod s id: 30 se vydala na planetu s id: 150
+Lodi s id: 30 zbyva doletet na planetu 150, 46 svetelnych let.
+
+Lod s id: 31 se vydala na planetu s id: 50
+Lodi s id: 31 zbyva doletet na planetu 50, 99 svetelnych let.
+
+Lod s id: 32 se vydala na planetu s id: 152
+Lodi s id: 32 zbyva doletet na planetu 152, 71 svetelnych let.
+
+Lod s id: 33 se vydala na planetu s id: 164
+Lodi s id: 33 zbyva doletet na planetu 164, 72 svetelnych let.
+
+Lod s id: 34 se vydala na planetu s id: 190
+Lodi s id: 34 zbyva doletet na planetu 190, 100 svetelnych let.
+
+Lod s id: 35 se vydala na planetu s id: 104
+Lodi s id: 35 zbyva doletet na planetu 104, 55 svetelnych let.
+
+Lod s id: 36 se vydala na planetu s id: 118
+Lodi s id: 36 zbyva doletet na planetu 118, 52 svetelnych let.
+
+Lod s id: 37 se vydala na planetu s id: 182
+Lodi s id: 37 zbyva doletet na planetu 182, 57 svetelnych let.
+
+Lod s id: 38 se vydala na planetu s id: 94
+Lodi s id: 38 zbyva doletet na planetu 94, 58 svetelnych let.
+
+Lod s id: 39 se vydala na planetu s id: 75
+Lodi s id: 39 zbyva doletet na planetu 75, 73 svetelnych let.
+
+---------------------------------------------------------------------------------------------
+Zacal 1. den.
+---------------------------------------------------------------------------------------------
+Lodi s id: 0 zbyva doletet: 0
+Lod s id: 0 vylozila na planete 131, 2940824 jednotek nakladu.
+Lod s id: 0 se vydala na planetu s id: 96
+Lod se vratila na zakladnu doplnit naklad.
+
+Lodi s id: 1 zbyva doletet na planetu 21, 2 svetelnych let.
+
+Lodi s id: 2 zbyva doletet na planetu 165, 13 svetelnych let.
+
+Lodi s id: 3 zbyva doletet na planetu 171, 28 svetelnych let.
+
+Lodi s id: 4 zbyva doletet na planetu 71, 19 svetelnych let.
+
+Lodi s id: 5 zbyva doletet: 0
+Lod s id: 5 vylozila na planete 92, 1889244 jednotek nakladu.
+Lod s id: 5 se vydala na planetu s id: 136
+Lod se vratila na zakladnu doplnit naklad.
+
+Lodi s id: 6 zbyva doletet na planetu 70, 33 svetelnych let.
+
+Lodi s id: 7 zbyva doletet na planetu 68, 21 svetelnych let.
+
+Lodi s id: 8 zbyva doletet: 0
+Lod s id: 8 vylozila na planete 14, 807232 jednotek nakladu.
+Lod s id: 8 se vydala na planetu s id: 137
+
+Lodi s id: 9 zbyva doletet na planetu 134, 38 svetelnych let.
+
+Lodi s id: 10 zbyva doletet na planetu 79, 39 svetelnych let.
+
+Lodi s id: 11 zbyva doletet na planetu 65, 45 svetelnych let.
+
+Lodi s id: 12 zbyva doletet na planetu 172, 9 svetelnych let.
+
+Lodi s id: 13 zbyva doletet na planetu 111, 58 svetelnych let.
+
+Lodi s id: 14 zbyva doletet na planetu 125, 65 svetelnych let.
+
+Lodi s id: 15 zbyva doletet na planetu 87, 22 svetelnych let.
+
+Lodi s id: 16 zbyva doletet na planetu 42, 14 svetelnych let.
+
+Lodi s id: 17 zbyva doletet na planetu 160, 25 svetelnych let.
+
+Lodi s id: 18 zbyva doletet na planetu 26, 69 svetelnych let.
+
+Lodi s id: 19 zbyva doletet na planetu 101, 26 svetelnych let.
+
+Lodi s id: 20 zbyva doletet na planetu 105, 26 svetelnych let.
+
+Lodi s id: 21 zbyva doletet: 0
+Lod s id: 21 vylozila na planete 18, 1577943 jednotek nakladu.
+Lod s id: 21 se vydala na planetu s id: 91
+
+Lodi s id: 22 zbyva doletet na planetu 66, 30 svetelnych let.
+
+Lodi s id: 23 zbyva doletet na planetu 46, 71 svetelnych let.
+
+Lodi s id: 24 zbyva doletet na planetu 38, 40 svetelnych let.
+
+Lodi s id: 25 zbyva doletet na planetu 122, 72 svetelnych let.
+
+Lodi s id: 26 zbyva doletet na planetu 135, 44 svetelnych let.
+
+Lodi s id: 27 zbyva doletet na planetu 39, 2 svetelnych let.
+
+Lodi s id: 28 zbyva doletet na planetu 187, 45 svetelnych let.
+
+Lodi s id: 29 zbyva doletet na planetu 19, 25 svetelnych let.
+
+Lodi s id: 30 zbyva doletet na planetu 150, 21 svetelnych let.
+
+Lodi s id: 31 zbyva doletet na planetu 50, 74 svetelnych let.
+
+Lodi s id: 32 zbyva doletet na planetu 152, 46 svetelnych let.
+
+Lodi s id: 33 zbyva doletet na planetu 164, 47 svetelnych let.
+
+Lodi s id: 34 zbyva doletet na planetu 190, 75 svetelnych let.
+
+Lodi s id: 35 zbyva doletet na planetu 104, 30 svetelnych let.
+
+Lodi s id: 36 zbyva doletet na planetu 118, 27 svetelnych let.
+
+Lodi s id: 37 zbyva doletet na planetu 182, 32 svetelnych let.
+
+Lodi s id: 38 zbyva doletet na planetu 94, 33 svetelnych let.
+
+Lodi s id: 39 zbyva doletet na planetu 75, 48 svetelnych let.
+
+---------------------------------------------------------------------------------------------
+Zacal 2. den.
+---------------------------------------------------------------------------------------------
+Lod s id: 0 dorazila na zakladnu a doplnila naklad.
+Lod s id: 0 se vydala na planetu s id: 202
+
+Lodi s id: 1 zbyva doletet: 0
+Lod s id: 1 vylozila na planete 21, 749071 jednotek nakladu.
+Lod s id: 1 se vydala na planetu s id: 52
+
+Lodi s id: 2 zbyva doletet: 0
+Lod s id: 2 vylozila na planete 165, 926845 jednotek nakladu.
+Lod s id: 2 se vydala na planetu s id: 85
+
+Lodi s id: 3 zbyva doletet na planetu 171, 3 svetelnych let.
+
+Lodi s id: 4 zbyva doletet: 0
+Lod s id: 4 vylozila na planete 71, 660360 jednotek nakladu.
+Lod s id: 4 se vydala na planetu s id: 24
+Lod se vratila na zakladnu doplnit naklad.
+
+Lod s id: 5 dorazila na zakladnu a doplnila naklad.
+Lod s id: 5 se vydala na planetu s id: 28
+
+Lodi s id: 6 zbyva doletet na planetu 70, 8 svetelnych let.
+
+Lodi s id: 7 zbyva doletet: 0
+Lod s id: 7 vylozila na planete 68, 1459295 jednotek nakladu.
+Lod s id: 7 se vydala na planetu s id: 74
+
+Lodi s id: 8 zbyva doletet na planetu 137, 109 svetelnych let.
+
+Lodi s id: 9 zbyva doletet na planetu 134, 13 svetelnych let.
+
+Lodi s id: 10 zbyva doletet na planetu 79, 14 svetelnych let.
+
+Lodi s id: 11 zbyva doletet na planetu 65, 20 svetelnych let.
+
+Lodi s id: 12 zbyva doletet: 0
+Lod s id: 12 vylozila na planete 172, 1214037 jednotek nakladu.
+Lod s id: 12 se vydala na planetu s id: 162
+
+Lodi s id: 13 zbyva doletet na planetu 111, 33 svetelnych let.
+
+Lodi s id: 14 zbyva doletet na planetu 125, 40 svetelnych let.
+
+Lodi s id: 15 zbyva doletet: 0
+Lod s id: 15 vylozila na planete 87, 1137093 jednotek nakladu.
+Lod s id: 15 se vydala na planetu s id: 145
+
+Lodi s id: 16 zbyva doletet: 0
+Lod s id: 16 vylozila na planete 42, 2286581 jednotek nakladu.
+Lod s id: 16 se vydala na planetu s id: 151
+
+Lodi s id: 17 zbyva doletet: 0
+Lod s id: 17 vylozila na planete 160, 1032936 jednotek nakladu.
+Lod s id: 17 se vydala na planetu s id: 31
+
+Lodi s id: 18 zbyva doletet na planetu 26, 44 svetelnych let.
+
+Lodi s id: 19 zbyva doletet na planetu 101, 1 svetelnych let.
+
+Lodi s id: 20 zbyva doletet na planetu 105, 1 svetelnych let.
+
+Lodi s id: 21 zbyva doletet na planetu 91, 34 svetelnych let.
+
+Lodi s id: 22 zbyva doletet na planetu 66, 5 svetelnych let.
+
+Lodi s id: 23 zbyva doletet na planetu 46, 46 svetelnych let.
+
+Lodi s id: 24 zbyva doletet na planetu 38, 15 svetelnych let.
+
+Lodi s id: 25 zbyva doletet na planetu 122, 47 svetelnych let.
+
+Lodi s id: 26 zbyva doletet na planetu 135, 19 svetelnych let.
+
+Lodi s id: 27 zbyva doletet: 0
+Lod s id: 27 vylozila na planete 39, 2204887 jednotek nakladu.
+Lod s id: 27 se vydala na planetu s id: 139
+
+Lodi s id: 28 zbyva doletet na planetu 187, 20 svetelnych let.
+
+Lodi s id: 29 zbyva doletet: 0
+Lod s id: 29 vylozila na planete 19, 1043702 jednotek nakladu.
+Lod s id: 29 se vydala na planetu s id: 194
+
+Lodi s id: 30 zbyva doletet: 0
+Lod s id: 30 vylozila na planete 150, 2242650 jednotek nakladu.
+Lod s id: 30 se vydala na planetu s id: 81
+
+Lodi s id: 31 zbyva doletet na planetu 50, 49 svetelnych let.
+
+Lodi s id: 32 zbyva doletet na planetu 152, 21 svetelnych let.
+
+Lodi s id: 33 zbyva doletet na planetu 164, 22 svetelnych let.
+
+Lodi s id: 34 zbyva doletet na planetu 190, 50 svetelnych let.
+
+Lodi s id: 35 zbyva doletet na planetu 104, 5 svetelnych let.
+
+Lodi s id: 36 zbyva doletet na planetu 118, 2 svetelnych let.
+
+Lodi s id: 37 zbyva doletet na planetu 182, 7 svetelnych let.
+
+Lodi s id: 38 zbyva doletet na planetu 94, 8 svetelnych let.
+
+Lodi s id: 39 zbyva doletet na planetu 75, 23 svetelnych let.
+
+---------------------------------------------------------------------------------------------
+Zacal 3. den.
+---------------------------------------------------------------------------------------------
+Lodi s id: 0 zbyva doletet na planetu 202, 101 svetelnych let.
+
+Lodi s id: 1 zbyva doletet na planetu 52, 88 svetelnych let.
+
+Lodi s id: 2 zbyva doletet na planetu 85, 43 svetelnych let.
+
+Lodi s id: 3 zbyva doletet: 0
+Lod s id: 3 vylozila na planete 171, 1522210 jednotek nakladu.
+Lod se vratila na zakladnu a ceka na dalsi mesic.
+Lod s id: 4 dorazila na zakladnu a doplnila naklad.
+Lod s id: 4 se vydala na planetu s id: 179
+
+Lodi s id: 5 zbyva doletet na planetu 28, 85 svetelnych let.
+
+Lodi s id: 6 zbyva doletet: 0
+Lod s id: 6 vylozila na planete 70, 1001579 jednotek nakladu.
+Lod s id: 6 se vydala na planetu s id: 37
+
+Lodi s id: 7 zbyva doletet na planetu 74, 24 svetelnych let.
+
+Lodi s id: 8 zbyva doletet na planetu 137, 84 svetelnych let.
+
+Lodi s id: 9 zbyva doletet: 0
+Lod s id: 9 vylozila na planete 134, 2927798 jednotek nakladu.
+Lod s id: 9 se vydala na planetu s id: 34
+
+Lodi s id: 10 zbyva doletet: 0
+Lod s id: 10 vylozila na planete 79, 1417163 jednotek nakladu.
+Lod s id: 10 se vydala na planetu s id: 114
+
+Lodi s id: 11 zbyva doletet: 0
+Lod s id: 11 vylozila na planete 65, 350491 jednotek nakladu.
+Lod se vratila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 12 zbyva doletet na planetu 162, 146 svetelnych let.
+
+Lodi s id: 13 zbyva doletet na planetu 111, 8 svetelnych let.
+
+Lodi s id: 14 zbyva doletet na planetu 125, 15 svetelnych let.
+
+Lodi s id: 15 zbyva doletet na planetu 145, 48 svetelnych let.
+
+Lodi s id: 16 zbyva doletet na planetu 151, 49 svetelnych let.
+
+Lodi s id: 17 zbyva doletet na planetu 31, 37 svetelnych let.
+
+Lodi s id: 18 zbyva doletet na planetu 26, 19 svetelnych let.
+
+Lodi s id: 19 zbyva doletet: 0
+Lod s id: 19 vylozila na planete 101, 1084584 jednotek nakladu.
+Lod s id: 19 se vydala na planetu s id: 126
+
+Lodi s id: 20 zbyva doletet: 0
+Lod s id: 20 vylozila na planete 105, 1715627 jednotek nakladu.
+Lod s id: 20 se vydala na planetu s id: 51
+
+Lodi s id: 21 zbyva doletet na planetu 91, 9 svetelnych let.
+
+Lodi s id: 22 zbyva doletet: 0
+Lod s id: 22 vylozila na planete 66, 617354 jednotek nakladu.
+Lod s id: 22 se vydala na planetu s id: 73
+
+Lodi s id: 23 zbyva doletet na planetu 46, 21 svetelnych let.
+
+Lodi s id: 24 zbyva doletet: 0
+Lod s id: 24 vylozila na planete 38, 692395 jednotek nakladu.
+Lod se vratila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 25 zbyva doletet na planetu 122, 22 svetelnych let.
+
+Lodi s id: 26 zbyva doletet: 0
+Lod s id: 26 vylozila na planete 135, 1031527 jednotek nakladu.
+Lod se vratila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 27 zbyva doletet na planetu 139, 21 svetelnych let.
+
+Lodi s id: 28 zbyva doletet: 0
+Lod s id: 28 vylozila na planete 187, 515082 jednotek nakladu.
+Lod s id: 28 se vydala na planetu s id: 193
+
+Lodi s id: 29 zbyva doletet na planetu 194, 26 svetelnych let.
+
+Lodi s id: 30 zbyva doletet na planetu 81, 21 svetelnych let.
+
+Lodi s id: 31 zbyva doletet na planetu 50, 24 svetelnych let.
+
+Lodi s id: 32 zbyva doletet: 0
+Lod s id: 32 vylozila na planete 152, 709665 jednotek nakladu.
+Lod se vratila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 33 zbyva doletet: 0
+Lod s id: 33 vylozila na planete 164, 1286174 jednotek nakladu.
+Lod se vratila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 34 zbyva doletet na planetu 190, 25 svetelnych let.
+
+Lodi s id: 35 zbyva doletet: 0
+Lod s id: 35 vylozila na planete 104, 2117670 jednotek nakladu.
+Lod s id: 35 se vydala na planetu s id: 15
+
+Lodi s id: 36 zbyva doletet: 0
+Lod s id: 36 vylozila na planete 118, 2218605 jednotek nakladu.
+Lod s id: 36 se vydala na planetu s id: 17
+
+Lodi s id: 37 zbyva doletet: 0
+Lod s id: 37 vylozila na planete 182, 1899378 jednotek nakladu.
+Lod s id: 37 se vydala na planetu s id: 78
+
+Lodi s id: 38 zbyva doletet: 0
+Lod s id: 38 vylozila na planete 94, 255476 jednotek nakladu.
+Lod s id: 38 se vydala na planetu s id: 158
+
+Lodi s id: 39 zbyva doletet: 0
+Lod s id: 39 vylozila na planete 75, 1182104 jednotek nakladu.
+Lod se vratila na zakladnu a ceka na dalsi mesic.
+---------------------------------------------------------------------------------------------
+Zacal 4. den.
+---------------------------------------------------------------------------------------------
+Lodi s id: 0 zbyva doletet na planetu 202, 76 svetelnych let.
+
+Lodi s id: 1 zbyva doletet na planetu 52, 63 svetelnych let.
+
+Lodi s id: 2 zbyva doletet na planetu 85, 18 svetelnych let.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 4 zbyva doletet na planetu 179, 94 svetelnych let.
+
+Lodi s id: 5 zbyva doletet na planetu 28, 60 svetelnych let.
+
+Lodi s id: 6 zbyva doletet na planetu 37, 40 svetelnych let.
+
+Lodi s id: 7 zbyva doletet: 0
+Lod s id: 7 vylozila na planete 74, 1378017 jednotek nakladu.
+Lod s id: 7 se vydala na planetu s id: 188
+Lod se vratila na zakladnu doplnit naklad.
+
+Lodi s id: 8 zbyva doletet na planetu 137, 59 svetelnych let.
+
+Lodi s id: 9 zbyva doletet na planetu 34, 47 svetelnych let.
+
+Lodi s id: 10 zbyva doletet na planetu 114, 27 svetelnych let.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 12 zbyva doletet na planetu 162, 121 svetelnych let.
+
+Lodi s id: 13 zbyva doletet: 0
+Lod s id: 13 vylozila na planete 111, 1676535 jednotek nakladu.
+Lod s id: 13 se vydala na planetu s id: 156
+
+Lodi s id: 14 zbyva doletet: 0
+Lod s id: 14 vylozila na planete 125, 1153922 jednotek nakladu.
+Lod se vratila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 15 zbyva doletet na planetu 145, 23 svetelnych let.
+
+Lodi s id: 16 zbyva doletet na planetu 151, 24 svetelnych let.
+
+Lodi s id: 17 zbyva doletet na planetu 31, 12 svetelnych let.
+
+Lodi s id: 18 zbyva doletet: 0
+Lod s id: 18 vylozila na planete 26, 1202346 jednotek nakladu.
+Lod se vratila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 19 zbyva doletet na planetu 126, 105 svetelnych let.
+
+Lodi s id: 20 zbyva doletet na planetu 51, 39 svetelnych let.
+
+Lodi s id: 21 zbyva doletet: 0
+Lod s id: 21 vylozila na planete 91, 637621 jednotek nakladu.
+Lod s id: 21 se vydala na planetu s id: 110
+
+Lodi s id: 22 zbyva doletet na planetu 73, 19 svetelnych let.
+
+Lodi s id: 23 zbyva doletet: 0
+Lod s id: 23 vylozila na planete 46, 2086628 jednotek nakladu.
+Lod se vratila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 25 zbyva doletet: 0
+Lod s id: 25 vylozila na planete 122, 774785 jednotek nakladu.
+Lod s id: 25 se vydala na planetu s id: 84
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 27 zbyva doletet: 0
+Lod s id: 27 vylozila na planete 139, 1966441 jednotek nakladu.
+Lod s id: 27 se vydala na planetu s id: 169
+
+Lodi s id: 28 zbyva doletet na planetu 193, 50 svetelnych let.
+
+Lodi s id: 29 zbyva doletet na planetu 194, 1 svetelnych let.
+
+Lodi s id: 30 zbyva doletet: 0
+Lod s id: 30 vylozila na planete 81, 1736009 jednotek nakladu.
+Lod s id: 30 se vydala na planetu s id: 183
+
+Lodi s id: 31 zbyva doletet: 0
+Lod s id: 31 vylozila na planete 50, 1230317 jednotek nakladu.
+Lod s id: 31 se vydala na planetu s id: 59
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 34 zbyva doletet: 0
+Lod s id: 34 vylozila na planete 190, 1603856 jednotek nakladu.
+Lod s id: 34 se vydala na planetu s id: 29
+
+Lodi s id: 35 zbyva doletet na planetu 15, 21 svetelnych let.
+
+Lodi s id: 36 zbyva doletet na planetu 17, 28 svetelnych let.
+
+Lodi s id: 37 zbyva doletet na planetu 78, 54 svetelnych let.
+
+Lodi s id: 38 zbyva doletet na planetu 158, 23 svetelnych let.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+---------------------------------------------------------------------------------------------
+Zacal 5. den.
+---------------------------------------------------------------------------------------------
+Lodi s id: 0 zbyva doletet na planetu 202, 51 svetelnych let.
+
+Lodi s id: 1 zbyva doletet na planetu 52, 38 svetelnych let.
+
+Lodi s id: 2 zbyva doletet: 0
+Lod s id: 2 vylozila na planete 85, 1792912 jednotek nakladu.
+Lod se vratila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 4 zbyva doletet na planetu 179, 69 svetelnych let.
+
+Lodi s id: 5 zbyva doletet na planetu 28, 35 svetelnych let.
+
+Lodi s id: 6 zbyva doletet na planetu 37, 15 svetelnych let.
+
+Lod s id: 7 dorazila na zakladnu a doplnila naklad.
+Lod se vratila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 8 zbyva doletet na planetu 137, 34 svetelnych let.
+
+Lodi s id: 9 zbyva doletet na planetu 34, 22 svetelnych let.
+
+Lodi s id: 10 zbyva doletet na planetu 114, 2 svetelnych let.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 12 zbyva doletet na planetu 162, 96 svetelnych let.
+
+Lodi s id: 13 zbyva doletet na planetu 156, 20 svetelnych let.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 15 zbyva doletet: 0
+Lod s id: 15 vylozila na planete 145, 2012701 jednotek nakladu.
+Lod s id: 15 se vydala na planetu s id: 77
+Lod se vratila na zakladnu doplnit naklad.
+
+Lodi s id: 16 zbyva doletet: 0
+Lod s id: 16 vylozila na planete 151, 1259511 jednotek nakladu.
+Lod s id: 16 se vydala na planetu s id: 60
+Lod se vratila na zakladnu doplnit naklad.
+
+Lodi s id: 17 zbyva doletet: 0
+Lod s id: 17 vylozila na planete 31, 573926 jednotek nakladu.
+Lod se vratila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 19 zbyva doletet na planetu 126, 80 svetelnych let.
+
+Lodi s id: 20 zbyva doletet na planetu 51, 14 svetelnych let.
+
+Lodi s id: 21 zbyva doletet na planetu 110, 18 svetelnych let.
+
+Lodi s id: 22 zbyva doletet: 0
+Lod s id: 22 vylozila na planete 73, 566770 jednotek nakladu.
+Lod se vratila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 25 zbyva doletet na planetu 84, 31 svetelnych let.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 27 zbyva doletet na planetu 169, 30 svetelnych let.
+
+Lodi s id: 28 zbyva doletet na planetu 193, 25 svetelnych let.
+
+Lodi s id: 29 zbyva doletet: 0
+Lod s id: 29 vylozila na planete 194, 1974111 jednotek nakladu.
+Lod s id: 29 se vydala na planetu s id: 138
+
+Lodi s id: 30 zbyva doletet na planetu 183, 207 svetelnych let.
+
+Lodi s id: 31 zbyva doletet na planetu 59, 28 svetelnych let.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 34 zbyva doletet: 0
+Lod s id: 34 vylozila na planete 29, 2282796 jednotek nakladu.
+Lod s id: 34 se vydala na planetu s id: 32
+Lod se vratila na zakladnu doplnit naklad.
+
+Lodi s id: 35 zbyva doletet: 0
+Lod s id: 35 vylozila na planete 15, 1744379 jednotek nakladu.
+Lod s id: 35 se vydala na planetu s id: 48
+Lod se vratila na zakladnu doplnit naklad.
+
+Lodi s id: 36 zbyva doletet na planetu 17, 3 svetelnych let.
+
+Lodi s id: 37 zbyva doletet na planetu 78, 29 svetelnych let.
+
+Lodi s id: 38 zbyva doletet: 0
+Lod s id: 38 vylozila na planete 158, 1047316 jednotek nakladu.
+Lod s id: 38 se vydala na planetu s id: 113
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+---------------------------------------------------------------------------------------------
+Zacal 6. den.
+---------------------------------------------------------------------------------------------
+Lodi s id: 0 zbyva doletet na planetu 202, 26 svetelnych let.
+
+Lodi s id: 1 zbyva doletet na planetu 52, 13 svetelnych let.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 4 zbyva doletet na planetu 179, 44 svetelnych let.
+
+Lodi s id: 5 zbyva doletet na planetu 28, 10 svetelnych let.
+
+Lodi s id: 6 zbyva doletet: 0
+Lod s id: 6 vylozila na planete 37, 785505 jednotek nakladu.
+Lod se vratila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 8 zbyva doletet na planetu 137, 9 svetelnych let.
+
+Lodi s id: 9 zbyva doletet: 0
+Lod s id: 9 vylozila na planete 34, 1239575 jednotek nakladu.
+Lod se vratila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 10 zbyva doletet: 0
+Lod s id: 10 vylozila na planete 114, 251141 jednotek nakladu.
+Lod s id: 10 se vydala na planetu s id: 61
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 12 zbyva doletet na planetu 162, 71 svetelnych let.
+
+Lodi s id: 13 zbyva doletet: 0
+Lod s id: 13 vylozila na planete 156, 2029742 jednotek nakladu.
+Lod s id: 13 se vydala na planetu s id: 8
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod s id: 15 dorazila na zakladnu a doplnila naklad.
+Lod s id: 15 se vydala na planetu s id: 115
+
+Lod s id: 16 dorazila na zakladnu a doplnila naklad.
+Lod s id: 16 se vydala na planetu s id: 33
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 19 zbyva doletet na planetu 126, 55 svetelnych let.
+
+Lodi s id: 20 zbyva doletet: 0
+Lod s id: 20 vylozila na planete 51, 1028323 jednotek nakladu.
+Lod s id: 20 se vydala na planetu s id: 127
+
+Lodi s id: 21 zbyva doletet: 0
+Lod s id: 21 vylozila na planete 110, 1445624 jednotek nakladu.
+Lod s id: 21 se vydala na planetu s id: 99
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 25 zbyva doletet na planetu 84, 6 svetelnych let.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 27 zbyva doletet na planetu 169, 5 svetelnych let.
+
+Lodi s id: 28 zbyva doletet: 0
+Lod s id: 28 vylozila na planete 193, 713046 jednotek nakladu.
+Lod s id: 28 se vydala na planetu s id: 35
+
+Lodi s id: 29 zbyva doletet na planetu 138, 8 svetelnych let.
+
+Lodi s id: 30 zbyva doletet na planetu 183, 182 svetelnych let.
+
+Lodi s id: 31 zbyva doletet na planetu 59, 3 svetelnych let.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod s id: 34 dorazila na zakladnu a doplnila naklad.
+Lod se vratila na zakladnu a ceka na dalsi mesic.
+Lod s id: 35 dorazila na zakladnu a doplnila naklad.
+Lod se vratila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 36 zbyva doletet: 0
+Lod s id: 36 vylozila na planete 17, 2219335 jednotek nakladu.
+Lod s id: 36 se vydala na planetu s id: 159
+Lod se vratila na zakladnu doplnit naklad.
+
+Lodi s id: 37 zbyva doletet na planetu 78, 4 svetelnych let.
+
+Lodi s id: 38 zbyva doletet na planetu 113, 235 svetelnych let.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+---------------------------------------------------------------------------------------------
+Zacal 7. den.
+---------------------------------------------------------------------------------------------
+Lodi s id: 0 zbyva doletet na planetu 202, 1 svetelnych let.
+
+Lodi s id: 1 zbyva doletet: 0
+Lod s id: 1 vylozila na planete 52, 2893103 jednotek nakladu.
+Lod se vratila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 4 zbyva doletet na planetu 179, 19 svetelnych let.
+
+Lodi s id: 5 zbyva doletet: 0
+Lod s id: 5 vylozila na planete 28, 2813240 jednotek nakladu.
+Lod se vratila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 8 zbyva doletet: 0
+Lod s id: 8 vylozila na planete 137, 1007591 jednotek nakladu.
+Lod s id: 8 se vydala na planetu s id: 196
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 10 zbyva doletet: 0
+Lod s id: 10 vylozila na planete 61, 1072039 jednotek nakladu.
+Lod s id: 10 se vydala na planetu s id: 58
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 12 zbyva doletet na planetu 162, 46 svetelnych let.
+
+Lodi s id: 13 zbyva doletet na planetu 8, 28 svetelnych let.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 15 zbyva doletet na planetu 115, 112 svetelnych let.
+
+Lodi s id: 16 zbyva doletet na planetu 33, 106 svetelnych let.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 19 zbyva doletet na planetu 126, 30 svetelnych let.
+
+Lodi s id: 20 zbyva doletet na planetu 127, 19 svetelnych let.
+
+Lodi s id: 21 zbyva doletet na planetu 99, 30 svetelnych let.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 25 zbyva doletet: 0
+Lod s id: 25 vylozila na planete 84, 1698307 jednotek nakladu.
+Lod se vratila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 27 zbyva doletet: 0
+Lod s id: 27 vylozila na planete 169, 386945 jednotek nakladu.
+Lod s id: 27 se vydala na planetu s id: 107
+Lod se vratila na zakladnu doplnit naklad.
+
+Lodi s id: 28 zbyva doletet na planetu 35, 31 svetelnych let.
+
+Lodi s id: 29 zbyva doletet: 0
+Lod s id: 29 vylozila na planete 138, 1657076 jednotek nakladu.
+Lod s id: 29 se vydala na planetu s id: 155
+Lod se vratila na zakladnu doplnit naklad.
+
+Lodi s id: 30 zbyva doletet na planetu 183, 157 svetelnych let.
+
+Lodi s id: 31 zbyva doletet: 0
+Lod s id: 31 vylozila na planete 59, 679254 jednotek nakladu.
+Lod se vratila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod s id: 36 dorazila na zakladnu a doplnila naklad.
+Lod se vratila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 37 zbyva doletet: 0
+Lod s id: 37 vylozila na planete 78, 1460804 jednotek nakladu.
+Lod s id: 37 se vydala na planetu s id: 36
+
+Lodi s id: 38 zbyva doletet na planetu 113, 210 svetelnych let.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+---------------------------------------------------------------------------------------------
+Zacal 8. den.
+---------------------------------------------------------------------------------------------
+Lodi s id: 0 zbyva doletet: 0
+Lod s id: 0 vylozila na planete 202, 2034169 jednotek nakladu.
+Lod se vratila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 4 zbyva doletet: 0
+Lod s id: 4 vylozila na planete 179, 1116414 jednotek nakladu.
+Lod s id: 4 se vydala na planetu s id: 10
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 8 zbyva doletet na planetu 196, 9 svetelnych let.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 10 zbyva doletet na planetu 58, 18 svetelnych let.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 12 zbyva doletet na planetu 162, 21 svetelnych let.
+
+Lodi s id: 13 zbyva doletet na planetu 8, 3 svetelnych let.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 15 zbyva doletet na planetu 115, 87 svetelnych let.
+
+Lodi s id: 16 zbyva doletet na planetu 33, 81 svetelnych let.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 19 zbyva doletet na planetu 126, 5 svetelnych let.
+
+Lodi s id: 20 zbyva doletet: 0
+Lod s id: 20 vylozila na planete 127, 1867557 jednotek nakladu.
+Lod s id: 20 se vydala na planetu s id: 53
+Lod se vratila na zakladnu doplnit naklad.
+
+Lodi s id: 21 zbyva doletet na planetu 99, 5 svetelnych let.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod s id: 27 dorazila na zakladnu a doplnila naklad.
+Lod se vratila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 28 zbyva doletet na planetu 35, 6 svetelnych let.
+
+Lod s id: 29 dorazila na zakladnu a doplnila naklad.
+Lod se vratila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 30 zbyva doletet na planetu 183, 132 svetelnych let.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 37 zbyva doletet na planetu 36, 43 svetelnych let.
+
+Lodi s id: 38 zbyva doletet na planetu 113, 185 svetelnych let.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+---------------------------------------------------------------------------------------------
+Zacal 9. den.
+---------------------------------------------------------------------------------------------
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 4 zbyva doletet na planetu 10, 34 svetelnych let.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 8 zbyva doletet: 0
+Lod s id: 8 vylozila na planete 196, 1830137 jednotek nakladu.
+Lod s id: 8 se vydala na planetu s id: 102
+Lod se vratila na zakladnu doplnit naklad.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 10 zbyva doletet: 0
+Lod s id: 10 vylozila na planete 58, 1516677 jednotek nakladu.
+Lod s id: 10 se vydala na planetu s id: 64
+Lod se vratila na zakladnu doplnit naklad.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 12 zbyva doletet: 0
+Lod s id: 12 vylozila na planete 162, 2042927 jednotek nakladu.
+Lod se vratila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 13 zbyva doletet: 0
+Lod s id: 13 vylozila na planete 8, 303462 jednotek nakladu.
+Lod se vratila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 15 zbyva doletet na planetu 115, 62 svetelnych let.
+
+Lodi s id: 16 zbyva doletet na planetu 33, 56 svetelnych let.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 19 zbyva doletet: 0
+Lod s id: 19 vylozila na planete 126, 1420248 jednotek nakladu.
+Lod s id: 19 se vydala na planetu s id: 62
+
+Lod s id: 20 dorazila na zakladnu a doplnila naklad.
+Lod se vratila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 21 zbyva doletet: 0
+Lod s id: 21 vylozila na planete 99, 704958 jednotek nakladu.
+Lod s id: 21 se vydala na planetu s id: 177
+Lod se vratila na zakladnu doplnit naklad.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 28 zbyva doletet: 0
+Lod s id: 28 vylozila na planete 35, 1224611 jednotek nakladu.
+Lod se vratila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 30 zbyva doletet na planetu 183, 107 svetelnych let.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 37 zbyva doletet na planetu 36, 18 svetelnych let.
+
+Lodi s id: 38 zbyva doletet na planetu 113, 160 svetelnych let.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+---------------------------------------------------------------------------------------------
+Zacal 10. den.
+---------------------------------------------------------------------------------------------
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 4 zbyva doletet na planetu 10, 9 svetelnych let.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod s id: 8 dorazila na zakladnu a doplnila naklad.
+Lod se vratila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod s id: 10 dorazila na zakladnu a doplnila naklad.
+Lod se vratila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 15 zbyva doletet na planetu 115, 37 svetelnych let.
+
+Lodi s id: 16 zbyva doletet na planetu 33, 31 svetelnych let.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 19 zbyva doletet na planetu 62, 37 svetelnych let.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod s id: 21 dorazila na zakladnu a doplnila naklad.
+Lod se vratila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 30 zbyva doletet na planetu 183, 82 svetelnych let.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 37 zbyva doletet: 0
+Lod s id: 37 vylozila na planete 36, 1625379 jednotek nakladu.
+Lod s id: 37 se vydala na planetu s id: 106
+Lod se vratila na zakladnu doplnit naklad.
+
+Lodi s id: 38 zbyva doletet na planetu 113, 135 svetelnych let.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+---------------------------------------------------------------------------------------------
+Zacal 11. den.
+---------------------------------------------------------------------------------------------
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 4 zbyva doletet: 0
+Lod s id: 4 vylozila na planete 10, 2261421 jednotek nakladu.
+Lod s id: 4 se vydala na planetu s id: 57
+Lod se vratila na zakladnu doplnit naklad.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 15 zbyva doletet na planetu 115, 12 svetelnych let.
+
+Lodi s id: 16 zbyva doletet na planetu 33, 6 svetelnych let.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 19 zbyva doletet na planetu 62, 12 svetelnych let.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 30 zbyva doletet na planetu 183, 57 svetelnych let.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod s id: 37 dorazila na zakladnu a doplnila naklad.
+Lod se vratila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 38 zbyva doletet na planetu 113, 110 svetelnych let.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+---------------------------------------------------------------------------------------------
+Zacal 12. den.
+---------------------------------------------------------------------------------------------
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod s id: 4 dorazila na zakladnu a doplnila naklad.
+Lod se vratila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 15 zbyva doletet: 0
+Lod s id: 15 vylozila na planete 115, 529622 jednotek nakladu.
+Lod se vratila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 16 zbyva doletet: 0
+Lod s id: 16 vylozila na planete 33, 785480 jednotek nakladu.
+Lod se vratila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 19 zbyva doletet: 0
+Lod s id: 19 vylozila na planete 62, 1708602 jednotek nakladu.
+Lod s id: 19 se vydala na planetu s id: 72
+Lod se vratila na zakladnu doplnit naklad.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 30 zbyva doletet na planetu 183, 32 svetelnych let.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 38 zbyva doletet na planetu 113, 85 svetelnych let.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+---------------------------------------------------------------------------------------------
+Zacal 13. den.
+---------------------------------------------------------------------------------------------
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod s id: 19 dorazila na zakladnu a doplnila naklad.
+Lod se vratila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 30 zbyva doletet na planetu 183, 7 svetelnych let.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 38 zbyva doletet na planetu 113, 60 svetelnych let.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+---------------------------------------------------------------------------------------------
+Zacal 14. den.
+---------------------------------------------------------------------------------------------
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 30 zbyva doletet: 0
+Lod s id: 30 vylozila na planete 183, 536526 jednotek nakladu.
+Lod s id: 30 se vydala na planetu s id: 117
+Lod se vratila na zakladnu doplnit naklad.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 38 zbyva doletet na planetu 113, 35 svetelnych let.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+---------------------------------------------------------------------------------------------
+Zacal 15. den.
+---------------------------------------------------------------------------------------------
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod s id: 30 dorazila na zakladnu a doplnila naklad.
+Lod se vratila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 38 zbyva doletet na planetu 113, 10 svetelnych let.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+---------------------------------------------------------------------------------------------
+Zacal 16. den.
+---------------------------------------------------------------------------------------------
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 38 zbyva doletet: 0
+Lod s id: 38 vylozila na planete 113, 787332 jednotek nakladu.
+Lod s id: 38 se vydala na planetu s id: 195
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+---------------------------------------------------------------------------------------------
+Zacal 17. den.
+---------------------------------------------------------------------------------------------
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 38 zbyva doletet na planetu 195, 19 svetelnych let.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+---------------------------------------------------------------------------------------------
+Zacal 18. den.
+---------------------------------------------------------------------------------------------
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 38 zbyva doletet: 0
+Lod s id: 38 vylozila na planete 195, 1020362 jednotek nakladu.
+Lod s id: 38 se vydala na planetu s id: 23
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+---------------------------------------------------------------------------------------------
+Zacal 19. den.
+---------------------------------------------------------------------------------------------
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lodi s id: 38 zbyva doletet: 0
+Lod s id: 38 vylozila na planete 23, 717317 jednotek nakladu.
+Lod s id: 38 se vydala na planetu s id: 129
+Lod se vratila na zakladnu doplnit naklad.
+
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+---------------------------------------------------------------------------------------------
+Zacal 20. den.
+---------------------------------------------------------------------------------------------
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod s id: 38 dorazila na zakladnu a doplnila naklad.
+Lod se vratila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+---------------------------------------------------------------------------------------------
+Zacal 21. den.
+---------------------------------------------------------------------------------------------
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+---------------------------------------------------------------------------------------------
+Zacal 22. den.
+---------------------------------------------------------------------------------------------
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+---------------------------------------------------------------------------------------------
+Zacal 23. den.
+---------------------------------------------------------------------------------------------
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+---------------------------------------------------------------------------------------------
+Zacal 24. den.
+---------------------------------------------------------------------------------------------
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+---------------------------------------------------------------------------------------------
+Zacal 25. den.
+---------------------------------------------------------------------------------------------
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+---------------------------------------------------------------------------------------------
+Zacal 26. den.
+---------------------------------------------------------------------------------------------
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+---------------------------------------------------------------------------------------------
+Zacal 27. den.
+---------------------------------------------------------------------------------------------
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+---------------------------------------------------------------------------------------------
+Zacal 28. den.
+---------------------------------------------------------------------------------------------
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+---------------------------------------------------------------------------------------------
+Zacal 29. den.
+---------------------------------------------------------------------------------------------
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.
+Lod dorazila na zakladnu a ceka na dalsi mesic.

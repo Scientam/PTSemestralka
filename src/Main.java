@@ -132,7 +132,9 @@ public class Main {
 	//*********************************************************************************SIMULACE********************************************************************************************************/	
 		 	BufferedWriter bw = new BufferedWriter(new FileWriter("OrderFulfillment.txt"));
 		    starship = null;
-		    starshipL = new ArrayList<>();		 
+		    starshipL = new ArrayList<>();	
+		    int counter = 0;
+		    int target = 0;
 		   
 		    /**
 			 * Cyklus spousti simulaci kazdy den a generuje objednavky kazdych 30 dni. Pracuje se pouze s ArrayListem. Informace o objednavkach se ukladaji
@@ -141,54 +143,108 @@ public class Main {
 		    System.out.println("Zadej pocet dni po ktere bude bezet simulace (rok ma 360 dni): ");
 		    maxD = sc.nextInt();
 			for (int d = 0; d < maxD; d++) { 
-				if (d == 0) {planetL=DataGeneration.createPlanetL(entitiesV, planetL);}														// id planet jde od 5,...,entitiesV.size()
+				bw.write("---------------------------------------------------------------------------------------------");
+				bw.newLine();
+				bw.write("Zacal " + d + ". den.");
+				bw.newLine();
+				bw.write("---------------------------------------------------------------------------------------------");
+				bw.newLine();
+				
+				if (d == 0) {
+					planetL=DataGeneration.createPlanetL(entitiesV, planetL);
+					starshipL=DataGeneration.createStarshipL(entitiesV, starshipL);
+					planetL=DataGeneration.createOrder(d, entitiesV, planetL);
+					}	
+					
 			//****************************************************vytvoreni objednavek******************************************************************/
-				if (d % 30 == 0) {
-					System.out.println("Chcete zadat vlastni objednavku? (0 - NE/1 - ANO): ");
-					choice = sc.nextInt();
-					while (choice == 1) {
-						System.out.println("Zadej objednavku ve tvaru (id_planety pocet_leku): ");
-						orderID = sc.nextInt();
-						orderDrugCount = sc.nextInt();
-						if (planetL.get(orderID).getAnswered()==false) {
-							planetL.get(orderID).setOrder(orderDrugCount);    // vytvori objednavku, jeji velikost zavisi na poctu obyvatel planety
-							planetL.get(orderID).setAnswered(true);
-						}
-						System.out.println("Chcete zadat vlastni objednavku? (0 - NE/1 - ANO): ");
-						choice = sc.nextInt();
-					} 
-					WorkWithFile.printOrder(d, entitiesV, planetL);
-				}
+
+				
 			//*****************************************************vyrizovani objednacek****************************************************************/
 				
-				for (int i = 0; i < planetsCount; i++) {
-					if (d == 0) {
-					factoryId = entitiesV.get(r.nextInt(4)).getKey();                    													// urceni centraly, ktera obednavku vyridi
-					starship = new Starship(i, 25, CAPACITY, factoryId, factoryId);     												    //volani lode, musi se doresit ID
-					starshipL.add(starship);
-					}
+				for (int i = 0; i < starshipL.size(); i++) {
 					if (d % 30 == 0) {
-					starshipL.get(i).setTargetP(planetL.get(i+factoriesCount).getId());																	//lodi se priradi id dalsi planety
-					starshipL.get(i).setDistance(floydWarshall[factoryId][starshipL.get(i).getTargetP()]);					//lodi se priradi vzdalenost, jakou ma uletet
-					}
+						
+						starshipL.get(i).setTargetP(-1);
+						for (int c = 0; c < 20; c++){
+							target = entitiesV.get(starshipL.get(i).getNumF()).neighbour[c].getIndex();
+							if ((target > factoriesCount) && (planetL.get(target).isStatus() == true)){
+								starshipL.get(i).setTargetP(target);
+								planetL.get(starshipL.get(i).getTargetP()).setStatus(false);
+								bw.write("Lod s id: " + starshipL.get(i).getId() + " se vydala na planetu s id: " + starshipL.get(i).getTargetP());
+								bw.newLine();
+								break;
+							}
+						}
+					starshipL.get(i).setDistance(floydWarshall[starshipL.get(i).getNumF()][starshipL.get(i).getTargetP()]);					//lodi se priradi vzdalenost, jakou ma uletet
+						}
 					
 					/**
 					 * Pokud lod doleti na planetu, vylozi zasoby podle objednavky.
 					 * Pote se priradi dalsi planeta (pripadne centrala).
 					 */
-					if (starshipL.get(i).getDistance() <= 25.0) {
-						starshipL.get(i).setDistance(0.0);																						 // lod doletela na planetu
-						starshipL.get(i).setCapacity(starshipL.get(i).getCapacity() - planetL.get(starshipL.get(i).getTargetP()+factoriesCount).getOrder());    // vylozeni nakladu
+					if (starshipL.get(i).getDistance() <= 25) {
+						starshipL.get(i).setDistance(0);
+						if (starshipL.get(i).getTargetP() < factoriesCount){
+							if (starshipL.get(i).getIsInUse() == true){
+							starshipL.get(i).setCapacity(CAPACITY);
+							bw.write("Lod s id: " + starshipL.get(i).getId() + " dorazila na zakladnu a doplnila naklad.");
+							bw.newLine();
+							}else{
+								bw.write("Lod dorazila na zakladnu a ceka na dalsi mesic.");
+								bw.newLine();
+								continue;
+							}
+						}
+						else{
+						starshipL.get(i).setCapacity(starshipL.get(i).getCapacity() - planetL.get(starshipL.get(i).getTargetP()).getOrder());    // vylozeni nakladu
 						bw.write("Lodi s id: " + starshipL.get(i).getId() + " zbyva doletet: " + starshipL.get(i).getDistance());
 						bw.newLine();
 						//duvod, proc se po vylozeni nevypisuje, kolik se vylozilo, protoze se hleda objednavka centraly, ktera neexistuje
-						bw.write("Lod s id: " + starshipL.get(i).getId() + " vylozila na planete "+planetL.get(i).getId()+", " + planetL.get(starshipL.get(i).getTargetP()).getOrder() + " jednotek nakladu.");
+						bw.write("Lod s id: " + starshipL.get(i).getId() + " vylozila na planete "+starshipL.get(i).getTargetP()+", " + planetL.get(starshipL.get(i).getTargetP()).getOrder() + " jednotek nakladu.");
 						bw.newLine();
-						starshipL.get(i).setSourceP(starshipL.get(i).getTargetP());																// lod se vraci na domovskou centralu						
-						starshipL.get(i).setTargetP(factoryId);			
+						}
+						starshipL.get(i).setSourceP(starshipL.get(i).getTargetP());
+						if (starshipL.get(i).getSourceP() == -1){
+							starshipL.get(i).setIsInUse(false);
+							bw.write("Dorucovani skoncilo.");
+							bw.newLine();
+							continue;
+						}						
+						starshipL.get(i).setTargetP(-1);
+						target = 0;
+						for (int c = 0; c < 5; c++){
+						target = entitiesV.get(starshipL.get(i).getSourceP()).neighbour[c].getIndex();
+							if ((target > factoriesCount) && (planetL.get(target).isStatus() == true)){
+								starshipL.get(i).setTargetP(target);
+								planetL.get(starshipL.get(i).getTargetP()).setStatus(false);
+								bw.write("Lod s id: " + starshipL.get(i).getId() + " se vydala na planetu s id: " + starshipL.get(i).getTargetP());
+								bw.newLine();
+								break;
+							}
+						}
+						if (starshipL.get(i).getTargetP() == -1){	
+							for (int c = 0; c < 20; c++){
+								target = entitiesV.get(starshipL.get(i).getNumF()).neighbour[c].getIndex();
+								if ((target > factoriesCount) && (planetL.get(target).isStatus() == true)){
+									starshipL.get(i).setTargetP(target);
+									planetL.get(starshipL.get(i).getTargetP()).setStatus(false);
+									bw.write("Lod s id: " + starshipL.get(i).getId() + " se vydala na planetu s id: " + starshipL.get(i).getTargetP());
+									bw.newLine();
+									break;
+								}
+							}
+							if (starshipL.get(i).getTargetP() == -1){
+								starshipL.get(i).setIsInUse(false);
+								bw.write("Lod se vratila na zakladnu a ceka na dalsi mesic.");
+								bw.newLine();
+								continue;
+							}
+						}
+						
+						starshipL.get(i).setDistance(floydWarshall[starshipL.get(i).getSourceP()][starshipL.get(i).getTargetP()]);
 					} else {
-						starshipL.get(i).setDistance(starshipL.get(i).getDistance() - 25.0);					//vzdalenost se snizuje kazdy den o 25 LY
-						bw.write("Lodi s id: " + starshipL.get(i).getId() + " zbyva doletet na planetu "+planetL.get(i).getId()+", "+ starshipL.get(i).getDistance()+" světelných let.");
+						starshipL.get(i).setDistance(starshipL.get(i).getDistance() - 25);					//vzdalenost se snizuje kazdy den o 25 LY
+						bw.write("Lodi s id: " + starshipL.get(i).getId() + " zbyva doletet na planetu "+starshipL.get(i).getTargetP()+", "+ starshipL.get(i).getDistance()+" svetelnych let.");
 						bw.newLine();
 					}				
 					// Pridal bych nejakou podminku na vzdalenost, aby to nebralo, planety na druhe strane galaxie
@@ -197,22 +253,13 @@ public class Main {
 					 */
 					
 					
-					/** if (starshipL.get(i).getCapacity() < planetL.get(starshipL.get(i).getTargetP()).getOrder()){
+					if (starshipL.get(i).getCapacity() < planetL.get(starshipL.get(i).getTargetP()).getOrder()){
 						starshipL.get(i).setSourceP(starshipL.get(i).getTargetP());
-						starshipL.get(i).setTargetP(factoryId);																		*******
-						//ulozit vzdalenost k centrale do Distance																	*******	
-																							}*/
-					/**for (int j=0; j<planetsCount; j++) {
-						if (i!=j && (entitiesV.get(j+factoriesCount).getOrder() < starship.getCapacity()) ) {
-						    while (planets.get(i+1).getOrder() < starship.getCapacity()){
-							    starship.setTargetP(planets.get(i+1).getKey());
-							    //lod doleti na dalsi planetu
-							    starship.setCapacity(starship.getCapacity() - planet.getOrder());
-							} 
-					    }	
-					} */
-					
-					//starship.get(i).setTargetP(floydWarshall[planet.get(i).getId()][planet.get(i).getId()]);
+						starshipL.get(i).setTargetP(starshipL.get(i).getNumF());																		
+						starshipL.get(i).setDistance(floydWarshall[starshipL.get(i).getNumF()][starshipL.get(i).getTargetP()]);
+						bw.write("Lod se vratila na zakladnu doplnit naklad.");
+						bw.newLine();
+						}
 				
 				bw.newLine();
 				}		
