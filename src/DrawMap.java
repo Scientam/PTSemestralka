@@ -63,7 +63,7 @@ public class DrawMap extends JFrame{
 																							/*KRESLENI VRCHOLU*/
 		g2.setColor(Color.BLUE);
 		for(int i = factoriesCount; i < entities.size(); i++) {
-			g2.fill(new Ellipse2D.Double(entities.get(i).getXAxis()+100, entities.get(i).getYAxis()+130 , 4, 4));
+			g2.fill(new Ellipse2D.Double(entities.get(i).getXAxis()+100, entities.get(i).getYAxis()+130 , 4, 4));		
 		}		
 		
 		g2.setColor(Color.GREEN);
@@ -71,15 +71,13 @@ public class DrawMap extends JFrame{
 			g2.fill(new Ellipse2D.Double(entities.get(j).getXAxis()+100, entities.get(j).getYAxis()+130, 7, 7));
 		}		
 		
-		g2.setColor(Color.RED);
-		g2.fill(new Ellipse2D.Double(400 + 100, 400 + 130, 10, 10));
 																							/*KRESLENI CEST*/	
 		g2.setColor(Color.BLACK);
 		for (int i = 0; i < entities.size(); i++) {		
 			int from;
 		    int to;
 			if (paths[i][5] != null) {
-				for (int k = 0; k < paths[i][5].size()-1; k++){ 					
+				for (int k = 0; k < paths[i][5].size()-1; k++) { 					
 					from = paths[i][5].get(k);
 					to = paths[i][5].get(k+1);
 					g2.draw(new Line2D.Double(entities.get(from).getXAxis()+2+100, entities.get(from).getYAxis()+2+130, entities.get(to).getXAxis()+2+100, entities.get(to).getYAxis()+2+130) );

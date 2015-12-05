@@ -1,8 +1,11 @@
-src/Main.java:13:	class 'Main' je prilis slozita (Cyclomatic Complexity of 21 (Highest = 20)).
-src/Main.java:13:	class 'Main' je prilis slozita (Cyclomatic Complexity of 21 (Highest = 20)).
-src/Main.java:57:	Ruznych cest pruchodu metodou 'main()' je 10882, doporuceny limit je 200 (NPath complexity).
-src/Main.java:57:	Ruznych cest pruchodu metodou 'main()' je 10882, doporuceny limit je 200 (NPath complexity).
-src/Main.java:57:	Vyhnete se prilis dlouhym metodam.
-src/Main.java:57:	Vyhnete se prilis dlouhym metodam.
-src/Main.java:57:	method 'main' je prilis slozita (Cyclomatic Complexity of 20).
-src/Main.java:57:	method 'main' je prilis slozita (Cyclomatic Complexity of 20).
+src/DataGeneration.java:209:	Prirazovani hodnoty parametru 'planetL' metody je problematicke. Pouzijte lokalni promenne.
+src/DataGeneration.java:209:	Prirazovani hodnoty parametru 'planetL' metody je problematicke. Pouzijte lokalni promenne.
+src/Main.java:2:	Zruste nevyuzite importy jako 'java.io.File'
+src/Main.java:13:	class 'Main' je prilis slozita (Cyclomatic Complexity of 12 (Highest = 11)).
+src/Main.java:13:	class 'Main' je prilis slozita (Cyclomatic Complexity of 12 (Highest = 11)).
+src/Main.java:69:	Vyhnete se prilis dlouhym metodam.
+src/Main.java:69:	Vyhnete se prilis dlouhym metodam.
+src/Main.java:69:	method 'main' je prilis slozita (Cyclomatic Complexity of 11).
+src/Main.java:69:	method 'main' je prilis slozita (Cyclomatic Complexity of 11).
+src/Main.java:153:	Vyhnete se zbytecnemu porovnavani booleovskych vyrazu.
+src/WorkWithFile.java:92:	Vyhnete se zbytecnemu porovnavani booleovskych vyrazu.
