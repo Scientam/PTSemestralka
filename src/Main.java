@@ -8,7 +8,7 @@ import java.util.Random;
 import java.util.Scanner;
 /**
  * @authors Karel Sobehart, Petr Tobias
- * @version 0.0512.1048
+ * @version 0.0512.1115
  */
 public class Main {
 	
@@ -38,17 +38,20 @@ public class Main {
 	static List<Integer>[][] paths;
 	//************************************************************************************************promenne pro simulaci*************************************************************************
     //Dodelej prosim ty komenty a u simulace vic popisku, co k cemu slouzi
-	 static int maxD;
-	 static int choice;
-	 static int orderID = 0;
-	 static int orderDrugCount = 0;
-	 static Starship starship;
-	 static List<Planet> planetL;
-	 static List<Starship> starshipL;
-
-	
-	
-	    
+	/** */
+	static int maxD;
+	/** */
+	static int choice;
+	/** */
+	static int orderID = 0;
+	/** */
+	static int orderDrugCount = 0;
+	/** */
+	static Starship starship;
+	/** */
+	static List<Planet> planetL;
+	/** */
+	static List<Starship> starshipL;
 	/** vytvori promennou, ktera slouzi pro generování náhodné veličiny*/
 	static Random r = new Random();
 	/** vytvori promennou, ktera slouzi k identifikovani centraly */
@@ -57,8 +60,6 @@ public class Main {
 	//private static int starshipId;
 	/** konstanta uchovavajici plny naklad*/
 	static final int CAPACITY = 5000000;
-	private static Scanner sc2;
-
 
 	/**
 	 * @param args
@@ -130,8 +131,6 @@ public class Main {
 		}
 	//*********************************************************************************SIMULACE********************************************************************************************************/	
 		 	BufferedWriter bw = new BufferedWriter(new FileWriter("OrderFulfillment.txt"));
-		    sc2 = new Scanner(new File("Distance.txt"));
-		    //sc2.skip("0.0");
 		    starship = null;
 		    starshipL = new ArrayList<>();		 
 		   
@@ -143,7 +142,7 @@ public class Main {
 		    maxD = sc.nextInt();
 			for (int d = 0; d < maxD; d++) { 
 				if (d == 0) {planetL=DataGeneration.createPlanetL(entitiesV, planetL);}
-				//****************************************************vytvoreni objednavek******************************************************************/
+			//****************************************************vytvoreni objednavek******************************************************************/
 				if (d % 30 == 0) {
 					System.out.println("Chcete zadat vlastni objednavku? (0 - NE/1 - ANO): ");
 					choice = sc.nextInt();
@@ -160,44 +159,24 @@ public class Main {
 					} 
 					WorkWithFile.printOrder(d, entitiesV, planetL);
 				}
+			//*****************************************************vyrizovani objednacek****************************************************************/
 				
-			
-				
-				//*****************************************************vyrizovani objednacek****************************************************************/
-				
-					for (int i = 0; i < planetsCount; i++){
-					if (d == 0){
-					// pokud bude cas, udelal bych, aby to bralo nejblizsi centralu
-					factoryId = entitiesV.get(r.nextInt(4)).getKey();                   // urceni centraly, ktera obednavku vyridi
-					//sc2.skip("\t");
-					starship = new Starship(i, 25, CAPACITY, factoryId);      //volani lode, musi se doresit ID
+				for (int i = 0; i < planetsCount; i++) {
+					if (d == 0) {
+					factoryId = entitiesV.get(r.nextInt(4)).getKey();                    													// urceni centraly, ktera obednavku vyridi
+					starship = new Starship(i, 25, CAPACITY, factoryId, factoryId);     												    //volani lode, musi se doresit ID
 					starshipL.add(starship);
 					}
-					if (d % 30 == 0){
-					starshipL.get(i).setSourceP(factoryId);
-					starshipL.get(i).setTargetP(planetL.get(i+factoriesCount).getId());								//lodi se priradi id dalsi planety
-					starshipL.get(i).setDistance(Double.parseDouble(sc2.next()));				//lodi se priradi vzdalenost, jakou ma uletet
+					if (d % 30 == 0) {
+					starshipL.get(i).setTargetP(planetL.get(i).getId());																	//lodi se priradi id dalsi planety
+					starshipL.get(i).setDistance(floydWarshall[factoryId][starshipL.get(i).getTargetP()+factoriesCount]);					//lodi se priradi vzdalenost, jakou ma uletet
 					}
-					/**
-					 * Pokud ma lod id centraly, vrati se na ni a doplni zasoby.
-					 * Po doplneni zasob se vrati id planety, na kterou puvodne smerovala.
-					 */
-					/*if (starship.get(i).getTargetP() == factoryId){
-						starship.get(i).setDistance(starship.get(i).getDistance() - 25.0);					//vzdalenost se snizuje kazdy den o 25 LY
-						bw6.write("Lodi s id: " + starship.get(i).getId() + " zbyva doletet: " + starship.get(i).getDistance());
-						bw6.newLine();
-						if (starship.get(i).getDistance() < 25.0){
-							starship.get(i).setDistance(0.0);
-							starship.get(i).setSourceP(starship.get(i).getTargetP());
-							starship.get(i).setCapacity(CAPACITY);
-							starship.get(i).setTargetP(starship.get(i).getSourceP());
-						}
-					}*/
+					
 					/**
 					 * Pokud lod doleti na planetu, vylozi zasoby podle objednavky.
 					 * Pote se priradi dalsi planeta (pripadne centrala).
 					 */
-					if (starshipL.get(i).getDistance() <= 25.0){
+					if (starshipL.get(i).getDistance() <= 25.0) {
 						starshipL.get(i).setDistance(0.0);
 						starshipL.get(i).setCapacity(starshipL.get(i).getCapacity() - planetL.get(starshipL.get(i).getTargetP()).getOrder());
 						bw.write("Lodi s id: " + starshipL.get(i).getId() + " zbyva doletet: " + starshipL.get(i).getDistance());
@@ -208,11 +187,7 @@ public class Main {
 						//duvod, proc se po vylozeni nevypisuje, kolik se vylozilo, protoze se hleda objednavka centraly, ktera neexistuje
 						starshipL.get(i).setTargetP(factoryId);			
 						//ulozit vzdalenost k centrale do Distance
-					}
-					else{
-						/**
-						 * Lodi se odpocitava 25 LY z celkove cesty kazdy den.
-						 */
+					} else {
 					starshipL.get(i).setDistance(starshipL.get(i).getDistance() - 25.0);					//vzdalenost se snizuje kazdy den o 25 LY
 					bw.write("Lodi s id: " + starshipL.get(i).getId() + " zbyva doletet: " + starshipL.get(i).getDistance());
 					bw.newLine();

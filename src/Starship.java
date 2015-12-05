@@ -23,11 +23,12 @@ public class Starship {
 	 * @param velocity
 	 * @param capacity
 	 */
-	public Starship(int id, int velocity,int capacity, int numF)  {
+	public Starship(int id, int velocity,int capacity, int numF, int argSourceP)  {
 		this.id = id;
 		this.velocity = velocity;
 		this.capacity = capacity;
 		this.numF = numF;
+		this.sourceP = argSourceP;
 		this.isInUse = true;
 	}
 	
