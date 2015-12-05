@@ -3,6 +3,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
+import java.util.Scanner;
 
 public class DataGeneration {
 	/** pole se vzdalenostmi entit */
@@ -14,6 +15,7 @@ public class DataGeneration {
 	private static List<Neighbour> neigh = new ArrayList<Neighbour>();
 	private static Random r = new Random();
 	private static int danger;
+	static Scanner sc = new Scanner(System.in);
 	 
 	
 	/**
@@ -227,5 +229,28 @@ public class DataGeneration {
 		 return planetL;
 	 }
 	 
+	 
+	 public static List<Planet> createOrder (int day, List<Vertex> entitiesV,List<Planet> planetL) {
+		 int choice;
+		 int orderID;
+		 int orderDrugCount;
+		 if (day % 30 == 0) {
+				System.out.println("Chcete zadat vlastni objednavku? (0 - NE/1 - ANO): ");
+				choice = sc.nextInt();
+				while (choice == 1) {
+					System.out.println("Zadej objednavku ve tvaru (id_planety pocet_leku): ");
+					orderID = sc.nextInt();
+					orderDrugCount = sc.nextInt();
+					if (planetL.get(orderID).getAnswered()==false) {
+						planetL.get(orderID).setOrder(orderDrugCount);    // vytvori objednavku, jeji velikost zavisi na poctu obyvatel planety
+						planetL.get(orderID).setAnswered(true);
+					}
+					System.out.println("Chcete zadat vlastni objednavku? (0 - NE/1 - ANO): ");
+					choice = sc.nextInt();
+				} 
+				WorkWithFile.printOrder(day, entitiesV, planetL);
+			}		 
+		 return planetL;
+	 }
 	  
 }

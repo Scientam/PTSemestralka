@@ -143,22 +143,7 @@ public class Main {
 			for (int d = 0; d < maxD; d++) { 
 				if (d == 0) {planetL=DataGeneration.createPlanetL(entitiesV, planetL);}														// id planet jde od 5,...,entitiesV.size()
 			//****************************************************vytvoreni objednavek******************************************************************/
-				if (d % 30 == 0) {
-					System.out.println("Chcete zadat vlastni objednavku? (0 - NE/1 - ANO): ");
-					choice = sc.nextInt();
-					while (choice == 1) {
-						System.out.println("Zadej objednavku ve tvaru (id_planety pocet_leku): ");
-						orderID = sc.nextInt();
-						orderDrugCount = sc.nextInt();
-						if (planetL.get(orderID).getAnswered()==false) {
-							planetL.get(orderID).setOrder(orderDrugCount);    // vytvori objednavku, jeji velikost zavisi na poctu obyvatel planety
-							planetL.get(orderID).setAnswered(true);
-						}
-						System.out.println("Chcete zadat vlastni objednavku? (0 - NE/1 - ANO): ");
-						choice = sc.nextInt();
-					} 
-					WorkWithFile.printOrder(d, entitiesV, planetL);
-				}
+				planetL = DataGeneration.createOrder(d, entitiesV, planetL);
 			//*****************************************************vyrizovani objednacek****************************************************************/
 				
 				for (int i = 0; i < planetsCount; i++) {
