@@ -1,5 +1,4 @@
 import java.io.BufferedWriter;
-import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -8,7 +7,7 @@ import java.util.Random;
 import java.util.Scanner;
 /**
  * @authors Karel Sobehart, Petr Tobias
- * @version 0.0512.1336
+ * @version 0.0512.1541
  */
 public class Main {
 	
@@ -130,28 +129,21 @@ public class Main {
 			new DrawMap(factoriesCount, planetsCount, neighbourCountF, neighbourCountP, entitiesV, paths);		
 		}
 	//*********************************************************************************SIMULACE********************************************************************************************************/	
-		 	BufferedWriter bw = new BufferedWriter(new FileWriter("OrderFulfillment.txt"));
-		    starship = null;
-		    starshipL = new ArrayList<>();		 
-		   
+		 	BufferedWriter bw = new BufferedWriter(new FileWriter("OrderFulfillment.txt"));	 
 		    /**
-			 * Cyklus spousti simulaci kazdy den a generuje objednavky kazdych 30 dni. Pracuje se pouze s ArrayListem. Informace o objednavkach se ukladaji
-			 * do textoveho souboru.
+			 * Cyklus spousti simulaci kazdy den a generuje objednavky kazdych 30 dni. Pracuje se pouze s ArrayListem. Informace o objednavkach se ukladaji do textoveho souboru.
 			 */
 		    System.out.println("Zadej pocet dni po ktere bude bezet simulace (rok ma 360 dni): ");
 		    maxD = sc.nextInt();
 			for (int d = 0; d < maxD; d++) { 
-				if (d == 0) {planetL=DataGeneration.createPlanetL(entitiesV, planetL);}														// id planet jde od 5,...,entitiesV.size()
-			//****************************************************vytvoreni objednavek******************************************************************/
+				if (d == 0) {
+					planetL=DataGeneration.createPlanetL(entitiesV, planetL);													// vytvoreni planer
+					starshipL=DataGeneration.createStarshipL(entitiesV, starshipL);												// vytvoreni lodi
+				}														// id planet jde od 5,...,entitiesV.size()
 				planetL = DataGeneration.createOrder(d, entitiesV, planetL);
 			//*****************************************************vyrizovani objednacek****************************************************************/
 				
 				for (int i = 0; i < planetsCount; i++) {
-					if (d == 0) {
-					factoryId = entitiesV.get(r.nextInt(4)).getKey();                    													// urceni centraly, ktera obednavku vyridi
-					starship = new Starship(i, 25, CAPACITY, factoryId, factoryId);     												    //volani lode, musi se doresit ID
-					starshipL.add(starship);
-					}
 					if (d % 30 == 0) {
 					starshipL.get(i).setTargetP(planetL.get(i+factoriesCount).getId());																	//lodi se priradi id dalsi planety
 					starshipL.get(i).setDistance(floydWarshall[factoryId][starshipL.get(i).getTargetP()]);					//lodi se priradi vzdalenost, jakou ma uletet

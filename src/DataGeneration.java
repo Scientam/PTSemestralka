@@ -6,16 +6,21 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class DataGeneration {
+	static Scanner sc = new Scanner(System.in);
 	/** pole se vzdalenostmi entit */
 	private static int[][] distance;		
 	/** x-ove a y-ove souradnice objektu */
 	private static double xAxis, yAxis;
 	/** pomocna promenna uchovavajici aktualni vzdalenost*/
 	private static double actDist;
+	/** */
 	private static List<Neighbour> neigh = new ArrayList<Neighbour>();
+	/** */
 	private static Random r = new Random();
+	/** */
 	private static int danger;
-	static Scanner sc = new Scanner(System.in);
+	/** */
+	
 	 
 	
 	/**
@@ -113,7 +118,6 @@ public class DataGeneration {
 	  * @param entitiesV
 	 * @throws IOException 
 	  */
-	 @SuppressWarnings("unchecked")
 	 public static List<Vertex> neighbour(int factoriesCount, int neighbourCountF, int neighbourCountP, List<Vertex> entitiesV) throws IOException {
 		 for (int i = 0; i < entitiesV.size(); i++) {												//vytvori Al pomocnych objektu slozicich k hledani sousedu
 			 neigh.add(new Neighbour(i, 100000));
@@ -219,9 +223,15 @@ public class DataGeneration {
 	 }
 	 
 	 
+	 /**
+	  * 
+	  * @param entitiesV
+	  * @param planetL
+	  * @return
+	  */
 	 public static List<Planet> createPlanetL (List<Vertex> entitiesV, List<Planet> planetL) {
 		 Planet planet;
-		 planetL = new ArrayList<>();
+		 planetL = new ArrayList<Planet>();
 		 for (int i = 5; i < entitiesV.size(); i++){
 				planet = (Planet) entitiesV.get(i);			//volani planety
 				planetL.add(planet);
@@ -229,7 +239,26 @@ public class DataGeneration {
 		 return planetL;
 	 }
 	 
+	 public static List<Starship> createStarshipL (List<Vertex> entitiesV, List<Starship> starshipL) {
+		 int factoryId;
+		 Starship starship;
+		 starshipL = new ArrayList<Starship>();
+		 for (int i = 0; i < entitiesV.size()-5; i++){
+			 	factoryId = entitiesV.get(r.nextInt(4)).getKey();                    													// urceni centraly, ktera obednavku vyridi
+				starship = new Starship(i, 25, 5000000, factoryId, factoryId);     												    //volani lode, musi se doresit ID
+				starshipL.add(starship);
+			} 
+		 return starshipL;
+	 }
 	 
+	 
+	 /**
+	  * 
+	  * @param day
+	  * @param entitiesV
+	  * @param planetL
+	  * @return
+	  */
 	 public static List<Planet> createOrder (int day, List<Vertex> entitiesV,List<Planet> planetL) {
 		 int choice;
 		 int orderID;
