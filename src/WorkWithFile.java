@@ -74,14 +74,13 @@ public class WorkWithFile {
 	 }
 	
 	
-	public static void printOrder(int day, List<Vertex> entitiesV, List<Planet> planetL) {
+	public static void printOrder(int day, int maxD, List<Vertex> entitiesV, List<Planet> planetL) {
 		BufferedWriter bw;
 		int production;
 		try {
-			bw = new BufferedWriter(new FileWriter("Order.txt"));
+			bw = new BufferedWriter(new FileWriter("Order.txt", true));
 			bw.write("---------------------------------------------------------------------------------------------");
 			bw.newLine();
-			if ((day % 30) == 0) {
 			bw.write("Objednavky pro "+(day/30+1)+". mesic: ");
 			bw.newLine();
 			bw.write("---------------------------------------------------------------------------------------------");
@@ -98,9 +97,11 @@ public class WorkWithFile {
 			}
 				bw.write("---------------------------------------------------------------------------------------------");
 				bw.newLine();
-			}
+
 			bw.close();
-		}catch (IOException e) {e.printStackTrace();}	
+			}
+		
+		catch (IOException e) {e.printStackTrace();}	
 		
 	}
 

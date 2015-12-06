@@ -157,9 +157,8 @@ public class Main {
 					
 			//****************************************************vytvoreni objednavek******************************************************************/
 
-					//BufferedWriter bw2 = new BufferedWriter(new FileWriter("Order.txt"));
-					planetL=DataGeneration.createOrder(d, entitiesV, planetL);
-					
+				//BufferedWriter bw2 = new BufferedWriter(new FileWriter("Order.txt"));
+				if (d % 30 == 0) {planetL=DataGeneration.createOrder(d, maxD, entitiesV, planetL);	}				
 			
 			//*****************************************************vyrizovani objednacek****************************************************************/
 				
