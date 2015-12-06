@@ -1,15 +1,17 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Graph {		
+public class Graph {	
+	/** Promena ktera uchovava matici prechudcu */
 	public static int[][] p;
 		  	
-  	
-  	/**
-  	 * Floyd-Warshall algorithm. Finds all shortest paths among all pairs of nodes
-  	 * @param d matrix of distances (Integer.MAX_VALUE represents positive infinity)
-  	 * @return matrix of predecessors
-  	 */
+  
+	/**
+	 * Floyd-Warshall algoritmus najde nejkratsi cesty mezi vsemi vrcholy.
+	 * @param m
+	 * @param argBool
+	 * @return
+	 */
   	public static int[][] floydWarshallM(int[][] m, boolean argBool) {
   		if(argBool){p = constructInitialMatrixOfPredecessors(m);}  		
   	    for (int k = 0; k < m.length; k++) {
@@ -28,10 +30,10 @@ public class Graph {
   	
   	
   	/**
-	 * Constructs matrix P0
-	 * @param d matrix of lengths
-	 * @return P0
-	 */
+  	 * Metoa ktera vytvori matici P0 slouzici k nalezeni vsech predchudcu.
+  	 * @param d
+  	 * @return
+  	 */
 	private static int[][] constructInitialMatrixOfPredecessors(int[][] d) {
 	    int[][] initial = new int[d.length][d.length];
 	    for (int i = 0; i < d.length; i++) {
@@ -48,7 +50,7 @@ public class Graph {
 	
   	
   	/**
-  	 * 
+  	 * Metoda ktera vrati matici predchudcu.
   	 * @return
   	 */
   	public static int[][] getPathMatrix(){

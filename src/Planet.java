@@ -1,6 +1,4 @@
 public class Planet extends Vertex {
-	
-
 
 	/** promenna uchovavajici informaci o tom zda se na planetu budou nadale dovazet leky  */
 	private boolean status;
@@ -10,8 +8,9 @@ public class Planet extends Vertex {
 	private int drugProduction;
 	/** promenna uchovavajici objednavku*/
 	private int order;
-	/** */
+	/** promena ktera urcuje identifikacni cislo objektu */
 	private int id;
+	/** promena ktera urcuje zda je dana planeta obsluhovana */
 	private boolean answered;
 	
 	  															/* konstruktor */	     
@@ -74,7 +73,7 @@ public class Planet extends Vertex {
 	
 	
 	/**
-	 * 
+	 * konstruktor
 	 * @param populCount
 	 * @param drugProduction
 	 * @return
@@ -82,73 +81,46 @@ public class Planet extends Vertex {
 	public int order(int populCount, int drugProduction){
 		order = populCount - drugProduction;
 		return order;
-	}
+	}	
 	
 	
-	/**
-	 * 
-	 * @return
-	 */
 	public int getId() {
 		return this.id;
 	}
 	
 	
-	/**
-	 * 
-	 * @return
-	 */
+	
 	public int getPopulCount() {
 		return this.populCount;
 	}
 	
-	/**
-	 * 
-	 * @param populCount
-	 */
-	public void setPopulCount(int populCount) {
-		this.populCount = populCount;
+	
+	public void setPopulCount(int argPopulCount) {
+		this.populCount = argPopulCount;
 	}
 	
-	/**
-	 * 
-	 * @return
-	 */
+	
 	public int getOrder() {
 	    return this.order;
 	}
 	
 	
-	/**
-	 * 
-	 * @return
-	 */
+	
 	public boolean getAnswered() {
 	    return this.answered;
 	}
 	
-	/**
-	 * 
-	 * @param order
-	 */
+	
 	public void setOrder(int argOrder) {
 		this.order = argOrder;
 	}
 	
 	
-	/**
-	 * 
-	 * @param argId
-	 */
 	public void setId(int argId) {
 		this.id = argId;
 	}
 	
 	
-	/**
-	 * 
-	 * @param argAnswered
-	 */
 	public void setAnswered(boolean argAnswered) {
 		this.answered = argAnswered;
 	}
@@ -158,8 +130,8 @@ public class Planet extends Vertex {
 	}
 
 
-	public void setStatus(boolean status) {
-		this.status = status;
+	public void setStatus(boolean argStatus) {
+		this.status = argStatus;
 	}
 	
 }

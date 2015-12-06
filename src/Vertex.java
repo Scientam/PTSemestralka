@@ -1,13 +1,8 @@
 import java.util.Random;
 
-/**
- * Trida pro reprezentaci vrcholu
- * @author Scien_000
- */
-
 public class Vertex {
 	
-	/* deklarace promennych */
+	/** vytvori promnenou ktera slouzi k vytvareni nahodnych velicin */
 	Random r = new Random();	
 	/** deklaruje promenou pro identifikaci vrcholu */
 	protected int key;
@@ -21,6 +16,7 @@ public class Vertex {
 	public int[] predecessor;		
 	/** deklaruje promennou uchovavajici vzdalenost vrcholu */
 	protected double distance;
+	/**  promena uchovavajicí pole sousedu*/
 	protected Neighbour[] neighbour;
 	
 																				//konstruktory

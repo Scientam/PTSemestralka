@@ -16,9 +16,9 @@ public class Starship {
 	/** promenna uchovavajici informaci o tom zda je dana lod prave k dispozici */
 	private boolean isInUse;
 	
-															/* konstruktor */
+																							/* konstruktor */
 	/**
-	 * 
+	 * konstruktor
 	 * @param id
 	 * @param velocity
 	 * @param capacity
@@ -32,145 +32,84 @@ public class Starship {
 		this.isInUse = true;
 	}
 	
-														
-
-	/* settery */
+																								/* settery */
 
 	
-	public void setId(int id) {
-		this.id = id;
+	public void setId(int argId) {
+		this.id = argId;
 	}	
 
 
-	/**
-	 * 
-	 * @param sourceP
-	 */
-	public void setSourceP(int sourceP) {
-		this.sourceP = sourceP;
+	public void setSourceP(int argSourceP) {
+		this.sourceP = argSourceP;
 	}
 
 
-	/**
-	 * 
-	 * @param targetP
-	 */
-	public void setTargetP(int targetP) {
-		 this.targetP = targetP;
+	public void setTargetP(int argTargetP) {
+		 this.targetP = argTargetP;
 	}
 	
 	
-	/**
-	 * 
-	 * @param isInUse
-	 */
-	public void setIsInUse(boolean isInUse) {
-		 this.isInUse = isInUse;
+	public void setIsInUse(boolean argIsInUse) {
+		 this.isInUse = argIsInUse;
 	}
 	
 	
-	/**
-	 * 
-	 * @param capacity
-	 */
-	public void setCapacity(int capacity) {
-		this.capacity = capacity;
+	public void setCapacity(int argCapacity) {
+		this.capacity = argCapacity;
 	}
 	
-	/**
-	 * 
-	 * @param argVelocity
-	 */
+
 	public void setVelocity(int argVelocity) {
 		this.velocity = argVelocity;
 	}
 	
 	
-	/**
-	 * 
-	 * @param argNumF
-	 */
 	public void setNumF(int argNumF) {
 		this.numF = argNumF;
 	}
 	
 	
-	/**
-	 * 
-	 * @param distance
-	 */
-	public void setDistance(int distance) {
-		this.distance = distance;
+	public void setDistance(int argDistance) {
+		this.distance = argDistance;
 	}
-	
-
 																										/* gettery */
-	/**
-	 * 
-	 * @return id
-	 */
+
 	 public int getId() {
 		 return id;
 	 }
 	 
 	  
-	 /**
-	  * 
-	  * @return velocity
-	  */
 	 public int getVelocity() {
 		 return velocity;
 	 }
 	 
 	 
-	 /**
-	  * 
-	  * @return capacity
-	  */
 	 public int getCapacity() {
 		 return capacity;
 	 }
 	 
 	 
-	 /**
-	  * 
-	  * @return numF
-	  */
 	 public int getNumF() {
 		 return numF;
 	 }
 	 
 	 
-	 /**
-	  * 
-	  * @return sourceP
-	  */
 	 public int getSourceP() {
 			return sourceP;
 	}
 	 
 	 
-	 /**
-	  * 
-	  * @return targetP
-	  */
 	 public int getTargetP() {
 		 return targetP;
 	 }
 	 
-	 /**
-	  * 
-	  * @return distance
-	  */
+
 	 public int getDistance() {
 		 return distance;
 	 }
 	 
 	 
-	 /**
-	  * 
-	  * @return isInUse
-	  */
 	 public boolean getIsInUse() {
 		 return isInUse;
 	 }

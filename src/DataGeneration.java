@@ -9,29 +9,28 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class DataGeneration {
+	/** vytvori promnenou ktera nacita data z konzole */
 	static Scanner sc = new Scanner(System.in);
-	/** pole se vzdalenostmi entit */
+	/** vytvori promnenou ktera uchovava pole se vzdalenostmi mezi entitami */
 	private static int[][] distance;		
-	/** x-ove a y-ove souradnice objektu */
+	/** vytvori promnene ktere urcuji polohu */ 
 	private static double xAxis, yAxis;
-	/** pomocna promenna uchovavajici aktualni vzdalenost*/
+	/** vytvori promnenou ktera urcuje aktualni vzdalenost */
 	private static double actDist;
-	/** */
+	/** vytvori promnenou ktera uchovava pole sousedu daneho objektu */
 	private static List<Neighbour> neigh = new ArrayList<Neighbour>();
-	/** */
+	/** vytvori promnenou ktera slouzi k vytvareni nahodnych velicin */
 	private static Random r = new Random();
-	/** */
-	private static int danger;
-	/** */
-	
+	/** vytvori promnenou ktera urcuje zda je cesta bezpecna */
+	private static int danger;	
 	 
 	
 	/**
 	 * Tato metoda vytvori centraly na pozadovanych(vyhodnych) souradnicich
 	 * @param factoriesCount
 	 * @param planetsCount
-	 * @param entity
-	 * @param adjFactoriesCount
+	 * @param neighbourCountF
+	 * @param entitiesV
 	 * @return
 	 */
 	 public static List<Vertex> factoriesDistribution(int factoriesCount, int planetsCount, int neighbourCountF, List<Vertex> entitiesV) {
@@ -56,14 +55,14 @@ public class DataGeneration {
 	 
 	 
 	 /**
-	 * Generuje nahodne rozlozeni planet na zadanem uzemi.
-	 * @param factoriesCount
-	 * @param planetsCount
-	 * @param entity
-	 * @param neighbourCountP
-	 * @return
-	 * @throws IOException 
-	 */
+	  * Generuje nahodne rozlozeni planet na zadanem uzemi.
+	  * @param factoriesCount
+	  * @param planetsCount
+	  * @param neighbourCountP
+	  * @param entitiesV
+	  * @return
+	  * @throws IOException
+	  */
 	 public static List<Vertex> planetsDistribution(int factoriesCount, int planetsCount,int neighbourCountP, List<Vertex> entitiesV) throws IOException {
 		 int boundX = 800+2;
 		 int boundY = 800+2;													   // nasteaveni mezi
@@ -105,7 +104,7 @@ public class DataGeneration {
 	 
 	 
 	 /**
-	  * 
+	  * Metoda vraci matici vzdalenosti mezi vsemi vrcholy.
 	  * @return
 	  */
 	 public static int[][] getDistance() {
@@ -119,7 +118,8 @@ public class DataGeneration {
 	  * @param neighbourCountF
 	  * @param neighbourCountP
 	  * @param entitiesV
-	 * @throws IOException 
+	  * @return
+	  * @throws IOException
 	  */
 	 public static List<Vertex> neighbour(int factoriesCount, int neighbourCountF, int neighbourCountP, List<Vertex> entitiesV) throws IOException {
 		 for (int i = 0; i < entitiesV.size(); i++) {												//vytvori Al pomocnych objektu slozicich k hledani sousedu
@@ -155,7 +155,7 @@ public class DataGeneration {
 	 
 	 
 	 /**
-	  * 
+	  * Metoda vrací matici vzdalenosti mezi vrcholy mezi kterymi vede cesta.
 	  * @param entitiesV
 	  * @param distance
 	  * @return
@@ -186,7 +186,7 @@ public class DataGeneration {
 	 
 	 
 	 /**
-	  * 
+	  * Meta ktera kazdemu vrcholu priradi jeho sousedy.
 	  * @param entitiesV
 	  * @param floydWarshallP
 	  * @return
@@ -203,7 +203,7 @@ public class DataGeneration {
 	 
 	 
 	 /**
-	  * 
+	  * Metoda ktera rekonstruuje nejkratsi cesty mezi vsemi vrcholy z predchudcu.
 	  * @param paths
 	  * @param entitiesV
 	  * @return
@@ -216,18 +216,12 @@ public class DataGeneration {
 		        	}		        	
 				}	
 			}
-		
-		    /*
-		    System.out.println("Cesta z vrcholu 5 do vrcholu 7: ");
-		    for (int i = 0; i < paths[5][7].size(); i++) {
-		    	System.out.print(paths[5][7].get(i)+" ");
-			}*/
 		 return paths;
 	 }
 	 
 	 
 	 /**
-	  * 
+	  * Metoda vytvarejici AL planet.
 	  * @param entitiesV
 	  * @param planetL
 	  * @return
@@ -246,6 +240,13 @@ public class DataGeneration {
 		 return planetL;
 	 }
 	 
+	 
+	 /**
+	  * Metoda vytvarejici AL lodi.
+	  * @param entitiesV
+	  * @param starshipL
+	  * @return
+	  */
 	 public static List<Starship> createStarshipL (List<Vertex> entitiesV, List<Starship> starshipL) {
 		 int factoryId;
 		 Starship starship;
@@ -259,8 +260,10 @@ public class DataGeneration {
 	 }
 	 
 	 
+	
 	 /**
-	  * 
+	  * Metoda slouzici k vytvoreni objednavek. 
+	  * Lze mozno zadat rucni objednavky.
 	  * @param day
 	  * @param entitiesV
 	  * @param planetL
@@ -297,6 +300,16 @@ public class DataGeneration {
 		return planetL;
 	 }
 	 
+	 
+	 /**
+	  * Metoda hledajici planetu, kteru lze obslouzit na naplanovane ceste.
+	  * @param target
+	  * @param factoriesCount
+	  * @param i
+	  * @param planetL
+	  * @param starshipL
+	  * @param distance
+	  */
 	 public static void nextTarget(int target, int factoriesCount, int i, List<Planet> planetL, List<Starship> starshipL, int[][] distance){
 				starshipL.get(i).setTargetP(target);
 				planetL.get(starshipL.get(i).getTargetP()).setStatus(false);
@@ -305,6 +318,12 @@ public class DataGeneration {
 		 
 	 }
 	 
+	 
+	 /**
+	  * Metoda slouzici k vyrizeni objednavek.
+	  * @param i
+	  * @param starshipL
+	  */
 	 public static void orderExecution (int i, List<Starship> starshipL) {
 		 BufferedWriter bw;
 		 try {
@@ -321,6 +340,13 @@ public class DataGeneration {
 		}
 	 }
 	 
+	 
+	 /**
+	  * Metoda slouzici k vyrizeni objednavek.
+	  * @param i
+	  * @param planetL
+	  * @param starshipL
+	  */
 	 public static void orderExecution2(int i,List<Planet> planetL, List<Starship> starshipL){
 		 BufferedWriter bw;
 		 try {
@@ -340,6 +366,13 @@ public class DataGeneration {
 		}
 	 }
 	 
+	 
+	 /**
+	  * Metoda slouzici k navratu lodi.
+	  * @param i
+	  * @param starshipL
+	  * @param distance
+	  */
 	 public static void returnShip(int i, List<Starship> starshipL, int[][] distance){
 		 BufferedWriter bw;
 		 try {

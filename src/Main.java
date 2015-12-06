@@ -7,7 +7,7 @@ import java.util.Random;
 import java.util.Scanner;
 /**
  * @authors Karel Sobehart, Petr Tobias
- * @version 0.0612.2055
+ * @version 1.0
  */
 public class Main {
 	
@@ -17,13 +17,13 @@ public class Main {
 	static List<Vertex> entitiesV = new ArrayList<Vertex>();		
 	/** vytvori promennou, urcujici zda se data budou generovat nebo nacitat ze souboru*/
 	static int input;
-	/** vytvori promenou ktera urcuje pocet central v galaxii */
+	/** vytvori promennou ktera urcuje pocet central v galaxii */
 	static int factoriesCount = 5;
-	/** vytvori promenou ktera urcuje pocet sousedu kazde centraly */
+	/** vytvori promennou ktera urcuje pocet sousedu kazde centraly */
 	static int neighbourCountF = 20; 
-	/** vytvori promenou ktera urcuje pocet planet v galaxii */
+	/** vytvori pronmenou ktera urcuje pocet planet v galaxii */
 	static int planetsCount;
-	/** vytvori promenou ktera urcuje pocet sousedu kazde planety(v zadani 5) */
+	/** vytvori promennou ktera urcuje pocet sousedu kazde planety(v zadani 5) */
 	static int neighbourCountP = 5;
 	/** vytvori promennou, ktera uchovava vzdalenosti mezi všemi vrcholy */
 	static int[][] distance;
@@ -36,27 +36,22 @@ public class Main {
 	/** vytvori promennou, ktera uchovava posloupnosti vrcholu tvorici nejkratsi cestu z vrcholu u do vrcholu v */
 	static List<Integer>[][] paths;
 	//************************************************************************************************promenne pro simulaci*************************************************************************
-    //Dodelej prosim ty komenty a u simulace vic popisku, co k cemu slouzi
-	/** */
+	/** promenna urcujuci pocet dni po ktere pobezi simulace */
 	static int maxD;
-	/** */
+	/** promenna urcujici zda se bude zadavat objednavka rucne */
 	static int choice;
-	/** */
+	/** promenna urcijici jakouobjednavku prave vyrizujeme */
 	static int orderID = 0;
-	/** */
+	/** promenna urcujici kolik leku se ma objednat */
 	static int orderDrugCount = 0;
-	/** */
+	/** promenna reprezentujici objekt lod */
 	static Starship starship;
-	/** */
+	/** AL uchovavajici objekt planet */
 	static List<Planet> planetL;
-	/** */
+	/** AL uchovavajici objekt lod*/
 	static List<Starship> starshipL;
 	/** vytvori promennou, ktera slouzi pro generování náhodné veličiny*/
 	static Random r = new Random();
-	/** vytvori promennou, ktera slouzi k identifikovani centraly */
-	//private static int factoryId;
-	/** */
-	//private static int starshipId;
 	/** konstanta uchovavajici plny naklad*/
 	static final int CAPACITY = 5000000;
 
@@ -77,38 +72,38 @@ public class Main {
 			floydWarshallP = new int[factoriesCount+planetsCount][factoriesCount+planetsCount];
 			paths = new ArrayList[factoriesCount+planetsCount][factoriesCount+planetsCount];
 			
-			/** zavola metodu, ktera vytvori centraly */
+			/* zavola metodu, ktera vytvori centraly */
 			entitiesV = DataGeneration.factoriesDistribution(factoriesCount, planetsCount, neighbourCountF, entitiesV);
-			/** zavola metodu, ktera vytvori planety */
+			/* zavola metodu, ktera vytvori planety */
 			entitiesV = DataGeneration.planetsDistribution(factoriesCount, planetsCount, neighbourCountP, entitiesV);	
-			/** vytvori textovy soubor, do ktereho se vypisi parametry vrcholu */
+			/* vytvori textovy soubor, do ktereho se vypisi parametry vrcholu */
 			WorkWithFile.printVertex(entitiesV);
-			/** spocte vzdalenosti mezi vsemi vrcholy a ulozi do matice */
+			/* spocte vzdalenosti mezi vsemi vrcholy a ulozi do matice */
 			distance = DataGeneration.getDistance();												
-			/** vytvori textovy soubor, do ktereho se vypise matice vzdalenosti */
+			/* vytvori textovy soubor, do ktereho se vypise matice vzdalenosti */
 			WorkWithFile.printMatrix(distance, entitiesV.size(), "Distance.txt");
-			/** zavola metodu, ktera najde sousedy, tedy vytvori hrany */
+			/* zavola metodu, ktera najde sousedy, tedy vytvori hrany */
 			DataGeneration.neighbour(factoriesCount, neighbourCountF, neighbourCountP, entitiesV);  
-			/** vytvori textovy soubor, do ktereho se vypisi hrany */
+			/* vytvori textovy soubor, do ktereho se vypisi hrany */
 			WorkWithFile.printNeigbour(entitiesV, factoriesCount, planetsCount);
-			/** spocte vzdalenosti mezi vsemi vrcholy mezi kterymi existuje hrana a ulozi do matice */
+			/* spocte vzdalenosti mezi vsemi vrcholy mezi kterymi existuje hrana a ulozi do matice */
 			realDistance = DataGeneration.realDistance(entitiesV, distance);
 			WorkWithFile.printMatrix(realDistance, entitiesV.size(), "RealDistance.txt");
-			/** zavola metodu, ktera najde nejkratsi cesty, tj. hodnoty */
+			/* zavola metodu, ktera najde nejkratsi cesty, tj. hodnoty */
 			floydWarshall= Graph.floydWarshallM(realDistance, true); 	
-			/** vytvori textovy soubor, do ktereho se vypisi nejkratsi cesty, tj. hodnoty */
+			/* vytvori textovy soubor, do ktereho se vypisi nejkratsi cesty, tj. hodnoty */
 			WorkWithFile.printMatrix(floydWarshall, entitiesV.size(), "FWShortestPath.txt");
-			/** zavola metodu, ktera najde nejkratsi cesty, tj. predchudce */
+			/* zavola metodu, ktera najde nejkratsi cesty, tj. predchudce */
 			floydWarshallP = Graph.getPathMatrix(); 										
-			/** vytvori textovy soubor, do ktereho se vypisi nejkratsi cesty, tj. predchudci */
+			/* vytvori textovy soubor, do ktereho se vypisi nejkratsi cesty, tj. predchudci */
 			WorkWithFile.printMatrix(floydWarshallP, entitiesV.size(), "FWPath.txt");
-			/** ulozeni pole predchudcu kazdeho vrcholu */
+			/* ulozeni pole predchudcu kazdeho vrcholu */
 			DataGeneration.assignNeighbour(entitiesV, floydWarshallP);
 			 new DrawMapG(factoriesCount, planetsCount, neighbourCountF, neighbourCountP, entitiesV, paths);
 			if (entitiesV.size()<=1000) {
-				/** vytvoreni listu cest z kazdeho vrcholu do kazdeho */
+				/* vytvoreni listu cest z kazdeho vrcholu do kazdeho */
 			    DataGeneration.createPaths(paths, entitiesV);
-				/** zavola metodu, ktera nazorne vykresli galaxii, tj. plnety,  centraly a cesty mezi nimi */
+				/* zavola metodu, ktera nazorne vykresli galaxii, tj. plnety,  centraly a cesty mezi nimi */
 			   new DrawMap(factoriesCount, planetsCount, neighbourCountF, neighbourCountP, entitiesV, paths);	
 			}
 			
@@ -136,6 +131,7 @@ public class Main {
 	//*********************************************************************************SIMULACE********************************************************************************************************/	
 		BufferedWriter bw = new BufferedWriter(new FileWriter("OrderFulfillment.txt"));
 	    starship = null;
+	    planetL = new ArrayList<>();
 	    starshipL = new ArrayList<>();
 	    int target = 0;
 	   
@@ -300,13 +296,12 @@ public class Main {
 					bw.newLine();
 					}
 				}
-			
 			bw.newLine();
 			}
 //*****************************************************************************KONEC_SIMULACE******************************************************************************************************/	
 		}
 		bw.close();
 		System.out.println("Program skoncil.");
-}
+	}
 
 }

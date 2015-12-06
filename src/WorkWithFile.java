@@ -10,7 +10,7 @@ import java.util.List;
 public class WorkWithFile {
 //********************************************************************************************VYPIS_DO_TXT*********************************************************************************************	
 	/**
-	 * 
+	 * Metoda ktera vytiskne matici nxn
 	 * @param matrix
 	 * @param size
 	 * @param name
@@ -31,7 +31,7 @@ public class WorkWithFile {
 	
 	
 	/**
-	 * 
+	 * Metoda ktera vytiskne AL typu vertex.
 	 * @param entitiesV
 	 */
 	public static void printVertex(List<Vertex> entitiesV) {
@@ -48,7 +48,7 @@ public class WorkWithFile {
 	
 	
 	/**
-	 * 
+	 * Metoda ktera vytiskne hrany.
 	 * @param entitiesV
 	 * @param factoriesCount
 	 * @param planetsCount
@@ -74,6 +74,12 @@ public class WorkWithFile {
 	 }
 	
 	
+	/**
+	 * Metoda ktera vytiskne objednavku.
+	 * @param day
+	 * @param entitiesV
+	 * @param planetL
+	 */
 	public static void printOrder(int day, List<Vertex> entitiesV, List<Planet> planetL) {
 		BufferedWriter bw;
 		try {
@@ -101,6 +107,11 @@ public class WorkWithFile {
 		
 	}
 	
+	/**
+	 * Metoda ktera vytiskne cestu do dalsiho vrcholu.
+	 * @param i
+	 * @param starshipL
+	 */
 	public static void printNextTarget(int i, List<Starship> starshipL){
 		BufferedWriter bw;
 		try {
@@ -121,7 +132,7 @@ public class WorkWithFile {
 	//********************************************************************************************NACITANI_Z_TXT*********************************************************************************************	
 
 	/**
-	 * 
+	 * Metoda slouzici k nacitani z txt promenne typu Vertex.
 	 * @param factoriesCount
 	 * @return
 	 */
@@ -154,7 +165,7 @@ public class WorkWithFile {
 	
 	
 	/**
-	 * 
+	 * Metoda slouzici k nacitani z txt hran.
 	 * @param entitiesV
 	 * @param factoriesCount
 	 * @param planetsCount
@@ -199,7 +210,7 @@ public class WorkWithFile {
 	
 	
 	/**
-	 * 
+	 * Metoda slouzici k nacitani z txt matice vzdalenosti.
 	 * @param realDistance
 	 */
 	public static void fromFileRealDistance(int[][] realDistance) {
@@ -224,7 +235,7 @@ public class WorkWithFile {
 	
 	
 	/**
-	 * 
+	 * Metoda slouzici k nacitani z txt matice nejkratsich cest.
 	 * @param floydWarshall
 	 */
 	public static void fromFileFWShortestPath(int[][] floydWarshall) {
@@ -249,7 +260,7 @@ public class WorkWithFile {
 	
 	
 	/**
-	 * 
+	 * Metoda slouzici k nacitani z txt matice predchudcu.
 	 * @param floydWarshallP
 	 */
 	public static void fromFileFWPath(int[][] floydWarshallP) {

@@ -506,3 +506,61 @@ Planeta s id: 252 objednava takovyto pocet leku: 1361219
 Planeta s id: 253 objednava takovyto pocet leku: 1717681
 Planeta s id: 254 objednava takovyto pocet leku: 927148
 ---------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
+Objednavky pro 1. mesic: 
+---------------------------------------------------------------------------------------------
+Planeta s id: 5 objednava takovyto pocet leku: 2509664
+Planeta s id: 6 objednava takovyto pocet leku: 1868980
+Planeta s id: 7 objednava takovyto pocet leku: 1127703
+Planeta s id: 8 objednava takovyto pocet leku: 907638
+Planeta s id: 9 objednava takovyto pocet leku: 1830112
+Planeta s id: 10 objednava takovyto pocet leku: 1484719
+Planeta s id: 11 objednava takovyto pocet leku: 1152254
+Planeta s id: 12 objednava takovyto pocet leku: 2142290
+Planeta s id: 13 objednava takovyto pocet leku: 1440911
+Planeta s id: 14 objednava takovyto pocet leku: 454830
+Planeta s id: 15 objednava takovyto pocet leku: 2139373
+Planeta s id: 16 objednava takovyto pocet leku: 907182
+Planeta s id: 17 objednava takovyto pocet leku: 2443032
+Planeta s id: 18 objednava takovyto pocet leku: 1714123
+Planeta s id: 19 objednava takovyto pocet leku: 616231
+Planeta s id: 20 objednava takovyto pocet leku: 868382
+Planeta s id: 21 objednava takovyto pocet leku: 1382948
+Planeta s id: 22 objednava takovyto pocet leku: 792097
+Planeta s id: 23 objednava takovyto pocet leku: 761318
+Planeta s id: 24 objednava takovyto pocet leku: 1502427
+Planeta s id: 25 objednava takovyto pocet leku: 1279251
+Planeta s id: 26 objednava takovyto pocet leku: 916348
+Planeta s id: 27 objednava takovyto pocet leku: 919769
+Planeta s id: 28 objednava takovyto pocet leku: 1582352
+Planeta s id: 29 objednava takovyto pocet leku: 2205910
+---------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
+Objednavky pro 2. mesic: 
+---------------------------------------------------------------------------------------------
+Planeta s id: 5 objednava takovyto pocet leku: 278470
+Planeta s id: 6 objednava takovyto pocet leku: 1810575
+Planeta s id: 7 objednava takovyto pocet leku: 494607
+Planeta s id: 8 objednava takovyto pocet leku: 1438938
+Planeta s id: 9 objednava takovyto pocet leku: 701961
+Planeta s id: 10 objednava takovyto pocet leku: 1835653
+Planeta s id: 11 objednava takovyto pocet leku: 1849671
+Planeta s id: 12 objednava takovyto pocet leku: 1014769
+Planeta s id: 13 objednava takovyto pocet leku: 1176254
+Planeta s id: 14 objednava takovyto pocet leku: 552931
+Planeta s id: 15 objednava takovyto pocet leku: 1581275
+Planeta s id: 16 objednava takovyto pocet leku: 1393963
+Planeta s id: 17 objednava takovyto pocet leku: 1586384
+Planeta s id: 18 objednava takovyto pocet leku: 1898721
+Planeta s id: 19 objednava takovyto pocet leku: 1137657
+Planeta s id: 20 objednava takovyto pocet leku: 1407377
+Planeta s id: 21 objednava takovyto pocet leku: 1252481
+Planeta s id: 22 objednava takovyto pocet leku: 580871
+Planeta s id: 23 objednava takovyto pocet leku: 1766259
+Planeta s id: 24 objednava takovyto pocet leku: 2308608
+Planeta s id: 25 objednava takovyto pocet leku: 1721174
+Planeta s id: 26 objednava takovyto pocet leku: 1679972
+Planeta s id: 27 objednava takovyto pocet leku: 1576746
+Planeta s id: 28 objednava takovyto pocet leku: 1027501
+Planeta s id: 29 objednava takovyto pocet leku: 1006205
+---------------------------------------------------------------------------------------------
