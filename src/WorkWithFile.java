@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class WorkWithFile {
-//********************************************************************************************VÝPIS_DO_TXT*********************************************************************************************	
+//********************************************************************************************VYPIS_DO_TXT*********************************************************************************************	
 	/**
 	 * 
 	 * @param matrix
@@ -88,7 +88,7 @@ public class WorkWithFile {
 			bw.newLine();
 			
 			
-			for (int i = 0; i < planetL.size(); i++) {			                            //cyklus pobÃ¬Å¾Ã­ pro vÅ¡echny planety
+			for (int i = 0; i < planetL.size(); i++) {			                            //cyklus pobezi pro vseechny planety
 				if (planetL.get(i).getAnswered()==false) {
 					production = planetL.get(i).drugProduction( planetL.get(i).getPopulCount() );
 					planetL.get(i).setOrder( planetL.get(i).order( planetL.get(i).getPopulCount(), production ) );    // vytvori objednavku, jeji velikost zavisi na poctu obyvatel planety
@@ -104,7 +104,7 @@ public class WorkWithFile {
 		
 	}
 
-	//********************************************************************************************NAČÍTÁNÍ_Z_TXT*********************************************************************************************	
+	//********************************************************************************************NACITANI_Z_TXT*********************************************************************************************	
 
 	/**
 	 * 
