@@ -2,6 +2,8 @@ public class Planet extends Vertex {
 
 	/** promenna uchovavajici informaci o tom zda se na planetu budou nadale dovazet leky  */
 	private boolean status;
+	/** promenna uchovavajici informaci o tom, zda na ni smeruje lod ci nikoliv */
+	private boolean tempStatus;
 	/** promenna uchovavajici informaci o poctu obyvatel */
 	private int populCount;
 	/** promenna uchovajici informaci o vlastni produkci leku*/
@@ -133,5 +135,16 @@ public class Planet extends Vertex {
 	public void setStatus(boolean argStatus) {
 		this.status = argStatus;
 	}
+
+
+	public boolean isTempStatus() {
+		return tempStatus;
+	}
+
+
+	public void setTempStatus(boolean tempStatus) {
+		this.tempStatus = tempStatus;
+	}
+	
 	
 }

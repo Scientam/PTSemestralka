@@ -312,7 +312,7 @@ public class DataGeneration {
 	  */
 	 public static void nextTarget(int target, int factoriesCount, int i, List<Planet> planetL, List<Starship> starshipL, int[][] distance){
 				starshipL.get(i).setTargetP(target);
-				planetL.get(starshipL.get(i).getTargetP()).setStatus(false);
+				planetL.get(starshipL.get(i).getTargetP()).setTempStatus(false);
 				starshipL.get(i).setDistance(distance[starshipL.get(i).getNumF()][starshipL.get(i).getTargetP()]);
 				WorkWithFile.printNextTarget(i, starshipL);
 		 

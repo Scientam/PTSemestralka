@@ -130,6 +130,7 @@ public class Main {
 		}
 	//*********************************************************************************SIMULACE********************************************************************************************************/	
 		BufferedWriter bw = new BufferedWriter(new FileWriter("OrderFulfillment.txt"));
+		BufferedWriter bw2 = new BufferedWriter(new FileWriter("Order.txt"));
 	    starship = null;
 	    planetL = new ArrayList<>();
 	    starshipL = new ArrayList<>();
@@ -163,8 +164,15 @@ public class Main {
 					if (planetL.get(i).isStatus()){
 						planetL.get(i).setPopulCount(planetL.get(i).getPopulCount() - planetL.get(i).getOrder());
 					}
+					if (planetL.get(i).getPopulCount() < 40000){
+						planetL.get(i).setStatus(false);
+						planetL.get(i).setTempStatus(false);
+					}else{
 					planetL.get(i).setStatus(true);
+					planetL.get(i).setTempStatus(true);
+					}
 				}
+				
 				
 				for (int i = 0; i < starshipL.size(); i++){
 					starshipL.get(i).setIsInUse(true);
@@ -183,7 +191,7 @@ public class Main {
 					starshipL.get(i).setTargetP(-1);
 					for (int c = 0; c < 20; c++){
 						target = entitiesV.get(starshipL.get(i).getNumF()).neighbour[c].getIndex();
-						if ((target > factoriesCount) && (planetL.get(target).isStatus())){							 
+						if ((target > factoriesCount) && (planetL.get(target).isTempStatus())){							 
 							DataGeneration.nextTarget(target, factoriesCount, i, planetL, starshipL, distance);
 							break;
 						}
@@ -192,7 +200,7 @@ public class Main {
 						for (int j = 5; j < entitiesV.size(); j++){
 							for (int c = 0; c < 5; c++){
 								target = entitiesV.get(j).neighbour[c].getIndex();
-								if ((target > factoriesCount) && (planetL.get(target).isStatus())){
+								if ((target > factoriesCount) && (planetL.get(target).isTempStatus())){
 									DataGeneration.nextTarget(target, factoriesCount, i, planetL, starshipL, distance);
 									break;
 								}
@@ -224,6 +232,7 @@ public class Main {
 					else{
 						//DataGeneration.orderExecution2(i, planetL, starshipL);
 						starshipL.get(i).setCapacity(starshipL.get(i).getCapacity() - planetL.get(starshipL.get(i).getTargetP()).getOrder());    // vylozeni nakladu
+						planetL.get(starshipL.get(i).getTargetP()).setStatus(false);
 						bw.write("Lodi s id: " + starshipL.get(i).getId() + " zbyva doletet: " + starshipL.get(i).getDistance());
 						bw.newLine();
 						bw.write("Lod s id: " + starshipL.get(i).getId() + " vylozila na planete "+starshipL.get(i).getTargetP()+", " + planetL.get(starshipL.get(i).getTargetP()).getOrder() + " jednotek nakladu.");
@@ -241,7 +250,7 @@ public class Main {
 					target = 0;
 					for (int c = 0; c < 5; c++){
 					target = entitiesV.get(starshipL.get(i).getSourceP()).neighbour[c].getIndex();
-						if ((target > factoriesCount) && (planetL.get(target).isStatus())){
+						if ((target > factoriesCount) && (planetL.get(target).isTempStatus())){
 							DataGeneration.nextTarget(target, factoriesCount, i, planetL, starshipL, distance);
 							break;
 							
@@ -250,7 +259,7 @@ public class Main {
 					if (starshipL.get(i).getTargetP() == -1){	
 						for (int c = 0; c < 20; c++){
 							target = entitiesV.get(starshipL.get(i).getNumF()).neighbour[c].getIndex();
-							if ((target > factoriesCount) && (planetL.get(target).isStatus())){
+							if ((target > factoriesCount) && (planetL.get(target).isTempStatus())){
 								DataGeneration.nextTarget(target, factoriesCount, i, planetL, starshipL, distance);
 								break;
 							
@@ -260,7 +269,7 @@ public class Main {
 							for (int j = 5; j < entitiesV.size(); j++){
 								for (int c = 0; c < 5; c++){
 									target = entitiesV.get(j).neighbour[c].getIndex();
-									if ((target > factoriesCount) && (planetL.get(target).isStatus())){
+									if ((target > factoriesCount) && (planetL.get(target).isTempStatus())){
 										DataGeneration.nextTarget(target, factoriesCount, i, planetL, starshipL, distance);
 									break;
 									}
