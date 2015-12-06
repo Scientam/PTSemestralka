@@ -7,7 +7,7 @@ import java.util.Random;
 import java.util.Scanner;
 /**
  * @authors Karel Sobehart, Petr Tobias
- * @version 0.0512.1924
+ * @version 0.0612.1921
  */
 public class Main {
 	
@@ -104,11 +104,14 @@ public class Main {
 			WorkWithFile.printMatrix(floydWarshallP, entitiesV.size(), "FWPath.txt");
 			/** ulozeni pole predchudcu kazdeho vrcholu */
 			DataGeneration.assignNeighbour(entitiesV, floydWarshallP);
-			/** vytvoreni listu cest z kazdeho vrcholu do kazdeho */
-		    DataGeneration.createPaths(paths, entitiesV);
-			/** zavola metodu, ktera nazorne vykresli galaxii, tj. plnety,  centraly a cesty mezi nimi */
-		    new DrawMapG(factoriesCount, planetsCount, neighbourCountF, neighbourCountP, entitiesV, paths);
-			new DrawMap(factoriesCount, planetsCount, neighbourCountF, neighbourCountP, entitiesV, paths);	
+			 new DrawMapG(factoriesCount, planetsCount, neighbourCountF, neighbourCountP, entitiesV, paths);
+			if (entitiesV.size()<=1000) {
+				/** vytvoreni listu cest z kazdeho vrcholu do kazdeho */
+			    DataGeneration.createPaths(paths, entitiesV);
+				/** zavola metodu, ktera nazorne vykresli galaxii, tj. plnety,  centraly a cesty mezi nimi */
+			   new DrawMap(factoriesCount, planetsCount, neighbourCountF, neighbourCountP, entitiesV, paths);	
+			}
+			
 	    //***********************************************************************************NACITANI_ZE_SOUBORU*************************************************************************************/
 		} else { 	
 			entitiesV = WorkWithFile.fromFileVrcholy(factoriesCount);
@@ -124,9 +127,11 @@ public class Main {
 			WorkWithFile.fromFileFWShortestPath(floydWarshall);
 			WorkWithFile.fromFileFWPath(floydWarshallP);
 			DataGeneration.assignNeighbour(entitiesV, floydWarshallP);
-			DataGeneration.createPaths(paths, entitiesV);
 			new DrawMapG(factoriesCount, planetsCount, neighbourCountF, neighbourCountP, entitiesV, paths);
-			new DrawMap(factoriesCount, planetsCount, neighbourCountF, neighbourCountP, entitiesV, paths);		
+			if (entitiesV.size()<=1000) {
+				DataGeneration.createPaths(paths, entitiesV);
+				new DrawMap(factoriesCount, planetsCount, neighbourCountF, neighbourCountP, entitiesV, paths);	
+			}	
 		}
 	//*********************************************************************************SIMULACE********************************************************************************************************/	
 		 	BufferedWriter bw = new BufferedWriter(new FileWriter("OrderFulfillment.txt"));
