@@ -7,7 +7,7 @@ import java.util.Random;
 import java.util.Scanner;
 /**
  * @authors Karel Sobehart, Petr Tobias
- * @version 0.0612.1921
+ * @version 0.0612.2055
  */
 public class Main {
 	
@@ -54,7 +54,7 @@ public class Main {
 	/** vytvori promennou, ktera slouzi pro generování náhodné veličiny*/
 	static Random r = new Random();
 	/** vytvori promennou, ktera slouzi k identifikovani centraly */
-	private static int factoryId;
+	//private static int factoryId;
 	/** */
 	//private static int starshipId;
 	/** konstanta uchovavajici plny naklad*/
@@ -135,7 +135,6 @@ public class Main {
 		}
 	//*********************************************************************************SIMULACE********************************************************************************************************/	
 		BufferedWriter bw = new BufferedWriter(new FileWriter("OrderFulfillment.txt"));
-	 	BufferedWriter bw2 = new BufferedWriter(new FileWriter("Order.txt"));
 	    starship = null;
 	    starshipL = new ArrayList<>();
 	    int target = 0;
@@ -165,7 +164,7 @@ public class Main {
 
 			if (d % 30 == 0){
 				for (int i = 0; i < planetL.size(); i++){
-					if (planetL.get(i).isStatus() == true){
+					if (planetL.get(i).isStatus()){
 						planetL.get(i).setPopulCount(planetL.get(i).getPopulCount() - planetL.get(i).getOrder());
 					}
 					planetL.get(i).setStatus(true);
@@ -188,7 +187,7 @@ public class Main {
 					starshipL.get(i).setTargetP(-1);
 					for (int c = 0; c < 20; c++){
 						target = entitiesV.get(starshipL.get(i).getNumF()).neighbour[c].getIndex();
-						if ((target > factoriesCount) && (planetL.get(target).isStatus() == true)){							 
+						if ((target > factoriesCount) && (planetL.get(target).isStatus())){							 
 							DataGeneration.nextTarget(target, factoriesCount, i, planetL, starshipL, distance);
 							break;
 						}
@@ -197,7 +196,7 @@ public class Main {
 						for (int j = 5; j < entitiesV.size(); j++){
 							for (int c = 0; c < 5; c++){
 								target = entitiesV.get(j).neighbour[c].getIndex();
-								if ((target > factoriesCount) && (planetL.get(target).isStatus() == true)){
+								if ((target > factoriesCount) && (planetL.get(target).isStatus())){
 									DataGeneration.nextTarget(target, factoriesCount, i, planetL, starshipL, distance);
 									break;
 								}
@@ -216,7 +215,7 @@ public class Main {
 				if (starshipL.get(i).getDistance() <= 25) {
 					starshipL.get(i).setDistance(0);
 					if (starshipL.get(i).getTargetP() < 5){
-						if (starshipL.get(i).getIsInUse() == true){
+						if (starshipL.get(i).getIsInUse()){
 					DataGeneration.orderExecution(i, starshipL);
 				}
 				else{
@@ -246,7 +245,7 @@ public class Main {
 					target = 0;
 					for (int c = 0; c < 5; c++){
 					target = entitiesV.get(starshipL.get(i).getSourceP()).neighbour[c].getIndex();
-						if ((target > factoriesCount) && (planetL.get(target).isStatus() == true)){
+						if ((target > factoriesCount) && (planetL.get(target).isStatus())){
 							DataGeneration.nextTarget(target, factoriesCount, i, planetL, starshipL, distance);
 							break;
 							
@@ -255,7 +254,7 @@ public class Main {
 					if (starshipL.get(i).getTargetP() == -1){	
 						for (int c = 0; c < 20; c++){
 							target = entitiesV.get(starshipL.get(i).getNumF()).neighbour[c].getIndex();
-							if ((target > factoriesCount) && (planetL.get(target).isStatus() == true)){
+							if ((target > factoriesCount) && (planetL.get(target).isStatus())){
 								DataGeneration.nextTarget(target, factoriesCount, i, planetL, starshipL, distance);
 								break;
 							
@@ -265,7 +264,7 @@ public class Main {
 							for (int j = 5; j < entitiesV.size(); j++){
 								for (int c = 0; c < 5; c++){
 									target = entitiesV.get(j).neighbour[c].getIndex();
-									if ((target > factoriesCount) && (planetL.get(target).isStatus() == true)){
+									if ((target > factoriesCount) && (planetL.get(target).isStatus())){
 										DataGeneration.nextTarget(target, factoriesCount, i, planetL, starshipL, distance);
 									break;
 									}

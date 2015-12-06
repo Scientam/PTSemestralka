@@ -234,7 +234,7 @@ public class DataGeneration {
 	  */
 	 public static List<Planet> createPlanetL (List<Vertex> entitiesV, List<Planet> planetL) {
 		 Planet planet;
-		 planetL = new ArrayList<Planet>();
+		// planetL = new ArrayList<Planet>();
 		 for (int i = 0; i < 5; i++){
 			 planet = new Planet(i, entitiesV.get(i).getXAxis(), entitiesV.get(i).getYAxis(), entitiesV.get(i).getNeighbourCount());
 			 planetL.add(planet);
@@ -249,7 +249,7 @@ public class DataGeneration {
 	 public static List<Starship> createStarshipL (List<Vertex> entitiesV, List<Starship> starshipL) {
 		 int factoryId;
 		 Starship starship;
-		 starshipL = new ArrayList<Starship>();
+		 //starshipL = new ArrayList<Starship>();
 		 for (int i = 0; i < (entitiesV.size()-5)/2; i++){
 			 	factoryId = entitiesV.get(r.nextInt(4)).getKey();                    													// urceni centraly, ktera obednavku vyridi
 				starship = new Starship(i, 25, 5000000, factoryId, factoryId);     												    //volani lode, musi se doresit ID
@@ -277,7 +277,7 @@ public class DataGeneration {
 					System.out.println("Zadej objednavku ve tvaru (id_planety pocet_leku): ");
 					orderID = sc.nextInt();
 					orderDrugCount = sc.nextInt();
-					if (planetL.get(orderID).getAnswered()==false) {
+					if (!planetL.get(orderID).getAnswered()) {
 						planetL.get(orderID).setOrder(orderDrugCount);    // vytvori objednavku, jeji velikost zavisi na poctu obyvatel planety
 						planetL.get(orderID).setAnswered(true);
 					}
@@ -285,7 +285,7 @@ public class DataGeneration {
 					choice = sc.nextInt();
 				} 
 				for (int i = 5; i < entitiesV.size(); i++) {			                            //cyklus pobezi pro vseechny planety
-					if (planetL.get(i).getAnswered()==false) {
+					if (!planetL.get(i).getAnswered()) {
 						int production = planetL.get(i).drugProduction( planetL.get(i).getPopulCount() );
 						planetL.get(i).setOrder( planetL.get(i).order( planetL.get(i).getPopulCount(), production ) );    // vytvori objednavku, jeji velikost zavisi na poctu obyvatel planety
 					}	

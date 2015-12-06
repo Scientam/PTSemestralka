@@ -76,7 +76,6 @@ public class WorkWithFile {
 	
 	public static void printOrder(int day, List<Vertex> entitiesV, List<Planet> planetL) {
 		BufferedWriter bw;
-		int production;
 		try {
 			bw = new BufferedWriter(new FileWriter("Order.txt", true));
 			bw.write("---------------------------------------------------------------------------------------------");

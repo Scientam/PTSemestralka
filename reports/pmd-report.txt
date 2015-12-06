@@ -1,21 +1,8 @@
-src/DataGeneration.java:1:	Zruste nevyuzite importy jako 'java.io.BufferedWriter'
-src/DataGeneration.java:2:	Zruste nevyuzite importy jako 'java.io.FileWriter'
-src/DataGeneration.java:234:	Prirazovani hodnoty parametru 'planetL' metody je problematicke. Pouzijte lokalni promenne.
-src/DataGeneration.java:234:	Prirazovani hodnoty parametru 'planetL' metody je problematicke. Pouzijte lokalni promenne.
-src/DataGeneration.java:248:	Prirazovani hodnoty parametru 'starshipL' metody je problematicke. Pouzijte lokalni promenne.
-src/DataGeneration.java:248:	Prirazovani hodnoty parametru 'starshipL' metody je problematicke. Pouzijte lokalni promenne.
-src/DataGeneration.java:279:	Vyhnete se zbytecnemu porovnavani booleovskych vyrazu.
-src/Main.java:12:	class 'Main' je prilis slozita (Cyclomatic Complexity of 25 (Highest = 24)).
-src/Main.java:12:	class 'Main' je prilis slozita (Cyclomatic Complexity of 25 (Highest = 24)).
-src/Main.java:57:	Privatni promenna 'factoryId' neni nikde v kodu pouzita
-src/Main.java:68:	Ruznych cest pruchodu metodou 'main()' je 17366, doporuceny limit je 200 (NPath complexity).
-src/Main.java:68:	Ruznych cest pruchodu metodou 'main()' je 17366, doporuceny limit je 200 (NPath complexity).
+src/Main.java:12:	class 'Main' je prilis slozita (Cyclomatic Complexity of 43 (Highest = 42)).
+src/Main.java:12:	class 'Main' je prilis slozita (Cyclomatic Complexity of 43 (Highest = 42)).
+src/Main.java:68:	Ruznych cest pruchodu metodou 'main()' je 17862940, doporuceny limit je 200 (NPath complexity).
+src/Main.java:68:	Ruznych cest pruchodu metodou 'main()' je 17862940, doporuceny limit je 200 (NPath complexity).
 src/Main.java:68:	Vyhnete se prilis dlouhym metodam.
 src/Main.java:68:	Vyhnete se prilis dlouhym metodam.
-src/Main.java:68:	method 'main' je prilis slozita (Cyclomatic Complexity of 24).
-src/Main.java:68:	method 'main' je prilis slozita (Cyclomatic Complexity of 24).
-src/Main.java:173:	Vyhnete se zbytecnemu porovnavani booleovskych vyrazu.
-src/Main.java:191:	Vyhnete se zbytecnemu porovnavani booleovskych vyrazu.
-src/Main.java:224:	Vyhnete se zbytecnemu porovnavani booleovskych vyrazu.
-src/Main.java:238:	Vyhnete se zbytecnemu porovnavani booleovskych vyrazu.
-src/WorkWithFile.java:92:	Vyhnete se zbytecnemu porovnavani booleovskych vyrazu.
+src/Main.java:68:	method 'main' je prilis slozita (Cyclomatic Complexity of 42).
+src/Main.java:68:	method 'main' je prilis slozita (Cyclomatic Complexity of 42).
