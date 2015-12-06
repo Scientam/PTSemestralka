@@ -102,6 +102,13 @@ public class Planet extends Vertex {
 		return this.populCount;
 	}
 	
+	/**
+	 * 
+	 * @param populCount
+	 */
+	public void setPopulCount(int populCount) {
+		this.populCount = populCount;
+	}
 	
 	/**
 	 * 

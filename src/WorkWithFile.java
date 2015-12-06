@@ -74,35 +74,49 @@ public class WorkWithFile {
 	 }
 	
 	
-	public static void printOrder(int day, int maxD, List<Vertex> entitiesV, List<Planet> planetL) {
+	public static void printOrder(int day, List<Vertex> entitiesV, List<Planet> planetL) {
 		BufferedWriter bw;
 		int production;
 		try {
 			bw = new BufferedWriter(new FileWriter("Order.txt", true));
 			bw.write("---------------------------------------------------------------------------------------------");
 			bw.newLine();
+			//if ((day % 30) == 0) {
 			bw.write("Objednavky pro "+(day/30+1)+". mesic: ");
 			bw.newLine();
 			bw.write("---------------------------------------------------------------------------------------------");
 			bw.newLine();
-			
-			
 			for (int i = 5; i < entitiesV.size(); i++) {			                            //cyklus pobezi pro vseechny planety
-				if (planetL.get(i).getAnswered()==false) {
+				/*if (planetL.get(i).getAnswered()==false) {
 					production = planetL.get(i).drugProduction( planetL.get(i).getPopulCount() );
 					planetL.get(i).setOrder( planetL.get(i).order( planetL.get(i).getPopulCount(), production ) );    // vytvori objednavku, jeji velikost zavisi na poctu obyvatel planety
-				}	
+				}*/	
 				bw.write("Planeta s id: "+(planetL.get(i).getId())+" objednava takovyto pocet leku: "+planetL.get(i).getOrder());
 				bw.newLine();
 			}
 				bw.write("---------------------------------------------------------------------------------------------");
 				bw.newLine();
-
+			//}
 			bw.close();
-			}
+		}catch (IOException e) {e.printStackTrace();}	
 		
-		catch (IOException e) {e.printStackTrace();}	
-		
+	}
+	
+	public static void printNextTarget(int i, List<Starship> starshipL){
+		BufferedWriter bw;
+		try {
+			bw = new BufferedWriter(new FileWriter("OrderFulfillment.txt", true));
+		bw.write("Lod s id: " + starshipL.get(i).getId() + " se vydala na planetu s id: " + starshipL.get(i).getTargetP());
+		bw.newLine();
+		bw.write("Lodi s id: " + starshipL.get(i).getId() + " zbyva doletet na planetu "+starshipL.get(i).getTargetP()+", "+ starshipL.get(i).getDistance()+" svetelnych let.");
+		bw.newLine();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	//********************************************************************************************NACITANI_Z_TXT*********************************************************************************************	

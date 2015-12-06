@@ -1,4 +1,5 @@
 import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -249,7 +250,7 @@ public class DataGeneration {
 		 int factoryId;
 		 Starship starship;
 		 starshipL = new ArrayList<Starship>();
-		 for (int i = 0; i < (entitiesV.size()-5)/100 * 40; i++){
+		 for (int i = 0; i < (entitiesV.size()-5)/2; i++){
 			 	factoryId = entitiesV.get(r.nextInt(4)).getKey();                    													// urceni centraly, ktera obednavku vyridi
 				starship = new Starship(i, 25, 5000000, factoryId, factoryId);     												    //volani lode, musi se doresit ID
 				starshipL.add(starship);
@@ -265,57 +266,96 @@ public class DataGeneration {
 	  * @param planetL
 	  * @return
 	  */
-	 public static List<Planet> createOrder (int day, int maxD, List<Vertex> entitiesV, List<Planet> planetL) {
+	 public static List<Planet> createOrder (int day, List<Vertex> entitiesV, List<Planet> planetL) {
 		 int choice;
 		 int orderID;
 		 int orderDrugCount;
-	
-		 System.out.println("Chcete zadat vlastní objednavku? (0 - NE/1 - ANO): ");
-		 choice = sc.nextInt();
-		 while (choice == 1) {
-			 System.out.println("Zadej objednavku ve tvaru (id_planety pocet_leku): ");
-			 orderID = sc.nextInt();
-			 orderDrugCount = sc.nextInt();
-			 if (planetL.get(orderID).getAnswered()==false) {
-				 planetL.get(orderID).setOrder(orderDrugCount);    // vytvori objednavku, jeji velikost zavisi na poctu obyvatel planety
-				 planetL.get(orderID).setAnswered(true);
-			 }
-			 System.out.println("Chcete zadat vlastni objednavku? (0 - NE/1 - ANO): ");
-			 choice = sc.nextInt();
-		  } 
-		  WorkWithFile.printOrder(day, maxD, entitiesV, planetL);
-		 return planetL;
+		 //if (day % 30 == 0) {
+				System.out.println("Chcete zadat vlastni objednavku? (0 - NE/1 - ANO): ");
+				choice = sc.nextInt();
+				while (choice == 1) {
+					System.out.println("Zadej objednavku ve tvaru (id_planety pocet_leku): ");
+					orderID = sc.nextInt();
+					orderDrugCount = sc.nextInt();
+					if (planetL.get(orderID).getAnswered()==false) {
+						planetL.get(orderID).setOrder(orderDrugCount);    // vytvori objednavku, jeji velikost zavisi na poctu obyvatel planety
+						planetL.get(orderID).setAnswered(true);
+					}
+					System.out.println("Chcete zadat vlastni objednavku? (0 - NE/1 - ANO): ");
+					choice = sc.nextInt();
+				} 
+				for (int i = 5; i < entitiesV.size(); i++) {			                            //cyklus pobezi pro vseechny planety
+					if (planetL.get(i).getAnswered()==false) {
+						int production = planetL.get(i).drugProduction( planetL.get(i).getPopulCount() );
+						planetL.get(i).setOrder( planetL.get(i).order( planetL.get(i).getPopulCount(), production ) );    // vytvori objednavku, jeji velikost zavisi na poctu obyvatel planety
+					}	
+					//bw.write("Planeta s id: "+(planetL.get(i).getId())+" objednava takovyto pocet leku: "+planetL.get(i).getOrder());
+					//bw.newLine();
+				}
+				//WorkWithFile.printOrder(day, entitiesV, planetL);
+			//}		 
+		return planetL;
 	 }
 	 
-	 public static List<Planet> orderExecution (int day, List<Starship> starshipL,List<Planet> planetL) {
-		/* BufferedWriter bw;
-		try {
-			bw = new BufferedWriter(new FileWriter("OrderFulfillment.txt"));
-			/**
-			 * Pokud lod doleti na planetu, vylozi zasoby podle objednavky.
-			 * Pote se priradi dalsi planeta (pripadne centrala).
-			 
-		 for (int i = 0; i < planetL.size(); i++) {
-			if (starshipL.get(i).getDistance() <= 25.0) {
-				starshipL.get(i).setDistance(0.0);																						 // lod doletela na planetu
-				starshipL.get(i).setCapacity(starshipL.get(i).getCapacity() - planetL.get(starshipL.get(i).getTargetP()+5).getOrder());    // vylozeni nakladu
-				bw.write("Lodi s id: " + starshipL.get(i).getId() + " zbyva doletet: " + starshipL.get(i).getDistance());
+	 public static void nextTarget(int target, int factoriesCount, int i, List<Planet> planetL, List<Starship> starshipL, int[][] distance){
+				starshipL.get(i).setTargetP(target);
+				planetL.get(starshipL.get(i).getTargetP()).setStatus(false);
+				starshipL.get(i).setDistance(distance[starshipL.get(i).getNumF()][starshipL.get(i).getTargetP()]);
+				WorkWithFile.printNextTarget(i, starshipL);
+		 
+	 }
+	 
+	 public static void orderExecution (int i, List<Starship> starshipL) {
+		 BufferedWriter bw;
+		 try {
+			bw = new BufferedWriter(new FileWriter("OrderFulfillment.txt", true));
+				starshipL.get(i).setCapacity(5000000);
+				bw.write("Lod s id: " + starshipL.get(i).getId() + " dorazila na zakladnu a doplnila naklad.");
 				bw.newLine();
-				//duvod, proc se po vylozeni nevypisuje, kolik se vylozilo, protoze se hleda objednavka centraly, ktera neexistuje
-				bw.write("Lod s id: " + starshipL.get(i).getId() + " vylozila na planete "+planetL.get(i).getId()+", " + planetL.get(starshipL.get(i).getTargetP()).getOrder() + " jednotek nakladu.");
-				bw.newLine();
-				starshipL.get(i).setSourceP(starshipL.get(i).getTargetP());																// lod se vraci na domovskou centralu						
-				starshipL.get(i).setTargetP(starshipL.get(i).getNumF());			
-			} else {
-				starshipL.get(i).setDistance(starshipL.get(i).getDistance() - 25.0);					//vzdalenost se snizuje kazdy den o 25 LY
-				bw.write("Lodi s id: " + starshipL.get(i).getId() + " zbyva doletet na planetu "+planetL.get(i).getId()+", "+ starshipL.get(i).getDistance()+" svìtelných let.");
-				bw.newLine();
-			}
+		 } catch (FileNotFoundException e) {
+			 // TODO Auto-generated catch block
+			 e.printStackTrace();
+		 } catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	 }
+	 
+	 public static void orderExecution2(int i,List<Planet> planetL, List<Starship> starshipL){
+		 BufferedWriter bw;
+		 try {
+			bw = new BufferedWriter(new FileWriter("OrderFulfillment.txt", true));
+		 starshipL.get(i).setCapacity(starshipL.get(i).getCapacity() - planetL.get(starshipL.get(i).getTargetP()).getOrder());    // vylozeni nakladu
+			bw.write("Lodi s id: " + starshipL.get(i).getId() + " zbyva doletet: " + starshipL.get(i).getDistance());
 			bw.newLine();
-		 }	
-		   bw.close();
-		} catch (IOException e) { e.printStackTrace(); }	*/ 		 
-		 return planetL;
+			//duvod, proc se po vylozeni nevypisuje, kolik se vylozilo, protoze se hleda objednavka centraly, ktera neexistuje
+			bw.write("Lod s id: " + starshipL.get(i).getId() + " vylozila na planete "+starshipL.get(i).getTargetP()+", " + planetL.get(starshipL.get(i).getTargetP()).getOrder() + " jednotek nakladu.");
+			bw.newLine();
+		 } catch (FileNotFoundException e) {
+			 // TODO Auto-generated catch block
+			 e.printStackTrace();
+	 } catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	 }
+	 
+	 public static void returnShip(int i, List<Starship> starshipL, int[][] distance){
+		 BufferedWriter bw;
+		 try {
+			bw = new BufferedWriter(new FileWriter("OrderFulfillment.txt", true));
+		 starshipL.get(i).setIsInUse(false);
+			starshipL.get(i).setTargetP(starshipL.get(i).getNumF());
+			starshipL.get(i).setDistance(distance[starshipL.get(i).getSourceP()][starshipL.get(i).getTargetP()]);
+			bw.write("Lod s id: " + starshipL.get(i).getId() + " se vydala zpet na zakladnu  ve vzdalenosti: " + starshipL.get(i).getDistance());
+			bw.newLine();
+		 } catch (FileNotFoundException e) {
+			 // TODO Auto-generated catch block
+			 e.printStackTrace();
+		 } catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	 }
 	  
 }

@@ -134,162 +134,180 @@ public class Main {
 			}	
 		}
 	//*********************************************************************************SIMULACE********************************************************************************************************/	
-		 	BufferedWriter bw = new BufferedWriter(new FileWriter("OrderFulfillment.txt"));
-		    starship = null;
-		    starshipL = new ArrayList<>();
-		    int target = 0;
-		   
-		    /**
-			 * Cyklus spousti simulaci kazdy den a generuje objednavky kazdych 30 dni. Pracuje se pouze s ArrayListem. Informace o objednavkach se ukladaji
-			 * do textoveho souboru.
-			 */
+		BufferedWriter bw = new BufferedWriter(new FileWriter("OrderFulfillment.txt"));
+	 	BufferedWriter bw2 = new BufferedWriter(new FileWriter("Order.txt"));
+	    starship = null;
+	    starshipL = new ArrayList<>();
+	    int target = 0;
+	   
+	    /**
+		 * Cyklus spousti simulaci kazdy den a generuje objednavky kazdych 30 dni. Pracuje se pouze s ArrayListem. Informace o objednavkach se ukladaji
+		 * do textoveho souboru.
+		 */
 
-		    System.out.println("Zadej pocet dni po ktere bude bezet simulace (rok ma 360 dni): ");
-		    maxD = sc.nextInt();
-			for (int d = 0; d < maxD; d++) { 
-
-				bw.write("---------------------------------------------------------------------------------------------");
-				bw.newLine();
-				bw.write("Zacal " + (d+1) + ". den.");
-				bw.newLine();
-				bw.write("---------------------------------------------------------------------------------------------");
-				bw.newLine();
-				
-				if (d == 0) {
-					planetL=DataGeneration.createPlanetL(entitiesV, planetL);
-					starshipL=DataGeneration.createStarshipL(entitiesV, starshipL);
-				}
-					
-			//****************************************************vytvoreni objednavek******************************************************************/
-
-				//BufferedWriter bw2 = new BufferedWriter(new FileWriter("Order.txt"));
-				if (d % 30 == 0) {planetL=DataGeneration.createOrder(d, maxD, entitiesV, planetL);	}				
+	    System.out.println("Zadej pocet dni po ktere bude bezet simulace (rok ma 360 dni): ");
+	    maxD = sc.nextInt();
+		for (int d = 0; d < maxD; d++) { 
 			
-			//*****************************************************vyrizovani objednacek****************************************************************/
+			bw.write("---------------------------------------------------------------------------------------------");
+			bw.newLine();
+			bw.write("Zacal " + (d+1) + ". den.");
+			bw.newLine();
+			bw.write("---------------------------------------------------------------------------------------------");
+			bw.newLine();
+			
+			if (d == 0) {
+				planetL=DataGeneration.createPlanetL(entitiesV, planetL);
+				starshipL=DataGeneration.createStarshipL(entitiesV, starshipL);
+			}
 				
-				for (int i = 0; i < starshipL.size(); i++) {											
+		//****************************************************vytvoreni objednavek******************************************************************/
 
-					if (d % 30 == 0) {
-						
-						starshipL.get(i).setTargetP(-1);
-						for (int c = 0; c < 20; c++){
-							target = entitiesV.get(starshipL.get(i).getNumF()).neighbour[c].getIndex();
-							if ((target > factoriesCount) && (planetL.get(target).isStatus() == true)){
-								starshipL.get(i).setTargetP(target);
-								planetL.get(starshipL.get(i).getTargetP()).setStatus(false);
-								starshipL.get(i).setDistance(floydWarshall[starshipL.get(i).getNumF()][starshipL.get(i).getTargetP()]);					//lodi se priradi vzdalenost, jakou ma uletet
-								bw.write("Lod s id: " + starshipL.get(i).getId() + " se vydala na planetu s id: " + starshipL.get(i).getTargetP() + " ve vzdalenosti: " + starshipL.get(i).getDistance());
-								bw.newLine();
-								break;
-							}
-						}
-					}	
+			if (d % 30 == 0){
+				for (int i = 0; i < planetL.size(); i++){
+					if (planetL.get(i).isStatus() == true){
+						planetL.get(i).setPopulCount(planetL.get(i).getPopulCount() - planetL.get(i).getOrder());
+					}
+					planetL.get(i).setStatus(true);
+				}
+				
+				for (int i = 0; i < starshipL.size(); i++){
+					starshipL.get(i).setIsInUse(true);
+				}
+			
+			planetL=DataGeneration.createOrder(d, entitiesV, planetL);
+			WorkWithFile.printOrder(d, entitiesV, planetL);
+			}
+			
+		//*****************************************************vyrizovani objednacek****************************************************************/
+			
+			for (int i = 0; i < starshipL.size(); i++) {											
 
-					/**
-					 * Pokud lod doleti na planetu, vylozi zasoby podle objednavky.
-					 * Pote se priradi dalsi planeta (pripadne centrala).
-					 */
-					if (starshipL.get(i).getDistance() <= 25) {
-						starshipL.get(i).setDistance(0);
-						if (starshipL.get(i).getTargetP() < factoriesCount){
-							if (starshipL.get(i).getIsInUse() == true){
-							starshipL.get(i).setCapacity(CAPACITY);
-							bw.write("Lod s id: " + starshipL.get(i).getId() + " dorazila na zakladnu a doplnila naklad.");
-							bw.newLine();
-							}else{
-								bw.write("Lod s id: " + starshipL.get(i).getId() + " dorazila na zakladnu a ceka na dalsi mesic.");
-								bw.newLine();
-								continue;
-							}
+				if (d % 30 == 0) {
+					
+					starshipL.get(i).setTargetP(-1);
+					for (int c = 0; c < 20; c++){
+						target = entitiesV.get(starshipL.get(i).getNumF()).neighbour[c].getIndex();
+						if ((target > factoriesCount) && (planetL.get(target).isStatus() == true)){							 
+							DataGeneration.nextTarget(target, factoriesCount, i, planetL, starshipL, distance);
+							break;
 						}
-						else{
-						starshipL.get(i).setCapacity(starshipL.get(i).getCapacity() - planetL.get(starshipL.get(i).getTargetP()).getOrder());    // vylozeni nakladu
-						bw.write("Lodi s id: " + starshipL.get(i).getId() + " zbyva doletet: " + starshipL.get(i).getDistance());
-						bw.newLine();
-						//duvod, proc se po vylozeni nevypisuje, kolik se vylozilo, protoze se hleda objednavka centraly, ktera neexistuje
-						bw.write("Lod s id: " + starshipL.get(i).getId() + " vylozila na planete "+starshipL.get(i).getTargetP()+", " + planetL.get(starshipL.get(i).getTargetP()).getOrder() + " jednotek nakladu.");
-						bw.newLine();
-						}
-						
-						if (starshipL.get(i).getTargetP() == -1){
-							starshipL.get(i).setIsInUse(false);
-							starshipL.get(i).setTargetP(starshipL.get(i).getNumF());
-							starshipL.get(i).setDistance(floydWarshall[starshipL.get(i).getSourceP()][starshipL.get(i).getTargetP()]);
-							bw.write("Lod se vydala zpet na zakladnu ve vzdalenosti: " + starshipL.get(i).getDistance());
-							bw.newLine();
-							continue;
-						}else{						
-						starshipL.get(i).setSourceP(starshipL.get(i).getTargetP());
-						}
-						starshipL.get(i).setTargetP(-1);
-						target = 0;
-						for (int c = 0; c < 5; c++){
-						target = entitiesV.get(starshipL.get(i).getSourceP()).neighbour[c].getIndex();
-							if ((target > factoriesCount) && (planetL.get(target).isStatus() == true)){
-								starshipL.get(i).setTargetP(target);
-								planetL.get(starshipL.get(i).getTargetP()).setStatus(false);
-								starshipL.get(i).setDistance(floydWarshall[starshipL.get(i).getSourceP()][starshipL.get(i).getTargetP()]);
-								bw.write("Lod s id: " + starshipL.get(i).getId() + " se vydala na planetu s id: " + starshipL.get(i).getTargetP());
-								bw.newLine();
-								bw.write("Lodi s id: " + starshipL.get(i).getId() + " zbyva doletet na planetu "+starshipL.get(i).getTargetP()+", "+ starshipL.get(i).getDistance()+" svetelnych let.");
-								bw.newLine();
-								break;
-							}
-						}
-						if (starshipL.get(i).getTargetP() == -1){	
-							for (int c = 0; c < 20; c++){
-								target = entitiesV.get(starshipL.get(i).getNumF()).neighbour[c].getIndex();
+					}
+					if (starshipL.get(i).getTargetP() == -1){
+						for (int j = 5; j < entitiesV.size(); j++){
+							for (int c = 0; c < 5; c++){
+								target = entitiesV.get(j).neighbour[c].getIndex();
 								if ((target > factoriesCount) && (planetL.get(target).isStatus() == true)){
-									starshipL.get(i).setTargetP(target);
-									planetL.get(starshipL.get(i).getTargetP()).setStatus(false);
-									starshipL.get(i).setDistance(floydWarshall[starshipL.get(i).getSourceP()][starshipL.get(i).getTargetP()]);
-									bw.write("Lod s id: " + starshipL.get(i).getId() + " se vydala na planetu s id: " + starshipL.get(i).getTargetP());
-									bw.newLine();
-									bw.write("Lodi s id: " + starshipL.get(i).getId() + " zbyva doletet na planetu "+starshipL.get(i).getTargetP()+", "+ starshipL.get(i).getDistance()+" svetelnych let.");
-									bw.newLine();
+									DataGeneration.nextTarget(target, factoriesCount, i, planetL, starshipL, distance);
 									break;
 								}
 							}
-							if (starshipL.get(i).getTargetP() == -1){
-								starshipL.get(i).setIsInUse(false);
-								starshipL.get(i).setTargetP(starshipL.get(i).getNumF());
-								starshipL.get(i).setDistance(floydWarshall[starshipL.get(i).getSourceP()][starshipL.get(i).getTargetP()]);
-								bw.write("Lod s id: " + starshipL.get(i).getId() + " se vydala zpet na zakladnu  ve vzdalenosti: " + starshipL.get(i).getDistance());
-								bw.newLine();
-								continue;
-							}
+						if (starshipL.get(i).getTargetP() != -1){
+							break;
 						}
-						
-						//starshipL.get(i).setDistance(floydWarshall[starshipL.get(i).getSourceP()][starshipL.get(i).getTargetP()]);
-					} else {
-						starshipL.get(i).setDistance(starshipL.get(i).getDistance() - 25);					//vzdalenost se snizuje kazdy den o 25 LY
-						bw.write("Lodi s id: " + starshipL.get(i).getId() + " zbyva doletet na planetu "+starshipL.get(i).getTargetP()+", "+ starshipL.get(i).getDistance()+" svetelnych let.");
-						bw.newLine();
-					}				
-					// Pridal bych nejakou podminku na vzdalenost, aby to nebralo, planety na druhe strane galaxie
-
-					/**
-					 * Pokud lod nema nalozen dostatek jednotek na pokryti objednavky dalsi planety, vraci se na centralu.
-					 */
-
-					if (starshipL.get(i).getSourceP() == -1 || starshipL.get(i).getTargetP() == -1){
-						continue;
-					}else{
-						if (starshipL.get(i).getCapacity() < planetL.get(starshipL.get(i).getTargetP()).getOrder()){
-						starshipL.get(i).setSourceP(starshipL.get(i).getTargetP());
-						starshipL.get(i).setTargetP(starshipL.get(i).getNumF());																		
-						starshipL.get(i).setDistance(floydWarshall[starshipL.get(i).getSourceP()][starshipL.get(i).getTargetP()]);
-						bw.write("Lod s id: " + starshipL.get(i).getId() +  " se vratila na zakladnu  ve vzdalenosti: " + starshipL.get(i).getDistance() + " doplnit naklad.");
-						bw.newLine();
 						}
 					}
-				
-				bw.newLine();
+				}	
+
+				/**
+				 * Pokud lod doleti na planetu, vylozi zasoby podle objednavky.
+				 * Pote se priradi dalsi planeta (pripadne centrala).
+				 */
+				if (starshipL.get(i).getDistance() <= 25) {
+					starshipL.get(i).setDistance(0);
+					if (starshipL.get(i).getTargetP() < 5){
+						if (starshipL.get(i).getIsInUse() == true){
+					DataGeneration.orderExecution(i, starshipL);
 				}
-	//*****************************************************************************KONEC_SIMULACE******************************************************************************************************/	
+				else{
+					bw.write("Lod s id: " + starshipL.get(i).getId() + " dorazila na zakladnu a ceka na dalsi mesic.");
+					bw.newLine();
+					continue;
+				}
+					}						
+					
+					else{
+						//DataGeneration.orderExecution2(i, planetL, starshipL);
+						starshipL.get(i).setCapacity(starshipL.get(i).getCapacity() - planetL.get(starshipL.get(i).getTargetP()).getOrder());    // vylozeni nakladu
+						bw.write("Lodi s id: " + starshipL.get(i).getId() + " zbyva doletet: " + starshipL.get(i).getDistance());
+						bw.newLine();
+						bw.write("Lod s id: " + starshipL.get(i).getId() + " vylozila na planete "+starshipL.get(i).getTargetP()+", " + planetL.get(starshipL.get(i).getTargetP()).getOrder() + " jednotek nakladu.");
+						bw.newLine();
+					}
+					
+					if (starshipL.get(i).getTargetP() == -1){
+						DataGeneration.returnShip(i, starshipL, distance);
+						continue;
+					}
+					else{						
+					starshipL.get(i).setSourceP(starshipL.get(i).getTargetP());
+					}
+					starshipL.get(i).setTargetP(-1);
+					target = 0;
+					for (int c = 0; c < 5; c++){
+					target = entitiesV.get(starshipL.get(i).getSourceP()).neighbour[c].getIndex();
+						if ((target > factoriesCount) && (planetL.get(target).isStatus() == true)){
+							DataGeneration.nextTarget(target, factoriesCount, i, planetL, starshipL, distance);
+							break;
+							
+						}
+					}
+					if (starshipL.get(i).getTargetP() == -1){	
+						for (int c = 0; c < 20; c++){
+							target = entitiesV.get(starshipL.get(i).getNumF()).neighbour[c].getIndex();
+							if ((target > factoriesCount) && (planetL.get(target).isStatus() == true)){
+								DataGeneration.nextTarget(target, factoriesCount, i, planetL, starshipL, distance);
+								break;
+							
+							}
+						}
+						if (starshipL.get(i).getTargetP() == -1){
+							for (int j = 5; j < entitiesV.size(); j++){
+								for (int c = 0; c < 5; c++){
+									target = entitiesV.get(j).neighbour[c].getIndex();
+									if ((target > factoriesCount) && (planetL.get(target).isStatus() == true)){
+										DataGeneration.nextTarget(target, factoriesCount, i, planetL, starshipL, distance);
+									break;
+									}
+								}
+							if (starshipL.get(i).getTargetP() != -1){
+								break;
+							}
+							}
+						}
+						if (starshipL.get(i).getTargetP() == -1){
+							DataGeneration.returnShip(i, starshipL, distance);
+						}
+					}
+					
+					} else {
+					starshipL.get(i).setDistance(starshipL.get(i).getDistance() - 25);					//vzdalenost se snizuje kazdy den o 25 LY
+					bw.write("Lodi s id: " + starshipL.get(i).getId() + " zbyva doletet na planetu "+starshipL.get(i).getTargetP()+", "+ starshipL.get(i).getDistance()+" svetelnych let.");
+					bw.newLine();
+				}
+
+				/**
+				 * Pokud lod nema nalozen dostatek jednotek na pokryti objednavky dalsi planety, vraci se na centralu.
+				 */
+
+				if (starshipL.get(i).getSourceP() == -1 || starshipL.get(i).getTargetP() == -1){
+					continue;
+				}else{
+					if (starshipL.get(i).getCapacity() < planetL.get(starshipL.get(i).getTargetP()).getOrder()){
+					starshipL.get(i).setSourceP(starshipL.get(i).getTargetP());
+					starshipL.get(i).setTargetP(starshipL.get(i).getNumF());																		
+					starshipL.get(i).setDistance(distance[starshipL.get(i).getSourceP()][starshipL.get(i).getTargetP()]);
+					bw.write("Lod s id: " + starshipL.get(i).getId() +  " se vratila na zakladnu  ve vzdalenosti: " + starshipL.get(i).getDistance() + " doplnit naklad.");
+					bw.newLine();
+					}
+				}
+			
+			bw.newLine();
 			}
-			bw.close();
-			System.out.println("Program skoncil.");
-	}
+//*****************************************************************************KONEC_SIMULACE******************************************************************************************************/	
+		}
+		bw.close();
+		System.out.println("Program skoncil.");
+}
 
 }
