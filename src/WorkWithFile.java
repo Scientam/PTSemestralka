@@ -88,7 +88,7 @@ public class WorkWithFile {
 			bw.newLine();
 			
 			
-			for (int i = 0; i < planetL.size(); i++) {			                            //cyklus pobezi pro vseechny planety
+			for (int i = 5; i < entitiesV.size(); i++) {			                            //cyklus pobezi pro vseechny planety
 				if (planetL.get(i).getAnswered()==false) {
 					production = planetL.get(i).drugProduction( planetL.get(i).getPopulCount() );
 					planetL.get(i).setOrder( planetL.get(i).order( planetL.get(i).getPopulCount(), production ) );    // vytvori objednavku, jeji velikost zavisi na poctu obyvatel planety

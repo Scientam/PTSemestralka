@@ -249,7 +249,7 @@ public class DataGeneration {
 		 int factoryId;
 		 Starship starship;
 		 starshipL = new ArrayList<Starship>();
-		 for (int i = 0; i < (entitiesV.size()-5)/5; i++){
+		 for (int i = 0; i < (entitiesV.size()-5)/100 * 40; i++){
 			 	factoryId = entitiesV.get(r.nextInt(4)).getKey();                    													// urceni centraly, ktera obednavku vyridi
 				starship = new Starship(i, 25, 5000000, factoryId, factoryId);     												    //volani lode, musi se doresit ID
 				starshipL.add(starship);
@@ -285,7 +285,7 @@ public class DataGeneration {
 				} 
 				WorkWithFile.printOrder(day, entitiesV, planetL);
 			}		 
-		 return planetL;
+		return planetL;
 	 }
 	 
 	 public static List<Planet> orderExecution (int day, List<Starship> starshipL,List<Planet> planetL) {

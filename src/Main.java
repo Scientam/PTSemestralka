@@ -145,7 +145,7 @@ public class Main {
 
 				bw.write("---------------------------------------------------------------------------------------------");
 				bw.newLine();
-				bw.write("Zacal " + d + ". den.");
+				bw.write("Zacal " + (d+1) + ". den.");
 				bw.newLine();
 				bw.write("---------------------------------------------------------------------------------------------");
 				bw.newLine();
@@ -153,12 +153,14 @@ public class Main {
 				if (d == 0) {
 					planetL=DataGeneration.createPlanetL(entitiesV, planetL);
 					starshipL=DataGeneration.createStarshipL(entitiesV, starshipL);
-					planetL=DataGeneration.createOrder(d, entitiesV, planetL);
-					}	
+				}
 					
 			//****************************************************vytvoreni objednavek******************************************************************/
 
-				
+					//BufferedWriter bw2 = new BufferedWriter(new FileWriter("Order.txt"));
+					planetL=DataGeneration.createOrder(d, entitiesV, planetL);
+					
+			
 			//*****************************************************vyrizovani objednacek****************************************************************/
 				
 				for (int i = 0; i < starshipL.size(); i++) {											
@@ -171,12 +173,12 @@ public class Main {
 							if ((target > factoriesCount) && (planetL.get(target).isStatus() == true)){
 								starshipL.get(i).setTargetP(target);
 								planetL.get(starshipL.get(i).getTargetP()).setStatus(false);
-								bw.write("Lod s id: " + starshipL.get(i).getId() + " se vydala na planetu s id: " + starshipL.get(i).getTargetP());
+								starshipL.get(i).setDistance(floydWarshall[starshipL.get(i).getNumF()][starshipL.get(i).getTargetP()]);					//lodi se priradi vzdalenost, jakou ma uletet
+								bw.write("Lod s id: " + starshipL.get(i).getId() + " se vydala na planetu s id: " + starshipL.get(i).getTargetP() + " ve vzdalenosti: " + starshipL.get(i).getDistance());
 								bw.newLine();
 								break;
 							}
 						}
-					starshipL.get(i).setDistance(floydWarshall[starshipL.get(i).getNumF()][starshipL.get(i).getTargetP()]);					//lodi se priradi vzdalenost, jakou ma uletet
 					}	
 
 					/**
@@ -191,7 +193,7 @@ public class Main {
 							bw.write("Lod s id: " + starshipL.get(i).getId() + " dorazila na zakladnu a doplnila naklad.");
 							bw.newLine();
 							}else{
-								bw.write("Lod dorazila na zakladnu a ceka na dalsi mesic.");
+								bw.write("Lod s id: " + starshipL.get(i).getId() + " dorazila na zakladnu a ceka na dalsi mesic.");
 								bw.newLine();
 								continue;
 							}
@@ -204,13 +206,17 @@ public class Main {
 						bw.write("Lod s id: " + starshipL.get(i).getId() + " vylozila na planete "+starshipL.get(i).getTargetP()+", " + planetL.get(starshipL.get(i).getTargetP()).getOrder() + " jednotek nakladu.");
 						bw.newLine();
 						}
-						starshipL.get(i).setSourceP(starshipL.get(i).getTargetP());
-						if (starshipL.get(i).getSourceP() == -1){
+						
+						if (starshipL.get(i).getTargetP() == -1){
 							starshipL.get(i).setIsInUse(false);
-							bw.write("Dorucovani skoncilo.");
+							starshipL.get(i).setTargetP(starshipL.get(i).getNumF());
+							starshipL.get(i).setDistance(floydWarshall[starshipL.get(i).getSourceP()][starshipL.get(i).getTargetP()]);
+							bw.write("Lod se vydala zpet na zakladnu ve vzdalenosti: " + starshipL.get(i).getDistance());
 							bw.newLine();
 							continue;
-						}						
+						}else{						
+						starshipL.get(i).setSourceP(starshipL.get(i).getTargetP());
+						}
 						starshipL.get(i).setTargetP(-1);
 						target = 0;
 						for (int c = 0; c < 5; c++){
@@ -218,7 +224,10 @@ public class Main {
 							if ((target > factoriesCount) && (planetL.get(target).isStatus() == true)){
 								starshipL.get(i).setTargetP(target);
 								planetL.get(starshipL.get(i).getTargetP()).setStatus(false);
+								starshipL.get(i).setDistance(floydWarshall[starshipL.get(i).getSourceP()][starshipL.get(i).getTargetP()]);
 								bw.write("Lod s id: " + starshipL.get(i).getId() + " se vydala na planetu s id: " + starshipL.get(i).getTargetP());
+								bw.newLine();
+								bw.write("Lodi s id: " + starshipL.get(i).getId() + " zbyva doletet na planetu "+starshipL.get(i).getTargetP()+", "+ starshipL.get(i).getDistance()+" svetelnych let.");
 								bw.newLine();
 								break;
 							}
@@ -229,20 +238,25 @@ public class Main {
 								if ((target > factoriesCount) && (planetL.get(target).isStatus() == true)){
 									starshipL.get(i).setTargetP(target);
 									planetL.get(starshipL.get(i).getTargetP()).setStatus(false);
+									starshipL.get(i).setDistance(floydWarshall[starshipL.get(i).getSourceP()][starshipL.get(i).getTargetP()]);
 									bw.write("Lod s id: " + starshipL.get(i).getId() + " se vydala na planetu s id: " + starshipL.get(i).getTargetP());
+									bw.newLine();
+									bw.write("Lodi s id: " + starshipL.get(i).getId() + " zbyva doletet na planetu "+starshipL.get(i).getTargetP()+", "+ starshipL.get(i).getDistance()+" svetelnych let.");
 									bw.newLine();
 									break;
 								}
 							}
 							if (starshipL.get(i).getTargetP() == -1){
 								starshipL.get(i).setIsInUse(false);
-								bw.write("Lod se vratila na zakladnu a ceka na dalsi mesic.");
+								starshipL.get(i).setTargetP(starshipL.get(i).getNumF());
+								starshipL.get(i).setDistance(floydWarshall[starshipL.get(i).getSourceP()][starshipL.get(i).getTargetP()]);
+								bw.write("Lod s id: " + starshipL.get(i).getId() + " se vydala zpet na zakladnu  ve vzdalenosti: " + starshipL.get(i).getDistance());
 								bw.newLine();
 								continue;
 							}
 						}
 						
-						starshipL.get(i).setDistance(floydWarshall[starshipL.get(i).getSourceP()][starshipL.get(i).getTargetP()]);
+						//starshipL.get(i).setDistance(floydWarshall[starshipL.get(i).getSourceP()][starshipL.get(i).getTargetP()]);
 					} else {
 						starshipL.get(i).setDistance(starshipL.get(i).getDistance() - 25);					//vzdalenost se snizuje kazdy den o 25 LY
 						bw.write("Lodi s id: " + starshipL.get(i).getId() + " zbyva doletet na planetu "+starshipL.get(i).getTargetP()+", "+ starshipL.get(i).getDistance()+" svetelnych let.");
@@ -254,13 +268,17 @@ public class Main {
 					 * Pokud lod nema nalozen dostatek jednotek na pokryti objednavky dalsi planety, vraci se na centralu.
 					 */
 
-					if (starshipL.get(i).getCapacity() < planetL.get(starshipL.get(i).getTargetP()).getOrder()){
+					if (starshipL.get(i).getSourceP() == -1 || starshipL.get(i).getTargetP() == -1){
+						continue;
+					}else{
+						if (starshipL.get(i).getCapacity() < planetL.get(starshipL.get(i).getTargetP()).getOrder()){
 						starshipL.get(i).setSourceP(starshipL.get(i).getTargetP());
 						starshipL.get(i).setTargetP(starshipL.get(i).getNumF());																		
-						starshipL.get(i).setDistance(floydWarshall[starshipL.get(i).getNumF()][starshipL.get(i).getTargetP()]);
-						bw.write("Lod se vratila na zakladnu doplnit naklad.");
+						starshipL.get(i).setDistance(floydWarshall[starshipL.get(i).getSourceP()][starshipL.get(i).getTargetP()]);
+						bw.write("Lod s id: " + starshipL.get(i).getId() +  " se vratila na zakladnu  ve vzdalenosti: " + starshipL.get(i).getDistance() + " doplnit naklad.");
 						bw.newLine();
 						}
+					}
 				
 				bw.newLine();
 				}
